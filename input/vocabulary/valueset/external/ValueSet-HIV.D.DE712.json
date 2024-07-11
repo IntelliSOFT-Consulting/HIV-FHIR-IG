@@ -1,0 +1,46 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HIVDDE712",
+  "id": "HIV.D.DE712",
+  "title": "Cervical cancer stage at diagnosis ValueSet",
+  "description": "Value set of cervical cancer stage at diagnosis of cervical cancer",
+  "url": "http://smart.who.int/hiv/ValueSet/HIV.D.DE712",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+    ]
+  },
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "concept": [
+          {
+            "code": "HIV.D.DE713",
+            "display": "Stage 0"
+          },
+          {
+            "code": "HIV.D.DE714",
+            "display": "Stage I"
+          },
+          {
+            "code": "HIV.D.DE715",
+            "display": "Stage II"
+          },
+          {
+            "code": "HIV.D.DE716",
+            "display": "Stage III"
+          },
+          {
+            "code": "HIV.D.DE717",
+            "display": "Stage IV"
+          }
+        ]
+      }
+    ]
+  }
+}

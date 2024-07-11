@@ -1,0 +1,50 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HIVDDE753",
+  "id": "HIV.D.DE753",
+  "title": "Offer other clinical services ValueSet",
+  "description": "Value set of other clinical services offered or referrals given to the client",
+  "url": "http://smart.who.int/hiv/ValueSet/HIV.D.DE753",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+    ]
+  },
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "concept": [
+          {
+            "code": "HIV.D.DE754",
+            "display": "Assessment and provision of vaccinations"
+          },
+          {
+            "code": "HIV.D.DE755",
+            "display": "Hepatitis B (HBV) and hepatitis C virus (HCV) testing and treatment"
+          },
+          {
+            "code": "HIV.D.DE756",
+            "display": "Co-trimoxazole chemoprophylaxis to prevent pneumocystis carinii pneumonia"
+          },
+          {
+            "code": "HIV.D.DE757",
+            "display": "Intensified TB case finding and linkage to TB treatment"
+          },
+          {
+            "code": "HIV.D.DE758",
+            "display": "Provision of isoniazid preventive therapy if person does not have TB"
+          },
+          {
+            "code": "HIV.D.DE759",
+            "display": "Malaria prevention (such as bed nets and prophylaxis), depending on epidemiology"
+          }
+        ]
+      }
+    ]
+  }
+}

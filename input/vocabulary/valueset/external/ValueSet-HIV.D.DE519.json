@@ -1,0 +1,42 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HIVDDE519",
+  "id": "HIV.D.DE519",
+  "title": "Other support services ValueSet",
+  "description": "Value set of offer or refer for other support services",
+  "url": "http://smart.who.int/hiv/ValueSet/HIV.D.DE519",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+    ]
+  },
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "concept": [
+          {
+            "code": "HIV.D.DE520",
+            "display": "Mental health services"
+          },
+          {
+            "code": "HIV.D.DE521",
+            "display": "Psychosocial counselling, support and treatment adherence counselling"
+          },
+          {
+            "code": "HIV.D.DE522",
+            "display": "Legal and social services"
+          },
+          {
+            "code": "HIV.D.DE523",
+            "display": "Services for responding to violence against women"
+          }
+        ]
+      }
+    ]
+  }
+}

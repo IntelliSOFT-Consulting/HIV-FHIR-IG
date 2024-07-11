@@ -1,0 +1,38 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HIVEDE127",
+  "id": "HIV.E.DE127",
+  "title": "Infant feeding practice ValueSet",
+  "description": "Value set of infant feeding practice",
+  "url": "http://smart.who.int/hiv/ValueSet/HIV.E.DE127",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+    ]
+  },
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "concept": [
+          {
+            "code": "HIV.E.DE128",
+            "display": "Exclusively breastfeeding"
+          },
+          {
+            "code": "HIV.E.DE129",
+            "display": "Replacement feeding"
+          },
+          {
+            "code": "HIV.E.DE130",
+            "display": "Mixed feeding"
+          }
+        ]
+      }
+    ]
+  }
+}

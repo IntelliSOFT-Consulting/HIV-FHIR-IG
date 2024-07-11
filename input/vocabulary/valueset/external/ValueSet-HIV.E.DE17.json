@@ -1,0 +1,94 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HIVEDE17",
+  "id": "HIV.E.DE17",
+  "title": "Past pregnancy complications ValueSet",
+  "description": "Value set of whether the woman has had any complications or problems in any previous pregnancy",
+  "url": "http://smart.who.int/hiv/ValueSet/HIV.E.DE17",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+    ]
+  },
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "concept": [
+          {
+            "code": "HIV.E.DE18",
+            "display": "No past pregnancy complications"
+          },
+          {
+            "code": "HIV.E.DE19",
+            "display": "Does not know of any past pregnancy complications"
+          },
+          {
+            "code": "HIV.E.DE20",
+            "display": "Pre-eclampsia"
+          },
+          {
+            "code": "HIV.E.DE21",
+            "display": "Eclampsia"
+          },
+          {
+            "code": "HIV.E.DE22",
+            "display": "Alcohol use"
+          },
+          {
+            "code": "HIV.E.DE23",
+            "display": "Baby died within 24 hours of birth"
+          },
+          {
+            "code": "HIV.E.DE24",
+            "display": "Prolonged labour"
+          },
+          {
+            "code": "HIV.E.DE25",
+            "display": "Convulsions"
+          },
+          {
+            "code": "HIV.E.DE26",
+            "display": "Forceps"
+          },
+          {
+            "code": "HIV.E.DE27",
+            "display": "Gestational diabetes mellitus"
+          },
+          {
+            "code": "HIV.E.DE28",
+            "display": "Heavy bleeding (during or after delivery)"
+          },
+          {
+            "code": "HIV.E.DE29",
+            "display": "Macrosomia"
+          },
+          {
+            "code": "HIV.E.DE30",
+            "display": "Perineal tear (3rd or 4th degree)"
+          },
+          {
+            "code": "HIV.E.DE31",
+            "display": "Substance use"
+          },
+          {
+            "code": "HIV.E.DE32",
+            "display": "Tobacco use"
+          },
+          {
+            "code": "HIV.E.DE33",
+            "display": "Vacuum delivery"
+          },
+          {
+            "code": "HIV.E.DE34",
+            "display": "Other past pregnancy problems"
+          }
+        ]
+      }
+    ]
+  }
+}

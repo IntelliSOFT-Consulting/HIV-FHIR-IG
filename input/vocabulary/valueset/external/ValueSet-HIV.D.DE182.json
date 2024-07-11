@@ -1,0 +1,34 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HIVDDE182",
+  "id": "HIV.D.DE182",
+  "title": "HCV medicine type ValueSet",
+  "description": "Value set of type of medicine client is prescribed",
+  "url": "http://smart.who.int/hiv/ValueSet/HIV.D.DE182",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+    ]
+  },
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "concept": [
+          {
+            "code": "HIV.D.DE183",
+            "display": "Interferon"
+          },
+          {
+            "code": "HIV.D.DE184",
+            "display": "Direct acting antivirals"
+          }
+        ]
+      }
+    ]
+  }
+}

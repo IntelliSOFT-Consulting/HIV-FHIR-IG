@@ -1,0 +1,38 @@
+{
+  "resourceType": "Library",
+  "id": "HIVIND12Logic",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablelibrary",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablelibrary",
+      "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-library",
+      "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
+    ]
+  },
+  "url": "http://smart.who.int/HIV/Library/HIVIND12Logic",
+  "title": "HIV.IND.12 Logic",
+  "description": "% of person-years of follow-up (PYFU) on OAMT among opioid dependent people",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+      "valueCode": "computable"
+    }
+  ],
+  "name": "HIVIND12Logic",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "World Health Organization (WHO)",
+  "type": {
+    "coding": [
+      {
+        "code": "logic-library",
+        "system": "http://terminology.hl7.org/CodeSystem/library-type"
+      }
+    ]
+  },
+  "content": [
+    {
+      "id": "ig-loader-HIVIND12Logic.cql"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "resourceType": "Library",
+  "id": "HIVIND61Logic",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablelibrary",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablelibrary",
+      "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-library",
+      "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
+    ]
+  },
+  "url": "http://smart.who.int/HIV/Library/HIVIND61Logic",
+  "title": "HIV.IND.61 Logic",
+  "description": "% of pregnant women who were tested for syphilis on any ANC visit during the reporting period",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+      "valueCode": "computable"
+    }
+  ],
+  "name": "HIVIND61Logic",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "World Health Organization (WHO)",
+  "type": {
+    "coding": [
+      {
+        "code": "logic-library",
+        "system": "http://terminology.hl7.org/CodeSystem/library-type"
+      }
+    ]
+  },
+  "content": [
+    {
+      "id": "ig-loader-HIVIND61Logic.cql"
+    }
+  ]
+}

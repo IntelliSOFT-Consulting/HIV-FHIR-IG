@@ -1,0 +1,42 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HIVCDE80",
+  "id": "HIV.C.DE80",
+  "title": "PrEP product prescribed ValueSet",
+  "description": "Value set of prEP product that the client was prescribed",
+  "url": "http://smart.who.int/hiv/ValueSet/HIV.C.DE80",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+    ]
+  },
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "concept": [
+          {
+            "code": "HIV.C.DE81",
+            "display": "Oral PrEP"
+          },
+          {
+            "code": "HIV.C.DE82",
+            "display": "Dapivirine vaginal ring (DVR)"
+          },
+          {
+            "code": "HIV.C.DE83",
+            "display": "CAB-LA"
+          },
+          {
+            "code": "HIV.C.DE84",
+            "display": "Other"
+          }
+        ]
+      }
+    ]
+  }
+}

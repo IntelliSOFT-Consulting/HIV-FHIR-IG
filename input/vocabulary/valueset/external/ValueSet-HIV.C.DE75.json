@@ -1,0 +1,38 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HIVCDE75",
+  "id": "HIV.C.DE75",
+  "title": "Medications prescribed ValueSet",
+  "description": "Value set of medications the client was prescribed",
+  "url": "http://smart.who.int/hiv/ValueSet/HIV.C.DE75",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+    ]
+  },
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "concept": [
+          {
+            "code": "HIV.C.DE76",
+            "display": "PrEP for HIV prevention"
+          },
+          {
+            "code": "HIV.C.DE77",
+            "display": "PEP for HIV prevention"
+          },
+          {
+            "code": "HIV.C.DE78",
+            "display": "Other"
+          }
+        ]
+      }
+    ]
+  }
+}

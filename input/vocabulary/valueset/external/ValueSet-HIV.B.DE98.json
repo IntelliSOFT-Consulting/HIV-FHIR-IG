@@ -1,0 +1,38 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HIVBDE98",
+  "id": "HIV.B.DE98",
+  "title": "Test result of HIV assay 2 ValueSet",
+  "description": "Value set of the result of the second HIV assay in the testing strategy",
+  "url": "http://smart.who.int/hiv/ValueSet/HIV.B.DE98",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+    ]
+  },
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "concept": [
+          {
+            "code": "HIV.B.DE99",
+            "display": "Reactive"
+          },
+          {
+            "code": "HIV.B.DE100",
+            "display": "Non-reactive"
+          },
+          {
+            "code": "HIV.B.DE101",
+            "display": "Invalid"
+          }
+        ]
+      }
+    ]
+  }
+}

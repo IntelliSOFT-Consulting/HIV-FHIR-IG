@@ -1,0 +1,54 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HIVDDE560",
+  "id": "HIV.D.DE560",
+  "title": "Allergies ValueSet",
+  "description": "Value set of does the client have any allergies?",
+  "url": "http://smart.who.int/hiv/ValueSet/HIV.D.DE560",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+    ]
+  },
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "concept": [
+          {
+            "code": "HIV.D.DE561",
+            "display": "No known allergies"
+          },
+          {
+            "code": "HIV.D.DE562",
+            "display": "Don't know of any allergies"
+          },
+          {
+            "code": "HIV.D.DE563",
+            "display": "Albendazole"
+          },
+          {
+            "code": "HIV.D.DE564",
+            "display": "Malaria medication (sulfadoxine-pyrimethamine)"
+          },
+          {
+            "code": "HIV.D.DE565",
+            "display": "Penicillin"
+          },
+          {
+            "code": "HIV.D.DE566",
+            "display": "Tenofovir disoproxil fumarate (TDF)"
+          },
+          {
+            "code": "HIV.D.DE567",
+            "display": "Other allergies"
+          }
+        ]
+      }
+    ]
+  }
+}

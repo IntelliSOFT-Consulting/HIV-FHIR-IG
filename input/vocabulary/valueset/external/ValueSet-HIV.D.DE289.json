@@ -1,0 +1,298 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HIVDDE289",
+  "id": "HIV.D.DE289",
+  "title": "WHO HIV clinical stage condition or symptom ValueSet",
+  "description": "Value set of new or recurrent clinical events used to categorize HIV disease severity based at baseline and follow up",
+  "url": "http://smart.who.int/hiv/ValueSet/HIV.D.DE289",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+    ]
+  },
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "concept": [
+          {
+            "code": "HIV.D.DE290",
+            "display": "Asymptomatic"
+          },
+          {
+            "code": "HIV.D.DE291",
+            "display": "Persistent generalized lymphadenopathy"
+          },
+          {
+            "code": "HIV.D.DE292",
+            "display": "Moderate unexplained weight loss"
+          },
+          {
+            "code": "HIV.D.DE293",
+            "display": "Recurrent respiratory tract infections"
+          },
+          {
+            "code": "HIV.D.DE294",
+            "display": "Unexplained persistent hepatosplenomegaly"
+          },
+          {
+            "code": "HIV.D.DE295",
+            "display": "Herpes zoster"
+          },
+          {
+            "code": "HIV.D.DE296",
+            "display": "Angular cheilitis"
+          },
+          {
+            "code": "HIV.D.DE297",
+            "display": "Linear gingival erythema"
+          },
+          {
+            "code": "HIV.D.DE298",
+            "display": "Recurrent oral ulceration"
+          },
+          {
+            "code": "HIV.D.DE299",
+            "display": "Papular pruritic eruption"
+          },
+          {
+            "code": "HIV.D.DE300",
+            "display": "Fungal nail infections"
+          },
+          {
+            "code": "HIV.D.DE301",
+            "display": "Seborrhoeic dermatitis"
+          },
+          {
+            "code": "HIV.D.DE302",
+            "display": "Extensive wart virus infection"
+          },
+          {
+            "code": "HIV.D.DE303",
+            "display": "Extensive molluscum contagiosum"
+          },
+          {
+            "code": "HIV.D.DE304",
+            "display": "Unexplained persistent parotid enlargement"
+          },
+          {
+            "code": "HIV.D.DE305",
+            "display": "Unexplained severe weight loss in adults"
+          },
+          {
+            "code": "HIV.D.DE306",
+            "display": "Unexplained moderate malnutrition not adequately responding to standard therapy"
+          },
+          {
+            "code": "HIV.D.DE307",
+            "display": "Unexplained chronic diarrhoea for longer than 1 month"
+          },
+          {
+            "code": "HIV.D.DE308",
+            "display": "Unexplained persistent diarrhoea (14 days or more)"
+          },
+          {
+            "code": "HIV.D.DE309",
+            "display": "Unexplained persistent fever (above 37.5 C, intermittent or constant, for longer than one 1 month)"
+          },
+          {
+            "code": "HIV.D.DE310",
+            "display": "Persistent oral candidiasis"
+          },
+          {
+            "code": "HIV.D.DE311",
+            "display": "Oral hairy leukoplakia"
+          },
+          {
+            "code": "HIV.D.DE312",
+            "display": "Pulmonary TB"
+          },
+          {
+            "code": "HIV.D.DE313",
+            "display": "Lymph node TB"
+          },
+          {
+            "code": "HIV.D.DE314",
+            "display": "Severe bacterial infections (such as pneumonia, empyema, pyomyositis, bone or joint infection, meningitis, bacteraemia)"
+          },
+          {
+            "code": "HIV.D.DE315",
+            "display": "Severe recurrent bacterial pneumonia"
+          },
+          {
+            "code": "HIV.D.DE316",
+            "display": "Acute necrotizing ulcerative stomatitis"
+          },
+          {
+            "code": "HIV.D.DE317",
+            "display": "Acute necrotizing ulcerative gingivitis"
+          },
+          {
+            "code": "HIV.D.DE318",
+            "display": "Acute necrotizing ulcerative periodontitis"
+          },
+          {
+            "code": "HIV.D.DE319",
+            "display": "Unexplained anaemia (<8 g/dL)"
+          },
+          {
+            "code": "HIV.D.DE320",
+            "display": "Neutropaenia (<0.5 x 10^9/L)"
+          },
+          {
+            "code": "HIV.D.DE321",
+            "display": "Chronic thrombocytopaenia (<50 x 10^9/L)"
+          },
+          {
+            "code": "HIV.D.DE322",
+            "display": "Symptomatic lymphoid interstitial pneumonitis"
+          },
+          {
+            "code": "HIV.D.DE323",
+            "display": "Chronic HIV-associated lung disease, including bronchiectasis"
+          },
+          {
+            "code": "HIV.D.DE324",
+            "display": "HIV wasting syndrome"
+          },
+          {
+            "code": "HIV.D.DE325",
+            "display": "Unexplained severe wasting not responding to standard therapy"
+          },
+          {
+            "code": "HIV.D.DE326",
+            "display": "Unexplained stunting not responding to standard therapy"
+          },
+          {
+            "code": "HIV.D.DE327",
+            "display": "Unexplained severe malnutrition not responding to standard therapy"
+          },
+          {
+            "code": "HIV.D.DE328",
+            "display": "Pneumocystis (jirovecii) pneumonia"
+          },
+          {
+            "code": "HIV.D.DE329",
+            "display": "Recurrent severe bacterial pneumonia"
+          },
+          {
+            "code": "HIV.D.DE330",
+            "display": "Recurrent severe bacterial infections (such as empyema, pyomyositis, bone or joint infection, meningitis, but excluding pneumonia)"
+          },
+          {
+            "code": "HIV.D.DE331",
+            "display": "Empyema"
+          },
+          {
+            "code": "HIV.D.DE332",
+            "display": "Pyomyositis"
+          },
+          {
+            "code": "HIV.D.DE333",
+            "display": "Bone or joint infection"
+          },
+          {
+            "code": "HIV.D.DE334",
+            "display": "Meningitis"
+          },
+          {
+            "code": "HIV.D.DE335",
+            "display": "Chronic herpes simplex infection (orolabial or cutaneous of more than 1 month duration or visceral at any site)"
+          },
+          {
+            "code": "HIV.D.DE336",
+            "display": "Chronic herpes simplex infection (orolabial, genital or anorectal of more than 1 month in duration or visceral at any site)"
+          },
+          {
+            "code": "HIV.D.DE337",
+            "display": "Oesophageal candidiasis (or candidiasis of trachea, bronchi or lungs)"
+          },
+          {
+            "code": "HIV.D.DE338",
+            "display": "Extrapulmonary TB"
+          },
+          {
+            "code": "HIV.D.DE339",
+            "display": "Kaposi sarcoma"
+          },
+          {
+            "code": "HIV.D.DE340",
+            "display": "Cytomegalovirus infection (retinitis or infection of other organs)"
+          },
+          {
+            "code": "HIV.D.DE341",
+            "display": "Central nervous system toxoplasmosis"
+          },
+          {
+            "code": "HIV.D.DE342",
+            "display": "HIV encephalopathy"
+          },
+          {
+            "code": "HIV.D.DE343",
+            "display": "Extrapulmonary cryptococcosis, including meningitis"
+          },
+          {
+            "code": "HIV.D.DE344",
+            "display": "Disseminated nontuberculous mycobacterial infection"
+          },
+          {
+            "code": "HIV.D.DE345",
+            "display": "Progressive multifocal leukoencephalopathy"
+          },
+          {
+            "code": "HIV.D.DE346",
+            "display": "Chronic cryptosporidiosis"
+          },
+          {
+            "code": "HIV.D.DE347",
+            "display": "Chronic cryptosporidiosis (with diarrhoea)"
+          },
+          {
+            "code": "HIV.D.DE348",
+            "display": "Chronic isosporiasis"
+          },
+          {
+            "code": "HIV.D.DE349",
+            "display": "Disseminated mycosis (extrapulmonary histoplasmosis, coccidioidomycosis)"
+          },
+          {
+            "code": "HIV.D.DE350",
+            "display": "Disseminated endemic mycosis (extrapulmonary histoplasmosis, coccidioidomycosis, penicilliosis)"
+          },
+          {
+            "code": "HIV.D.DE351",
+            "display": "Cerebral lymphoma"
+          },
+          {
+            "code": "HIV.D.DE352",
+            "display": "B-cell non-Hodgkin lymphoma"
+          },
+          {
+            "code": "HIV.D.DE353",
+            "display": "HIV-associated nephropathy or cardiomyopathy"
+          },
+          {
+            "code": "HIV.D.DE354",
+            "display": "Recurrent septicaemia (including nontyphoidal Salmonella)"
+          },
+          {
+            "code": "HIV.D.DE355",
+            "display": "Invasive cervical carcinoma"
+          },
+          {
+            "code": "HIV.D.DE356",
+            "display": "Atypical disseminated leishmaniasis"
+          },
+          {
+            "code": "HIV.D.DE357",
+            "display": "Neutropenia"
+          }
+        ]
+      }
+    ]
+  }
+}

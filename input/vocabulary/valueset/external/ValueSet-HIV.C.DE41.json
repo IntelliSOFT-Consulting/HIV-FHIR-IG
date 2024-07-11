@@ -1,0 +1,42 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HIVCDE41",
+  "id": "HIV.C.DE41",
+  "title": "Pregnancy intention in serodiscordant partnerships ValueSet",
+  "description": "Value set of client's intention or desire in the next year to either become pregnant or prevent a future pregnancy (in serodiscordant partnerships)",
+  "url": "http://smart.who.int/hiv/ValueSet/HIV.C.DE41",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+    ]
+  },
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "concept": [
+          {
+            "code": "HIV.C.DE42",
+            "display": "Yes, I want to become pregnant"
+          },
+          {
+            "code": "HIV.C.DE43",
+            "display": "I'm OK either way"
+          },
+          {
+            "code": "HIV.C.DE44",
+            "display": "No, I don't want to become pregnant"
+          },
+          {
+            "code": "HIV.C.DE45",
+            "display": "Unsure"
+          }
+        ]
+      }
+    ]
+  }
+}

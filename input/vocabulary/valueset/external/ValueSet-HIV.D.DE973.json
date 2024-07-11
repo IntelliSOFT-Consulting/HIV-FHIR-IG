@@ -1,0 +1,69 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HIVDDE973",
+  "id": "HIV.D.DE973",
+  "title": "Symptoms of TB ValueSet",
+  "description": "Value set of symptoms that may indicate TB disease in clients living with HIV, based on a clinical algorithm",
+  "url": "http://smart.who.int/hiv/ValueSet/HIV.D.DE973",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+    ]
+  },
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "concept": [
+          {
+            "code": "HIV.D.DE974",
+            "display": "Current cough"
+          },
+          {
+            "code": "HIV.D.DE975",
+            "display": "Prolonged cough (>=2w)"
+          },
+          {
+            "code": "HIV.D.DE976",
+            "display": "Fever of 39 °C or greater"
+          },
+          {
+            "code": "HIV.D.DE977",
+            "display": "Weight loss (reported)"
+          },
+          {
+            "code": "HIV.D.DE978",
+            "display": "Night sweats"
+          },
+          {
+            "code": "HIV.D.DE979",
+            "display": "Poor weight gain"
+          },
+          {
+            "code": "HIV.D.DE980",
+            "display": "Reduced playfulness"
+          },
+          {
+            "code": "HIV.D.DE981",
+            "display": "Chest pain"
+          },
+          {
+            "code": "HIV.D.DE982",
+            "display": "Haemoptysis"
+          },
+          {
+            "code": "HIV.D.DE983",
+            "display": "Lethargy"
+          },
+          {
+            "code": "HIV.D.DE984"
+          }
+        ]
+      }
+    ]
+  }
+}

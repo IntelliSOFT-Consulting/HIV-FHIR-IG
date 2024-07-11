@@ -1,0 +1,42 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HIVBDE179",
+  "id": "HIV.B.DE179",
+  "title": "Intimate partner violence enquiry results ValueSet",
+  "description": "Value set of result of medical inquiry for intimate partner violence",
+  "url": "http://smart.who.int/hiv/ValueSet/HIV.B.DE179",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+    ]
+  },
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "concept": [
+          {
+            "code": "HIV.B.DE180",
+            "display": "Client received treatment and/or counselling as needed"
+          },
+          {
+            "code": "HIV.B.DE181",
+            "display": "Client was referred"
+          },
+          {
+            "code": "HIV.B.DE182",
+            "display": "No action necessary"
+          },
+          {
+            "code": "HIV.B.DE183",
+            "display": "Other IPV result"
+          }
+        ]
+      }
+    ]
+  }
+}

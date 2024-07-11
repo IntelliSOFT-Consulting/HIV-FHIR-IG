@@ -1,0 +1,38 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HIVEDE6",
+  "id": "HIV.E.DE6",
+  "title": "Source of gestational age ValueSet",
+  "description": "Value set of gestational age can be calculated multiple ways. This data element describes where the gestational age above has been calculated from.",
+  "url": "http://smart.who.int/hiv/ValueSet/HIV.E.DE6",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+    ]
+  },
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "concept": [
+          {
+            "code": "HIV.E.DE7",
+            "display": "Last menstrual period (LMP)"
+          },
+          {
+            "code": "HIV.E.DE8",
+            "display": "Ultrasound"
+          },
+          {
+            "code": "HIV.E.DE9",
+            "display": "Symphysis fundal height (SFH) or abdominal palpation"
+          }
+        ]
+      }
+    ]
+  }
+}

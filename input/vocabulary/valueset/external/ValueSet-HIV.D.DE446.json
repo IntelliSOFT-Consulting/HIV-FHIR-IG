@@ -1,0 +1,34 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HIVDDE446",
+  "id": "HIV.D.DE446",
+  "title": "Coinfection status at ART start ValueSet",
+  "description": "Value set of clients status of coinfections at the time when ART was initiated",
+  "url": "http://smart.who.int/hiv/ValueSet/HIV.D.DE446",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+    ]
+  },
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "concept": [
+          {
+            "code": "HIV.D.DE447",
+            "display": "Hepatitis B"
+          },
+          {
+            "code": "HIV.D.DE448",
+            "display": "Hepatitis C"
+          }
+        ]
+      }
+    ]
+  }
+}

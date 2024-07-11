@@ -1,0 +1,54 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HIVHDE1",
+  "id": "HIV.H.DE1",
+  "title": "Reason for follow-up ValueSet",
+  "description": "Value set of the reason why the client is being followed up",
+  "url": "http://smart.who.int/hiv/ValueSet/HIV.H.DE1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+    ]
+  },
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "concept": [
+          {
+            "code": "HIV.H.DE2",
+            "display": "Missed care visit"
+          },
+          {
+            "code": "HIV.H.DE3",
+            "display": "Missed medication pickup"
+          },
+          {
+            "code": "HIV.H.DE4",
+            "display": "Did not initiate ART"
+          },
+          {
+            "code": "HIV.H.DE5",
+            "display": "Incomplete visit"
+          },
+          {
+            "code": "HIV.H.DE6",
+            "display": "Inconclusive HIV status"
+          },
+          {
+            "code": "HIV.H.DE7",
+            "display": "Test results received"
+          },
+          {
+            "code": "HIV.H.DE8",
+            "display": "Other follow-up reason"
+          }
+        ]
+      }
+    ]
+  }
+}

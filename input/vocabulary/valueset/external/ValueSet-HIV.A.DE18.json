@@ -1,0 +1,46 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HIVADE18",
+  "id": "HIV.A.DE18",
+  "title": "Gender ValueSet",
+  "description": "Value set of gender of the client",
+  "url": "http://smart.who.int/hiv/ValueSet/HIV.A.DE18",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+    ]
+  },
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "concept": [
+          {
+            "code": "HIV.A.DE19",
+            "display": "Female"
+          },
+          {
+            "code": "HIV.A.DE20",
+            "display": "Male"
+          },
+          {
+            "code": "HIV.A.DE21",
+            "display": "Transgender male"
+          },
+          {
+            "code": "HIV.A.DE22",
+            "display": "Transgender female"
+          },
+          {
+            "code": "HIV.A.DE23",
+            "display": "Other"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HIVBDE121",
+  "id": "HIV.B.DE121",
+  "title": "Probable route of transmission ValueSet",
+  "description": "Value set of probable route(s) of transmission of HIV to client",
+  "url": "http://smart.who.int/hiv/ValueSet/HIV.B.DE121",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+    ]
+  },
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "concept": [
+          {
+            "code": "HIV.B.DE122",
+            "display": "Heterosexual sex"
+          },
+          {
+            "code": "HIV.B.DE123",
+            "display": "Sex between men"
+          },
+          {
+            "code": "HIV.B.DE124",
+            "display": "Unprotected intercourse during sex work"
+          },
+          {
+            "code": "HIV.B.DE125",
+            "display": "Injecting drug use with unsterile equipment"
+          },
+          {
+            "code": "HIV.B.DE126",
+            "display": "Nosocomial"
+          },
+          {
+            "code": "HIV.B.DE127",
+            "display": "Vertical"
+          },
+          {
+            "code": "HIV.B.DE128",
+            "display": "Other"
+          }
+        ]
+      }
+    ]
+  }
+}

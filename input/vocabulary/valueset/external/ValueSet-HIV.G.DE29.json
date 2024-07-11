@@ -1,0 +1,34 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HIVGDE29",
+  "id": "HIV.G.DE29",
+  "title": "Hepatitis B diagnosis ValueSet",
+  "description": "Value set of client's hepatitis B diagnosis",
+  "url": "http://smart.who.int/hiv/ValueSet/HIV.G.DE29",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+    ]
+  },
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "concept": [
+          {
+            "code": "HIV.G.DE30",
+            "display": "Hepatitis B positive"
+          },
+          {
+            "code": "HIV.G.DE31",
+            "display": "Hepatitis B negative"
+          }
+        ]
+      }
+    ]
+  }
+}

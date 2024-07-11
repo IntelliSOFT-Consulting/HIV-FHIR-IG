@@ -1,0 +1,38 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HIVADE25",
+  "id": "HIV.A.DE25",
+  "title": "Sex ValueSet",
+  "description": "Value set of sex of the client assigned at birth",
+  "url": "http://smart.who.int/hiv/ValueSet/HIV.A.DE25",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+    ]
+  },
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "concept": [
+          {
+            "code": "HIV.A.DE26",
+            "display": "Female"
+          },
+          {
+            "code": "HIV.A.DE27",
+            "display": "Male"
+          },
+          {
+            "code": "HIV.A.DE28",
+            "display": "Other"
+          }
+        ]
+      }
+    ]
+  }
+}

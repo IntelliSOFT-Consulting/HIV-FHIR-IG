@@ -1,0 +1,42 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HIVCDE36",
+  "id": "HIV.C.DE36",
+  "title": "Signs of substantial risk of HIV infection ValueSet",
+  "description": "Value set of signs the client is at a substantial risk of HIV infection",
+  "url": "http://smart.who.int/hiv/ValueSet/HIV.C.DE36",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+    ]
+  },
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "concept": [
+          {
+            "code": "HIV.C.DE37",
+            "display": "No condom use during sex with more than one partner in the past 6 months"
+          },
+          {
+            "code": "HIV.C.DE38",
+            "display": "STI in the past 6 months"
+          },
+          {
+            "code": "HIV.C.DE39",
+            "display": "A sexual partner in the past 6 months had one or more HIV risk factors"
+          },
+          {
+            "code": "HIV.C.DE40",
+            "display": "PrEP requested by client"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HIVHDE13",
+  "id": "HIV.H.DE13",
+  "title": "Contact method ValueSet",
+  "description": "Value set of method used to try to reach out to the client",
+  "url": "http://smart.who.int/hiv/ValueSet/HIV.H.DE13",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+    ]
+  },
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "concept": [
+          {
+            "code": "HIV.H.DE14",
+            "display": "Home visit"
+          },
+          {
+            "code": "HIV.H.DE15",
+            "display": "Text message"
+          },
+          {
+            "code": "HIV.H.DE16",
+            "display": "Phone"
+          }
+        ]
+      }
+    ]
+  }
+}

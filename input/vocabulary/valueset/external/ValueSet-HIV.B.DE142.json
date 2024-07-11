@@ -1,0 +1,50 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HIVBDE142",
+  "id": "HIV.B.DE142",
+  "title": "Counselling provided ValueSet",
+  "description": "Value set of whether counselling was provided to a client during the visit",
+  "url": "http://smart.who.int/hiv/ValueSet/HIV.B.DE142",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+    ]
+  },
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "concept": [
+          {
+            "code": "HIV.B.DE143",
+            "display": "HIV-positive counselling conducted"
+          },
+          {
+            "code": "HIV.B.DE144",
+            "display": "Hepatitis B positive counselling conducted"
+          },
+          {
+            "code": "HIV.B.DE145",
+            "display": "Hepatitis C positive counselling conducted"
+          },
+          {
+            "code": "HIV.B.DE146",
+            "display": "Syphilis counselling, treatment and further testing"
+          },
+          {
+            "code": "HIV.B.DE147",
+            "display": "Linked to enrolment in care and ART initiation"
+          },
+          {
+            "code": "HIV.B.DE148",
+            "display": "VMMC counselling provided"
+          }
+        ]
+      }
+    ]
+  }
+}

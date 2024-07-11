@@ -1,0 +1,98 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HIVDDE197",
+  "id": "HIV.D.DE197",
+  "title": "Reason(s) for adherence problem ValueSet",
+  "description": "Value set of reason why client was not adherent",
+  "url": "http://smart.who.int/hiv/ValueSet/HIV.D.DE197",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+    ]
+  },
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "concept": [
+          {
+            "code": "HIV.D.DE198",
+            "display": "Forgot"
+          },
+          {
+            "code": "HIV.D.DE199",
+            "display": "Toxicity/side effects"
+          },
+          {
+            "code": "HIV.D.DE200",
+            "display": "Busy"
+          },
+          {
+            "code": "HIV.D.DE201",
+            "display": "Change of routine"
+          },
+          {
+            "code": "HIV.D.DE202",
+            "display": "Travel cost"
+          },
+          {
+            "code": "HIV.D.DE203",
+            "display": "Distance to clinic"
+          },
+          {
+            "code": "HIV.D.DE204",
+            "display": "Client lost/ran out of pills"
+          },
+          {
+            "code": "HIV.D.DE205",
+            "display": "Stock-out"
+          },
+          {
+            "code": "HIV.D.DE206",
+            "display": "Too ill"
+          },
+          {
+            "code": "HIV.D.DE207",
+            "display": "Pill burden"
+          },
+          {
+            "code": "HIV.D.DE208",
+            "display": "Felt well"
+          },
+          {
+            "code": "HIV.D.DE209",
+            "display": "Depression"
+          },
+          {
+            "code": "HIV.D.DE210",
+            "display": "Alcohol use"
+          },
+          {
+            "code": "HIV.D.DE211",
+            "display": "Substance use"
+          },
+          {
+            "code": "HIV.D.DE212",
+            "display": "Stigma/disclosure concerns"
+          },
+          {
+            "code": "HIV.D.DE213",
+            "display": "Lack of food"
+          },
+          {
+            "code": "HIV.D.DE214",
+            "display": "Poor palatability"
+          },
+          {
+            "code": "HIV.D.DE215",
+            "display": "Other reason for nonadherence"
+          }
+        ]
+      }
+    ]
+  }
+}
