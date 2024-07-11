@@ -1,0 +1,132 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:0218967b-2fee-49d4-a8d0-0778e89e5483",
+      "request": {
+        "url": "Patient",
+        "method": "POST"
+      },
+      "resource": {
+        "resourceType": "Patient",
+        "name": [
+          {
+            "given": [
+              "Mittens"
+            ],
+            "family": "Cat",
+            "text": "PLHIV MedReq 09-22"
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1947-03-26"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:7459e651-f95e-4761-bc36-4fe02b9bd224",
+      "request": {
+        "url": "Condition",
+        "method": "POST"
+      },
+      "resource": {
+        "resourceType": "Condition",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:0218967b-2fee-49d4-a8d0-0778e89e5483"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "737378009",
+              "system": "http://snomed.info/sct",
+              "display": "World Health Organization 2007 Human immunodeficiency virus infection clinical stage 1 (finding)"
+            }
+          ]
+        },
+        "onsetDateTime": "2008-09-11"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:51515b62-9e4d-47d5-894e-3430886e9a14",
+      "request": {
+        "url": "Encounter",
+        "method": "POST"
+      },
+      "resource": {
+        "resourceType": "Encounter",
+        "status": "finished",
+        "class": {
+          "code": "AMB",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+        },
+	"serviceType": {
+	  "coding": [
+	    {
+	      "code": "788081006",
+	      "system": "http://snomed.info/sct"
+	    }
+	  ]
+	},
+        "subject": {
+          "reference": "urn:uuid:0218967b-2fee-49d4-a8d0-0778e89e5483"
+        },
+        "serviceProvider": {
+          "reference": "Organization/Organization-DAK"
+        },
+        "location": [
+          {
+            "location": {
+              "reference": "Location/Location-DAK"
+            }
+          }
+        ],
+        "period": {
+          "start": "2022-09-22",
+          "end": "2022-09-22"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:27b62888-53dc-4b79-8a45-97fd37f934aa",
+      "request": {
+        "url": "MedicationRequest/MedicationRequest-DAK-onart",
+        "method": "PUT"
+      },
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "MedicationRequest-DAK-onart",
+        "status": "active",
+        "intent": "order",
+        "subject": {
+          "reference": "urn:uuid:0218967b-2fee-49d4-a8d0-0778e89e5483"
+        },
+        "authoredOn": "2022-09-22",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "code": "XM35P4",
+              "system": "http://hl7.org/fhir/sid/icd-11",
+              "display": "Abacavir"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

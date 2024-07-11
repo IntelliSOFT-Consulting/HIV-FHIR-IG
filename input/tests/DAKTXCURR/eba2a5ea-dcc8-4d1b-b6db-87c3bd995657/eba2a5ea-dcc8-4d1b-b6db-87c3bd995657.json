@@ -1,0 +1,91 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:eba2a5ea-dcc8-4d1b-b6db-87c3bd995657",
+      "request": {
+        "url": "Patient",
+        "method": "POST"
+      },
+      "resource": {
+        "resourceType": "Patient",
+        "name": [
+          {
+            "given": [
+              "Mittens"
+            ],
+            "family": "Cat",
+            "text": "PLHIV On ART Obs 09-02"
+          }
+        ],
+        "gender": "female",
+        "birthDate": "2015-11-06"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f20bb6ea-3326-4b7f-9591-2355027df885",
+      "request": {
+        "url": "Condition",
+        "method": "POST"
+      },
+      "resource": {
+        "resourceType": "Condition",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:eba2a5ea-dcc8-4d1b-b6db-87c3bd995657"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "737378009",
+              "system": "http://snomed.info/sct",
+              "display": "World Health Organization 2007 Human immunodeficiency virus infection clinical stage 1 (finding)"
+            }
+          ]
+        },
+        "onsetDateTime": "2019-08-19"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:9e4b3dab-233b-446c-85df-87b91421892f",
+      "request": {
+        "url": "Observation",
+        "method": "POST"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:eba2a5ea-dcc8-4d1b-b6db-87c3bd995657"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "182929008",
+              "system": "http://snomed.info/sct",
+              "display": "Drug prophylaxis (procedure)"
+            }
+          ]
+        },
+        "valueBoolean": true,
+        "effectiveDateTime": "2022-09-02"
+      }
+    }
+  ]
+}
