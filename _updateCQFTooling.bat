@@ -4,13 +4,13 @@ setlocal enabledelayedexpansion
 set "r=releases"
 set "g=org.opencds.cqf"
 set "a=tooling-cli"
-set "v=2.4.0"
+set "v=3.6.0"
 
 set "dlurl=https://oss.sonatype.org/service/local/artifact/maven/redirect?r=%r%&g=%g%&a=%a%&v=%v%"
 set "dlurl_escaped=%dlurl:&=^^^&%"
 
 echo %dlurl_escaped%
-SET "tooling_jar=tooling-cli-2.4.0.jar"
+SET "tooling_jar=tooling-cli-3.6.0.jar"
 SET "input_cache_path=%~dp0input-cache\"
 SET "skipPrompts=false"
 IF "%~1"=="/f" SET "skipPrompts=true"
