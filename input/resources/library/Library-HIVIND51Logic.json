@@ -2,37 +2,31 @@
   "resourceType": "Library",
   "id": "HIVIND51Logic",
   "meta": {
-    "profile": [
-      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablelibrary",
-      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablelibrary",
-      "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-library",
-      "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
-    ]
+    "profile": [ "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablelibrary", "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablelibrary", "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-library", "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module" ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND51Logic",
-  "title": "HIV.IND.51 Logic",
-  "description": "% of people living with HIV newly initiated on ART and tested for TB who are diagnosed with active TB disease",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
-      "valueCode": "computable"
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+    "valueCode": "computable"
+  }, {
+    "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-softwaresystem",
+    "valueReference": {
+      "reference": "Device/cqf-tooling"
     }
-  ],
+  } ],
+  "url": "http://smart.who.int/HIV/Library/HIVIND51Logic",
   "name": "HIVIND51Logic",
+  "title": "HIV.IND.51 Logic",
   "status": "draft",
   "experimental": true,
-  "publisher": "World Health Organization (WHO)",
   "type": {
-    "coding": [
-      {
-        "code": "logic-library",
-        "system": "http://terminology.hl7.org/CodeSystem/library-type"
-      }
-    ]
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/library-type",
+      "code": "logic-library"
+    } ]
   },
-  "content": [
-    {
-      "id": "ig-loader-HIVIND51Logic.cql"
-    }
-  ]
+  "publisher": "World Health Organization (WHO)",
+  "description": "% of people living with HIV newly initiated on ART and tested for TB who are diagnosed with active TB disease",
+  "content": [ {
+    "id": "ig-loader-HIVIND51Logic.cql"
+  } ]
 }
