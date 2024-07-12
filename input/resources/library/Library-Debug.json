@@ -1,0 +1,24 @@
+{
+  "resourceType": "Library",
+  "id": "Debug",
+  "status": "draft",
+  "experimental": true,
+  "type": {
+    "coding": [
+      {
+        "code": "logic-library",
+        "system": "http://terminology.hl7.org/CodeSystem/library-type"
+      }
+    ]
+  },
+  "name": "Debug",
+  "title": "Debug",
+  "description": "Debug",
+  "version": "0.1.0",
+  "url": "https://path-global-health.github.io/MERindicators/Library/Debug",
+  "content": [
+    {
+      "id": "ig-loader-Debug.cql"
+    }
+  ]
+}
