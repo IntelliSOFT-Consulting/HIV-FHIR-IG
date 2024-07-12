@@ -18,8 +18,12 @@ context Patient
  * or should use communication or encounter resource to specify?
  */
 
+
+define "Debug Patient":
+    Patient.id
+
 define "Debug Condition":
-    [Condition] C
+    [Condition]
 
 define "HIV Positive Condition":
 [Condition] C
@@ -46,20 +50,9 @@ define "HIV test resulted":
 
 define "HIV Treatment Active":
 [MedicationStatement] MS
+    // this is not accurate, should be 'active' or similar
     where MS.status = 'recorded'
     and exists(MS.reasonCode C where C ~ HC."On ART - HIV.H.DE47")
-
-
-define "HIV PREP Active":
-[MedicationStatement] MS
-    where MS.status = 'recorded'
-    and exists(MS.reasonCode C where C ~ HC."Currently on PrEP")
-
- define "Client is at elevated risk for HIV acquisition":
-    [Observation] O
-    where O.status in { 'final', 'amended', 'corrected' }
-    and exists(O.category OC where OC ~ HCC."social-history")
-    and O.code ~ HC."At elevated risk for HIV acquisition - HIV.B.DE225"
 
 
 define "Patient Deceased before end of Measurement Period":
