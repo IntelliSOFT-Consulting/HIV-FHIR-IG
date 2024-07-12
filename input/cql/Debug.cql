@@ -18,7 +18,8 @@ context Patient
  * or should use communication or encounter resource to specify?
  */
 
-
+define "Debug Condition":
+    [Condition] C
 
 define "HIV Positive Condition":
 [Condition] C

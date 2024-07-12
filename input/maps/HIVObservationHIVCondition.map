@@ -40,15 +40,11 @@ group HIVObservationHIVCondition(
               patient -> subject.reference = reference(patient) "setSubjectRef";
             } "setSubject";
             obs.effective as effective -> cond.onset = effective "setOnset";
-            obsentry -> cond.code as ccode 
-            then {
-              obsentry -> ccode.coding as coding 
-              then {
-                obsentry -> coding.code = '86406008', 
-                            coding.display = "HIV Condition Positive", 
-                            coding.system = 'http://snomed.info/sct' "setCondSystemCode";
-              } "setCondCoding";
-            } "SetCondCode";
+
+            obsentry -> cond.clinicalStatus = cc("http://terminology.hl7.org/CodeSystem/condition-clinical", "active", "Active") "setClinicalStatus";
+            obsentry -> cond.code = cc("http://smart.who.int/hiv/CodeSystem/HIVConcepts", "HIV.B.DE116", "HIV-Positive") "setCode";
+            obsentry -> cond.category = cc("http://terminology.hl7.org/CodeSystem/condition-category", "encounter-diagnosis", "Encounter Diagnosis") "setCategory";
+
             // create provenance resource to document input/output resources links
             obs -> tgt.entry as pentry, pentry.resource = create("Provenance") as prov, uuid() as pid,
             pentry.request as prequest
