@@ -42,7 +42,7 @@ group HIVObservationHIVCondition(
             obs.effective as effective -> cond.onset = effective "setOnset";
 
             obsentry -> cond.clinicalStatus = cc("http://terminology.hl7.org/CodeSystem/condition-clinical", "active", "Active") "setClinicalStatus";
-            obsentry -> cond.code = cc("http://smart.who.int/hiv/CodeSystem/HIVConcepts", "HIV.B.DE116", "HIV-Positive") "setCode";
+            obsentry -> cond.code = cc("http://smart.who.int/hiv/CodeSystem/HIVConcepts", "HIV.B.DE116", "HIV-positive") "setCode";
             obsentry -> cond.category = cc("http://terminology.hl7.org/CodeSystem/condition-category", "encounter-diagnosis", "Encounter Diagnosis") "setCategory";
 
             // create provenance resource to document input/output resources links
@@ -97,20 +97,19 @@ group HIVObservationHIVCondition(
                 effective -> mseffective.end = (%effective + 30 days) "setEffectiveEnd";
               } "setEffective";
               
-            obsentry -> ms.status = "active" "setStatus";
-            
-            obsentry -> ms.medication = create("CodeableConcept") as medication 
-            then {
-              
-              obsentry -> medication.coding as coding 
-              then {
-                // Need to get the right code to set here
-                obsentry -> coding.code = '160119', 
-                            coding.display = "CURRENTLY TAKING ARV", 
-                            coding.system = 'https://openconceptlab.org/orgs/CIEL/sources/CIEL' "setMSSystemCode";
-              } "setMCoding";
-              
-            } "SetMSMedication";
+            // not correct
+            obsentry -> ms.status = "recorded" "setStatus";
+            obsentry -> ms.reasonCode = cc("http://smart.who.int/hiv/CodeSystem/HIVConcepts", "HIV.H.DE47", "On ART") "setMSReasonCode";
+
+            // obsentry -> ms.medication = create("CodeableConcept") as medication 
+            // then {
+            //   obsentry -> medication.coding as coding 
+            //   then {
+            //     obsentry -> coding.code = '160119', 
+            //                 coding.display = "CURRENTLY TAKING ARV", 
+            //                 coding.system = 'https://openconceptlab.org/orgs/CIEL/sources/CIEL' "setMSCoding";
+            //   } "setMSCoding";
+            // } "SetMSMedication";
             
             // create provenance resource to document input/output resources links
             obs -> tgt.entry as pentry, pentry.resource = create("Provenance") as prov, uuid() as pid,
