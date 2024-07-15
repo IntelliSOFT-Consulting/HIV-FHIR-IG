@@ -138,10 +138,10 @@
     }
   },
   {
-    "fullUrl" : "urn:uuid:9a349dca-40d4-4d44-ab00-b4785788aa1e",
+    "fullUrl" : "urn:uuid:090beb21-d0ff-44cf-9631-a1e8d441e8d7",
     "resource" : {
       "resourceType" : "Condition",
-      "id" : "9a349dca-40d4-4d44-ab00-b4785788aa1e",
+      "id" : "090beb21-d0ff-44cf-9631-a1e8d441e8d7",
       "clinicalStatus" : {
         "coding" : [{
           "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
@@ -169,16 +169,16 @@
     },
     "request" : {
       "method" : "PUT",
-      "url" : "Condition/9a349dca-40d4-4d44-ab00-b4785788aa1e"
+      "url" : "Condition/090beb21-d0ff-44cf-9631-a1e8d441e8d7"
     }
   },
   {
-    "fullUrl" : "urn:uuid:4a4e7970-e904-4b36-b84a-645aacd5c1f4",
+    "fullUrl" : "urn:uuid:faac9fdb-c35d-4254-9a03-be03e20cbce4",
     "resource" : {
       "resourceType" : "Provenance",
-      "id" : "4a4e7970-e904-4b36-b84a-645aacd5c1f4",
+      "id" : "faac9fdb-c35d-4254-9a03-be03e20cbce4",
       "target" : [{
-        "reference" : "urn:uuid:9a349dca-40d4-4d44-ab00-b4785788aa1e"
+        "reference" : "urn:uuid:090beb21-d0ff-44cf-9631-a1e8d441e8d7"
       }],
       "entity" : [{
         "role" : "source",
@@ -189,15 +189,22 @@
     },
     "request" : {
       "method" : "PUT",
-      "url" : "Provenance/4a4e7970-e904-4b36-b84a-645aacd5c1f4"
+      "url" : "Provenance/faac9fdb-c35d-4254-9a03-be03e20cbce4"
     }
   },
   {
-    "fullUrl" : "urn:uuid:137fb2ce-c46d-4746-b3f9-4a1f3560e654",
+    "fullUrl" : "urn:uuid:9ef01c27-6a98-44e4-b654-64a64d41df4c",
     "resource" : {
       "resourceType" : "MedicationStatement",
-      "id" : "137fb2ce-c46d-4746-b3f9-4a1f3560e654",
-      "status" : "recorded",
+      "id" : "9ef01c27-6a98-44e4-b654-64a64d41df4c",
+      "status" : "active",
+      "medicationCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code" : "160119",
+          "display" : "CURRENTLY TAKING ARV"
+        }]
+      },
       "subject" : {
         "reference" : "Patient/3e990510-1d51-4a25-abd4-3885cf9e8be9"
       },
@@ -214,16 +221,16 @@
     },
     "request" : {
       "method" : "PUT",
-      "url" : "MedicationStatement/137fb2ce-c46d-4746-b3f9-4a1f3560e654"
+      "url" : "MedicationStatement/9ef01c27-6a98-44e4-b654-64a64d41df4c"
     }
   },
   {
-    "fullUrl" : "urn:uuid:8434af91-b8e1-4cf5-bacd-d2aff7bc6e56",
+    "fullUrl" : "urn:uuid:2695a115-066a-425c-bd4a-d4ec70dcec4c",
     "resource" : {
       "resourceType" : "Provenance",
-      "id" : "8434af91-b8e1-4cf5-bacd-d2aff7bc6e56",
+      "id" : "2695a115-066a-425c-bd4a-d4ec70dcec4c",
       "target" : [{
-        "reference" : "urn:uuid:137fb2ce-c46d-4746-b3f9-4a1f3560e654"
+        "reference" : "urn:uuid:9ef01c27-6a98-44e4-b654-64a64d41df4c"
       }],
       "entity" : [{
         "role" : "source",
@@ -234,15 +241,22 @@
     },
     "request" : {
       "method" : "PUT",
-      "url" : "Provenance/8434af91-b8e1-4cf5-bacd-d2aff7bc6e56"
+      "url" : "Provenance/2695a115-066a-425c-bd4a-d4ec70dcec4c"
     }
   },
   {
-    "fullUrl" : "urn:uuid:48844b70-eb95-4cb4-afe6-d07170317baa",
+    "fullUrl" : "urn:uuid:f099e54f-2bbf-4a65-8b14-8a68b82ca8b2",
     "resource" : {
       "resourceType" : "MedicationStatement",
-      "id" : "48844b70-eb95-4cb4-afe6-d07170317baa",
-      "status" : "recorded",
+      "id" : "f099e54f-2bbf-4a65-8b14-8a68b82ca8b2",
+      "status" : "active",
+      "medicationCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "code" : "160119",
+          "display" : "CURRENTLY TAKING ARV"
+        }]
+      },
       "subject" : {
         "reference" : "Patient/3e990510-1d51-4a25-abd4-3885cf9e8be9"
       },
@@ -259,16 +273,16 @@
     },
     "request" : {
       "method" : "PUT",
-      "url" : "MedicationStatement/48844b70-eb95-4cb4-afe6-d07170317baa"
+      "url" : "MedicationStatement/f099e54f-2bbf-4a65-8b14-8a68b82ca8b2"
     }
   },
   {
-    "fullUrl" : "urn:uuid:36868fe0-84fe-4af1-9ecc-99bdb7733a33",
+    "fullUrl" : "urn:uuid:ff73ffd9-d278-4ca3-a64e-d78f64b11c7e",
     "resource" : {
       "resourceType" : "Provenance",
-      "id" : "36868fe0-84fe-4af1-9ecc-99bdb7733a33",
+      "id" : "ff73ffd9-d278-4ca3-a64e-d78f64b11c7e",
       "target" : [{
-        "reference" : "urn:uuid:48844b70-eb95-4cb4-afe6-d07170317baa"
+        "reference" : "urn:uuid:f099e54f-2bbf-4a65-8b14-8a68b82ca8b2"
       }],
       "entity" : [{
         "role" : "source",
@@ -279,7 +293,7 @@
     },
     "request" : {
       "method" : "PUT",
-      "url" : "Provenance/36868fe0-84fe-4af1-9ecc-99bdb7733a33"
+      "url" : "Provenance/ff73ffd9-d278-4ca3-a64e-d78f64b11c7e"
     }
   }]
 }

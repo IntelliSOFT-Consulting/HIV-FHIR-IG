@@ -51,7 +51,8 @@ define "HIV test resulted":
 define "HIV Treatment Active":
 [MedicationStatement] MS
     // this is not accurate, should be 'active' or similar
-    where MS.status = 'recorded'
+    // where MS.status = 'recorded'
+    where MS.status = 'active'
     and exists(MS.reasonCode C where C ~ HC."On ART - HIV.H.DE47")
 
 
