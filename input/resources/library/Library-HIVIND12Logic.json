@@ -2,31 +2,37 @@
   "resourceType": "Library",
   "id": "HIVIND12Logic",
   "meta": {
-    "profile": [ "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablelibrary", "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablelibrary", "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-library", "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module" ]
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablelibrary",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablelibrary",
+      "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-library",
+      "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
+    ]
   },
-  "extension": [ {
-    "url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
-    "valueCode": "computable"
-  }, {
-    "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-softwaresystem",
-    "valueReference": {
-      "reference": "Device/cqf-tooling"
-    }
-  } ],
   "url": "http://smart.who.int/HIV/Library/HIVIND12Logic",
-  "name": "HIVIND12Logic",
   "title": "HIV.IND.12 Logic",
+  "description": "% of person-years of follow-up (PYFU) on OAMT among opioid dependent people",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+      "valueCode": "computable"
+    }
+  ],
+  "name": "HIVIND12Logic",
   "status": "draft",
   "experimental": true,
-  "type": {
-    "coding": [ {
-      "system": "http://terminology.hl7.org/CodeSystem/library-type",
-      "code": "logic-library"
-    } ]
-  },
   "publisher": "World Health Organization (WHO)",
-  "description": "% of person-years of follow-up (PYFU) on OAMT among opioid dependent people",
-  "content": [ {
-    "id": "ig-loader-HIVIND12Logic.cql"
-  } ]
+  "type": {
+    "coding": [
+      {
+        "code": "logic-library",
+        "system": "http://terminology.hl7.org/CodeSystem/library-type"
+      }
+    ]
+  },
+  "content": [
+    {
+      "id": "ig-loader-HIVIND12Logic.cql"
+    }
+  ]
 }

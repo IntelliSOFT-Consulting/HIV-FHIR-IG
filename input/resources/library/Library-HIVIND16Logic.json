@@ -2,31 +2,37 @@
   "resourceType": "Library",
   "id": "HIVIND16Logic",
   "meta": {
-    "profile": [ "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablelibrary", "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablelibrary", "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-library", "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module" ]
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablelibrary",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablelibrary",
+      "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-library",
+      "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
+    ]
   },
-  "extension": [ {
-    "url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
-    "valueCode": "computable"
-  }, {
-    "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-softwaresystem",
-    "valueReference": {
-      "reference": "Device/cqf-tooling"
-    }
-  } ],
   "url": "http://smart.who.int/HIV/Library/HIVIND16Logic",
-  "name": "HIVIND16Logic",
   "title": "HIV.IND.16 Logic",
+  "description": "a) Number or (b) % of adverse events during the reporting period",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+      "valueCode": "computable"
+    }
+  ],
+  "name": "HIVIND16Logic",
   "status": "draft",
   "experimental": true,
-  "type": {
-    "coding": [ {
-      "system": "http://terminology.hl7.org/CodeSystem/library-type",
-      "code": "logic-library"
-    } ]
-  },
   "publisher": "World Health Organization (WHO)",
-  "description": "a) Number or (b) % of adverse events during the reporting period",
-  "content": [ {
-    "id": "ig-loader-HIVIND16Logic.cql"
-  } ]
+  "type": {
+    "coding": [
+      {
+        "code": "logic-library",
+        "system": "http://terminology.hl7.org/CodeSystem/library-type"
+      }
+    ]
+  },
+  "content": [
+    {
+      "id": "ig-loader-HIVIND16Logic.cql"
+    }
+  ]
 }
