@@ -406,14 +406,6 @@ Description: "0.1.1"
 * #9860137 ^property[=].valueString = "Misc"
 * #9860137 ^property[+].code = #datatype
 * #9860137 ^property[=].valueString = "N/A"
-* #discontinuation_date "Discontinuation date"
-* #discontinuation_date ^designation[0].language = #en
-* #discontinuation_date ^designation[=].value = "Discontinuation date"
-* #discontinuation_date ^designation[=].use.code = #Fully-Specified
-* #discontinuation_date ^property[0].code = #conceptclass
-* #discontinuation_date ^property[=].valueString = "Misc"
-* #discontinuation_date ^property[+].code = #datatype
-* #discontinuation_date ^property[=].valueString = "Date"
 * #9860143 "Treatment end date"
 * #9860143 ^designation[0].language = #en
 * #9860143 ^designation[=].value = "Date treatment stopped"
@@ -459,22 +451,6 @@ Description: "0.1.1"
 * #9860147 ^property[=].valueString = "State"
 * #9860147 ^property[+].code = #datatype
 * #9860147 ^property[=].valueString = "N/A"
-* #9860149 "Lost to followup" "Patients that are lost to followup.. boolean question."
-* #9860149 ^designation[0].language = #en
-* #9860149 ^designation[=].value = "Lost to followup"
-* #9860149 ^designation[=].use.code = #FULLY_SPECIFIED
-* #9860149 ^designation[+].language = #fr
-* #9860149 ^designation[=].value = "Perdu au suivi"
-* #9860149 ^designation[=].use.code = #FULLY_SPECIFIED
-* #9860149 ^designation[+].language = #ht
-* #9860149 ^designation[=].value = "Pa't fè swivi"
-* #9860149 ^designation[=].use.code = #FULLY_SPECIFIED
-* #9860149 ^designation[+].language = #es
-* #9860149 ^designation[=].value = "Perdido para el seguimiento"
-* #9860149 ^property[0].code = #conceptclass
-* #9860149 ^property[=].valueString = "Question"
-* #9860149 ^property[+].code = #datatype
-* #9860149 ^property[=].valueString = "Boolean"
 * #9860151 "Treatment interrupted/stopped"
 * #9860151 ^designation[0].language = #en
 * #9860151 ^designation[=].value = "Treatment interrupted/stopped"
@@ -1259,3 +1235,25 @@ Description: "0.1.1"
 * #9860243 ^property[=].valueString = "Misc"
 * #9860243 ^property[+].code = #datatype
 * #9860243 ^property[=].valueString = "N/A"
+* #9921831 "HIV program end date" "Question on encounter form. The date the patient was removed from the HIV program."
+* #9921831 ^designation[0].language = #en
+* #9921831 ^designation[=].value = "HIV program end date"
+* #9921831 ^designation[=].use.code = #FULLY_SPECIFIED
+* #9921831 ^designation[+].language = #fr
+* #9921831 ^designation[=].value = "Date de fin du programme VIH"
+* #9921831 ^designation[=].use.code = #FULLY_SPECIFIED
+* #9921831 ^designation[+].language = #ht
+* #9921831 ^designation[=].value = "Dat fini ak pwogram VIH"
+* #9921831 ^designation[=].use.code = #FULLY_SPECIFIED
+* #9921831 ^property[0].code = #conceptclass
+* #9921831 ^property[=].valueString = "Question"
+* #9921831 ^property[+].code = #datatype
+* #9921831 ^property[=].valueString = "Datetime"
+* #5240 "Lost to followup" "Patients that are lost to followup.. boolean question."
+* #5240 ^designation[0].language = #en
+* #5240 ^designation[=].value = "Lost to followup"
+* #5240 ^designation[=].use.code = #FULLY_SPECIFIED
+* #5240 ^property[0].code = #conceptclass
+* #5240 ^property[=].valueString = "Question"
+* #5240 ^property[+].code = #datatype
+* #5240 ^property[=].valueString = "Boolean"
