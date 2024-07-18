@@ -100,9 +100,9 @@ group HIVObservationHIVCondition(
               
             // not correct in hiv l3
             obsentry -> ms.status = "active" "setStatus";
-            obsentry -> ms.reasonCode = cc("http://smart.who.int/hiv/CodeSystem/HIVConcepts", "HIV.H.DE47", "On ART") "setMSReasonCode";
+            obsentry -> ms.reasonCode = cc("http://smart.who.int/hiv/CodeSystem/HIVConcepts", "HIV.H.DE47", "On ART") "setMSReasonCode";            
+            // need to fix
             // obsentry -> ms.medication = cc("https://openconceptlab.org/orgs/CIEL/sources/CIEL", "160119", "CURRENTLY TAKING ARV") "setMSCoding";
-
             obsentry -> ms.medication = create("CodeableConcept") as medication 
             then {
               obsentry -> medication.coding as coding 
@@ -110,7 +110,7 @@ group HIVObservationHIVCondition(
                 obsentry -> coding.code = '160119', 
                             coding.display = "CURRENTLY TAKING ARV", 
                             coding.system = 'https://openconceptlab.org/orgs/CIEL/sources/CIEL' "setMSCoding";
-              } "setMSCoding";
+                } "setMSCoding";
             } "SetMSMedication";
             
             // create provenance resource to document input/output resources links
