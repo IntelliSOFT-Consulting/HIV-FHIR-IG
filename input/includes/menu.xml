@@ -21,6 +21,16 @@
             </li>
         </ul>
     </li>
-
-
+    <li class="dropdown">
+        <a href="core-data-elements.html">Core Data Elements</a>
+    </li>
+    <li class="dropdown">
+        <a href="decision-support-logic.html">Decision Support Logic</a>
+    </li>
+    <li class="dropdown">
+        <a href="indicators-and-monitoring.html">Indicators &#38; Monitoring</a>
+    </li>
+    <li class="dropdown">
+        <a href="functional-and-non-functional-requirements.html">Functional &#38; Non-Functional Requirements</a>
+    </li>
 </ul>
