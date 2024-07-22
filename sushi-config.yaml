@@ -48,6 +48,8 @@ pages:
     title: Home
   generic-personas.md:
     title: Generic Personas
+  user-scenarios.md:
+    title: User Scenarios
 
 #
 # The parameters property represents IG.definition.parameter. Rather
