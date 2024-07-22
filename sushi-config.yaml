@@ -60,6 +60,10 @@ pages:
     title: Core Data Elements
   decision-support-logic.md:
     title: Decision Support Logic
+  indicators-and-monitoring.md:
+    title: Indicators and Monitoring
+  functional-and-non-functional-requirements.md:
+    title: Functional and Non-functional Requirements
 
 #
 # The parameters property represents IG.definition.parameter. Rather
