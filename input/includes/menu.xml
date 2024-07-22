@@ -5,6 +5,9 @@
     <li class="dropdown">
         <a href="generic-personas.html">Generic Personas</a>
     </li>
+    <li class="dropdown">
+        <a href="user-scenarios.html">User Scenarios</a>
+    </li>
     <!-- <li class="dropdown">
         <a data-toggle="dropdown" href="index.html" class="dropdown-toggle">Home<b class="caret"></b></a>
         <ul class="dropdown-menu">
