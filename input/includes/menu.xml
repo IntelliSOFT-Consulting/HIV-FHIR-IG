@@ -8,26 +8,19 @@
     <li class="dropdown">
         <a href="user-scenarios.html">User Scenarios</a>
     </li>
-    <!-- <li class="dropdown">
-        <a data-toggle="dropdown" href="index.html" class="dropdown-toggle">Home<b class="caret"></b></a>
+    <li class="dropdown">
+        <a data-toggle="dropdown" href="business-processes-and-workflows.html"
+            class="dropdown-toggle">Business Processes &#38; Workflows<b class="caret"></b></a>
         <ul class="dropdown-menu">
             <li>
-                <a href="index.html">Summary</a>
+                <a href="overview-of-key-hiv-business-processes.html">Overview of Key HIV Business
+                    Processes</a>
             </li>
             <li>
-                <a href="changes.html">Changes</a>
-            </li>
-            <li>
-                <a href="dependencies.html">Dependencies</a>
-            </li>
-            <li>
-                <a href="references.html">References</a>
-            </li>
-            <li>
-                <a href="adapting.html">Adapting Guidelines for Country Use</a>
+                <a href="workflows.html">Workflows</a>
             </li>
         </ul>
-    </li> -->
+    </li>
 
 
 </ul>
