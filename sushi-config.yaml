@@ -48,10 +48,6 @@ pages:
     title: Home
   generic-personas.md:
     title: Generic Personas
-    targeted-generic-personas.md:
-      title: Targeted Generic Personas
-    related-personas.md:
-      title: Related Personas
 
 #
 # The parameters property represents IG.definition.parameter. Rather
