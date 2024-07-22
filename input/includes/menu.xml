@@ -2,6 +2,9 @@
     <li>
         <a href="index.html">Introduction</a>
     </li>
+    <li class="dropdown">
+        <a href="generic-personas.html">Generic Personas</a>
+    </li>
     <!-- <li class="dropdown">
         <a data-toggle="dropdown" href="index.html" class="dropdown-toggle">Home<b class="caret"></b></a>
         <ul class="dropdown-menu">
@@ -23,16 +26,5 @@
         </ul>
     </li> -->
 
-    <li class="dropdown">
-        <a data-toggle="dropdown" href="generic-personas.html" class="dropdown-toggle">Generic Personas<b
-                class="caret"></b></a>
-        <ul class="dropdown-menu">
-            <li>
-                <a href="targeted-generic-personas.html">Targeted Generic Personas</a>
-            </li>
-            <li>
-                <a href="related-personas.html">Related Personas</a>
-            </li>
-        </ul>
-    </li>
+
 </ul>
