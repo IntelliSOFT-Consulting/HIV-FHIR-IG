@@ -50,6 +50,12 @@ pages:
     title: Generic Personas
   user-scenarios.md:
     title: User Scenarios
+  business-processes-and-workflows.md:
+    title: Business Processes and Workflows
+    overview-of-key-hiv-business-processes.md:
+      title: Overview of Key HIV Business Processes
+    workflows.md:
+      title: Workflows
 
 #
 # The parameters property represents IG.definition.parameter. Rather
