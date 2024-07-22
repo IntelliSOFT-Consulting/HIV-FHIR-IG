@@ -1,0 +1,38 @@
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+    <li>
+        <a href="index.html">Introduction</a>
+    </li>
+    <!-- <li class="dropdown">
+        <a data-toggle="dropdown" href="index.html" class="dropdown-toggle">Home<b class="caret"></b></a>
+        <ul class="dropdown-menu">
+            <li>
+                <a href="index.html">Summary</a>
+            </li>
+            <li>
+                <a href="changes.html">Changes</a>
+            </li>
+            <li>
+                <a href="dependencies.html">Dependencies</a>
+            </li>
+            <li>
+                <a href="references.html">References</a>
+            </li>
+            <li>
+                <a href="adapting.html">Adapting Guidelines for Country Use</a>
+            </li>
+        </ul>
+    </li> -->
+
+    <li class="dropdown">
+        <a data-toggle="dropdown" href="generic-personas.html" class="dropdown-toggle">Generic Personas<b
+                class="caret"></b></a>
+        <ul class="dropdown-menu">
+            <li>
+                <a href="targeted-generic-personas.html">Targeted Generic Personas</a>
+            </li>
+            <li>
+                <a href="related-personas.html">Related Personas</a>
+            </li>
+        </ul>
+    </li>
+</ul>
