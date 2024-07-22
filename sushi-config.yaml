@@ -56,6 +56,10 @@ pages:
       title: Overview of Key HIV Business Processes
     workflows.md:
       title: Workflows
+  core-data-elements.md:
+    title: Core Data Elements
+  decision-support-logic.md:
+    title: Decision Support Logic
 
 #
 # The parameters property represents IG.definition.parameter. Rather
