@@ -1,0 +1,241 @@
+// name the map and its canonical url
+map "https://path-global-health.github.io/MERindicators/StructureMap/Debug" = "Debug"
+
+// declare the structure defs used
+uses "http://hl7.org/fhir/StructureDefinition/Bundle" alias input as source
+uses "http://hl7.org/fhir/StructureDefinition/Bundle" alias output as target
+
+
+// declare group with local vars (src, tgt) and their aliases
+// anything ending with semicolon is a rule
+group HIVObservationHIVCondition(
+    source src: input,
+    target tgt: output
+) {
+    // set bundle type for the output bundle
+    src -> tgt.type = 'transaction' "setBundleType";
+
+    // loop through patients in input bundle
+    src.entry as entry -> tgt.entry as tentry 
+    then {
+      entry.resource : Patient as patient -> tentry.resource = patient
+      then {
+        // for observations of that patient look for art program enrollment
+        // create a condition resource in output with uuid
+        src.entry as obsentry where resource.is(Observation) 
+        and resource.subject.exists(reference=("Patient/" & patient.id))
+        and resource.code.exists(coding.exists(system='https://openconceptlab.org/orgs/CIEL/sources/CIEL' and code='160540')) 
+            -> tgt.entry as newentry, newentry.resource = create("Condition") as cond, uuid() as cid 
+        then {
+          obsentry.resource as obs -> newentry.fullUrl = ( "urn:uuid:" & cid ),
+          // var for request bit of resources in transaction bundle
+          newentry.request as newrequest
+          then {
+            obsentry -> cond.id = cid "setCId";
+            // setrequest rule for resource in transaction bundle
+            // needs to be processed properly before putting on existing data on fhir server
+            obsentry -> newrequest.method = "PUT", newrequest.url = ("Condition/" & cid) "setrequest";
+            patient -> cond.subject as subject 
+            then {
+              patient -> subject.reference = reference(patient) "setSubjectRef";
+            } "setSubject";
+            obs.effective as effective -> cond.onset = effective "setOnset";
+
+            obsentry -> cond.clinicalStatus = cc("http://terminology.hl7.org/CodeSystem/condition-clinical", "active", "Active") "setClinicalStatus";
+            obsentry -> cond.code = cc("http://smart.who.int/hiv/CodeSystem/HIVConcepts", "HIV.B.DE116", "HIV-positive") "setCode";
+            obsentry -> cond.category = cc("http://terminology.hl7.org/CodeSystem/condition-category", "encounter-diagnosis", "Encounter Diagnosis") "setCategory";
+
+            // create provenance resource to document input/output resources links
+            obs -> tgt.entry as pentry, pentry.resource = create("Provenance") as prov, uuid() as pid,
+            pentry.request as prequest
+            then {
+              obs -> prov.id = pid "setPId";
+              obs -> pentry.fullUrl = ( "urn:uuid:" & pid ) "setFullUrl";
+              obs -> prequest.method = "PUT", prequest.url = ("Provenance/" & pid) "setrequest";
+              obs -> prov.target as ptarg 
+              then {
+                obs -> ptarg.reference = ( "urn:uuid:" & cid ) "setTargetRef";
+              } "setTarget";
+              obs -> prov.entity as entity 
+              then {
+                obs -> entity.role = "source" "setRole";
+                obs -> entity.what as pwhat 
+                then {
+                  obs -> pwhat.reference = reference(obs) "setWhatRef";
+                } "setWhat";
+              } "setEntity";
+            //   obs -> prov.recordedDate = %now();
+            } "setProvenance";
+          } "setCondition";
+        } "getOnARTObservation";
+
+        // for observations of that patient look for return visit date
+        // create a medication request resource in output with uuid
+        src.entry as obsentry where resource.is(Observation) 
+        and resource.subject.exists(reference=("Patient/" & patient.id))
+        and resource.code.exists(coding.exists(system='https://openconceptlab.org/orgs/CIEL/sources/CIEL' and code='5096')) 
+            -> tgt.entry as newentry, newentry.resource = create("MedicationStatement") as ms, uuid() as msid 
+        then {
+          
+          obsentry.resource as obs -> newentry.fullUrl = ( "urn:uuid:" & msid ),
+          // var for request bit of resources in transaction bundle
+          newentry.request as newrequest
+          then {
+            
+            obsentry -> ms.id = msid "setMSId";
+            // setrequest rule for resource in transaction bundle
+            // needs to be processed properly before putting on existing data on fhir server
+            obsentry -> newrequest.method = "PUT", newrequest.url = ("MedicationStatement/" & msid) "setrequest";
+            
+            patient -> ms.subject as subject 
+            then {
+              patient -> subject.reference = reference(patient) "setSubjectRef";
+            } "setSubject";
+
+            // obs.effective as effective -> ms.effective = effective "setEffective";
+            obs.effective : dateTime as effective -> ms.effective = create("Period") as mseffective then {
+                effective -> mseffective.start = effective "setEffectiveStart";
+                effective -> mseffective.end = (%effective + 30 days) "setEffectiveEnd";
+              } "setEffective";
+              
+            // not correct in hiv l3
+            obsentry -> ms.status = "active" "setStatus";
+            obsentry -> ms.reasonCode = cc("http://smart.who.int/hiv/CodeSystem/HIVConcepts", "HIV.H.DE47", "On ART") "setMSReasonCode";            
+            // need to fix
+            // obsentry -> ms.medication = cc("https://openconceptlab.org/orgs/CIEL/sources/CIEL", "160119", "CURRENTLY TAKING ARV") "setMSCoding";
+            obsentry -> ms.medication = create("CodeableConcept") as medication 
+            then {
+              obsentry -> medication.coding as coding 
+              then {
+                obsentry -> coding.code = '160119', 
+                            coding.display = "CURRENTLY TAKING ARV", 
+                            coding.system = 'https://openconceptlab.org/orgs/CIEL/sources/CIEL' "setMSCoding";
+                } "setMSCoding";
+            } "SetMSMedication";
+            
+            // create provenance resource to document input/output resources links
+            obs -> tgt.entry as pentry, pentry.resource = create("Provenance") as prov, uuid() as pid,
+            pentry.request as prequest
+            then {
+              obs -> prov.id = pid "setPId";
+              obs -> pentry.fullUrl = ( "urn:uuid:" & pid ) "setFullUrl";
+              obs -> prequest.method = "PUT", prequest.url = ("Provenance/" & pid) "setrequest";
+              obs -> prov.target as ptarg 
+              then {
+                obs -> ptarg.reference = ( "urn:uuid:" & msid ) "setTargetRef";
+              } "setTarget";
+              obs -> prov.entity as entity 
+              then {
+                obs -> entity.role = "source" "setRole";
+                obs -> entity.what as pwhat 
+                then {
+                  obs -> pwhat.reference = reference(obs) "setWhatRef";
+                } "setWhat";
+              } "setEntity";
+            //   obs -> prov.recordedDate = %now();
+            } "setProvenance";
+          } "setMedicationStatement";
+        
+         } "getVisitObservation";
+
+         // create observation resource with the positive hiv test codes
+         // this will have to be one for hiv positive and one for hiv negative
+         src.entry as obsentry where resource.is(Observation) 
+         and resource.subject.exists(reference=("Patient/" & patient.id))
+         // ciel for hiv positive, could add snomed
+         and resource.code.exists(coding.exists(system='https://openconceptlab.org/orgs/CIEL/sources/CIEL' and code='138571')) 
+            -> tgt.entry as newentry, newentry.resource = create("Observation") as observe, uuid() as obsd 
+         then {
+           obsentry.resource as obs -> newentry.fullUrl = ( "urn:uuid:" & obsd ),
+           // var for request bit of resources in transaction bundle
+           newentry.request as newrequest
+           then {
+             // obsentry -> cond.id = cid "setCId";
+             obsentry -> observe.id = obsd "setOBSd";
+             // setrequest rule for resource in transaction bundle
+             // needs to be processed properly before putting on existing data on fhir server
+             obsentry -> newrequest.method = "PUT", newrequest.url = ("Observation/" & obsd) "setrequest";
+
+             patient -> observe.subject as subject 
+             then {
+               patient -> subject.reference = reference(patient) "setSubjectRef";
+             } "setSubject";
+             obs.effective as effective -> observe.effective = effective "setOnset";
+             // observations must have status and code
+             // different than the hiv positive code used above
+             obsentry -> observe.code = cc("http://smart.who.int/hiv/CodeSystem/HIVConcepts", "HIV.B.DE112", "HIV-positive") "setCode";
+             obsentry -> observe.status = cc("http://hl7.org/fhir/observation-status", "final", "Final") "setStatus";
+ 
+             // create provenance resource to document input/output resources links
+             obs -> tgt.entry as pentry, pentry.resource = create("Provenance") as prov, uuid() as pid,
+             pentry.request as prequest
+             then {
+               obs -> prov.id = pid "setPId";
+               obs -> pentry.fullUrl = ( "urn:uuid:" & pid ) "setFullUrl";
+               obs -> prequest.method = "PUT", prequest.url = ("Provenance/" & pid) "setrequest";
+               obs -> prov.target as ptarg 
+               then {
+                 obs -> ptarg.reference = ( "urn:uuid:" & cid ) "setTargetRef";
+               } "setTarget";
+               obs -> prov.entity as entity 
+               then {
+                 obs -> entity.role = "source" "setRole";
+                 obs -> entity.what as pwhat 
+                 then {
+                   obs -> pwhat.reference = reference(obs) "setWhatRef";
+                 } "setWhat";
+               } "setEntity";
+             //   obs -> prov.recordedDate = %now();
+             } "setProvenance";
+           } "setHIVPositiveTest";
+
+
+        // create observation resource with the negative hiv test codes
+        //  src.entry as obsentry where resource.is(Observation) 
+        //  and resource.subject.exists(reference=("Patient/" & patient.id))
+        //  and resource.code.exists(coding.exists(system='https://openconceptlab.org/orgs/CIEL/sources/CIEL' and code='664')) 
+        //     -> tgt.entry as newentry, newentry.resource = create("Observation") as negative, uuid() as negobs 
+        //  then {
+        //    obsentry.resource as obs -> newentry.fullUrl = ( "urn:uuid:" & negobs ),
+        //    newentry.request as newrequest
+        //    then {
+        //      obsentry -> negative.id = negobs "setOBSd";
+        //      obsentry -> newrequest.method = "PUT", newrequest.url = ("Observation/" & negobs) "setrequest";
+
+        //      patient -> negative.subject as subject 
+        //      then {
+        //        patient -> subject.reference = reference(patient) "setSubjectRef";
+        //      } "setSubject";
+        //      obs.effective as effective -> negative.effective = effective "setOnset";
+        //      obsentry -> negative.code = cc("http://smart.who.int/hiv/CodeSystem/HIVConcepts", "HIV.B.DE113", "HIV-negative") "setCode";
+        //      obsentry -> negative.status = cc("http://hl7.org/fhir/observation-status", "final", "Final") "setStatus";
+ 
+        //      obs -> tgt.entry as pentry, pentry.resource = create("Provenance") as prov, uuid() as pid,
+        //      pentry.request as prequest
+        //      then {
+        //        obs -> prov.id = pid "setPId";
+        //        obs -> pentry.fullUrl = ( "urn:uuid:" & pid ) "setFullUrl";
+        //        obs -> prequest.method = "PUT", prequest.url = ("Provenance/" & pid) "setrequest";
+        //        obs -> prov.target as ptarg 
+        //        then {
+        //          obs -> ptarg.reference = ( "urn:uuid:" & cid ) "setTargetRef";
+        //        } "setTarget";
+        //        obs -> prov.entity as entity 
+        //        then {
+        //          obs -> entity.role = "source" "setRole";
+        //          obs -> entity.what as pwhat 
+        //          then {
+        //            obs -> pwhat.reference = reference(obs) "setWhatRef";
+        //          } "setWhat";
+        //        } "setEntity";
+        //      } "setProvenance";
+        //    } "setHIVNegativeTest";
+
+         } "getOnARTObservation";
+
+        } "patientResource";
+    } "copyPatient";
+
+  }
+
+
