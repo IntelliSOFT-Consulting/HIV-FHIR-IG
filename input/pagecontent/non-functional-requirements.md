@@ -1,10 +1,6 @@
-This section provides an overview of illustrative functional and non-functional requirements that may be considered to kick-start the process of designing or adapting the digital tracking and decision-support system. Functional requirements describe the capabilities the system must have in order to meet the end-user's needs and achieve tasks within the business process. Non-functional requirements provide the general attributes and features of the digital system to ensure usability and overcome technical and physical constraints.
+Non-functional requirements provide the general attributes and features of the digital system to ensure usability and overcome technical and physical constraints.
 
 Examples of non-functional requirements include the ability to work offline, multiple language settings, and password protection
-
-### Functional Requirements
-
-### Non-Functional Requirements
 
 <table class="table table-hover table-bordered table-striped">
     <thead>
