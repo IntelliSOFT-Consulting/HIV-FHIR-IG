@@ -50,20 +50,22 @@ pages:
     title: Generic Personas
   user-scenarios.md:
     title: User Scenarios
-  business-processes-and-workflows.md:
-    title: Business Processes and Workflows
-    overview-of-key-hiv-business-processes.md:
-      title: Overview of Key HIV Business Processes
-    workflows.md:
-      title: Workflows
-  core-data-elements.md:
-    title: Core Data Elements
-  decision-support-logic.md:
-    title: Decision Support Logic
-  indicators-and-monitoring.md:
-    title: Indicators and Monitoring
-  functional-and-non-functional-requirements.md:
-    title: Functional and Non-functional Requirements
+  business-requirements.md:
+    title: Business Requirements
+    business-processes-and-workflows.md:
+      title: Business Processes and Workflows
+      overview-of-key-hiv-business-processes.md:
+        title: Overview of Key HIV Business Processes
+      workflows.md:
+        title: Workflows
+    core-data-elements.md:
+      title: Core Data Elements
+    decision-support-logic.md:
+      title: Decision Support Logic
+    indicators-and-monitoring.md:
+      title: Indicators and Monitoring
+    functional-and-non-functional-requirements.md:
+      title: Functional and Non-functional Requirements
 
 #
 # The parameters property represents IG.definition.parameter. Rather
