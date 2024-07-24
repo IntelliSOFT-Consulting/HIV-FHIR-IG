@@ -62,7 +62,7 @@
  */
 
 library HIVIND27Logic
-q
+
 // Included Libraries
 using FHIR version '4.0.1'
 
@@ -91,9 +91,9 @@ define "Measure Population":
    where H.effective starts before end of "Measurement Period"
     and (H.effective ends after start of "Measurement Period")
    )
-   and not HIC."Patient Deceased before end of Measurement Period"
-   and not HIC."Transfer Out at Facility during the measurement period"
-   and not HIC."Lost to Follow Up during the measurement period"
+  and not HIC."Patient Deceased before end of Measurement Period"
+  and not HIC."Transfer Out at Facility during the measurement period"
+  and not HIC."Lost to Follow Up during the measurement period"
 
 /*
  * As defined by Member States
