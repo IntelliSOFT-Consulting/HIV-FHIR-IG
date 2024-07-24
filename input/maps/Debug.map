@@ -188,50 +188,51 @@ group HIVObservationHIVCondition(
              //   obs -> prov.recordedDate = %now();
              } "setProvenance";
            } "setHIVPositiveTest";
+          } "getOnARTObservation";
 
 
         // create observation resource with the negative hiv test codes
-        //  src.entry as obsentry where resource.is(Observation) 
-        //  and resource.subject.exists(reference=("Patient/" & patient.id))
-        //  and resource.code.exists(coding.exists(system='https://openconceptlab.org/orgs/CIEL/sources/CIEL' and code='664')) 
-        //     -> tgt.entry as newentry, newentry.resource = create("Observation") as negative, uuid() as negobs 
-        //  then {
-        //    obsentry.resource as obs -> newentry.fullUrl = ( "urn:uuid:" & negobs ),
-        //    newentry.request as newrequest
-        //    then {
-        //      obsentry -> negative.id = negobs "setOBSd";
-        //      obsentry -> newrequest.method = "PUT", newrequest.url = ("Observation/" & negobs) "setrequest";
+         src.entry as obsentry where resource.is(Observation) 
+         and resource.subject.exists(reference=("Patient/" & patient.id))
+         and resource.code.exists(coding.exists(system='https://openconceptlab.org/orgs/CIEL/sources/CIEL' and code='664')) 
+            -> tgt.entry as newentry, newentry.resource = create("Observation") as negative, uuid() as negobs 
+         then {
+           obsentry.resource as obs -> newentry.fullUrl = ( "urn:uuid:" & negobs ),
+           newentry.request as newrequest
+           then {
+             obsentry -> negative.id = negobs "setOBSd";
+             obsentry -> newrequest.method = "PUT", newrequest.url = ("Observation/" & negobs) "setrequest";
 
-        //      patient -> negative.subject as subject 
-        //      then {
-        //        patient -> subject.reference = reference(patient) "setSubjectRef";
-        //      } "setSubject";
-        //      obs.effective as effective -> negative.effective = effective "setOnset";
-        //      obsentry -> negative.code = cc("http://smart.who.int/hiv/CodeSystem/HIVConcepts", "HIV.B.DE113", "HIV-negative") "setCode";
-        //      obsentry -> negative.status = cc("http://hl7.org/fhir/observation-status", "final", "Final") "setStatus";
+             patient -> negative.subject as subject 
+             then {
+               patient -> subject.reference = reference(patient) "setSubjectRef";
+             } "setSubject";
+             obs.effective as effective -> negative.effective = effective "setOnset";
+             obsentry -> negative.code = cc("http://smart.who.int/hiv/CodeSystem/HIVConcepts", "HIV.B.DE113", "HIV-negative") "setCode";
+             obsentry -> negative.status = cc("http://hl7.org/fhir/observation-status", "final", "Final") "setStatus";
  
-        //      obs -> tgt.entry as pentry, pentry.resource = create("Provenance") as prov, uuid() as pid,
-        //      pentry.request as prequest
-        //      then {
-        //        obs -> prov.id = pid "setPId";
-        //        obs -> pentry.fullUrl = ( "urn:uuid:" & pid ) "setFullUrl";
-        //        obs -> prequest.method = "PUT", prequest.url = ("Provenance/" & pid) "setrequest";
-        //        obs -> prov.target as ptarg 
-        //        then {
-        //          obs -> ptarg.reference = ( "urn:uuid:" & cid ) "setTargetRef";
-        //        } "setTarget";
-        //        obs -> prov.entity as entity 
-        //        then {
-        //          obs -> entity.role = "source" "setRole";
-        //          obs -> entity.what as pwhat 
-        //          then {
-        //            obs -> pwhat.reference = reference(obs) "setWhatRef";
-        //          } "setWhat";
-        //        } "setEntity";
-        //      } "setProvenance";
-        //    } "setHIVNegativeTest";
+             obs -> tgt.entry as pentry, pentry.resource = create("Provenance") as prov, uuid() as pid,
+             pentry.request as prequest
+             then {
+               obs -> prov.id = pid "setPId";
+               obs -> pentry.fullUrl = ( "urn:uuid:" & pid ) "setFullUrl";
+               obs -> prequest.method = "PUT", prequest.url = ("Provenance/" & pid) "setrequest";
+               obs -> prov.target as ptarg 
+               then {
+                 obs -> ptarg.reference = ( "urn:uuid:" & cid ) "setTargetRef";
+               } "setTarget";
+               obs -> prov.entity as entity 
+               then {
+                 obs -> entity.role = "source" "setRole";
+                 obs -> entity.what as pwhat 
+                 then {
+                   obs -> pwhat.reference = reference(obs) "setWhatRef";
+                 } "setWhat";
+               } "setEntity";
+             } "setProvenance";
+           } "setHIVNegativeTest";
+          } "getHIVNegativeObservation";
 
-         } "getOnARTObservation";
 
         } "patientResource";
     } "copyPatient";
