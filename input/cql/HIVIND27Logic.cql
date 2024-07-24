@@ -62,7 +62,7 @@
  */
 
 library HIVIND27Logic
-
+q
 // Included Libraries
 using FHIR version '4.0.1'
 
@@ -71,7 +71,7 @@ include FHIRHelpers version '4.0.1'
 include WHOCommon called WCom
 
 // Indicator Definition
-parameter "Measurement Period" Interval<Date> default Interval[@2023-01-01, @2023-01-30]
+parameter "Measurement Period" Interval<Date> default Interval[@2023-01-01, @2023-06-30]
 
 context Patient
 /*

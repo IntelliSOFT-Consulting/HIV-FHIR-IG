@@ -8,7 +8,7 @@ include WHOCommon called WCom
 include HIVConcepts called HC
 include HIVConceptsCustom called HCC
 
-parameter "Measurement Period" Interval<Date> default Interval[@2020-01-01, @2020-12-31]
+parameter "Measurement Period" Interval<Date> default Interval[@2020-01-01, @2024-12-31]
 parameter "Measurement Date" Date default @2020-01-01
 
 context Patient
@@ -52,13 +52,13 @@ define "HIV test resulted":
 
 define "HIV Treatment Active":
 [MedicationStatement] MS
-    where MS.status = 'recorded'
+    where MS.status = 'active'
     and exists(MS.reasonCode C where C ~ HC."On ART - HIV.H.DE47")
 
 
 define "HIV PREP Active":
 [MedicationStatement] MS
-    where MS.status = 'recorded'
+    where MS.status = 'active'
     and exists(MS.reasonCode C where C ~ HC."PrEP for HIV prevention")
 
  define "Client is at elevated risk for HIV acquisition":
