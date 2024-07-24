@@ -15,3 +15,6 @@ cp ./transform-test-data1.json ../tests/Debug/3e990510-1d51-4a25-abd4-3885cf9e8b
 cp ./transform-test-data2.json ../tests/Debug/445beebb-e886-11ea-87c2-00155d017200/
 cp ./transform-test-data1.json ../tests/HIVCommon/3e990510-1d51-4a25-abd4-3885cf9e8be9/
 cp ./transform-test-data2.json ../tests/HIVCommon/445beebb-e886-11ea-87c2-00155d017200/
+cp ./transform-test-data1.json ../tests/HIVIND27Logic/3e990510-1d51-4a25-abd4-3885cf9e8be9/
+cp ./transform-test-data2.json ../tests/HIVIND27Logic/445beebb-e886-11ea-87c2-00155d017200/
+
