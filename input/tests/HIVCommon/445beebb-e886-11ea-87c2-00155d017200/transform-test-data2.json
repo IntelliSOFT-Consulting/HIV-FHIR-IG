@@ -72,15 +72,28 @@
     }
   },
   {
-    "fullUrl" : "urn:uuid:1e2f4a5c-18c0-4d12-9de6-098f71a112d7",
+    "fullUrl" : "urn:uuid:d3ea9c4c-34a3-4172-8005-6f8bd5a28e52",
     "resource" : {
       "resourceType" : "Condition",
-      "id" : "1e2f4a5c-18c0-4d12-9de6-098f71a112d7",
+      "id" : "d3ea9c4c-34a3-4172-8005-6f8bd5a28e52",
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "active",
+          "display" : "Active"
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code" : "encounter-diagnosis",
+          "display" : "Encounter Diagnosis"
+        }]
+      }],
       "code" : {
         "coding" : [{
-          "system" : "http://snomed.info/sct",
-          "code" : "86406008",
-          "display" : "HIV Condition Positive"
+          "system" : "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+          "code" : "HIV.B.DE116"
         }]
       },
       "subject" : {
@@ -90,16 +103,16 @@
     },
     "request" : {
       "method" : "PUT",
-      "url" : "Condition/1e2f4a5c-18c0-4d12-9de6-098f71a112d7"
+      "url" : "Condition/d3ea9c4c-34a3-4172-8005-6f8bd5a28e52"
     }
   },
   {
-    "fullUrl" : "urn:uuid:5433554d-7ff2-4ed2-99b0-1f8fc2d72aec",
+    "fullUrl" : "urn:uuid:6b12db94-cef7-4a77-879e-8cc2e7572f71",
     "resource" : {
       "resourceType" : "Provenance",
-      "id" : "5433554d-7ff2-4ed2-99b0-1f8fc2d72aec",
+      "id" : "6b12db94-cef7-4a77-879e-8cc2e7572f71",
       "target" : [{
-        "reference" : "urn:uuid:1e2f4a5c-18c0-4d12-9de6-098f71a112d7"
+        "reference" : "urn:uuid:d3ea9c4c-34a3-4172-8005-6f8bd5a28e52"
       }],
       "entity" : [{
         "role" : "source",
@@ -110,7 +123,7 @@
     },
     "request" : {
       "method" : "PUT",
-      "url" : "Provenance/5433554d-7ff2-4ed2-99b0-1f8fc2d72aec"
+      "url" : "Provenance/6b12db94-cef7-4a77-879e-8cc2e7572f71"
     }
   }]
 }
