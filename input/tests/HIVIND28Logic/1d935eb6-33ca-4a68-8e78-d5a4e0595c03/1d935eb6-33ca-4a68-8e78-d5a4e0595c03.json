@@ -1,0 +1,5974 @@
+{
+  "resourceType": "Bundle",
+  "id": "1d935eb6-33ca-4a68-8e78-d5a4e0595c03",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "a4cde136-1d2c-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347114000",
+        "lastUpdated": "2020-11-02T19:58:34.000+00:00"
+      },
+      "identifier": [ {
+        "id": "a4d8045c-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "official",
+        "type": {
+          "coding": [ {
+            "code": "dfacd928-0370-4315-99d7-6ec1c9f7ae76"
+          } ],
+          "text": "OpenMRS ID"
+        },
+        "value": "MGFHDN"
+      }, {
+        "id": "a4cdf77e-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "05ee9cf4-7242-4a17-b4d4-00f707265c8a"
+          } ],
+          "text": "Unique Patient Number"
+        },
+        "value": "15339000179"
+      } ],
+      "active": true,
+      "name": [ {
+        "id": "a4cde889-1d2c-11eb-8abc-0242e805c5c5",
+        "family": "wairire",
+        "given": [ "wairire", "wairire" ]
+      } ],
+      "gender": "female",
+      "birthDate": "2004-04-05",
+      "deceasedBoolean": false,
+      "address": [ {
+        "id": "a4cdeeac-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/address",
+          "extension": [ {
+            "url": "http://fhir.openmrs.org/ext/address#address1",
+            "valueString": "65 address1"
+          } ]
+        } ],
+        "use": "old"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/a4cde136-1d2c-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "655c9242-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347867000",
+        "lastUpdated": "2020-11-02T20:11:07.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "1193AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "CURRENT DRUGS USED"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "1193"
+        } ],
+        "text": "CURRENT DRUGS USED"
+      },
+      "subject": {
+        "reference": "Patient/a4cde136-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "wairire wairire wairire (OpenMRS ID: MGFHDN)"
+      },
+      "encounter": {
+        "reference": "Encounter/655c5884-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2015-03-12T00:00:00+00:00",
+      "issued": "2020-11-02T20:11:07.000+00:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "160124AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Zidovudine / Lamivudine / Efavirenz"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "160124"
+        } ],
+        "text": "Zidovudine / Lamivudine / Efavirenz"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/655c5884-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e321de82-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347648000",
+        "lastUpdated": "2020-11-02T20:07:28.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a4cde136-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "wairire wairire wairire (OpenMRS ID: MGFHDN)"
+      },
+      "encounter": {
+        "reference": "Encounter/e321d03b-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2015-03-12T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:28.000+00:00",
+      "valueDateTime": "2015-04-11T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e321d03b-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "33058575-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347353000",
+        "lastUpdated": "2020-11-02T20:02:33.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "161555AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Reason for discontinuation of program"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "161555"
+        } ],
+        "text": "Reason for discontinuation of program"
+      },
+      "subject": {
+        "reference": "Patient/a4cde136-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "wairire wairire wairire (OpenMRS ID: MGFHDN)"
+      },
+      "encounter": {
+        "reference": "Encounter/33055548-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2015-07-10T00:00:00+00:00",
+      "issued": "2020-11-02T20:02:33.000+00:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "5240AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Lost to followup"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5240"
+        }, {
+          "system": "http://snomed.info/sct/",
+          "code": "399307001"
+        } ],
+        "text": "Lost to followup"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/33055548-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "a4d811fb-1d2c-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347114000",
+        "lastUpdated": "2020-11-02T19:58:34.000+00:00"
+      },
+      "identifier": [ {
+        "id": "a4e7394e-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "official",
+        "type": {
+          "coding": [ {
+            "code": "dfacd928-0370-4315-99d7-6ec1c9f7ae76"
+          } ],
+          "text": "OpenMRS ID"
+        },
+        "value": "MGFHEL"
+      }, {
+        "id": "a4d82f6c-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "05ee9cf4-7242-4a17-b4d4-00f707265c8a"
+          } ],
+          "text": "Unique Patient Number"
+        },
+        "value": "1533900180"
+      }, {
+        "id": "80698816-7b47-40fd-9a46-514f9ba2ca49",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "b4d66522-11fc-45c7-83e3-39a1af21ae0d"
+          } ],
+          "text": "Patient Clinic Number"
+        },
+        "value": "15339000180"
+      }, {
+        "id": "7780ed08-bef7-479e-b4e2-753ab63cfcc7",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "49af6cdc-7968-4abb-bf46-de10d7f4859f"
+          } ],
+          "text": "National ID"
+        },
+        "value": "9799799"
+      }, {
+        "id": "2152fa6a-5c02-4305-9164-a2bf7510da08",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "f85081e2-b4be-4e48-b3a4-7994b69bb101"
+          } ],
+          "text": "National Unique patient identifier"
+        },
+        "value": "0000000990000"
+      } ],
+      "active": true,
+      "name": [ {
+        "id": "a4d81a10-1d2c-11eb-8abc-0242e805c5c5",
+        "family": "Karanjee",
+        "given": [ "Karanjee", "Karanjee" ]
+      } ],
+      "gender": "female",
+      "birthDate": "1979-01-18",
+      "deceasedBoolean": false,
+      "address": [ {
+        "id": "d1d996d9-dd8f-4011-942b-e5c6873582de",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/address",
+          "extension": [ {
+            "url": "http://fhir.openmrs.org/ext/address#address1",
+            "valueString": "66 address1"
+          }, {
+            "url": "http://fhir.openmrs.org/ext/address#address2",
+            "valueString": "KINAMBA"
+          }, {
+            "url": "http://fhir.openmrs.org/ext/address#address4",
+            "valueString": "Marmanet"
+          }, {
+            "url": "http://fhir.openmrs.org/ext/address#address5",
+            "valueString": "Kinamba"
+          }, {
+            "url": "http://fhir.openmrs.org/ext/address#address6",
+            "valueString": "Kinamba"
+          } ]
+        } ],
+        "use": "home",
+        "city": "KINAMBA",
+        "district": "Laikipia",
+        "state": "Laikipia West"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/a4d811fb-1d2c-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "f1c5c14f-e38b-4231-9235-e62481a09baf",
+      "meta": {
+        "versionId": "1657884036000",
+        "lastUpdated": "2022-07-15T11:20:36.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "160540AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Method of enrollment"
+        }, {
+          "system": "http://loinc.org",
+          "code": "45252-4"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "160540"
+        } ],
+        "text": "Method of enrollment"
+      },
+      "subject": {
+        "reference": "Patient/a4d811fb-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Karanjee Karanjee Karanjee (OpenMRS ID: MGFHEL)"
+      },
+      "encounter": {
+        "reference": "Encounter/60a03e75-4f5e-4f9a-9b65-acb10a2a96ad",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2022-07-15T11:18:28+00:00",
+      "issued": "2022-07-15T11:20:36.000+00:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "160542AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Outpatient department"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "160542"
+        }, {
+          "system": "http://snomed.info/sct/",
+          "code": "33022008"
+        } ],
+        "text": "Outpatient department"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/60a03e75-4f5e-4f9a-9b65-acb10a2a96ad"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "d8bfb2bb-b5a7-41d3-9bc6-b5f546a26e23",
+      "meta": {
+        "versionId": "1657884084000",
+        "lastUpdated": "2022-07-15T11:21:24.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "1193AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "CURRENT DRUGS USED"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "1193"
+        } ],
+        "text": "CURRENT DRUGS USED"
+      },
+      "subject": {
+        "reference": "Patient/a4d811fb-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Karanjee Karanjee Karanjee (OpenMRS ID: MGFHEL)"
+      },
+      "encounter": {
+        "reference": "Encounter/dc579bd1-c846-4283-b308-b153daa92ff5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2015-03-13T00:00:00+00:00",
+      "issued": "2022-07-15T11:21:24.000+00:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "164505AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Lamivudine / Efavirenz / Tenofovir"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "164505"
+        } ],
+        "text": "Lamivudine / Efavirenz / Tenofovir"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/dc579bd1-c846-4283-b308-b153daa92ff5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "bd980905-d58c-4eb3-b592-e3a26289e39e",
+      "meta": {
+        "versionId": "1657884243000",
+        "lastUpdated": "2022-07-15T11:24:03.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a4d811fb-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Karanjee Karanjee Karanjee (OpenMRS ID: MGFHEL)"
+      },
+      "encounter": {
+        "reference": "Encounter/2e2f51a1-dacd-4887-a7e9-41e3dfd8cee3",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2022-07-15T11:18:02+00:00",
+      "issued": "2022-07-15T11:24:03.000+00:00",
+      "valueDateTime": "2022-10-13T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2e2f51a1-dacd-4887-a7e9-41e3dfd8cee3"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "c1f5fde9-bf62-4fe4-a93a-6b6fa39a8dbb",
+      "meta": {
+        "versionId": "1665668625000",
+        "lastUpdated": "2022-10-13T13:43:45.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a4d811fb-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Karanjee Karanjee Karanjee (OpenMRS ID: MGFHEL)"
+      },
+      "encounter": {
+        "reference": "Encounter/d454b02d-2ef8-4dc1-9723-ffeb58f86b97",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2022-10-13T13:36:19+00:00",
+      "issued": "2022-10-13T13:43:45.000+00:00",
+      "valueDateTime": "2023-02-14T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/d454b02d-2ef8-4dc1-9723-ffeb58f86b97"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "80f28d7a-42c7-4ed1-bfaf-f047117d87a9",
+      "meta": {
+        "versionId": "1676375261000",
+        "lastUpdated": "2023-02-14T11:47:41.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a4d811fb-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Karanjee Karanjee Karanjee (OpenMRS ID: MGFHEL)"
+      },
+      "encounter": {
+        "reference": "Encounter/1b259f4d-57c7-4686-957c-820af54b40a1",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2023-02-14T11:45:54+00:00",
+      "issued": "2023-02-14T11:47:41.000+00:00",
+      "valueDateTime": "2023-08-23T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/1b259f4d-57c7-4686-957c-820af54b40a1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "29a7ffe8-8a7e-4897-9d48-f5440333e56a",
+      "meta": {
+        "versionId": "1692616101000",
+        "lastUpdated": "2023-08-21T11:08:21.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a4d811fb-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Karanjee Karanjee Karanjee (OpenMRS ID: MGFHEL)"
+      },
+      "encounter": {
+        "reference": "Encounter/331c1886-022e-429b-adae-6bbd5062cdbe",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2023-08-21T11:05:39+00:00",
+      "issued": "2023-08-21T11:08:21.000+00:00",
+      "valueDateTime": "2023-11-30T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/331c1886-022e-429b-adae-6bbd5062cdbe"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "330cf123-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347353000",
+        "lastUpdated": "2020-11-02T20:02:33.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "161555AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Reason for discontinuation of program"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "161555"
+        } ],
+        "text": "Reason for discontinuation of program"
+      },
+      "subject": {
+        "reference": "Patient/a4d811fb-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Karanjee Karanjee Karanjee (OpenMRS ID: MGFHEL)"
+      },
+      "encounter": {
+        "reference": "Encounter/330cc3e6-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2015-03-13T00:00:00+00:00",
+      "issued": "2020-11-02T20:02:33.000+00:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "159492AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Transferred out"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "159492"
+        } ],
+        "text": "Transferred out"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/330cc3e6-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "a4e744c3-1d2c-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347114000",
+        "lastUpdated": "2020-11-02T19:58:34.000+00:00"
+      },
+      "identifier": [ {
+        "id": "a4f1b953-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "official",
+        "type": {
+          "coding": [ {
+            "code": "dfacd928-0370-4315-99d7-6ec1c9f7ae76"
+          } ],
+          "text": "OpenMRS ID"
+        },
+        "value": "MGFHFJ"
+      }, {
+        "id": "a4e760d2-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "05ee9cf4-7242-4a17-b4d4-00f707265c8a"
+          } ],
+          "text": "Unique Patient Number"
+        },
+        "value": "1533900128"
+      }, {
+        "id": "82d5b36f-cd36-4519-9650-20aa7c12c5f9",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "49af6cdc-7968-4abb-bf46-de10d7f4859f"
+          } ],
+          "text": "National ID"
+        },
+        "value": "98797997"
+      }, {
+        "id": "b4e3197e-39f7-4716-b238-9f93c30fb114",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "f85081e2-b4be-4e48-b3a4-7994b69bb101"
+          } ],
+          "text": "National Unique patient identifier"
+        },
+        "value": "0000007070070"
+      } ],
+      "active": true,
+      "name": [ {
+        "id": "a4e74ca2-1d2c-11eb-8abc-0242e805c5c5",
+        "family": "Maringich",
+        "given": [ "Maringich", "Maringich" ]
+      } ],
+      "gender": "male",
+      "birthDate": "1977-03-02",
+      "deceasedBoolean": false,
+      "address": [ {
+        "id": "a4e75493-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/address",
+          "extension": [ {
+            "url": "http://fhir.openmrs.org/ext/address#address1",
+            "valueString": "67 address1"
+          }, {
+            "url": "http://fhir.openmrs.org/ext/address#address4",
+            "valueString": "Marmanet"
+          } ]
+        } ],
+        "use": "home",
+        "city": "karandi",
+        "district": "Laikipia",
+        "state": "Laikipia West"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/a4e744c3-1d2c-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ea02a7a8-16b3-4597-8e12-80ef5e95a3d8",
+      "meta": {
+        "versionId": "1684335821000",
+        "lastUpdated": "2023-05-17T15:03:41.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "160540AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Method of enrollment"
+        }, {
+          "system": "http://loinc.org",
+          "code": "45252-4"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "160540"
+        } ],
+        "text": "Method of enrollment"
+      },
+      "subject": {
+        "reference": "Patient/a4e744c3-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Maringich Maringich Maringich (OpenMRS ID: MGFHFJ)"
+      },
+      "encounter": {
+        "reference": "Encounter/f1a199c6-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2014-07-14T00:00:00+00:00",
+      "issued": "2023-05-17T15:03:41.000+00:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "160542AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Outpatient department"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "160542"
+        }, {
+          "system": "http://snomed.info/sct/",
+          "code": "33022008"
+        } ],
+        "text": "Outpatient department"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/f1a199c6-1d2c-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "6562fde3-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347867000",
+        "lastUpdated": "2020-11-02T20:11:07.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "1193AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "CURRENT DRUGS USED"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "1193"
+        } ],
+        "text": "CURRENT DRUGS USED"
+      },
+      "subject": {
+        "reference": "Patient/a4e744c3-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Maringich Maringich Maringich (OpenMRS ID: MGFHFJ)"
+      },
+      "encounter": {
+        "reference": "Encounter/6562bf25-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2014-07-14T00:00:00+00:00",
+      "issued": "2020-11-02T20:11:07.000+00:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "1652AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "LAMIVUDINE / NEVIRAPINE / ZIDOVUDINE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "1652"
+        }, {
+          "system": "http://snomed.info/sct/",
+          "code": "424990009"
+        } ],
+        "text": "LAMIVUDINE / NEVIRAPINE / ZIDOVUDINE"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/6562bf25-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e32eb0e5-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347648000",
+        "lastUpdated": "2020-11-02T20:07:28.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a4e744c3-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Maringich Maringich Maringich (OpenMRS ID: MGFHFJ)"
+      },
+      "encounter": {
+        "reference": "Encounter/e32e99af-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2014-07-14T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:28.000+00:00",
+      "valueDateTime": "2014-08-13T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e32e99af-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e333ac31-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347648000",
+        "lastUpdated": "2020-11-02T20:07:28.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a4e744c3-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Maringich Maringich Maringich (OpenMRS ID: MGFHFJ)"
+      },
+      "encounter": {
+        "reference": "Encounter/e333a481-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2014-08-04T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:28.000+00:00",
+      "valueDateTime": "2014-09-03T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e333a481-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e33f3273-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347648000",
+        "lastUpdated": "2020-11-02T20:07:28.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a4e744c3-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Maringich Maringich Maringich (OpenMRS ID: MGFHFJ)"
+      },
+      "encounter": {
+        "reference": "Encounter/e33f2588-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2016-06-08T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:28.000+00:00",
+      "valueDateTime": "2016-09-06T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e33f2588-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e3444771-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347648000",
+        "lastUpdated": "2020-11-02T20:07:28.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a4e744c3-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Maringich Maringich Maringich (OpenMRS ID: MGFHFJ)"
+      },
+      "encounter": {
+        "reference": "Encounter/e34437d5-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2016-08-03T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:28.000+00:00",
+      "valueDateTime": "2016-10-02T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e34437d5-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e3512808-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347648000",
+        "lastUpdated": "2020-11-02T20:07:28.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a4e744c3-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Maringich Maringich Maringich (OpenMRS ID: MGFHFJ)"
+      },
+      "encounter": {
+        "reference": "Encounter/e3510def-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-06-27T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:28.000+00:00",
+      "valueDateTime": "2017-08-26T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e3510def-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e3561fbe-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347648000",
+        "lastUpdated": "2020-11-02T20:07:28.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a4e744c3-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Maringich Maringich Maringich (OpenMRS ID: MGFHFJ)"
+      },
+      "encounter": {
+        "reference": "Encounter/e3560657-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-09-26T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:28.000+00:00",
+      "valueDateTime": "2017-11-25T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e3560657-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e35b44d2-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347649000",
+        "lastUpdated": "2020-11-02T20:07:29.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a4e744c3-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Maringich Maringich Maringich (OpenMRS ID: MGFHFJ)"
+      },
+      "encounter": {
+        "reference": "Encounter/e35b2e04-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-02-27T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:29.000+00:00",
+      "valueDateTime": "2018-05-28T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e35b2e04-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e3605c7f-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347649000",
+        "lastUpdated": "2020-11-02T20:07:29.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a4e744c3-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Maringich Maringich Maringich (OpenMRS ID: MGFHFJ)"
+      },
+      "encounter": {
+        "reference": "Encounter/e3604427-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-05-28T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:29.000+00:00",
+      "valueDateTime": "2018-07-27T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e3604427-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e36bc904-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347649000",
+        "lastUpdated": "2020-11-02T20:07:29.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a4e744c3-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Maringich Maringich Maringich (OpenMRS ID: MGFHFJ)"
+      },
+      "encounter": {
+        "reference": "Encounter/e36bb1e4-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-07-24T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:29.000+00:00",
+      "valueDateTime": "2019-01-24T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e36bb1e4-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e370f213-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347649000",
+        "lastUpdated": "2020-11-02T20:07:29.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a4e744c3-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Maringich Maringich Maringich (OpenMRS ID: MGFHFJ)"
+      },
+      "encounter": {
+        "reference": "Encounter/e370d1ce-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2019-01-25T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:29.000+00:00",
+      "valueDateTime": "2019-06-24T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e370d1ce-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e379dfea-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347649000",
+        "lastUpdated": "2020-11-02T20:07:29.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a4e744c3-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Maringich Maringich Maringich (OpenMRS ID: MGFHFJ)"
+      },
+      "encounter": {
+        "reference": "Encounter/e379b299-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-04-01T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:29.000+00:00",
+      "valueDateTime": "2020-07-21T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e379b299-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e37f0499-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347649000",
+        "lastUpdated": "2020-11-02T20:07:29.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a4e744c3-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Maringich Maringich Maringich (OpenMRS ID: MGFHFJ)"
+      },
+      "encounter": {
+        "reference": "Encounter/e37ed75b-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-07-21T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:29.000+00:00",
+      "valueDateTime": "2021-02-06T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e37ed75b-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e3841614-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347649000",
+        "lastUpdated": "2020-11-02T20:07:29.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a4e744c3-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Maringich Maringich Maringich (OpenMRS ID: MGFHFJ)"
+      },
+      "encounter": {
+        "reference": "Encounter/e383e9e6-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-07-29T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:29.000+00:00",
+      "valueDateTime": "2021-02-14T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e383e9e6-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ebfd8bea-234c-4b58-985e-9fcc4e8508ca",
+      "meta": {
+        "versionId": "1610464264000",
+        "lastUpdated": "2021-01-12T15:11:04.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a4e744c3-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Maringich Maringich Maringich (OpenMRS ID: MGFHFJ)"
+      },
+      "encounter": {
+        "reference": "Encounter/3ab4105a-d85a-4b1b-a890-744fc47fd40f",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-01-12T15:09:32+00:00",
+      "issued": "2021-01-12T15:11:04.000+00:00",
+      "valueDateTime": "2021-05-20T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/3ab4105a-d85a-4b1b-a890-744fc47fd40f"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "3b8e90dd-a6bd-4b8d-b2a4-284a3d83a64b",
+      "meta": {
+        "versionId": "1621507019000",
+        "lastUpdated": "2021-05-20T10:36:59.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a4e744c3-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Maringich Maringich Maringich (OpenMRS ID: MGFHFJ)"
+      },
+      "encounter": {
+        "reference": "Encounter/304ad554-7514-41c6-ba05-b11514f122d3",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-05-20T10:36:29+00:00",
+      "issued": "2021-05-20T10:36:59.000+00:00",
+      "valueDateTime": "2021-11-18T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/304ad554-7514-41c6-ba05-b11514f122d3"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "f1c421c1-c327-4b0f-8001-1b86c489f303",
+      "meta": {
+        "versionId": "1638780644000",
+        "lastUpdated": "2021-12-06T08:50:44.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a4e744c3-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Maringich Maringich Maringich (OpenMRS ID: MGFHFJ)"
+      },
+      "encounter": {
+        "reference": "Encounter/3de1e195-b4d5-48f6-b313-0fc83b6d9e50",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-12-06T08:49:53+00:00",
+      "issued": "2021-12-06T08:50:44.000+00:00",
+      "valueDateTime": "2022-02-23T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/3de1e195-b4d5-48f6-b313-0fc83b6d9e50"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "36441d4f-a897-4cdf-89ca-43ae2270ce4b",
+      "meta": {
+        "versionId": "1646131420000",
+        "lastUpdated": "2022-03-01T10:43:40.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a4e744c3-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Maringich Maringich Maringich (OpenMRS ID: MGFHFJ)"
+      },
+      "encounter": {
+        "reference": "Encounter/ade21745-9d7d-40d9-a92f-b86f8a8517ae",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2022-02-22T10:43:00+00:00",
+      "issued": "2022-03-01T10:43:40.000+00:00",
+      "valueDateTime": "2022-06-23T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/ade21745-9d7d-40d9-a92f-b86f8a8517ae"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "40672665-02ce-48b0-9096-3258fcf5e0fb",
+      "meta": {
+        "versionId": "1655991283000",
+        "lastUpdated": "2022-06-23T13:34:43.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a4e744c3-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Maringich Maringich Maringich (OpenMRS ID: MGFHFJ)"
+      },
+      "encounter": {
+        "reference": "Encounter/1a158f10-053b-4635-9648-c5ed65bda344",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2022-06-23T13:32:46+00:00",
+      "issued": "2022-06-23T13:34:43.000+00:00",
+      "valueDateTime": "2022-11-22T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/1a158f10-053b-4635-9648-c5ed65bda344"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "c09c9ac7-6bf0-40d1-9f8a-e2b1cee83c3f",
+      "meta": {
+        "versionId": "1669380947000",
+        "lastUpdated": "2022-11-25T12:55:47.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a4e744c3-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Maringich Maringich Maringich (OpenMRS ID: MGFHFJ)"
+      },
+      "encounter": {
+        "reference": "Encounter/d6688623-b86a-4276-b120-c64873dea6c1",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2022-11-22T12:54:00+00:00",
+      "issued": "2022-11-25T12:55:47.000+00:00",
+      "valueDateTime": "2023-02-16T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/d6688623-b86a-4276-b120-c64873dea6c1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "62025ef5-49be-49a9-817a-514bfa6c680b",
+      "meta": {
+        "versionId": "1677586089000",
+        "lastUpdated": "2023-02-28T12:08:09.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a4e744c3-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Maringich Maringich Maringich (OpenMRS ID: MGFHFJ)"
+      },
+      "encounter": {
+        "reference": "Encounter/a890ba5a-9106-4a15-8642-a615f92172ea",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2023-02-28T12:06:45+00:00",
+      "issued": "2023-02-28T12:08:09.000+00:00",
+      "valueDateTime": "2023-08-23T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/a890ba5a-9106-4a15-8642-a615f92172ea"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "88a1e6cb-0cf7-4fb0-bf49-1b65a340c71e",
+      "meta": {
+        "versionId": "1692784555000",
+        "lastUpdated": "2023-08-23T09:55:55.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a4e744c3-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Maringich Maringich Maringich (OpenMRS ID: MGFHFJ)"
+      },
+      "encounter": {
+        "reference": "Encounter/708784ce-14bf-4894-8728-ccbc22c4e1b1",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2023-08-23T09:53:51+00:00",
+      "issued": "2023-08-23T09:55:55.000+00:00",
+      "valueDateTime": "2023-11-16T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/708784ce-14bf-4894-8728-ccbc22c4e1b1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "6ef8cd2e-ba5d-4f22-bb5b-fd7117a4e152",
+      "meta": {
+        "versionId": "1700152220000",
+        "lastUpdated": "2023-11-16T16:30:20.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a4e744c3-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Maringich Maringich Maringich (OpenMRS ID: MGFHFJ)"
+      },
+      "encounter": {
+        "reference": "Encounter/0237a1aa-ab03-4a83-af07-9e6cf8784294",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2023-11-16T16:27:23+00:00",
+      "issued": "2023-11-16T16:30:20.000+00:00",
+      "valueDateTime": "2024-02-13T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/0237a1aa-ab03-4a83-af07-9e6cf8784294"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "a4f1ca9c-1d2c-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347114000",
+        "lastUpdated": "2020-11-02T19:58:34.000+00:00"
+      },
+      "identifier": [ {
+        "id": "a4ff974e-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "official",
+        "type": {
+          "coding": [ {
+            "code": "dfacd928-0370-4315-99d7-6ec1c9f7ae76"
+          } ],
+          "text": "OpenMRS ID"
+        },
+        "value": "MGFHGG"
+      }, {
+        "id": "a4f1e8c6-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "05ee9cf4-7242-4a17-b4d4-00f707265c8a"
+          } ],
+          "text": "Unique Patient Number"
+        },
+        "value": "15339000177"
+      } ],
+      "active": true,
+      "name": [ {
+        "id": "a4f1d72c-1d2c-11eb-8abc-0242e805c5c5",
+        "family": "ROSE",
+        "given": [ "ROSE", "ROSE" ]
+      } ],
+      "gender": "male",
+      "birthDate": "1977-08-27",
+      "deceasedBoolean": false,
+      "address": [ {
+        "id": "a4f1df76-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/address",
+          "extension": [ {
+            "url": "http://fhir.openmrs.org/ext/address#address1",
+            "valueString": "68 address1"
+          } ]
+        } ],
+        "use": "old"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/a4f1ca9c-1d2c-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "331c0230-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347353000",
+        "lastUpdated": "2020-11-02T20:02:33.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "161555AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Reason for discontinuation of program"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "161555"
+        } ],
+        "text": "Reason for discontinuation of program"
+      },
+      "subject": {
+        "reference": "Patient/a4f1ca9c-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "ROSE ROSE ROSE (OpenMRS ID: MGFHGG)"
+      },
+      "encounter": {
+        "reference": "Encounter/331330cc-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2015-07-09T00:00:00+00:00",
+      "issued": "2020-11-02T20:02:33.000+00:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "5240AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Lost to followup"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5240"
+        }, {
+          "system": "http://snomed.info/sct/",
+          "code": "399307001"
+        } ],
+        "text": "Lost to followup"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/331330cc-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "a4ffad07-1d2c-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347114000",
+        "lastUpdated": "2020-11-02T19:58:34.000+00:00"
+      },
+      "identifier": [ {
+        "id": "a509d2db-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "official",
+        "type": {
+          "coding": [ {
+            "code": "dfacd928-0370-4315-99d7-6ec1c9f7ae76"
+          } ],
+          "text": "OpenMRS ID"
+        },
+        "value": "MGFHHE"
+      }, {
+        "id": "a4ffda2b-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "05ee9cf4-7242-4a17-b4d4-00f707265c8a"
+          } ],
+          "text": "Unique Patient Number"
+        },
+        "value": "1533900133"
+      } ],
+      "active": true,
+      "name": [ {
+        "id": "a4ffc064-1d2c-11eb-8abc-0242e805c5c5",
+        "family": "MATO",
+        "given": [ "MATO", "MATO" ]
+      } ],
+      "gender": "female",
+      "birthDate": "1977-06-22",
+      "deceasedBoolean": false
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/a4ffad07-1d2c-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "0b79224a-888b-4937-9b49-981ea13b987c",
+      "meta": {
+        "versionId": "1654512379000",
+        "lastUpdated": "2022-06-06T10:46:19.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "160540AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Method of enrollment"
+        }, {
+          "system": "http://loinc.org",
+          "code": "45252-4"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "160540"
+        } ],
+        "text": "Method of enrollment"
+      },
+      "subject": {
+        "reference": "Patient/a4ffad07-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MATO MATO MATO (OpenMRS ID: MGFHHE)"
+      },
+      "encounter": {
+        "reference": "Encounter/f1b363b3-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2014-07-18T00:00:00+00:00",
+      "issued": "2022-06-06T10:46:19.000+00:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "160542AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Outpatient department"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "160542"
+        }, {
+          "system": "http://snomed.info/sct/",
+          "code": "33022008"
+        } ],
+        "text": "Outpatient department"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/f1b363b3-1d2c-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "656fa663-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347867000",
+        "lastUpdated": "2020-11-02T20:11:07.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "1193AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "CURRENT DRUGS USED"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "1193"
+        } ],
+        "text": "CURRENT DRUGS USED"
+      },
+      "subject": {
+        "reference": "Patient/a4ffad07-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MATO MATO MATO (OpenMRS ID: MGFHHE)"
+      },
+      "encounter": {
+        "reference": "Encounter/656f71ef-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2016-06-13T00:00:00+00:00",
+      "issued": "2020-11-02T20:11:07.000+00:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "164505AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Lamivudine / Efavirenz / Tenofovir"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "164505"
+        } ],
+        "text": "Lamivudine / Efavirenz / Tenofovir"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/656f71ef-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e3934b5b-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347649000",
+        "lastUpdated": "2020-11-02T20:07:29.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a4ffad07-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MATO MATO MATO (OpenMRS ID: MGFHHE)"
+      },
+      "encounter": {
+        "reference": "Encounter/e393309f-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2016-06-13T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:29.000+00:00",
+      "valueDateTime": "2016-08-12T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e393309f-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e398794d-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347649000",
+        "lastUpdated": "2020-11-02T20:07:29.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a4ffad07-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MATO MATO MATO (OpenMRS ID: MGFHHE)"
+      },
+      "encounter": {
+        "reference": "Encounter/e3985090-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-04-01T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:29.000+00:00",
+      "valueDateTime": "2020-07-20T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e3985090-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e39edcb4-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347649000",
+        "lastUpdated": "2020-11-02T20:07:29.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a4ffad07-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MATO MATO MATO (OpenMRS ID: MGFHHE)"
+      },
+      "encounter": {
+        "reference": "Encounter/e39eb15d-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-04-21T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:29.000+00:00",
+      "valueDateTime": "2020-04-09T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e39eb15d-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e3a3ebb8-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347649000",
+        "lastUpdated": "2020-11-02T20:07:29.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a4ffad07-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MATO MATO MATO (OpenMRS ID: MGFHHE)"
+      },
+      "encounter": {
+        "reference": "Encounter/e3a3bf70-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-07-28T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:29.000+00:00",
+      "valueDateTime": "2020-12-05T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e3a3bf70-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "74e6c768-8a2d-4970-8f1f-fb8ad5c81230",
+      "meta": {
+        "versionId": "1605101076000",
+        "lastUpdated": "2020-11-11T13:24:36.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a4ffad07-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MATO MATO MATO (OpenMRS ID: MGFHHE)"
+      },
+      "encounter": {
+        "reference": "Encounter/b948419b-1784-4d35-93a6-673cc06bf8a6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-11-11T13:22:46+00:00",
+      "issued": "2020-11-11T13:24:36.000+00:00",
+      "valueDateTime": "2021-01-19T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/b948419b-1784-4d35-93a6-673cc06bf8a6"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "5f7daccd-6a9d-465f-bc04-7361e4f9f66e",
+      "meta": {
+        "versionId": "1611050065000",
+        "lastUpdated": "2021-01-19T09:54:25.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a4ffad07-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MATO MATO MATO (OpenMRS ID: MGFHHE)"
+      },
+      "encounter": {
+        "reference": "Encounter/7d1bd0a8-d153-4287-a159-3c01581d7266",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-01-19T09:52:05+00:00",
+      "issued": "2021-01-19T09:54:25.000+00:00",
+      "valueDateTime": "2021-06-17T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/7d1bd0a8-d153-4287-a159-3c01581d7266"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "640fcae9-fb91-4d40-bea3-085a68c2a99c",
+      "meta": {
+        "versionId": "1623922559000",
+        "lastUpdated": "2021-06-17T09:35:59.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a4ffad07-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MATO MATO MATO (OpenMRS ID: MGFHHE)"
+      },
+      "encounter": {
+        "reference": "Encounter/9b9ca090-e5bb-4dd1-827b-81d0900955d9",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-06-17T09:33:32+00:00",
+      "issued": "2021-06-17T09:35:59.000+00:00",
+      "valueDateTime": "2021-10-12T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/9b9ca090-e5bb-4dd1-827b-81d0900955d9"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "549bb054-464a-462e-a239-a7ee156513d3",
+      "meta": {
+        "versionId": "1634034791000",
+        "lastUpdated": "2021-10-12T10:33:11.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a4ffad07-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MATO MATO MATO (OpenMRS ID: MGFHHE)"
+      },
+      "encounter": {
+        "reference": "Encounter/b51d2ea1-0b2a-48c6-9acc-104cddac941a",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-10-12T10:32:48+00:00",
+      "issued": "2021-10-12T10:33:11.000+00:00",
+      "valueDateTime": "2022-01-11T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/b51d2ea1-0b2a-48c6-9acc-104cddac941a"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "f4dedd2d-99cd-4487-8470-8c0600103a29",
+      "meta": {
+        "versionId": "1642675786000",
+        "lastUpdated": "2022-01-20T10:49:46.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a4ffad07-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MATO MATO MATO (OpenMRS ID: MGFHHE)"
+      },
+      "encounter": {
+        "reference": "Encounter/6d0e3168-b74e-4fdd-8513-82a678dc6e10",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2022-01-20T10:48:12+00:00",
+      "issued": "2022-01-20T10:49:46.000+00:00",
+      "valueDateTime": "2022-04-14T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/6d0e3168-b74e-4fdd-8513-82a678dc6e10"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "3322b068-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347353000",
+        "lastUpdated": "2020-11-02T20:02:33.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "161555AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Reason for discontinuation of program"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "161555"
+        } ],
+        "text": "Reason for discontinuation of program"
+      },
+      "subject": {
+        "reference": "Patient/a4ffad07-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MATO MATO MATO (OpenMRS ID: MGFHHE)"
+      },
+      "encounter": {
+        "reference": "Encounter/33227f9e-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2016-11-10T00:00:00+00:00",
+      "issued": "2020-11-02T20:02:33.000+00:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "5240AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Lost to followup"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5240"
+        }, {
+          "system": "http://snomed.info/sct/",
+          "code": "399307001"
+        } ],
+        "text": "Lost to followup"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/33227f9e-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "a509e465-1d2c-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347114000",
+        "lastUpdated": "2020-11-02T19:58:34.000+00:00"
+      },
+      "identifier": [ {
+        "id": "a51413fa-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "official",
+        "type": {
+          "coding": [ {
+            "code": "dfacd928-0370-4315-99d7-6ec1c9f7ae76"
+          } ],
+          "text": "OpenMRS ID"
+        },
+        "value": "MGFHJC"
+      }, {
+        "id": "a50a0716-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "05ee9cf4-7242-4a17-b4d4-00f707265c8a"
+          } ],
+          "text": "Unique Patient Number"
+        },
+        "value": "15339000110"
+      } ],
+      "active": true,
+      "name": [ {
+        "id": "a509efe6-1d2c-11eb-8abc-0242e805c5c5",
+        "family": "AGNES",
+        "given": [ "AGNES", "AGNES" ]
+      } ],
+      "gender": "female",
+      "birthDate": "1978-08-18",
+      "deceasedDateTime": "2016-05-16T00:00:00+00:00",
+      "address": [ {
+        "id": "a509fbae-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/address",
+          "extension": [ {
+            "url": "http://fhir.openmrs.org/ext/address#address1",
+            "valueString": "70 address1"
+          } ]
+        } ],
+        "use": "old"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/a509e465-1d2c-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "65763b9f-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347867000",
+        "lastUpdated": "2020-11-02T20:11:07.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "1193AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "CURRENT DRUGS USED"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "1193"
+        } ],
+        "text": "CURRENT DRUGS USED"
+      },
+      "subject": {
+        "reference": "Patient/a509e465-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "AGNES AGNES AGNES (OpenMRS ID: MGFHJC)"
+      },
+      "encounter": {
+        "reference": "Encounter/6575fbc8-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2015-02-09T00:00:00+00:00",
+      "issued": "2020-11-02T20:11:07.000+00:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "164505AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Lamivudine / Efavirenz / Tenofovir"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "164505"
+        } ],
+        "text": "Lamivudine / Efavirenz / Tenofovir"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/6575fbc8-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e55a1353-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347652000",
+        "lastUpdated": "2020-11-02T20:07:32.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a509e465-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "AGNES AGNES AGNES (OpenMRS ID: MGFHJC)"
+      },
+      "encounter": {
+        "reference": "Encounter/e3aa2d66-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2015-02-09T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:32.000+00:00",
+      "valueDateTime": "2015-03-11T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e3aa2d66-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e561bd68-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347652000",
+        "lastUpdated": "2020-11-02T20:07:32.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a509e465-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "AGNES AGNES AGNES (OpenMRS ID: MGFHJC)"
+      },
+      "encounter": {
+        "reference": "Encounter/e56195b3-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2015-03-30T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:32.000+00:00",
+      "valueDateTime": "2015-04-29T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e56195b3-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "33291a9a-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347353000",
+        "lastUpdated": "2020-11-02T20:02:33.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "161555AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Reason for discontinuation of program"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "161555"
+        } ],
+        "text": "Reason for discontinuation of program"
+      },
+      "subject": {
+        "reference": "Patient/a509e465-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "AGNES AGNES AGNES (OpenMRS ID: MGFHJC)"
+      },
+      "encounter": {
+        "reference": "Encounter/3328ec7f-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2016-05-16T00:00:00+00:00",
+      "issued": "2020-11-02T20:02:33.000+00:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "160034AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Died"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "160034"
+        }, {
+          "system": "http://snomed.info/sct/",
+          "code": "397709008"
+        } ],
+        "text": "Died"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/3328ec7f-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "a5142686-1d2c-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347115000",
+        "lastUpdated": "2020-11-02T19:58:35.000+00:00"
+      },
+      "identifier": [ {
+        "id": "a52987d4-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "official",
+        "type": {
+          "coding": [ {
+            "code": "dfacd928-0370-4315-99d7-6ec1c9f7ae76"
+          } ],
+          "text": "OpenMRS ID"
+        },
+        "value": "MGFHK7"
+      }, {
+        "id": "a51440ea-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "05ee9cf4-7242-4a17-b4d4-00f707265c8a"
+          } ],
+          "text": "Unique Patient Number"
+        },
+        "value": "15339000108"
+      } ],
+      "active": true,
+      "name": [ {
+        "id": "a5143182-1d2c-11eb-8abc-0242e805c5c5",
+        "family": "biko",
+        "given": [ "biko", "biko" ]
+      } ],
+      "gender": "female",
+      "birthDate": "1986-06-22",
+      "deceasedBoolean": false,
+      "address": [ {
+        "id": "a5143806-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/address",
+          "extension": [ {
+            "url": "http://fhir.openmrs.org/ext/address#address1",
+            "valueString": "71 address1"
+          } ]
+        } ],
+        "use": "old"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/a5142686-1d2c-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "3335ca50-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347353000",
+        "lastUpdated": "2020-11-02T20:02:33.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "161555AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Reason for discontinuation of program"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "161555"
+        } ],
+        "text": "Reason for discontinuation of program"
+      },
+      "subject": {
+        "reference": "Patient/a5142686-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "biko biko biko (OpenMRS ID: MGFHK7)"
+      },
+      "encounter": {
+        "reference": "Encounter/33359e55-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2015-07-28T00:00:00+00:00",
+      "issued": "2020-11-02T20:02:33.000+00:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "5240AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Lost to followup"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5240"
+        }, {
+          "system": "http://snomed.info/sct/",
+          "code": "399307001"
+        } ],
+        "text": "Lost to followup"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/33359e55-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "a529949c-1d2c-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347115000",
+        "lastUpdated": "2020-11-02T19:58:35.000+00:00"
+      },
+      "identifier": [ {
+        "id": "a539fe9c-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "official",
+        "type": {
+          "coding": [ {
+            "code": "dfacd928-0370-4315-99d7-6ec1c9f7ae76"
+          } ],
+          "text": "OpenMRS ID"
+        },
+        "value": "MGFHL4"
+      }, {
+        "id": "a529b19f-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "05ee9cf4-7242-4a17-b4d4-00f707265c8a"
+          } ],
+          "text": "Unique Patient Number"
+        },
+        "value": "1510001316"
+      }, {
+        "id": "b80693e9-667f-4ffb-8fbd-2b52e0aa451c",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "49af6cdc-7968-4abb-bf46-de10d7f4859f"
+          } ],
+          "text": "National ID"
+        },
+        "value": "9677869"
+      }, {
+        "id": "dab1e425-8f11-4154-8fa9-56705e8612bd",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "f85081e2-b4be-4e48-b3a4-7994b69bb101"
+          } ],
+          "text": "National Unique patient identifier"
+        },
+        "value": "0000007009007"
+      } ],
+      "active": true,
+      "name": [ {
+        "id": "a5299cb0-1d2c-11eb-8abc-0242e805c5c5",
+        "family": "WACHIRA",
+        "given": [ "WACHIRA", "WACHIRA" ]
+      } ],
+      "gender": "male",
+      "birthDate": "1967-06-14",
+      "deceasedBoolean": false,
+      "address": [ {
+        "id": "a529a4eb-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/address",
+          "extension": [ {
+            "url": "http://fhir.openmrs.org/ext/address#address1",
+            "valueString": "72 address1"
+          }, {
+            "url": "http://fhir.openmrs.org/ext/address#address2",
+            "valueString": "KAICHAKUN"
+          }, {
+            "url": "http://fhir.openmrs.org/ext/address#address4",
+            "valueString": "Marmanet"
+          } ]
+        } ],
+        "use": "home",
+        "city": "Kaichakun",
+        "district": "Laikipia",
+        "state": "Laikipia West"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/a529949c-1d2c-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "657c86b8-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347867000",
+        "lastUpdated": "2020-11-02T20:11:07.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "1193AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "CURRENT DRUGS USED"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "1193"
+        } ],
+        "text": "CURRENT DRUGS USED"
+      },
+      "subject": {
+        "reference": "Patient/a529949c-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "WACHIRA WACHIRA WACHIRA (OpenMRS ID: MGFHL4)"
+      },
+      "encounter": {
+        "reference": "Encounter/657c4714-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-04-08T00:00:00+00:00",
+      "issued": "2020-11-02T20:11:07.000+00:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "9fb85385-b4fb-468c-b7c1-22f75834b4b0",
+          "display": "Tenofovir / Lamivudine / Dolutegravir"
+        } ],
+        "text": "Tenofovir / Lamivudine / Dolutegravir"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/657c4714-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e5777a1a-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347652000",
+        "lastUpdated": "2020-11-02T20:07:32.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a529949c-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "WACHIRA WACHIRA WACHIRA (OpenMRS ID: MGFHL4)"
+      },
+      "encounter": {
+        "reference": "Encounter/e5774385-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-04-08T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:32.000+00:00",
+      "valueDateTime": "2020-07-22T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e5774385-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e57da752-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347652000",
+        "lastUpdated": "2020-11-02T20:07:32.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a529949c-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "WACHIRA WACHIRA WACHIRA (OpenMRS ID: MGFHL4)"
+      },
+      "encounter": {
+        "reference": "Encounter/e57d9e70-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-07-30T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:32.000+00:00",
+      "valueDateTime": "2020-08-09T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e57d9e70-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e587dc1b-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347652000",
+        "lastUpdated": "2020-11-02T20:07:32.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a529949c-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "WACHIRA WACHIRA WACHIRA (OpenMRS ID: MGFHL4)"
+      },
+      "encounter": {
+        "reference": "Encounter/e587d4e4-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-10-02T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:32.000+00:00",
+      "valueDateTime": "2020-11-01T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e587d4e4-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e58e2f84-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347652000",
+        "lastUpdated": "2020-11-02T20:07:32.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a529949c-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "WACHIRA WACHIRA WACHIRA (OpenMRS ID: MGFHL4)"
+      },
+      "encounter": {
+        "reference": "Encounter/e58e26b0-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-10-27T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:32.000+00:00",
+      "valueDateTime": "2021-02-04T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e58e26b0-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "dc4f3559-b303-481b-9a68-c2fcc2a542fc",
+      "meta": {
+        "versionId": "1611159305000",
+        "lastUpdated": "2021-01-20T16:15:05.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a529949c-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "WACHIRA WACHIRA WACHIRA (OpenMRS ID: MGFHL4)"
+      },
+      "encounter": {
+        "reference": "Encounter/9157baa4-9384-4a08-9fd5-3b967ae331ca",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-01-20T16:13:56+00:00",
+      "issued": "2021-01-20T16:15:05.000+00:00",
+      "valueDateTime": "2021-04-27T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/9157baa4-9384-4a08-9fd5-3b967ae331ca"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e4331b89-a375-483c-8c26-1c9cb65a7c3f",
+      "meta": {
+        "versionId": "1619519968000",
+        "lastUpdated": "2021-04-27T10:39:28.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a529949c-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "WACHIRA WACHIRA WACHIRA (OpenMRS ID: MGFHL4)"
+      },
+      "encounter": {
+        "reference": "Encounter/3f324283-7cac-40e5-b010-b9bd007a58c2",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-04-27T10:37:59+00:00",
+      "issued": "2021-04-27T10:39:28.000+00:00",
+      "valueDateTime": "2021-08-24T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/3f324283-7cac-40e5-b010-b9bd007a58c2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "62535541-c407-49d9-9fce-9616fe9e30d9",
+      "meta": {
+        "versionId": "1641304232000",
+        "lastUpdated": "2022-01-04T13:50:32.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a529949c-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "WACHIRA WACHIRA WACHIRA (OpenMRS ID: MGFHL4)"
+      },
+      "encounter": {
+        "reference": "Encounter/63d15717-aed9-4465-8cbc-4b4b554ad5fe",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-12-01T13:49:00+00:00",
+      "issued": "2022-01-04T13:50:32.000+00:00",
+      "valueDateTime": "2022-04-30T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/63d15717-aed9-4465-8cbc-4b4b554ad5fe"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "fd74d65b-9391-4f72-a3fc-183bf6aafcd9",
+      "meta": {
+        "versionId": "1642690234000",
+        "lastUpdated": "2022-01-20T14:50:34.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a529949c-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "WACHIRA WACHIRA WACHIRA (OpenMRS ID: MGFHL4)"
+      },
+      "encounter": {
+        "reference": "Encounter/afde0255-fcfd-46fd-ba56-4ecb41a8d483",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2022-01-20T14:49:38+00:00",
+      "issued": "2022-01-20T14:50:34.000+00:00",
+      "valueDateTime": "2022-04-14T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/afde0255-fcfd-46fd-ba56-4ecb41a8d483"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "a30be50c-3c7c-44aa-874b-61cebc2762a5",
+      "meta": {
+        "versionId": "1650460059000",
+        "lastUpdated": "2022-04-20T13:07:39.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a529949c-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "WACHIRA WACHIRA WACHIRA (OpenMRS ID: MGFHL4)"
+      },
+      "encounter": {
+        "reference": "Encounter/76f121ce-f597-4914-a33d-7abb48e036f4",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2022-04-20T13:05:38+00:00",
+      "issued": "2022-04-20T13:07:39.000+00:00",
+      "valueDateTime": "2022-09-22T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/76f121ce-f597-4914-a33d-7abb48e036f4"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "861aa9d0-e8d6-44f8-be70-4b2355690ee9",
+      "meta": {
+        "versionId": "1663931664000",
+        "lastUpdated": "2022-09-23T11:14:24.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a529949c-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "WACHIRA WACHIRA WACHIRA (OpenMRS ID: MGFHL4)"
+      },
+      "encounter": {
+        "reference": "Encounter/6205cc94-d04d-4f8a-b661-901fce04e811",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2022-09-22T11:13:00+00:00",
+      "issued": "2022-09-23T11:14:24.000+00:00",
+      "valueDateTime": "2023-01-26T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/6205cc94-d04d-4f8a-b661-901fce04e811"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "22c0e516-1a4b-4f5d-8355-63dc3898ef67",
+      "meta": {
+        "versionId": "1669286862000",
+        "lastUpdated": "2022-11-24T10:47:42.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a529949c-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "WACHIRA WACHIRA WACHIRA (OpenMRS ID: MGFHL4)"
+      },
+      "encounter": {
+        "reference": "Encounter/b5cafd3e-a2eb-428d-b334-5f0ac95904fa",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2022-11-22T10:44:00+00:00",
+      "issued": "2022-11-24T10:47:42.000+00:00",
+      "valueDateTime": "2023-02-16T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/b5cafd3e-a2eb-428d-b334-5f0ac95904fa"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "4c9c65f2-39a2-4880-922b-9133c9f2ae91",
+      "meta": {
+        "versionId": "1676548617000",
+        "lastUpdated": "2023-02-16T11:56:57.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a529949c-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "WACHIRA WACHIRA WACHIRA (OpenMRS ID: MGFHL4)"
+      },
+      "encounter": {
+        "reference": "Encounter/de5e9370-ce4f-4862-8fe0-6fbd8f6292ff",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2023-02-16T11:55:44+00:00",
+      "issued": "2023-02-16T11:56:57.000+00:00",
+      "valueDateTime": "2023-08-22T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/de5e9370-ce4f-4862-8fe0-6fbd8f6292ff"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "3c4936ef-b7e8-45ef-b1d3-272a46a8958f",
+      "meta": {
+        "versionId": "1693821177000",
+        "lastUpdated": "2023-09-04T09:52:57.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a529949c-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "WACHIRA WACHIRA WACHIRA (OpenMRS ID: MGFHL4)"
+      },
+      "encounter": {
+        "reference": "Encounter/bbfce2e8-0b9c-4ef9-8303-b4d0d7627af6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2023-08-29T09:51:00+00:00",
+      "issued": "2023-09-04T09:52:57.000+00:00",
+      "valueDateTime": "2023-09-28T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/bbfce2e8-0b9c-4ef9-8303-b4d0d7627af6"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "d0eb3694-74de-4ebf-bada-3d4bbdf95207",
+      "meta": {
+        "versionId": "1695896275000",
+        "lastUpdated": "2023-09-28T10:17:55.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a529949c-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "WACHIRA WACHIRA WACHIRA (OpenMRS ID: MGFHL4)"
+      },
+      "encounter": {
+        "reference": "Encounter/be2c8044-f57b-48b3-b833-dbb2a830a802",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2023-09-28T10:15:59+00:00",
+      "issued": "2023-09-28T10:17:55.000+00:00",
+      "valueDateTime": "2023-11-24T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/be2c8044-f57b-48b3-b833-dbb2a830a802"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "a53a0b9f-1d2c-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347115000",
+        "lastUpdated": "2020-11-02T19:58:35.000+00:00"
+      },
+      "identifier": [ {
+        "id": "a544461f-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "official",
+        "type": {
+          "coding": [ {
+            "code": "dfacd928-0370-4315-99d7-6ec1c9f7ae76"
+          } ],
+          "text": "OpenMRS ID"
+        },
+        "value": "MGFHMY"
+      }, {
+        "id": "a53a2844-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "05ee9cf4-7242-4a17-b4d4-00f707265c8a"
+          } ],
+          "text": "Unique Patient Number"
+        },
+        "value": "1533900063"
+      }, {
+        "id": "86afc75b-ca11-4c43-b28b-76130df7b967",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "49af6cdc-7968-4abb-bf46-de10d7f4859f"
+          } ],
+          "text": "National ID"
+        },
+        "value": "99979667"
+      }, {
+        "id": "71f4bc0c-3d5b-4077-8fd2-c467526753f2",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "f85081e2-b4be-4e48-b3a4-7994b69bb101"
+          } ],
+          "text": "National Unique patient identifier"
+        },
+        "value": "000WN0WK0007L"
+      } ],
+      "active": true,
+      "name": [ {
+        "id": "a53a13b3-1d2c-11eb-8abc-0242e805c5c5",
+        "family": "MUGUE",
+        "given": [ "MUGUE", "MUGUE" ]
+      } ],
+      "gender": "female",
+      "birthDate": "1990-01-15",
+      "deceasedBoolean": false,
+      "address": [ {
+        "id": "a53a1bae-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/address",
+          "extension": [ {
+            "url": "http://fhir.openmrs.org/ext/address#address1",
+            "valueString": "73 address1"
+          }, {
+            "url": "http://fhir.openmrs.org/ext/address#address4",
+            "valueString": "Marmanet"
+          } ]
+        } ],
+        "use": "home",
+        "city": "karandi",
+        "district": "Laikipia",
+        "state": "Laikipia West"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/a53a0b9f-1d2c-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "17ec7038-70da-454d-a9bb-a07560645602",
+      "meta": {
+        "versionId": "1685371965000",
+        "lastUpdated": "2023-05-29T14:52:45.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "160540AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Method of enrollment"
+        }, {
+          "system": "http://loinc.org",
+          "code": "45252-4"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "160540"
+        } ],
+        "text": "Method of enrollment"
+      },
+      "subject": {
+        "reference": "Patient/a53a0b9f-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MUGUE MUGUE MUGUE (OpenMRS ID: MGFHMY)"
+      },
+      "encounter": {
+        "reference": "Encounter/f1e2591a-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-05-09T00:00:00+00:00",
+      "issued": "2023-05-29T14:52:45.000+00:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "160542AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Outpatient department"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "160542"
+        }, {
+          "system": "http://snomed.info/sct/",
+          "code": "33022008"
+        } ],
+        "text": "Outpatient department"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/f1e2591a-1d2c-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "6582f153-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347867000",
+        "lastUpdated": "2020-11-02T20:11:07.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "1193AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "CURRENT DRUGS USED"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "1193"
+        } ],
+        "text": "CURRENT DRUGS USED"
+      },
+      "subject": {
+        "reference": "Patient/a53a0b9f-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MUGUE MUGUE MUGUE (OpenMRS ID: MGFHMY)"
+      },
+      "encounter": {
+        "reference": "Encounter/6582b1d8-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2016-07-13T00:00:00+00:00",
+      "issued": "2020-11-02T20:11:07.000+00:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "1652AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "LAMIVUDINE / NEVIRAPINE / ZIDOVUDINE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "1652"
+        }, {
+          "system": "http://snomed.info/sct/",
+          "code": "424990009"
+        } ],
+        "text": "LAMIVUDINE / NEVIRAPINE / ZIDOVUDINE"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/6582b1d8-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e5a7b4c3-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347652000",
+        "lastUpdated": "2020-11-02T20:07:32.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a53a0b9f-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MUGUE MUGUE MUGUE (OpenMRS ID: MGFHMY)"
+      },
+      "encounter": {
+        "reference": "Encounter/e5a7a41e-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2016-07-13T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:32.000+00:00",
+      "valueDateTime": "2016-08-12T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e5a7a41e-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e5b4ece2-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347652000",
+        "lastUpdated": "2020-11-02T20:07:32.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a53a0b9f-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MUGUE MUGUE MUGUE (OpenMRS ID: MGFHMY)"
+      },
+      "encounter": {
+        "reference": "Encounter/e5b4d2d3-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-05-09T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:32.000+00:00",
+      "valueDateTime": "2018-06-08T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e5b4d2d3-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e5bacddb-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347652000",
+        "lastUpdated": "2020-11-02T20:07:32.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a53a0b9f-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MUGUE MUGUE MUGUE (OpenMRS ID: MGFHMY)"
+      },
+      "encounter": {
+        "reference": "Encounter/e5bab6b9-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-05-25T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:32.000+00:00",
+      "valueDateTime": "2018-06-20T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e5bab6b9-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e5c12f3a-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347653000",
+        "lastUpdated": "2020-11-02T20:07:33.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a53a0b9f-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MUGUE MUGUE MUGUE (OpenMRS ID: MGFHMY)"
+      },
+      "encounter": {
+        "reference": "Encounter/e5c12154-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-06-06T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:33.000+00:00",
+      "valueDateTime": "2018-07-06T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e5c12154-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e5cb646f-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347653000",
+        "lastUpdated": "2020-11-02T20:07:33.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a53a0b9f-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MUGUE MUGUE MUGUE (OpenMRS ID: MGFHMY)"
+      },
+      "encounter": {
+        "reference": "Encounter/e5cb4d03-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-06-08T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:33.000+00:00",
+      "valueDateTime": "2018-07-06T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e5cb4d03-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e5d1c4dd-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347653000",
+        "lastUpdated": "2020-11-02T20:07:33.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a53a0b9f-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MUGUE MUGUE MUGUE (OpenMRS ID: MGFHMY)"
+      },
+      "encounter": {
+        "reference": "Encounter/e5d1aafd-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-07-09T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:33.000+00:00",
+      "valueDateTime": "2018-07-20T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e5d1aafd-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e5d826b6-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347653000",
+        "lastUpdated": "2020-11-02T20:07:33.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a53a0b9f-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MUGUE MUGUE MUGUE (OpenMRS ID: MGFHMY)"
+      },
+      "encounter": {
+        "reference": "Encounter/e5d80b97-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-07-19T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:33.000+00:00",
+      "valueDateTime": "2018-08-18T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e5d80b97-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e5e108bd-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347653000",
+        "lastUpdated": "2020-11-02T20:07:33.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a53a0b9f-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MUGUE MUGUE MUGUE (OpenMRS ID: MGFHMY)"
+      },
+      "encounter": {
+        "reference": "Encounter/e5e0f090-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-09-12T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:33.000+00:00",
+      "valueDateTime": "2018-10-16T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e5e0f090-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e5f570b1-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347653000",
+        "lastUpdated": "2020-11-02T20:07:33.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a53a0b9f-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MUGUE MUGUE MUGUE (OpenMRS ID: MGFHMY)"
+      },
+      "encounter": {
+        "reference": "Encounter/e5f554d5-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-10-16T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:33.000+00:00",
+      "valueDateTime": "2018-11-15T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e5f554d5-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e5fbd15d-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347653000",
+        "lastUpdated": "2020-11-02T20:07:33.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a53a0b9f-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MUGUE MUGUE MUGUE (OpenMRS ID: MGFHMY)"
+      },
+      "encounter": {
+        "reference": "Encounter/e5fbba30-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-12-18T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:33.000+00:00",
+      "valueDateTime": "2019-01-17T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e5fbba30-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e6022228-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347653000",
+        "lastUpdated": "2020-11-02T20:07:33.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a53a0b9f-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MUGUE MUGUE MUGUE (OpenMRS ID: MGFHMY)"
+      },
+      "encounter": {
+        "reference": "Encounter/e6020b09-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2019-01-16T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:33.000+00:00",
+      "valueDateTime": "2019-02-13T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e6020b09-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e608787c-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347653000",
+        "lastUpdated": "2020-11-02T20:07:33.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a53a0b9f-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MUGUE MUGUE MUGUE (OpenMRS ID: MGFHMY)"
+      },
+      "encounter": {
+        "reference": "Encounter/e6086a67-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2019-01-17T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:33.000+00:00",
+      "valueDateTime": "2019-02-16T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e6086a67-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e60eef0f-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347653000",
+        "lastUpdated": "2020-11-02T20:07:33.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a53a0b9f-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MUGUE MUGUE MUGUE (OpenMRS ID: MGFHMY)"
+      },
+      "encounter": {
+        "reference": "Encounter/e60ed4ec-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2019-02-13T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:33.000+00:00",
+      "valueDateTime": "2019-03-15T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e60ed4ec-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e6153b56-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347653000",
+        "lastUpdated": "2020-11-02T20:07:33.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a53a0b9f-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MUGUE MUGUE MUGUE (OpenMRS ID: MGFHMY)"
+      },
+      "encounter": {
+        "reference": "Encounter/e6152e2c-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2019-05-07T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:33.000+00:00",
+      "valueDateTime": "2019-06-06T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e6152e2c-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e61bb120-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347653000",
+        "lastUpdated": "2020-11-02T20:07:33.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a53a0b9f-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MUGUE MUGUE MUGUE (OpenMRS ID: MGFHMY)"
+      },
+      "encounter": {
+        "reference": "Encounter/e61ba659-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-03-11T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:33.000+00:00",
+      "valueDateTime": "2020-04-10T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e61ba659-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e622140e-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347653000",
+        "lastUpdated": "2020-11-02T20:07:33.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a53a0b9f-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MUGUE MUGUE MUGUE (OpenMRS ID: MGFHMY)"
+      },
+      "encounter": {
+        "reference": "Encounter/e621ea7d-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-05-21T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:33.000+00:00",
+      "valueDateTime": "2020-08-29T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e621ea7d-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e6286eca-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347653000",
+        "lastUpdated": "2020-11-02T20:07:33.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a53a0b9f-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MUGUE MUGUE MUGUE (OpenMRS ID: MGFHMY)"
+      },
+      "encounter": {
+        "reference": "Encounter/e6284b35-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-08-12T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:33.000+00:00",
+      "valueDateTime": "2020-10-07T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e6284b35-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e63296fa-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347653000",
+        "lastUpdated": "2020-11-02T20:07:33.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a53a0b9f-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MUGUE MUGUE MUGUE (OpenMRS ID: MGFHMY)"
+      },
+      "encounter": {
+        "reference": "Encounter/e6328973-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-09-01T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:33.000+00:00",
+      "valueDateTime": "2020-09-13T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e6328973-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e638e9c8-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347653000",
+        "lastUpdated": "2020-11-02T20:07:33.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a53a0b9f-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MUGUE MUGUE MUGUE (OpenMRS ID: MGFHMY)"
+      },
+      "encounter": {
+        "reference": "Encounter/e638e0be-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-09-16T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:33.000+00:00",
+      "valueDateTime": "2020-10-26T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e638e0be-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e63f6600-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347653000",
+        "lastUpdated": "2020-11-02T20:07:33.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a53a0b9f-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MUGUE MUGUE MUGUE (OpenMRS ID: MGFHMY)"
+      },
+      "encounter": {
+        "reference": "Encounter/e63f3c21-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-10-07T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:33.000+00:00",
+      "valueDateTime": "2020-11-10T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e63f3c21-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "14305f72-c99d-4fcc-b2fd-94b259cc8bc5",
+      "meta": {
+        "versionId": "1605102464000",
+        "lastUpdated": "2020-11-11T13:47:44.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a53a0b9f-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MUGUE MUGUE MUGUE (OpenMRS ID: MGFHMY)"
+      },
+      "encounter": {
+        "reference": "Encounter/57a395d9-3f88-4808-8352-1cd415f1b0a6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-11-11T13:44:07+00:00",
+      "issued": "2020-11-11T13:47:44.000+00:00",
+      "valueDateTime": "2021-01-19T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/57a395d9-3f88-4808-8352-1cd415f1b0a6"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ae945b3f-51e8-4c52-bebe-9caac8057271",
+      "meta": {
+        "versionId": "1611064245000",
+        "lastUpdated": "2021-01-19T13:50:45.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a53a0b9f-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MUGUE MUGUE MUGUE (OpenMRS ID: MGFHMY)"
+      },
+      "encounter": {
+        "reference": "Encounter/6d5cd5fa-99bf-47ff-a9ca-896208744fa6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-01-19T13:47:14+00:00",
+      "issued": "2021-01-19T13:50:45.000+00:00",
+      "valueDateTime": "2021-02-11T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/6d5cd5fa-99bf-47ff-a9ca-896208744fa6"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e3c73ee6-e65b-4e5c-93a2-35a1407e06a5",
+      "meta": {
+        "versionId": "1613140699000",
+        "lastUpdated": "2021-02-12T14:38:19.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a53a0b9f-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MUGUE MUGUE MUGUE (OpenMRS ID: MGFHMY)"
+      },
+      "encounter": {
+        "reference": "Encounter/f6335cb8-ea2b-4548-96ca-8902421f70bb",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-02-12T14:37:55+00:00",
+      "issued": "2021-02-12T14:38:19.000+00:00",
+      "valueDateTime": "2021-03-11T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/f6335cb8-ea2b-4548-96ca-8902421f70bb"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "84379bf5-0a0e-41fc-b63c-8790e508ac71",
+      "meta": {
+        "versionId": "1616079178000",
+        "lastUpdated": "2021-03-18T14:52:58.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a53a0b9f-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MUGUE MUGUE MUGUE (OpenMRS ID: MGFHMY)"
+      },
+      "encounter": {
+        "reference": "Encounter/6499ad07-e306-463a-bcfc-30c183442987",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-03-11T14:52:00+00:00",
+      "issued": "2021-03-18T14:52:58.000+00:00",
+      "valueDateTime": "2021-04-07T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/6499ad07-e306-463a-bcfc-30c183442987"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "9908bc4f-6bf3-40e0-84d4-9d1b598a0eb5",
+      "meta": {
+        "versionId": "1618577859000",
+        "lastUpdated": "2021-04-16T12:57:39.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a53a0b9f-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MUGUE MUGUE MUGUE (OpenMRS ID: MGFHMY)"
+      },
+      "encounter": {
+        "reference": "Encounter/7f1e7015-f3e7-43a8-abac-fffd446a6b63",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-04-16T12:56:19+00:00",
+      "issued": "2021-04-16T12:57:39.000+00:00",
+      "valueDateTime": "2021-06-09T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/7f1e7015-f3e7-43a8-abac-fffd446a6b63"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "fd5675ea-60f8-45a7-a7c8-b940c3f8dbe9",
+      "meta": {
+        "versionId": "1623251426000",
+        "lastUpdated": "2021-06-09T15:10:26.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a53a0b9f-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MUGUE MUGUE MUGUE (OpenMRS ID: MGFHMY)"
+      },
+      "encounter": {
+        "reference": "Encounter/7e894133-1303-4545-bfed-6c046d40a759",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-06-09T15:08:40+00:00",
+      "issued": "2021-06-09T15:10:26.000+00:00",
+      "valueDateTime": "2021-07-07T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/7e894133-1303-4545-bfed-6c046d40a759"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "cab67570-a8dd-409a-a82b-5d6259746ec1",
+      "meta": {
+        "versionId": "1625754165000",
+        "lastUpdated": "2021-07-08T14:22:45.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a53a0b9f-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MUGUE MUGUE MUGUE (OpenMRS ID: MGFHMY)"
+      },
+      "encounter": {
+        "reference": "Encounter/8ef17614-63b6-458e-8271-f7a5748258be",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-07-08T14:22:14+00:00",
+      "issued": "2021-07-08T14:22:45.000+00:00",
+      "valueDateTime": "2021-08-11T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/8ef17614-63b6-458e-8271-f7a5748258be"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "77f9a1cf-0b7b-498a-b250-6c8c37484aba",
+      "meta": {
+        "versionId": "1628695482000",
+        "lastUpdated": "2021-08-11T15:24:42.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a53a0b9f-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MUGUE MUGUE MUGUE (OpenMRS ID: MGFHMY)"
+      },
+      "encounter": {
+        "reference": "Encounter/c4a0aab3-cc67-40c7-8736-b79dee47186a",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-08-11T15:23:30+00:00",
+      "issued": "2021-08-11T15:24:42.000+00:00",
+      "valueDateTime": "2021-11-11T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/c4a0aab3-cc67-40c7-8736-b79dee47186a"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "55eda873-ad0e-40f2-97a7-a9f67cb5525a",
+      "meta": {
+        "versionId": "1637573260000",
+        "lastUpdated": "2021-11-22T09:27:40.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a53a0b9f-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MUGUE MUGUE MUGUE (OpenMRS ID: MGFHMY)"
+      },
+      "encounter": {
+        "reference": "Encounter/bb5f53cf-df0a-459f-9445-dd9988b410d3",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-11-22T09:26:40+00:00",
+      "issued": "2021-11-22T09:27:40.000+00:00",
+      "valueDateTime": "2022-01-12T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/bb5f53cf-df0a-459f-9445-dd9988b410d3"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "4dc7ec3a-9b10-4dde-89ef-0478cd29bcd0",
+      "meta": {
+        "versionId": "1645276357000",
+        "lastUpdated": "2022-02-19T13:12:37.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a53a0b9f-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MUGUE MUGUE MUGUE (OpenMRS ID: MGFHMY)"
+      },
+      "encounter": {
+        "reference": "Encounter/1232842f-1b96-4de5-96ed-87629e606787",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2022-02-19T13:10:49+00:00",
+      "issued": "2022-02-19T13:12:37.000+00:00",
+      "valueDateTime": "2022-06-16T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/1232842f-1b96-4de5-96ed-87629e606787"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "6ff5fdb4-449d-4902-9b63-ab526bf53eba",
+      "meta": {
+        "versionId": "1655895765000",
+        "lastUpdated": "2022-06-22T11:02:45.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a53a0b9f-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MUGUE MUGUE MUGUE (OpenMRS ID: MGFHMY)"
+      },
+      "encounter": {
+        "reference": "Encounter/b0ec4837-b687-4802-afb8-6e7d540d96bd",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2022-06-06T10:59:00+00:00",
+      "issued": "2022-06-22T11:02:45.000+00:00",
+      "valueDateTime": "2022-07-12T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/b0ec4837-b687-4802-afb8-6e7d540d96bd"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "3f035f2e-684b-460a-9c55-750ef8ee0e31",
+      "meta": {
+        "versionId": "1661180634000",
+        "lastUpdated": "2022-08-22T15:03:54.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a53a0b9f-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MUGUE MUGUE MUGUE (OpenMRS ID: MGFHMY)"
+      },
+      "encounter": {
+        "reference": "Encounter/a70bc932-1663-4037-ac75-7a82c31401b4",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2022-08-22T13:47:40+00:00",
+      "issued": "2022-08-22T15:03:54.000+00:00",
+      "valueDateTime": "2022-09-06T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/a70bc932-1663-4037-ac75-7a82c31401b4"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "553bd7b8-a6b2-4f79-8c1f-a27c32d8c5bd",
+      "meta": {
+        "versionId": "1662487629000",
+        "lastUpdated": "2022-09-06T18:07:09.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a53a0b9f-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MUGUE MUGUE MUGUE (OpenMRS ID: MGFHMY)"
+      },
+      "encounter": {
+        "reference": "Encounter/26644d9f-86e2-4d62-87c2-130822770123",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2022-09-06T18:05:52+00:00",
+      "issued": "2022-09-06T18:07:09.000+00:00",
+      "valueDateTime": "2022-11-28T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/26644d9f-86e2-4d62-87c2-130822770123"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "0bc6cce7-cf23-480c-8d8e-7974a2667fb9",
+      "meta": {
+        "versionId": "1669731734000",
+        "lastUpdated": "2022-11-29T14:22:14.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a53a0b9f-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MUGUE MUGUE MUGUE (OpenMRS ID: MGFHMY)"
+      },
+      "encounter": {
+        "reference": "Encounter/06e9aed5-a9e0-4c28-8411-10fc409cbbf5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2022-11-29T14:20:10+00:00",
+      "issued": "2022-11-29T14:22:14.000+00:00",
+      "valueDateTime": "2022-12-27T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/06e9aed5-a9e0-4c28-8411-10fc409cbbf5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "28952e40-0ce7-445f-9000-3fd75bda96ad",
+      "meta": {
+        "versionId": "1672157616000",
+        "lastUpdated": "2022-12-27T16:13:36.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a53a0b9f-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MUGUE MUGUE MUGUE (OpenMRS ID: MGFHMY)"
+      },
+      "encounter": {
+        "reference": "Encounter/07438277-94ed-4124-8ef5-1d3780bd4852",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2022-12-27T16:12:07+00:00",
+      "issued": "2022-12-27T16:13:36.000+00:00",
+      "valueDateTime": "2023-01-27T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/07438277-94ed-4124-8ef5-1d3780bd4852"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "1f612893-069c-421e-8f75-e66c6e31339c",
+      "meta": {
+        "versionId": "1675689015000",
+        "lastUpdated": "2023-02-06T13:10:15.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a53a0b9f-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MUGUE MUGUE MUGUE (OpenMRS ID: MGFHMY)"
+      },
+      "encounter": {
+        "reference": "Encounter/8f9f0aac-1d6f-46ce-945a-4f4fa9754984",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2023-02-06T13:07:14+00:00",
+      "issued": "2023-02-06T13:10:15.000+00:00",
+      "valueDateTime": "2023-03-06T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/8f9f0aac-1d6f-46ce-945a-4f4fa9754984"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "6b296e4b-5406-45a4-b676-0691f6033ab9",
+      "meta": {
+        "versionId": "1678352710000",
+        "lastUpdated": "2023-03-09T09:05:10.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a53a0b9f-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MUGUE MUGUE MUGUE (OpenMRS ID: MGFHMY)"
+      },
+      "encounter": {
+        "reference": "Encounter/699051d8-be96-4875-8aa0-929f7898b7ee",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2023-03-08T09:03:00+00:00",
+      "issued": "2023-03-09T09:05:10.000+00:00",
+      "valueDateTime": "2023-04-11T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/699051d8-be96-4875-8aa0-929f7898b7ee"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "facb3b62-f9e3-41d0-96ae-72358b86d1fd",
+      "meta": {
+        "versionId": "1685357777000",
+        "lastUpdated": "2023-05-29T10:56:17.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a53a0b9f-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MUGUE MUGUE MUGUE (OpenMRS ID: MGFHMY)"
+      },
+      "encounter": {
+        "reference": "Encounter/b4e7486d-181b-411a-b55f-7fe9687a3e68",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2023-05-15T10:54:00+00:00",
+      "issued": "2023-05-29T10:56:17.000+00:00",
+      "valueDateTime": "2023-05-31T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/b4e7486d-181b-411a-b55f-7fe9687a3e68"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "229fd111-2901-4246-a86a-47b0bc938039",
+      "meta": {
+        "versionId": "1689004415000",
+        "lastUpdated": "2023-07-10T15:53:35.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a53a0b9f-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MUGUE MUGUE MUGUE (OpenMRS ID: MGFHMY)"
+      },
+      "encounter": {
+        "reference": "Encounter/9ba33500-8026-4380-b2b9-85b151beaee8",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2023-07-07T13:05:37+00:00",
+      "issued": "2023-07-10T15:53:35.000+00:00",
+      "valueDateTime": "2023-07-13T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/9ba33500-8026-4380-b2b9-85b151beaee8"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "3d8283a1-d70e-4c3a-91a2-c9f8a80a9308",
+      "meta": {
+        "versionId": "1692968457000",
+        "lastUpdated": "2023-08-25T13:00:57.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a53a0b9f-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MUGUE MUGUE MUGUE (OpenMRS ID: MGFHMY)"
+      },
+      "encounter": {
+        "reference": "Encounter/fb8a0bd6-36e4-407f-9f54-4ad9da136858",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2023-08-25T12:58:28+00:00",
+      "issued": "2023-08-25T13:00:57.000+00:00",
+      "valueDateTime": "2023-09-21T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/fb8a0bd6-36e4-407f-9f54-4ad9da136858"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "4a3e42e2-f16e-4de6-9136-8c8953b2fee2",
+      "meta": {
+        "versionId": "1695303222000",
+        "lastUpdated": "2023-09-21T13:33:42.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a53a0b9f-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MUGUE MUGUE MUGUE (OpenMRS ID: MGFHMY)"
+      },
+      "encounter": {
+        "reference": "Encounter/2b9bc115-9f2e-4868-b727-e0ea7b3e1bfd",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2023-09-21T13:32:25+00:00",
+      "issued": "2023-09-21T13:33:42.000+00:00",
+      "valueDateTime": "2023-10-12T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2b9bc115-9f2e-4868-b727-e0ea7b3e1bfd"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "bc672706-241f-4b11-9c1b-3d1338d88d5c",
+      "meta": {
+        "versionId": "1698312128000",
+        "lastUpdated": "2023-10-26T09:22:08.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a53a0b9f-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MUGUE MUGUE MUGUE (OpenMRS ID: MGFHMY)"
+      },
+      "encounter": {
+        "reference": "Encounter/e18d9797-9115-4da9-8208-7b875e3126e4",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2023-10-25T09:20:00+00:00",
+      "issued": "2023-10-26T09:22:08.000+00:00",
+      "valueDateTime": "2023-11-27T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e18d9797-9115-4da9-8208-7b875e3126e4"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "333c0313-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347353000",
+        "lastUpdated": "2020-11-02T20:02:33.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "161555AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Reason for discontinuation of program"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "161555"
+        } ],
+        "text": "Reason for discontinuation of program"
+      },
+      "subject": {
+        "reference": "Patient/a53a0b9f-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MUGUE MUGUE MUGUE (OpenMRS ID: MGFHMY)"
+      },
+      "encounter": {
+        "reference": "Encounter/333be382-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2016-11-10T00:00:00+00:00",
+      "issued": "2020-11-02T20:02:33.000+00:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "5240AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Lost to followup"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5240"
+        }, {
+          "system": "http://snomed.info/sct/",
+          "code": "399307001"
+        } ],
+        "text": "Lost to followup"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/333be382-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "a5445313-1d2c-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347115000",
+        "lastUpdated": "2020-11-02T19:58:35.000+00:00"
+      },
+      "identifier": [ {
+        "id": "a54e59f6-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "official",
+        "type": {
+          "coding": [ {
+            "code": "dfacd928-0370-4315-99d7-6ec1c9f7ae76"
+          } ],
+          "text": "OpenMRS ID"
+        },
+        "value": "MGFHNW"
+      }, {
+        "id": "a5446e14-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "05ee9cf4-7242-4a17-b4d4-00f707265c8a"
+          } ],
+          "text": "Unique Patient Number"
+        },
+        "value": "1533900211"
+      }, {
+        "id": "d6755407-e70e-4798-9e81-1fc2751522da",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "49af6cdc-7968-4abb-bf46-de10d7f4859f"
+          } ],
+          "text": "National ID"
+        },
+        "value": "9997799"
+      }, {
+        "id": "dc20b5ca-0e82-422f-992e-114d27c3e85e",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "f85081e2-b4be-4e48-b3a4-7994b69bb101"
+          } ],
+          "text": "National Unique patient identifier"
+        },
+        "value": "0000J0DZLK0WJ"
+      } ],
+      "active": true,
+      "name": [ {
+        "id": "a5445b1d-1d2c-11eb-8abc-0242e805c5c5",
+        "family": "Zeina",
+        "given": [ "Zeina", "Zeina" ]
+      } ],
+      "gender": "male",
+      "birthDate": "1966-06-01",
+      "deceasedBoolean": false,
+      "address": [ {
+        "id": "a544617d-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/address",
+          "extension": [ {
+            "url": "http://fhir.openmrs.org/ext/address#address1",
+            "valueString": "74 address1"
+          }, {
+            "url": "http://fhir.openmrs.org/ext/address#address4",
+            "valueString": "Marmanet"
+          } ]
+        } ],
+        "use": "home",
+        "city": "KARANDI",
+        "district": "Laikipia",
+        "state": "Laikipia West"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/a5445313-1d2c-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "65ab9c62-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347867000",
+        "lastUpdated": "2020-11-02T20:11:07.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "1193AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "CURRENT DRUGS USED"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "1193"
+        } ],
+        "text": "CURRENT DRUGS USED"
+      },
+      "subject": {
+        "reference": "Patient/a5445313-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Zeina Zeina Zeina (OpenMRS ID: MGFHNW)"
+      },
+      "encounter": {
+        "reference": "Encounter/65ab5d72-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2016-07-01T00:00:00+00:00",
+      "issued": "2020-11-02T20:11:07.000+00:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "164505AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Lamivudine / Efavirenz / Tenofovir"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "164505"
+        } ],
+        "text": "Lamivudine / Efavirenz / Tenofovir"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/65ab5d72-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e65a0620-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347654000",
+        "lastUpdated": "2020-11-02T20:07:34.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a5445313-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Zeina Zeina Zeina (OpenMRS ID: MGFHNW)"
+      },
+      "encounter": {
+        "reference": "Encounter/e659f5b2-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2016-07-01T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:34.000+00:00",
+      "valueDateTime": "2016-07-15T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e659f5b2-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e6643cb9-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347654000",
+        "lastUpdated": "2020-11-02T20:07:34.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a5445313-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Zeina Zeina Zeina (OpenMRS ID: MGFHNW)"
+      },
+      "encounter": {
+        "reference": "Encounter/e6642ef4-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2016-08-04T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:34.000+00:00",
+      "valueDateTime": "2016-08-18T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e6642ef4-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e66a97b5-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347654000",
+        "lastUpdated": "2020-11-02T20:07:34.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a5445313-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Zeina Zeina Zeina (OpenMRS ID: MGFHNW)"
+      },
+      "encounter": {
+        "reference": "Encounter/e66a7c38-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-07-25T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:34.000+00:00",
+      "valueDateTime": "2017-08-24T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e66a7c38-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e67101e0-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347654000",
+        "lastUpdated": "2020-11-02T20:07:34.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a5445313-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Zeina Zeina Zeina (OpenMRS ID: MGFHNW)"
+      },
+      "encounter": {
+        "reference": "Encounter/e670e3c9-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-01-26T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:34.000+00:00",
+      "valueDateTime": "2018-04-26T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e670e3c9-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e67c6c6f-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347654000",
+        "lastUpdated": "2020-11-02T20:07:34.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a5445313-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Zeina Zeina Zeina (OpenMRS ID: MGFHNW)"
+      },
+      "encounter": {
+        "reference": "Encounter/e67c545e-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-04-24T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:34.000+00:00",
+      "valueDateTime": "2018-05-25T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e67c545e-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e682c7d0-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347654000",
+        "lastUpdated": "2020-11-02T20:07:34.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a5445313-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Zeina Zeina Zeina (OpenMRS ID: MGFHNW)"
+      },
+      "encounter": {
+        "reference": "Encounter/e682ae40-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-05-25T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:34.000+00:00",
+      "valueDateTime": "2018-08-24T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e682ae40-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e689300b-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347654000",
+        "lastUpdated": "2020-11-02T20:07:34.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a5445313-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Zeina Zeina Zeina (OpenMRS ID: MGFHNW)"
+      },
+      "encounter": {
+        "reference": "Encounter/e6891702-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-08-24T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:34.000+00:00",
+      "valueDateTime": "2018-09-23T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e6891702-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e693674e-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347654000",
+        "lastUpdated": "2020-11-02T20:07:34.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a5445313-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Zeina Zeina Zeina (OpenMRS ID: MGFHNW)"
+      },
+      "encounter": {
+        "reference": "Encounter/e6934986-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-09-20T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:34.000+00:00",
+      "valueDateTime": "2018-12-20T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e6934986-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e699b1ed-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347654000",
+        "lastUpdated": "2020-11-02T20:07:34.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a5445313-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Zeina Zeina Zeina (OpenMRS ID: MGFHNW)"
+      },
+      "encounter": {
+        "reference": "Encounter/e699a519-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2019-05-14T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:34.000+00:00",
+      "valueDateTime": "2019-09-11T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e699a519-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e6a028b1-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347654000",
+        "lastUpdated": "2020-11-02T20:07:34.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a5445313-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Zeina Zeina Zeina (OpenMRS ID: MGFHNW)"
+      },
+      "encounter": {
+        "reference": "Encounter/e69ffb30-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2019-12-17T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:34.000+00:00",
+      "valueDateTime": "2020-06-24T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e69ffb30-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e6aa672d-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347654000",
+        "lastUpdated": "2020-11-02T20:07:34.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a5445313-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Zeina Zeina Zeina (OpenMRS ID: MGFHNW)"
+      },
+      "encounter": {
+        "reference": "Encounter/e6aa366a-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-06-22T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:34.000+00:00",
+      "valueDateTime": "2020-11-19T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e6aa366a-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e6b3444f-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347654000",
+        "lastUpdated": "2020-11-02T20:07:34.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a5445313-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Zeina Zeina Zeina (OpenMRS ID: MGFHNW)"
+      },
+      "encounter": {
+        "reference": "Encounter/e6b320d2-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-10-22T00:00:00+00:00",
+      "issued": "2020-11-02T20:07:34.000+00:00",
+      "valueDateTime": "2021-01-30T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e6b320d2-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "d749d5df-8820-4a76-8f23-48e52f6e0b64",
+      "meta": {
+        "versionId": "1611139758000",
+        "lastUpdated": "2021-01-20T10:49:18.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a5445313-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Zeina Zeina Zeina (OpenMRS ID: MGFHNW)"
+      },
+      "encounter": {
+        "reference": "Encounter/dd33b3f3-6703-4422-a9cc-ed62481c75ab",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-01-20T10:48:15+00:00",
+      "issued": "2021-01-20T10:49:18.000+00:00",
+      "valueDateTime": "2021-06-17T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/dd33b3f3-6703-4422-a9cc-ed62481c75ab"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "149eeeba-2951-43f9-bc8a-5c48b938c993",
+      "meta": {
+        "versionId": "1624007521000",
+        "lastUpdated": "2021-06-18T09:12:01.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a5445313-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Zeina Zeina Zeina (OpenMRS ID: MGFHNW)"
+      },
+      "encounter": {
+        "reference": "Encounter/edafcb07-023d-4714-8e07-4d55fd87c4c6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-06-18T09:11:04+00:00",
+      "issued": "2021-06-18T09:12:01.000+00:00",
+      "valueDateTime": "2021-10-12T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/edafcb07-023d-4714-8e07-4d55fd87c4c6"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "7cb769e5-1f46-4502-928e-8d86140b3a4a",
+      "meta": {
+        "versionId": "1624024401000",
+        "lastUpdated": "2021-06-18T13:53:21.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a5445313-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Zeina Zeina Zeina (OpenMRS ID: MGFHNW)"
+      },
+      "encounter": {
+        "reference": "Encounter/fef5f9a8-e1df-49bb-a88e-1d840c8eaf05",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-06-18T13:52:52+00:00",
+      "issued": "2021-06-18T13:53:21.000+00:00",
+      "valueDateTime": "2021-10-12T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/fef5f9a8-e1df-49bb-a88e-1d840c8eaf05"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "aaf86112-4203-4f37-b413-ea11396825cb",
+      "meta": {
+        "versionId": "1635166800000",
+        "lastUpdated": "2021-10-25T13:00:00.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a5445313-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Zeina Zeina Zeina (OpenMRS ID: MGFHNW)"
+      },
+      "encounter": {
+        "reference": "Encounter/a923123c-a9b8-4117-952c-04d1dda042f7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-10-25T12:59:16+00:00",
+      "issued": "2021-10-25T13:00:00.000+00:00",
+      "valueDateTime": "2022-02-15T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/a923123c-a9b8-4117-952c-04d1dda042f7"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "8282d54a-bb13-46b2-87a8-910cea130da8",
+      "meta": {
+        "versionId": "1644935589000",
+        "lastUpdated": "2022-02-15T14:33:09.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a5445313-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Zeina Zeina Zeina (OpenMRS ID: MGFHNW)"
+      },
+      "encounter": {
+        "reference": "Encounter/36b1bf81-7ec5-4f6e-957a-75da78064108",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2022-02-15T14:31:36+00:00",
+      "issued": "2022-02-15T14:33:09.000+00:00",
+      "valueDateTime": "2022-06-14T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/36b1bf81-7ec5-4f6e-957a-75da78064108"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "0b1cfb2a-a487-4f5c-8080-44cea5ed253e",
+      "meta": {
+        "versionId": "1655201503000",
+        "lastUpdated": "2022-06-14T10:11:43.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a5445313-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Zeina Zeina Zeina (OpenMRS ID: MGFHNW)"
+      },
+      "encounter": {
+        "reference": "Encounter/45d91100-cc5e-4a51-ae22-fe4f6fc51bc4",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2022-06-14T10:10:18+00:00",
+      "issued": "2022-06-14T10:11:43.000+00:00",
+      "valueDateTime": "2023-01-12T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/45d91100-cc5e-4a51-ae22-fe4f6fc51bc4"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2b0939c3-fd10-456d-91ed-0222fe15d41d",
+      "meta": {
+        "versionId": "1673520114000",
+        "lastUpdated": "2023-01-12T10:41:54.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a5445313-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Zeina Zeina Zeina (OpenMRS ID: MGFHNW)"
+      },
+      "encounter": {
+        "reference": "Encounter/703b64e4-eca9-40e6-a8f9-5068321b7c61",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2023-01-12T10:36:20+00:00",
+      "issued": "2023-01-12T10:41:54.000+00:00",
+      "valueDateTime": "2023-07-11T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/703b64e4-eca9-40e6-a8f9-5068321b7c61"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "892046b9-030a-4b98-aca3-fb5d337c1948",
+      "meta": {
+        "versionId": "1689067609000",
+        "lastUpdated": "2023-07-11T09:26:49.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a5445313-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Zeina Zeina Zeina (OpenMRS ID: MGFHNW)"
+      },
+      "encounter": {
+        "reference": "Encounter/5ad0f3a1-d93a-4ab7-801d-7b9bf011e47a",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2023-07-11T09:24:12+00:00",
+      "issued": "2023-07-11T09:26:49.000+00:00",
+      "valueDateTime": "2023-11-21T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/5ad0f3a1-d93a-4ab7-801d-7b9bf011e47a"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "6622bec6-6269-4854-a4e2-7a9e34d6afd1",
+      "meta": {
+        "versionId": "1699979276000",
+        "lastUpdated": "2023-11-14T16:27:56.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/a5445313-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Zeina Zeina Zeina (OpenMRS ID: MGFHNW)"
+      },
+      "encounter": {
+        "reference": "Encounter/28eb1cc2-fd47-4dd9-bbbb-4cfb6d9b45b2",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2023-11-13T16:23:00+00:00",
+      "issued": "2023-11-14T16:27:56.000+00:00",
+      "valueDateTime": "2024-05-21T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/28eb1cc2-fd47-4dd9-bbbb-4cfb6d9b45b2"
+    }
+  } ]
+}

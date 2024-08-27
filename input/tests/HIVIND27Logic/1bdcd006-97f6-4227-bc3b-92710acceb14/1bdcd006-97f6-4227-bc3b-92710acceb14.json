@@ -1,0 +1,5431 @@
+{
+  "resourceType": "Bundle",
+  "id": "1bdcd006-97f6-4227-bc3b-92710acceb14",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "b38a6ac3-1d2c-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347139000",
+        "lastUpdated": "2020-11-02T19:58:59.000+00:00"
+      },
+      "identifier": [ {
+        "id": "b3961ac4-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "official",
+        "type": {
+          "coding": [ {
+            "code": "dfacd928-0370-4315-99d7-6ec1c9f7ae76"
+          } ],
+          "text": "OpenMRS ID"
+        },
+        "value": "MGFUJW"
+      }, {
+        "id": "b38abf38-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "05ee9cf4-7242-4a17-b4d4-00f707265c8a"
+          } ],
+          "text": "Unique Patient Number"
+        },
+        "value": "15339000354"
+      } ],
+      "active": true,
+      "name": [ {
+        "id": "b38a84c3-1d2c-11eb-8abc-0242e805c5c5",
+        "family": "elima",
+        "given": [ "elima", "elima" ]
+      } ],
+      "gender": "female",
+      "birthDate": "1966-06-15",
+      "deceasedBoolean": false,
+      "address": [ {
+        "id": "b38a9ceb-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/address",
+          "extension": [ {
+            "url": "http://fhir.openmrs.org/ext/address#address1",
+            "valueString": "295 address1"
+          } ]
+        } ],
+        "use": "old"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/b38a6ac3-1d2c-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "75eaa2cc-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347894000",
+        "lastUpdated": "2020-11-02T20:11:34.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "1193AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "CURRENT DRUGS USED"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "1193"
+        } ],
+        "text": "CURRENT DRUGS USED"
+      },
+      "subject": {
+        "reference": "Patient/b38a6ac3-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "elima elima elima (OpenMRS ID: MGFUJW)"
+      },
+      "encounter": {
+        "reference": "Encounter/75ea69d2-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-09-04T00:00:00+00:00",
+      "issued": "2020-11-02T20:11:34.000+00:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "164505AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Lamivudine / Efavirenz / Tenofovir"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "164505"
+        } ],
+        "text": "Lamivudine / Efavirenz / Tenofovir"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/75ea69d2-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2ae2d47b-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347769000",
+        "lastUpdated": "2020-11-02T20:09:29.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b38a6ac3-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "elima elima elima (OpenMRS ID: MGFUJW)"
+      },
+      "encounter": {
+        "reference": "Encounter/2ae2574e-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-09-04T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:29.000+00:00",
+      "valueDateTime": "2017-10-04T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2ae2574e-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2aea461f-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347769000",
+        "lastUpdated": "2020-11-02T20:09:29.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b38a6ac3-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "elima elima elima (OpenMRS ID: MGFUJW)"
+      },
+      "encounter": {
+        "reference": "Encounter/2ae9d4de-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-11-10T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:29.000+00:00",
+      "valueDateTime": "2018-01-09T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2ae9d4de-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "38094723-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347361000",
+        "lastUpdated": "2020-11-02T20:02:41.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "161555AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Reason for discontinuation of program"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "161555"
+        } ],
+        "text": "Reason for discontinuation of program"
+      },
+      "subject": {
+        "reference": "Patient/b38a6ac3-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "elima elima elima (OpenMRS ID: MGFUJW)"
+      },
+      "encounter": {
+        "reference": "Encounter/380912f0-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-03-15T00:00:00+00:00",
+      "issued": "2020-11-02T20:02:41.000+00:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "5240AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Lost to followup"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5240"
+        }, {
+          "system": "http://snomed.info/sct/",
+          "code": "399307001"
+        } ],
+        "text": "Lost to followup"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/380912f0-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "b396367c-1d2c-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347139000",
+        "lastUpdated": "2020-11-02T19:58:59.000+00:00"
+      },
+      "identifier": [ {
+        "id": "b3a4304d-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "official",
+        "type": {
+          "coding": [ {
+            "code": "dfacd928-0370-4315-99d7-6ec1c9f7ae76"
+          } ],
+          "text": "OpenMRS ID"
+        },
+        "value": "MGFUKT"
+      }, {
+        "id": "b396719c-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "05ee9cf4-7242-4a17-b4d4-00f707265c8a"
+          } ],
+          "text": "Unique Patient Number"
+        },
+        "value": "15339000355"
+      } ],
+      "active": true,
+      "name": [ {
+        "id": "b3964915-1d2c-11eb-8abc-0242e805c5c5",
+        "family": "Muthumbi",
+        "given": [ "Muthumbi", "Muthumbi" ]
+      } ],
+      "gender": "female",
+      "birthDate": "1987-06-15",
+      "deceasedBoolean": false,
+      "address": [ {
+        "id": "b3965c33-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/address",
+          "extension": [ {
+            "url": "http://fhir.openmrs.org/ext/address#address1",
+            "valueString": "296 address1"
+          } ]
+        } ],
+        "use": "old"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/b396367c-1d2c-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "75f11056-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347894000",
+        "lastUpdated": "2020-11-02T20:11:34.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "1193AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "CURRENT DRUGS USED"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "1193"
+        } ],
+        "text": "CURRENT DRUGS USED"
+      },
+      "subject": {
+        "reference": "Patient/b396367c-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Muthumbi Muthumbi Muthumbi (OpenMRS ID: MGFUKT)"
+      },
+      "encounter": {
+        "reference": "Encounter/75f0c6b7-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-05-10T00:00:00+00:00",
+      "issued": "2020-11-02T20:11:34.000+00:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "164505AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Lamivudine / Efavirenz / Tenofovir"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "164505"
+        } ],
+        "text": "Lamivudine / Efavirenz / Tenofovir"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/75f0c6b7-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2af22630-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347769000",
+        "lastUpdated": "2020-11-02T20:09:29.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b396367c-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Muthumbi Muthumbi Muthumbi (OpenMRS ID: MGFUKT)"
+      },
+      "encounter": {
+        "reference": "Encounter/2af1a0f1-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-05-10T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:29.000+00:00",
+      "valueDateTime": "2017-06-09T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2af1a0f1-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2afc3616-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347769000",
+        "lastUpdated": "2020-11-02T20:09:29.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b396367c-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Muthumbi Muthumbi Muthumbi (OpenMRS ID: MGFUKT)"
+      },
+      "encounter": {
+        "reference": "Encounter/2afba872-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-05-18T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:29.000+00:00",
+      "valueDateTime": "2018-06-17T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2afba872-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "38139244-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347361000",
+        "lastUpdated": "2020-11-02T20:02:41.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "161555AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Reason for discontinuation of program"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "161555"
+        } ],
+        "text": "Reason for discontinuation of program"
+      },
+      "subject": {
+        "reference": "Patient/b396367c-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Muthumbi Muthumbi Muthumbi (OpenMRS ID: MGFUKT)"
+      },
+      "encounter": {
+        "reference": "Encounter/3813658b-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-07-11T00:00:00+00:00",
+      "issued": "2020-11-02T20:02:41.000+00:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "5240AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Lost to followup"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5240"
+        }, {
+          "system": "http://snomed.info/sct/",
+          "code": "399307001"
+        } ],
+        "text": "Lost to followup"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/3813658b-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "b3a4582a-1d2c-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347139000",
+        "lastUpdated": "2020-11-02T19:58:59.000+00:00"
+      },
+      "identifier": [ {
+        "id": "b3af7fa7-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "official",
+        "type": {
+          "coding": [ {
+            "code": "dfacd928-0370-4315-99d7-6ec1c9f7ae76"
+          } ],
+          "text": "OpenMRS ID"
+        },
+        "value": "MGFULP"
+      }, {
+        "id": "b3a4ac86-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "05ee9cf4-7242-4a17-b4d4-00f707265c8a"
+          } ],
+          "text": "Unique Patient Number"
+        },
+        "value": "15339000359"
+      } ],
+      "active": true,
+      "name": [ {
+        "id": "b3a47365-1d2c-11eb-8abc-0242e805c5c5",
+        "family": "Mwinyeria",
+        "given": [ "Mwinyeria", "Mwinyeria" ]
+      } ],
+      "gender": "male",
+      "birthDate": "1967-06-15",
+      "deceasedBoolean": false,
+      "address": [ {
+        "id": "b3a48a9c-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/address",
+          "extension": [ {
+            "url": "http://fhir.openmrs.org/ext/address#address1",
+            "valueString": "297 address1"
+          } ]
+        } ],
+        "use": "old"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/b3a4582a-1d2c-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "75fc8bb8-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347895000",
+        "lastUpdated": "2020-11-02T20:11:35.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "1193AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "CURRENT DRUGS USED"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "1193"
+        } ],
+        "text": "CURRENT DRUGS USED"
+      },
+      "subject": {
+        "reference": "Patient/b3a4582a-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Mwinyeria Mwinyeria Mwinyeria (OpenMRS ID: MGFULP)"
+      },
+      "encounter": {
+        "reference": "Encounter/75fc4cfc-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-05-29T00:00:00+00:00",
+      "issued": "2020-11-02T20:11:35.000+00:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "164505AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Lamivudine / Efavirenz / Tenofovir"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "164505"
+        } ],
+        "text": "Lamivudine / Efavirenz / Tenofovir"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/75fc4cfc-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2b03e646-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347769000",
+        "lastUpdated": "2020-11-02T20:09:29.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3a4582a-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Mwinyeria Mwinyeria Mwinyeria (OpenMRS ID: MGFULP)"
+      },
+      "encounter": {
+        "reference": "Encounter/2b037202-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-05-29T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:29.000+00:00",
+      "valueDateTime": "2017-06-28T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2b037202-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2b0bd9c1-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347769000",
+        "lastUpdated": "2020-11-02T20:09:29.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3a4582a-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Mwinyeria Mwinyeria Mwinyeria (OpenMRS ID: MGFULP)"
+      },
+      "encounter": {
+        "reference": "Encounter/2b0b172a-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-03-16T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:29.000+00:00",
+      "valueDateTime": "2020-04-20T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2b0b172a-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2b166895-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347769000",
+        "lastUpdated": "2020-11-02T20:09:29.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3a4582a-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Mwinyeria Mwinyeria Mwinyeria (OpenMRS ID: MGFULP)"
+      },
+      "encounter": {
+        "reference": "Encounter/2b155a8d-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-04-20T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:29.000+00:00",
+      "valueDateTime": "2020-07-21T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2b155a8d-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2b1dd1e5-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347769000",
+        "lastUpdated": "2020-11-02T20:09:29.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3a4582a-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Mwinyeria Mwinyeria Mwinyeria (OpenMRS ID: MGFULP)"
+      },
+      "encounter": {
+        "reference": "Encounter/2b1ced56-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-07-16T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:29.000+00:00",
+      "valueDateTime": "2020-08-15T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2b1ced56-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "381b15a0-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347361000",
+        "lastUpdated": "2020-11-02T20:02:41.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "161555AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Reason for discontinuation of program"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "161555"
+        } ],
+        "text": "Reason for discontinuation of program"
+      },
+      "subject": {
+        "reference": "Patient/b3a4582a-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Mwinyeria Mwinyeria Mwinyeria (OpenMRS ID: MGFULP)"
+      },
+      "encounter": {
+        "reference": "Encounter/381ae8f6-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-09-26T00:00:00+00:00",
+      "issued": "2020-11-02T20:02:41.000+00:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "5240AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Lost to followup"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5240"
+        }, {
+          "system": "http://snomed.info/sct/",
+          "code": "399307001"
+        } ],
+        "text": "Lost to followup"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/381ae8f6-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "b3af95d1-1d2c-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347139000",
+        "lastUpdated": "2020-11-02T19:58:59.000+00:00"
+      },
+      "identifier": [ {
+        "id": "b3bc1b92-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "official",
+        "type": {
+          "coding": [ {
+            "code": "dfacd928-0370-4315-99d7-6ec1c9f7ae76"
+          } ],
+          "text": "OpenMRS ID"
+        },
+        "value": "MGFUMM"
+      }, {
+        "id": "b3afbe3a-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "05ee9cf4-7242-4a17-b4d4-00f707265c8a"
+          } ],
+          "text": "Unique Patient Number"
+        },
+        "value": "15339000360"
+      } ],
+      "active": true,
+      "name": [ {
+        "id": "b3afa1ac-1d2c-11eb-8abc-0242e805c5c5",
+        "family": "GAKURU",
+        "given": [ "GAKURU", "GAKURU" ]
+      } ],
+      "gender": "female",
+      "birthDate": "1990-06-15",
+      "deceasedBoolean": false,
+      "address": [ {
+        "id": "b3afae81-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/address",
+          "extension": [ {
+            "url": "http://fhir.openmrs.org/ext/address#address1",
+            "valueString": "298 address1"
+          } ]
+        } ],
+        "use": "old"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/b3af95d1-1d2c-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "760938c7-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347895000",
+        "lastUpdated": "2020-11-02T20:11:35.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "1193AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "CURRENT DRUGS USED"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "1193"
+        } ],
+        "text": "CURRENT DRUGS USED"
+      },
+      "subject": {
+        "reference": "Patient/b3af95d1-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "GAKURU GAKURU GAKURU (OpenMRS ID: MGFUMM)"
+      },
+      "encounter": {
+        "reference": "Encounter/7608f8c3-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-05-10T00:00:00+00:00",
+      "issued": "2020-11-02T20:11:35.000+00:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "164505AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Lamivudine / Efavirenz / Tenofovir"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "164505"
+        } ],
+        "text": "Lamivudine / Efavirenz / Tenofovir"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/7608f8c3-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2b27956b-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347769000",
+        "lastUpdated": "2020-11-02T20:09:29.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3af95d1-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "GAKURU GAKURU GAKURU (OpenMRS ID: MGFUMM)"
+      },
+      "encounter": {
+        "reference": "Encounter/2b271f08-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-05-10T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:29.000+00:00",
+      "valueDateTime": "2017-06-09T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2b271f08-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "38216701-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347361000",
+        "lastUpdated": "2020-11-02T20:02:41.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "161555AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Reason for discontinuation of program"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "161555"
+        } ],
+        "text": "Reason for discontinuation of program"
+      },
+      "subject": {
+        "reference": "Patient/b3af95d1-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "GAKURU GAKURU GAKURU (OpenMRS ID: MGFUMM)"
+      },
+      "encounter": {
+        "reference": "Encounter/3821376b-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-09-07T00:00:00+00:00",
+      "issued": "2020-11-02T20:02:41.000+00:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "5240AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Lost to followup"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5240"
+        }, {
+          "system": "http://snomed.info/sct/",
+          "code": "399307001"
+        } ],
+        "text": "Lost to followup"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/3821376b-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "b3bc3f3e-1d2c-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347139000",
+        "lastUpdated": "2020-11-02T19:58:59.000+00:00"
+      },
+      "identifier": [ {
+        "id": "b3c99140-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "official",
+        "type": {
+          "coding": [ {
+            "code": "dfacd928-0370-4315-99d7-6ec1c9f7ae76"
+          } ],
+          "text": "OpenMRS ID"
+        },
+        "value": "MGFUNK"
+      }, {
+        "id": "b3bc98be-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "05ee9cf4-7242-4a17-b4d4-00f707265c8a"
+          } ],
+          "text": "Unique Patient Number"
+        },
+        "value": "1533900361"
+      }, {
+        "id": "9a6b3de6-b900-4410-aeaf-710ba13e9c50",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "49af6cdc-7968-4abb-bf46-de10d7f4859f"
+          } ],
+          "text": "National ID"
+        },
+        "value": "89899798"
+      }, {
+        "id": "3e97abef-99ee-463e-a1a4-d41047f590c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "f85081e2-b4be-4e48-b3a4-7994b69bb101"
+          } ],
+          "text": "National Unique patient identifier"
+        },
+        "value": "000YQ00X0XJEG"
+      }, {
+        "id": "bf89d785-a3b8-44d2-a496-45883b97aea5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "b4d66522-11fc-45c7-83e3-39a1af21ae0d"
+          } ],
+          "text": "Patient Clinic Number"
+        },
+        "value": "153300036"
+      } ],
+      "active": true,
+      "name": [ {
+        "id": "b3bc57c7-1d2c-11eb-8abc-0242e805c5c5",
+        "family": "Antony",
+        "given": [ "Antony", "Antony" ]
+      } ],
+      "gender": "male",
+      "birthDate": "1972-06-15",
+      "deceasedBoolean": false,
+      "address": [ {
+        "id": "c895623d-c4cd-49d2-9ff1-67089736bcf6",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/address",
+          "extension": [ {
+            "url": "http://fhir.openmrs.org/ext/address#address1",
+            "valueString": "299 address1"
+          }, {
+            "url": "http://fhir.openmrs.org/ext/address#address2",
+            "valueString": "Muthengera primary"
+          }, {
+            "url": "http://fhir.openmrs.org/ext/address#address4",
+            "valueString": "Marmanet"
+          }, {
+            "url": "http://fhir.openmrs.org/ext/address#address5",
+            "valueString": "Muthengera"
+          }, {
+            "url": "http://fhir.openmrs.org/ext/address#address6",
+            "valueString": "Marmanet"
+          } ]
+        } ],
+        "use": "home",
+        "city": "nyahururu",
+        "district": "Laikipia",
+        "state": "Laikipia West"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/b3bc3f3e-1d2c-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "431f2e22-53f8-45b4-abf2-8c103b73c266",
+      "meta": {
+        "versionId": "1654513197000",
+        "lastUpdated": "2022-06-06T10:59:57.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "160540AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Method of enrollment"
+        }, {
+          "system": "http://loinc.org",
+          "code": "45252-4"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "160540"
+        } ],
+        "text": "Method of enrollment"
+      },
+      "subject": {
+        "reference": "Patient/b3bc3f3e-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Antony Antony Antony (OpenMRS ID: MGFUNK)"
+      },
+      "encounter": {
+        "reference": "Encounter/0f738c51-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-04-12T00:00:00+00:00",
+      "issued": "2022-06-06T10:59:57.000+00:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "160542AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Outpatient department"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "160542"
+        }, {
+          "system": "http://snomed.info/sct/",
+          "code": "33022008"
+        } ],
+        "text": "Outpatient department"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/0f738c51-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "76174b51-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347895000",
+        "lastUpdated": "2020-11-02T20:11:35.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "1193AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "CURRENT DRUGS USED"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "1193"
+        } ],
+        "text": "CURRENT DRUGS USED"
+      },
+      "subject": {
+        "reference": "Patient/b3bc3f3e-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Antony Antony Antony (OpenMRS ID: MGFUNK)"
+      },
+      "encounter": {
+        "reference": "Encounter/76170ba4-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-09-22T00:00:00+00:00",
+      "issued": "2020-11-02T20:11:35.000+00:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "164505AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Lamivudine / Efavirenz / Tenofovir"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "164505"
+        } ],
+        "text": "Lamivudine / Efavirenz / Tenofovir"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/76170ba4-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2b2f41f7-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347769000",
+        "lastUpdated": "2020-11-02T20:09:29.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3bc3f3e-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Antony Antony Antony (OpenMRS ID: MGFUNK)"
+      },
+      "encounter": {
+        "reference": "Encounter/2b2ebbbe-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-09-22T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:29.000+00:00",
+      "valueDateTime": "2017-10-22T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2b2ebbbe-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2b396b0c-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347769000",
+        "lastUpdated": "2020-11-02T20:09:29.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3bc3f3e-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Antony Antony Antony (OpenMRS ID: MGFUNK)"
+      },
+      "encounter": {
+        "reference": "Encounter/2b38dd86-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-02-14T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:29.000+00:00",
+      "valueDateTime": "2018-05-15T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2b38dd86-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2b410c39-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347769000",
+        "lastUpdated": "2020-11-02T20:09:29.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3bc3f3e-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Antony Antony Antony (OpenMRS ID: MGFUNK)"
+      },
+      "encounter": {
+        "reference": "Encounter/2b407e3a-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-05-15T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:29.000+00:00",
+      "valueDateTime": "2018-08-14T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2b407e3a-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2b48ac10-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347769000",
+        "lastUpdated": "2020-11-02T20:09:29.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3bc3f3e-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Antony Antony Antony (OpenMRS ID: MGFUNK)"
+      },
+      "encounter": {
+        "reference": "Encounter/2b483384-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-09-20T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:29.000+00:00",
+      "valueDateTime": "2018-12-20T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2b483384-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2b555ece-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347769000",
+        "lastUpdated": "2020-11-02T20:09:29.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3bc3f3e-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Antony Antony Antony (OpenMRS ID: MGFUNK)"
+      },
+      "encounter": {
+        "reference": "Encounter/2b551c34-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2019-05-15T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:29.000+00:00",
+      "valueDateTime": "2019-09-12T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2b551c34-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2b5d6e2e-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347769000",
+        "lastUpdated": "2020-11-02T20:09:29.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3bc3f3e-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Antony Antony Antony (OpenMRS ID: MGFUNK)"
+      },
+      "encounter": {
+        "reference": "Encounter/2b5c8bfe-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2019-12-17T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:29.000+00:00",
+      "valueDateTime": "2020-06-24T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2b5c8bfe-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2b64e473-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347769000",
+        "lastUpdated": "2020-11-02T20:09:29.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3bc3f3e-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Antony Antony Antony (OpenMRS ID: MGFUNK)"
+      },
+      "encounter": {
+        "reference": "Encounter/2b642424-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-06-24T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:29.000+00:00",
+      "valueDateTime": "2020-12-01T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2b642424-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "64ff2668-d85b-4acf-b90e-d09fb9cccb7e",
+      "meta": {
+        "versionId": "1606469654000",
+        "lastUpdated": "2020-11-27T09:34:14.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3bc3f3e-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Antony Antony Antony (OpenMRS ID: MGFUNK)"
+      },
+      "encounter": {
+        "reference": "Encounter/6ee84b13-5151-4fb8-893f-ce473eb95b24",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-11-27T09:31:47+00:00",
+      "issued": "2020-11-27T09:34:14.000+00:00",
+      "valueDateTime": "2021-02-25T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/6ee84b13-5151-4fb8-893f-ce473eb95b24"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2f9b0483-e4a3-4d04-a3fd-7afdf2918f9b",
+      "meta": {
+        "versionId": "1614248542000",
+        "lastUpdated": "2021-02-25T10:22:22.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3bc3f3e-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Antony Antony Antony (OpenMRS ID: MGFUNK)"
+      },
+      "encounter": {
+        "reference": "Encounter/4335b47d-5f7f-4c29-8e59-f6579658f82a",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-02-25T10:12:36+00:00",
+      "issued": "2021-02-25T10:22:22.000+00:00",
+      "valueDateTime": "2021-06-24T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/4335b47d-5f7f-4c29-8e59-f6579658f82a"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "32fa38ab-85b4-4cf8-8fd9-b4ecdb5c5458",
+      "meta": {
+        "versionId": "1626692959000",
+        "lastUpdated": "2021-07-19T11:09:19.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3bc3f3e-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Antony Antony Antony (OpenMRS ID: MGFUNK)"
+      },
+      "encounter": {
+        "reference": "Encounter/e65b842c-6992-417e-9231-5040662d1bb8",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-07-19T11:08:50+00:00",
+      "issued": "2021-07-19T11:09:19.000+00:00",
+      "valueDateTime": "2021-10-14T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e65b842c-6992-417e-9231-5040662d1bb8"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "07b60d47-b471-4ea3-9e42-37f4b1d0ed98",
+      "meta": {
+        "versionId": "1634389641000",
+        "lastUpdated": "2021-10-16T13:07:21.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3bc3f3e-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Antony Antony Antony (OpenMRS ID: MGFUNK)"
+      },
+      "encounter": {
+        "reference": "Encounter/389efc53-00f1-48f7-aec2-13d0d046423d",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-10-16T13:06:57+00:00",
+      "issued": "2021-10-16T13:07:21.000+00:00",
+      "valueDateTime": "2022-01-11T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/389efc53-00f1-48f7-aec2-13d0d046423d"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "b2fa910a-304b-444b-881b-8c1d29c49e0c",
+      "meta": {
+        "versionId": "1642759352000",
+        "lastUpdated": "2022-01-21T10:02:32.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3bc3f3e-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Antony Antony Antony (OpenMRS ID: MGFUNK)"
+      },
+      "encounter": {
+        "reference": "Encounter/2278dfae-a603-498e-8eea-49b43ccdf4ac",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2022-01-21T10:01:22+00:00",
+      "issued": "2022-01-21T10:02:32.000+00:00",
+      "valueDateTime": "2022-04-12T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2278dfae-a603-498e-8eea-49b43ccdf4ac"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "a8a86a68-ca61-4130-9116-b06d1695865e",
+      "meta": {
+        "versionId": "1651758509000",
+        "lastUpdated": "2022-05-05T13:48:29.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3bc3f3e-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Antony Antony Antony (OpenMRS ID: MGFUNK)"
+      },
+      "encounter": {
+        "reference": "Encounter/491d4004-9acc-4f80-b042-de8b9f3da188",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2022-05-05T13:47:10+00:00",
+      "issued": "2022-05-05T13:48:29.000+00:00",
+      "valueDateTime": "2022-09-22T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/491d4004-9acc-4f80-b042-de8b9f3da188"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "f7642b6e-c62a-4508-b4bc-83b2e37e3563",
+      "meta": {
+        "versionId": "1663341507000",
+        "lastUpdated": "2022-09-16T15:18:27.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3bc3f3e-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Antony Antony Antony (OpenMRS ID: MGFUNK)"
+      },
+      "encounter": {
+        "reference": "Encounter/dd06f133-dbd0-4d8c-8f17-e44d71e62322",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2022-09-15T15:17:00+00:00",
+      "issued": "2022-09-16T15:18:27.000+00:00",
+      "valueDateTime": "2023-01-24T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/dd06f133-dbd0-4d8c-8f17-e44d71e62322"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "49e344de-79dc-4405-b641-69517df5300f",
+      "meta": {
+        "versionId": "1674552554000",
+        "lastUpdated": "2023-01-24T09:29:14.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3bc3f3e-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Antony Antony Antony (OpenMRS ID: MGFUNK)"
+      },
+      "encounter": {
+        "reference": "Encounter/f7c896df-972e-48aa-91aa-1cc678214245",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2023-01-24T09:25:53+00:00",
+      "issued": "2023-01-24T09:29:14.000+00:00",
+      "valueDateTime": "2023-07-25T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/f7c896df-972e-48aa-91aa-1cc678214245"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "c9c7b347-6b95-4082-a5dc-6bd99d0b41c8",
+      "meta": {
+        "versionId": "1686576765000",
+        "lastUpdated": "2023-06-12T13:32:45.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3bc3f3e-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Antony Antony Antony (OpenMRS ID: MGFUNK)"
+      },
+      "encounter": {
+        "reference": "Encounter/23a0c081-ab35-44d9-adab-078fec02a3d6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2023-06-08T13:30:00+00:00",
+      "issued": "2023-06-12T13:32:45.000+00:00",
+      "valueDateTime": "2023-09-07T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/23a0c081-ab35-44d9-adab-078fec02a3d6"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "cdf9c5e9-be9f-4ab3-aed4-59dc8bea2f89",
+      "meta": {
+        "versionId": "1690197257000",
+        "lastUpdated": "2023-07-24T11:14:17.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3bc3f3e-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Antony Antony Antony (OpenMRS ID: MGFUNK)"
+      },
+      "encounter": {
+        "reference": "Encounter/b83e3e74-3d80-4bcb-aa54-5ad0fd0918a1",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2023-07-24T11:11:38+00:00",
+      "issued": "2023-07-24T11:14:17.000+00:00",
+      "valueDateTime": "2023-10-19T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/b83e3e74-3d80-4bcb-aa54-5ad0fd0918a1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "aaf01ae4-b288-4b27-921e-76a185fc9714",
+      "meta": {
+        "versionId": "1697727114000",
+        "lastUpdated": "2023-10-19T14:51:54.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3bc3f3e-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Antony Antony Antony (OpenMRS ID: MGFUNK)"
+      },
+      "encounter": {
+        "reference": "Encounter/aeac2f43-a51c-4680-84f6-9c618bc21429",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2023-10-19T14:47:44+00:00",
+      "issued": "2023-10-19T14:51:54.000+00:00",
+      "valueDateTime": "2024-03-19T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/aeac2f43-a51c-4680-84f6-9c618bc21429"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "b3c9aed0-1d2c-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347139000",
+        "lastUpdated": "2020-11-02T19:58:59.000+00:00"
+      },
+      "identifier": [ {
+        "id": "b3d5d8a8-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "official",
+        "type": {
+          "coding": [ {
+            "code": "dfacd928-0370-4315-99d7-6ec1c9f7ae76"
+          } ],
+          "text": "OpenMRS ID"
+        },
+        "value": "MGFUPH"
+      }, {
+        "id": "b3c9edbf-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "05ee9cf4-7242-4a17-b4d4-00f707265c8a"
+          } ],
+          "text": "Unique Patient Number"
+        },
+        "value": "1533900362"
+      }, {
+        "id": "954b376e-4eb4-43be-b079-8715bcf66c41",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "49af6cdc-7968-4abb-bf46-de10d7f4859f"
+          } ],
+          "text": "National ID"
+        },
+        "value": "97776999"
+      } ],
+      "active": true,
+      "name": [ {
+        "id": "b3c9c38d-1d2c-11eb-8abc-0242e805c5c5",
+        "family": "Aletia",
+        "given": [ "Aletia", "Aletia" ]
+      } ],
+      "gender": "female",
+      "birthDate": "1971-06-15",
+      "deceasedBoolean": false,
+      "address": [ {
+        "id": "d6a6667c-53b8-439d-a9d2-2563d1d39b34",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/address",
+          "extension": [ {
+            "url": "http://fhir.openmrs.org/ext/address#address1",
+            "valueString": "300 address1"
+          }, {
+            "url": "http://fhir.openmrs.org/ext/address#address2",
+            "valueString": "Thigiu Dam"
+          }, {
+            "url": "http://fhir.openmrs.org/ext/address#address4",
+            "valueString": "Marmanet"
+          }, {
+            "url": "http://fhir.openmrs.org/ext/address#address5",
+            "valueString": "Thigio"
+          }, {
+            "url": "http://fhir.openmrs.org/ext/address#address6",
+            "valueString": "Gituamba"
+          } ]
+        } ],
+        "use": "home",
+        "city": "Thigio",
+        "district": "Laikipia",
+        "state": "Laikipia West"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/b3c9aed0-1d2c-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "d2ae3eee-5d89-44cb-b08e-eeb4662e0f15",
+      "meta": {
+        "versionId": "1652196953000",
+        "lastUpdated": "2022-05-10T15:35:53.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "160540AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Method of enrollment"
+        }, {
+          "system": "http://loinc.org",
+          "code": "45252-4"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "160540"
+        } ],
+        "text": "Method of enrollment"
+      },
+      "subject": {
+        "reference": "Patient/b3c9aed0-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Aletia Aletia Aletia (OpenMRS ID: MGFUPH)"
+      },
+      "encounter": {
+        "reference": "Encounter/0f8090c8-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-07-17T00:00:00+00:00",
+      "issued": "2022-05-10T15:35:53.000+00:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "160542AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Outpatient department"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "160542"
+        }, {
+          "system": "http://snomed.info/sct/",
+          "code": "33022008"
+        } ],
+        "text": "Outpatient department"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/0f8090c8-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "76241319-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347895000",
+        "lastUpdated": "2020-11-02T20:11:35.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "1193AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "CURRENT DRUGS USED"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "1193"
+        } ],
+        "text": "CURRENT DRUGS USED"
+      },
+      "subject": {
+        "reference": "Patient/b3c9aed0-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Aletia Aletia Aletia (OpenMRS ID: MGFUPH)"
+      },
+      "encounter": {
+        "reference": "Encounter/7623cd2d-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-07-05T00:00:00+00:00",
+      "issued": "2020-11-02T20:11:35.000+00:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "164505AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Lamivudine / Efavirenz / Tenofovir"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "164505"
+        } ],
+        "text": "Lamivudine / Efavirenz / Tenofovir"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/7623cd2d-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2b6c26df-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347769000",
+        "lastUpdated": "2020-11-02T20:09:29.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3c9aed0-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Aletia Aletia Aletia (OpenMRS ID: MGFUPH)"
+      },
+      "encounter": {
+        "reference": "Encounter/2b6bb582-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-07-05T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:29.000+00:00",
+      "valueDateTime": "2017-08-04T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2b6bb582-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2b7404d4-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347769000",
+        "lastUpdated": "2020-11-02T20:09:29.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3c9aed0-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Aletia Aletia Aletia (OpenMRS ID: MGFUPH)"
+      },
+      "encounter": {
+        "reference": "Encounter/2b73769d-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-07-17T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:29.000+00:00",
+      "valueDateTime": "2018-07-31T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2b73769d-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2b7e3d44-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347770000",
+        "lastUpdated": "2020-11-02T20:09:30.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3c9aed0-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Aletia Aletia Aletia (OpenMRS ID: MGFUPH)"
+      },
+      "encounter": {
+        "reference": "Encounter/2b7db7e1-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-08-09T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:30.000+00:00",
+      "valueDateTime": "2018-09-08T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2b7db7e1-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2b85e368-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347770000",
+        "lastUpdated": "2020-11-02T20:09:30.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3c9aed0-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Aletia Aletia Aletia (OpenMRS ID: MGFUPH)"
+      },
+      "encounter": {
+        "reference": "Encounter/2b855cc0-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-09-26T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:30.000+00:00",
+      "valueDateTime": "2018-10-26T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2b855cc0-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2b914650-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347770000",
+        "lastUpdated": "2020-11-02T20:09:30.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3c9aed0-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Aletia Aletia Aletia (OpenMRS ID: MGFUPH)"
+      },
+      "encounter": {
+        "reference": "Encounter/2b90ad67-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-09-23T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:30.000+00:00",
+      "valueDateTime": "2020-10-23T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2b90ad67-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2b98f100-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347770000",
+        "lastUpdated": "2020-11-02T20:09:30.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3c9aed0-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Aletia Aletia Aletia (OpenMRS ID: MGFUPH)"
+      },
+      "encounter": {
+        "reference": "Encounter/2b984f3b-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-10-28T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:30.000+00:00",
+      "valueDateTime": "2020-11-27T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2b984f3b-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "40dd0e07-ae04-4106-b1b6-02e562c285fa",
+      "meta": {
+        "versionId": "1606725936000",
+        "lastUpdated": "2020-11-30T08:45:36.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3c9aed0-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Aletia Aletia Aletia (OpenMRS ID: MGFUPH)"
+      },
+      "encounter": {
+        "reference": "Encounter/f98f49b5-ff2e-4b3c-95e1-3b093abafd29",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-11-27T08:43:00+00:00",
+      "issued": "2020-11-30T08:45:36.000+00:00",
+      "valueDateTime": "2021-02-25T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/f98f49b5-ff2e-4b3c-95e1-3b093abafd29"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "021e51f7-811c-495a-8a9c-fbc6d7cfc31e",
+      "meta": {
+        "versionId": "1606898867000",
+        "lastUpdated": "2020-12-02T08:47:47.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3c9aed0-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Aletia Aletia Aletia (OpenMRS ID: MGFUPH)"
+      },
+      "encounter": {
+        "reference": "Encounter/e33ea30d-640c-4fe0-b267-958be8c52ec8",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-11-27T08:45:00+00:00",
+      "issued": "2020-12-02T08:47:47.000+00:00",
+      "valueDateTime": "2021-02-25T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e33ea30d-640c-4fe0-b267-958be8c52ec8"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ce1c0e97-a57e-4d1d-a1ad-1912f668e823",
+      "meta": {
+        "versionId": "1614681927000",
+        "lastUpdated": "2021-03-02T10:45:27.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3c9aed0-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Aletia Aletia Aletia (OpenMRS ID: MGFUPH)"
+      },
+      "encounter": {
+        "reference": "Encounter/78013429-34a9-4542-8287-76828473ff50",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-02-24T10:44:00+00:00",
+      "issued": "2021-03-02T10:45:27.000+00:00",
+      "valueDateTime": "2021-03-08T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/78013429-34a9-4542-8287-76828473ff50"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e9e04507-0d7c-46dd-964c-e080f022845d",
+      "meta": {
+        "versionId": "1617280135000",
+        "lastUpdated": "2021-04-01T12:28:55.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3c9aed0-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Aletia Aletia Aletia (OpenMRS ID: MGFUPH)"
+      },
+      "encounter": {
+        "reference": "Encounter/15db8d47-6afc-4ba4-b798-4947e7e6beb0",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-04-01T12:28:29+00:00",
+      "issued": "2021-04-01T12:28:55.000+00:00",
+      "valueDateTime": "2021-04-12T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/15db8d47-6afc-4ba4-b798-4947e7e6beb0"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "f0e60aaa-83d1-4e61-9fd1-1ae16fd192e5",
+      "meta": {
+        "versionId": "1617788304000",
+        "lastUpdated": "2021-04-07T09:38:24.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3c9aed0-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Aletia Aletia Aletia (OpenMRS ID: MGFUPH)"
+      },
+      "encounter": {
+        "reference": "Encounter/d5605536-0f79-4545-9a76-9c8f5c01c8be",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-04-06T09:36:00+00:00",
+      "issued": "2021-04-07T09:38:24.000+00:00",
+      "valueDateTime": "2021-05-05T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/d5605536-0f79-4545-9a76-9c8f5c01c8be"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "22af6aaf-888d-45b3-a876-44724a5cb57d",
+      "meta": {
+        "versionId": "1620312333000",
+        "lastUpdated": "2021-05-06T14:45:33.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3c9aed0-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Aletia Aletia Aletia (OpenMRS ID: MGFUPH)"
+      },
+      "encounter": {
+        "reference": "Encounter/a5db3eab-dd32-41ad-93ef-f13cb1771677",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-05-05T14:45:00+00:00",
+      "issued": "2021-05-06T14:45:33.000+00:00",
+      "valueDateTime": "2021-08-24T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/a5db3eab-dd32-41ad-93ef-f13cb1771677"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "88dc4e25-b7c7-4193-a111-0e19caa97350",
+      "meta": {
+        "versionId": "1633343073000",
+        "lastUpdated": "2021-10-04T10:24:33.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3c9aed0-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Aletia Aletia Aletia (OpenMRS ID: MGFUPH)"
+      },
+      "encounter": {
+        "reference": "Encounter/caa0c7c0-4f19-4f58-a008-8e4636fa4be8",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-10-04T10:24:10+00:00",
+      "issued": "2021-10-04T10:24:33.000+00:00",
+      "valueDateTime": "2021-10-28T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/caa0c7c0-4f19-4f58-a008-8e4636fa4be8"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "77ece364-614e-48ce-83cb-0db029a724c2",
+      "meta": {
+        "versionId": "1641303749000",
+        "lastUpdated": "2022-01-04T13:42:29.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3c9aed0-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Aletia Aletia Aletia (OpenMRS ID: MGFUPH)"
+      },
+      "encounter": {
+        "reference": "Encounter/85dfb7a4-b8bc-4ca6-9657-2daccd37e0b2",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-12-01T13:42:00+00:00",
+      "issued": "2022-01-04T13:42:29.000+00:00",
+      "valueDateTime": "2022-04-30T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/85dfb7a4-b8bc-4ca6-9657-2daccd37e0b2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "87817980-9435-4f41-9214-0d6a9968b746",
+      "meta": {
+        "versionId": "1667148758000",
+        "lastUpdated": "2022-10-30T16:52:38.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3c9aed0-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Aletia Aletia Aletia (OpenMRS ID: MGFUPH)"
+      },
+      "encounter": {
+        "reference": "Encounter/0b2fe2e9-1c14-4a4e-81b9-a2328eefb8d4",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2022-10-30T12:10:33+00:00",
+      "issued": "2022-10-30T16:52:38.000+00:00",
+      "valueDateTime": "2022-11-15T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/0b2fe2e9-1c14-4a4e-81b9-a2328eefb8d4"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "59a17340-1f9f-4a23-813f-b57b34b22136",
+      "meta": {
+        "versionId": "1681737516000",
+        "lastUpdated": "2023-04-17T13:18:36.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3c9aed0-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Aletia Aletia Aletia (OpenMRS ID: MGFUPH)"
+      },
+      "encounter": {
+        "reference": "Encounter/c5bd4465-4878-4caa-b7d3-b971a4b58812",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2023-04-17T12:57:32+00:00",
+      "issued": "2023-04-17T13:18:36.000+00:00",
+      "valueDateTime": "2023-05-16T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/c5bd4465-4878-4caa-b7d3-b971a4b58812"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "274c84fe-2a66-472d-98e8-c122ba69aefc",
+      "meta": {
+        "versionId": "1684148998000",
+        "lastUpdated": "2023-05-15T11:09:58.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3c9aed0-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Aletia Aletia Aletia (OpenMRS ID: MGFUPH)"
+      },
+      "encounter": {
+        "reference": "Encounter/f6e305bd-b2ed-4738-a7bd-bab78f5a98a2",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2023-05-15T11:04:49+00:00",
+      "issued": "2023-05-15T11:09:58.000+00:00",
+      "valueDateTime": "2023-06-20T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/f6e305bd-b2ed-4738-a7bd-bab78f5a98a2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "b159cd7a-3a3f-4643-a9d7-4bcf3f69daa4",
+      "meta": {
+        "versionId": "1687257911000",
+        "lastUpdated": "2023-06-20T10:45:11.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3c9aed0-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Aletia Aletia Aletia (OpenMRS ID: MGFUPH)"
+      },
+      "encounter": {
+        "reference": "Encounter/9447af17-9e42-4f35-b599-50ea2d9c080b",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2023-06-20T10:31:42+00:00",
+      "issued": "2023-06-20T10:45:11.000+00:00",
+      "valueDateTime": "2023-07-26T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/9447af17-9e42-4f35-b599-50ea2d9c080b"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "a191fa77-048c-40c1-a434-515373762ada",
+      "meta": {
+        "versionId": "1690366342000",
+        "lastUpdated": "2023-07-26T10:12:22.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3c9aed0-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Aletia Aletia Aletia (OpenMRS ID: MGFUPH)"
+      },
+      "encounter": {
+        "reference": "Encounter/e25e5ea1-8aa1-4114-8ca6-e7b61f04036d",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2023-07-26T10:09:54+00:00",
+      "issued": "2023-07-26T10:12:22.000+00:00",
+      "valueDateTime": "2024-01-25T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e25e5ea1-8aa1-4114-8ca6-e7b61f04036d"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "b3d5e640-1d2c-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347139000",
+        "lastUpdated": "2020-11-02T19:58:59.000+00:00"
+      },
+      "identifier": [ {
+        "id": "b3e28100-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "official",
+        "type": {
+          "coding": [ {
+            "code": "dfacd928-0370-4315-99d7-6ec1c9f7ae76"
+          } ],
+          "text": "OpenMRS ID"
+        },
+        "value": "MGFURF"
+      }, {
+        "id": "b3d5fd01-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "05ee9cf4-7242-4a17-b4d4-00f707265c8a"
+          } ],
+          "text": "Unique Patient Number"
+        },
+        "value": "1533900363"
+      }, {
+        "id": "5a768bb8-2c7e-4a31-99ca-33d340ce42c3",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "b7bfefd0-239b-11e9-ab14-d663bd873d93"
+          } ],
+          "text": "KP unique Number"
+        },
+        "value": "3243423545243"
+      }, {
+        "id": "ffb496d5-2cd7-4390-9e0b-609dc34c4226",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "d8ee3b8c-a8fc-4d6b-af6a-9423be5f8906"
+          } ],
+          "text": "District Registration Number"
+        },
+        "value": "423432432"
+      } ],
+      "active": true,
+      "name": [ {
+        "id": "b3d5ee05-1d2c-11eb-8abc-0242e805c5c5",
+        "family": "KIBIRO",
+        "given": [ "KIBIRO", "KIBIRO" ]
+      } ],
+      "gender": "male",
+      "birthDate": "1990-06-15",
+      "deceasedBoolean": false
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/b3d5e640-1d2c-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "32e8ed23-e4d6-45a7-9ac8-8bebdeb34c1c",
+      "meta": {
+        "versionId": "1652196908000",
+        "lastUpdated": "2022-05-10T15:35:08.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "160540AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Method of enrollment"
+        }, {
+          "system": "http://loinc.org",
+          "code": "45252-4"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "160540"
+        } ],
+        "text": "Method of enrollment"
+      },
+      "subject": {
+        "reference": "Patient/b3d5e640-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "KIBIRO KIBIRO KIBIRO (OpenMRS ID: MGFURF)"
+      },
+      "encounter": {
+        "reference": "Encounter/0f8836d1-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-04-18T00:00:00+00:00",
+      "issued": "2022-05-10T15:35:08.000+00:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "160542AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Outpatient department"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "160542"
+        }, {
+          "system": "http://snomed.info/sct/",
+          "code": "33022008"
+        } ],
+        "text": "Outpatient department"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/0f8836d1-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "763af3c8-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347895000",
+        "lastUpdated": "2020-11-02T20:11:35.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "1193AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "CURRENT DRUGS USED"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "1193"
+        } ],
+        "text": "CURRENT DRUGS USED"
+      },
+      "subject": {
+        "reference": "Patient/b3d5e640-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "KIBIRO KIBIRO KIBIRO (OpenMRS ID: MGFURF)"
+      },
+      "encounter": {
+        "reference": "Encounter/763ab352-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-10-24T00:00:00+00:00",
+      "issued": "2020-11-02T20:11:35.000+00:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "164505AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Lamivudine / Efavirenz / Tenofovir"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "164505"
+        } ],
+        "text": "Lamivudine / Efavirenz / Tenofovir"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/763ab352-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2ba6e5e7-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347770000",
+        "lastUpdated": "2020-11-02T20:09:30.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3d5e640-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "KIBIRO KIBIRO KIBIRO (OpenMRS ID: MGFURF)"
+      },
+      "encounter": {
+        "reference": "Encounter/2ba66608-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-10-24T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:30.000+00:00",
+      "valueDateTime": "2017-11-23T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2ba66608-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2bae294f-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347770000",
+        "lastUpdated": "2020-11-02T20:09:30.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3d5e640-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "KIBIRO KIBIRO KIBIRO (OpenMRS ID: MGFURF)"
+      },
+      "encounter": {
+        "reference": "Encounter/2bae032e-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-02-15T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:30.000+00:00",
+      "valueDateTime": "2018-04-16T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2bae032e-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2bb8b2db-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347770000",
+        "lastUpdated": "2020-11-02T20:09:30.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3d5e640-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "KIBIRO KIBIRO KIBIRO (OpenMRS ID: MGFURF)"
+      },
+      "encounter": {
+        "reference": "Encounter/2bb82ba9-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-04-12T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:30.000+00:00",
+      "valueDateTime": "2018-06-12T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2bb82ba9-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2bc075e9-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347770000",
+        "lastUpdated": "2020-11-02T20:09:30.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3d5e640-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "KIBIRO KIBIRO KIBIRO (OpenMRS ID: MGFURF)"
+      },
+      "encounter": {
+        "reference": "Encounter/2bbfef9c-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-08-24T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:30.000+00:00",
+      "valueDateTime": "2018-09-25T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2bbfef9c-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2bc80351-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347770000",
+        "lastUpdated": "2020-11-02T20:09:30.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3d5e640-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "KIBIRO KIBIRO KIBIRO (OpenMRS ID: MGFURF)"
+      },
+      "encounter": {
+        "reference": "Encounter/2bc78e41-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-09-25T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:30.000+00:00",
+      "valueDateTime": "2018-10-25T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2bc78e41-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2bd558b2-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347770000",
+        "lastUpdated": "2020-11-02T20:09:30.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3d5e640-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "KIBIRO KIBIRO KIBIRO (OpenMRS ID: MGFURF)"
+      },
+      "encounter": {
+        "reference": "Encounter/2bd45c7b-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-10-12T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:30.000+00:00",
+      "valueDateTime": "2020-10-23T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2bd45c7b-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2bdbf7d2-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347770000",
+        "lastUpdated": "2020-11-02T20:09:30.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3d5e640-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "KIBIRO KIBIRO KIBIRO (OpenMRS ID: MGFURF)"
+      },
+      "encounter": {
+        "reference": "Encounter/2bdbd5a7-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-10-23T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:30.000+00:00",
+      "valueDateTime": "2020-11-22T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2bdbd5a7-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "66605f11-92e8-4489-b53d-ee442171a679",
+      "meta": {
+        "versionId": "1606209013000",
+        "lastUpdated": "2020-11-24T09:10:13.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3d5e640-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "KIBIRO KIBIRO KIBIRO (OpenMRS ID: MGFURF)"
+      },
+      "encounter": {
+        "reference": "Encounter/042c2ab7-69f2-4113-a9dc-c205c6ca36b9",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-11-24T09:08:31+00:00",
+      "issued": "2020-11-24T09:10:13.000+00:00",
+      "valueDateTime": "2021-02-25T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/042c2ab7-69f2-4113-a9dc-c205c6ca36b9"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "ec88c3dc-967d-4d40-852d-97c1395d1725",
+      "meta": {
+        "versionId": "1614616623000",
+        "lastUpdated": "2021-03-01T16:37:03.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3d5e640-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "KIBIRO KIBIRO KIBIRO (OpenMRS ID: MGFURF)"
+      },
+      "encounter": {
+        "reference": "Encounter/500c79ec-0fb5-4c17-81f1-c8ce67f310e3",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-02-25T16:35:00+00:00",
+      "issued": "2021-03-01T16:37:03.000+00:00",
+      "valueDateTime": "2021-04-27T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/500c79ec-0fb5-4c17-81f1-c8ce67f310e3"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "c30b051e-2f79-4d35-8993-59c02f12f046",
+      "meta": {
+        "versionId": "1618913972000",
+        "lastUpdated": "2021-04-20T10:19:32.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3d5e640-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "KIBIRO KIBIRO KIBIRO (OpenMRS ID: MGFURF)"
+      },
+      "encounter": {
+        "reference": "Encounter/4775273a-1d86-4425-9e98-6ecdab58f0be",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-04-19T10:17:00+00:00",
+      "issued": "2021-04-20T10:19:32.000+00:00",
+      "valueDateTime": "2021-08-20T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/4775273a-1d86-4425-9e98-6ecdab58f0be"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "b6e10776-88d8-4d1a-bc61-2387c880fa91",
+      "meta": {
+        "versionId": "1629886416000",
+        "lastUpdated": "2021-08-25T10:13:36.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3d5e640-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "KIBIRO KIBIRO KIBIRO (OpenMRS ID: MGFURF)"
+      },
+      "encounter": {
+        "reference": "Encounter/f06aaa08-efd6-4261-805d-b9b720c8424c",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-08-25T10:11:13+00:00",
+      "issued": "2021-08-25T10:13:36.000+00:00",
+      "valueDateTime": "2021-11-18T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/f06aaa08-efd6-4261-805d-b9b720c8424c"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "0a8768a0-9048-48c6-9738-fc77d66c2ec8",
+      "meta": {
+        "versionId": "1641302815000",
+        "lastUpdated": "2022-01-04T13:26:55.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3d5e640-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "KIBIRO KIBIRO KIBIRO (OpenMRS ID: MGFURF)"
+      },
+      "encounter": {
+        "reference": "Encounter/40008a71-4f91-4e2f-99c6-49e0c60c68b5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-12-01T13:26:00+00:00",
+      "issued": "2022-01-04T13:26:55.000+00:00",
+      "valueDateTime": "2022-04-30T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/40008a71-4f91-4e2f-99c6-49e0c60c68b5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "12937799-7eb9-4426-a671-92be0b2a52b0",
+      "meta": {
+        "versionId": "1642768878000",
+        "lastUpdated": "2022-01-21T12:41:18.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3d5e640-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "KIBIRO KIBIRO KIBIRO (OpenMRS ID: MGFURF)"
+      },
+      "encounter": {
+        "reference": "Encounter/f915d1fd-d6d4-468f-a86e-fb0f8de9d0a6",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2022-01-21T12:40:06+00:00",
+      "issued": "2022-01-21T12:41:18.000+00:00",
+      "valueDateTime": "2022-04-12T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/f915d1fd-d6d4-468f-a86e-fb0f8de9d0a6"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "b76b1a04-b4c8-43bf-9b7f-f3e2798420c5",
+      "meta": {
+        "versionId": "1649932456000",
+        "lastUpdated": "2022-04-14T10:34:16.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3d5e640-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "KIBIRO KIBIRO KIBIRO (OpenMRS ID: MGFURF)"
+      },
+      "encounter": {
+        "reference": "Encounter/e63e809b-10f7-48ea-8938-94b4994aa2ad",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2022-04-14T10:32:32+00:00",
+      "issued": "2022-04-14T10:34:16.000+00:00",
+      "valueDateTime": "2022-09-15T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e63e809b-10f7-48ea-8938-94b4994aa2ad"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "25bcd1a0-2e60-458c-b8bd-0d02e3e5e43c",
+      "meta": {
+        "versionId": "1669890064000",
+        "lastUpdated": "2022-12-01T10:21:04.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3d5e640-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "KIBIRO KIBIRO KIBIRO (OpenMRS ID: MGFURF)"
+      },
+      "encounter": {
+        "reference": "Encounter/0e79bfb9-c923-4d02-9e32-7b95831eee15",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2022-11-30T10:20:00+00:00",
+      "issued": "2022-12-01T10:21:04.000+00:00",
+      "valueDateTime": "2023-01-24T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/0e79bfb9-c923-4d02-9e32-7b95831eee15"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "b3e2bc8b-1d2c-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347139000",
+        "lastUpdated": "2020-11-02T19:58:59.000+00:00"
+      },
+      "identifier": [ {
+        "id": "b3f1b18e-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "official",
+        "type": {
+          "coding": [ {
+            "code": "dfacd928-0370-4315-99d7-6ec1c9f7ae76"
+          } ],
+          "text": "OpenMRS ID"
+        },
+        "value": "MGFUTD"
+      }, {
+        "id": "b3e32205-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "05ee9cf4-7242-4a17-b4d4-00f707265c8a"
+          } ],
+          "text": "Unique Patient Number"
+        },
+        "value": "1533900364"
+      }, {
+        "id": "8dedb54d-d9e7-4693-8865-cbec85b098ba",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "49af6cdc-7968-4abb-bf46-de10d7f4859f"
+          } ],
+          "text": "National ID"
+        },
+        "value": "89799899"
+      }, {
+        "id": "5df7dbd1-c8d8-43c2-ab73-9a18f436dd41",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "f85081e2-b4be-4e48-b3a4-7994b69bb101"
+          } ],
+          "text": "National Unique patient identifier"
+        },
+        "value": "0000007000700"
+      } ],
+      "active": true,
+      "name": [ {
+        "id": "b3e2dcb2-1d2c-11eb-8abc-0242e805c5c5",
+        "family": "mch",
+        "given": [ "mch", "mch" ]
+      } ],
+      "gender": "female",
+      "birthDate": "1974-06-15",
+      "deceasedBoolean": false,
+      "address": [ {
+        "id": "1813fc1d-2a8a-4511-a16c-b9b4bb1d07bf",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/address",
+          "extension": [ {
+            "url": "http://fhir.openmrs.org/ext/address#address1",
+            "valueString": "302 address1"
+          }, {
+            "url": "http://fhir.openmrs.org/ext/address#address4",
+            "valueString": "Marmanet"
+          } ]
+        } ],
+        "use": "home",
+        "city": "karandi",
+        "district": "Laikipia",
+        "state": "Laikipia West"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/b3e2bc8b-1d2c-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2313eca7-e801-405e-b4c8-b874ab78e252",
+      "meta": {
+        "versionId": "1652196868000",
+        "lastUpdated": "2022-05-10T15:34:28.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "160540AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Method of enrollment"
+        }, {
+          "system": "http://loinc.org",
+          "code": "45252-4"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "160540"
+        } ],
+        "text": "Method of enrollment"
+      },
+      "subject": {
+        "reference": "Patient/b3e2bc8b-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "mch mch mch (OpenMRS ID: MGFUTD)"
+      },
+      "encounter": {
+        "reference": "Encounter/0f91310c-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-04-20T00:00:00+00:00",
+      "issued": "2022-05-10T15:34:28.000+00:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "160542AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Outpatient department"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "160542"
+        }, {
+          "system": "http://snomed.info/sct/",
+          "code": "33022008"
+        } ],
+        "text": "Outpatient department"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/0f91310c-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "764b87c1-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347895000",
+        "lastUpdated": "2020-11-02T20:11:35.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "1193AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "CURRENT DRUGS USED"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "1193"
+        } ],
+        "text": "CURRENT DRUGS USED"
+      },
+      "subject": {
+        "reference": "Patient/b3e2bc8b-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "mch mch mch (OpenMRS ID: MGFUTD)"
+      },
+      "encounter": {
+        "reference": "Encounter/764b47a8-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-08-01T00:00:00+00:00",
+      "issued": "2020-11-02T20:11:35.000+00:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "164505AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Lamivudine / Efavirenz / Tenofovir"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "164505"
+        } ],
+        "text": "Lamivudine / Efavirenz / Tenofovir"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/764b47a8-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2be69bc0-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347770000",
+        "lastUpdated": "2020-11-02T20:09:30.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3e2bc8b-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "mch mch mch (OpenMRS ID: MGFUTD)"
+      },
+      "encounter": {
+        "reference": "Encounter/2be61ea8-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-08-01T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:30.000+00:00",
+      "valueDateTime": "2017-09-30T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2be61ea8-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2bee61e2-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347770000",
+        "lastUpdated": "2020-11-02T20:09:30.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3e2bc8b-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "mch mch mch (OpenMRS ID: MGFUTD)"
+      },
+      "encounter": {
+        "reference": "Encounter/2bedda11-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-03-01T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:30.000+00:00",
+      "valueDateTime": "2018-05-03T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2bedda11-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2bf5df37-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347770000",
+        "lastUpdated": "2020-11-02T20:09:30.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3e2bc8b-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "mch mch mch (OpenMRS ID: MGFUTD)"
+      },
+      "encounter": {
+        "reference": "Encounter/2bf55d88-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-05-04T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:30.000+00:00",
+      "valueDateTime": "2018-06-03T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2bf55d88-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2bfda3dc-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347770000",
+        "lastUpdated": "2020-11-02T20:09:30.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3e2bc8b-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "mch mch mch (OpenMRS ID: MGFUTD)"
+      },
+      "encounter": {
+        "reference": "Encounter/2bfd13ae-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-05-30T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:30.000+00:00",
+      "valueDateTime": "2018-06-29T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2bfd13ae-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2c0680a3-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347770000",
+        "lastUpdated": "2020-11-02T20:09:30.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3e2bc8b-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "mch mch mch (OpenMRS ID: MGFUTD)"
+      },
+      "encounter": {
+        "reference": "Encounter/2c05fb1b-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-07-31T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:30.000+00:00",
+      "valueDateTime": "2018-09-29T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2c05fb1b-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2c0cb4bc-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347770000",
+        "lastUpdated": "2020-11-02T20:09:30.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3e2bc8b-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "mch mch mch (OpenMRS ID: MGFUTD)"
+      },
+      "encounter": {
+        "reference": "Encounter/2c0c4794-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2019-02-06T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:30.000+00:00",
+      "valueDateTime": "2019-03-21T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2c0c4794-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2c1a0bbc-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347771000",
+        "lastUpdated": "2020-11-02T20:09:31.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3e2bc8b-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "mch mch mch (OpenMRS ID: MGFUTD)"
+      },
+      "encounter": {
+        "reference": "Encounter/2c191fb2-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-05-14T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:31.000+00:00",
+      "valueDateTime": "2020-10-15T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2c191fb2-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2c1f990a-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347771000",
+        "lastUpdated": "2020-11-02T20:09:31.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3e2bc8b-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "mch mch mch (OpenMRS ID: MGFUTD)"
+      },
+      "encounter": {
+        "reference": "Encounter/2c1f760c-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-10-12T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:31.000+00:00",
+      "valueDateTime": "2020-11-11T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2c1f760c-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2c26a089-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347771000",
+        "lastUpdated": "2020-11-02T20:09:31.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3e2bc8b-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "mch mch mch (OpenMRS ID: MGFUTD)"
+      },
+      "encounter": {
+        "reference": "Encounter/2c25d348-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-10-16T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:31.000+00:00",
+      "valueDateTime": "2021-01-19T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2c25d348-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "9f3c95d0-6ae8-4ee4-aef9-547c73ca776b",
+      "meta": {
+        "versionId": "1611141343000",
+        "lastUpdated": "2021-01-20T11:15:43.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3e2bc8b-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "mch mch mch (OpenMRS ID: MGFUTD)"
+      },
+      "encounter": {
+        "reference": "Encounter/e0348705-24bc-46ff-adcd-1db72dc22687",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-01-20T11:14:39+00:00",
+      "issued": "2021-01-20T11:15:43.000+00:00",
+      "valueDateTime": "2021-06-17T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/e0348705-24bc-46ff-adcd-1db72dc22687"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "e796d621-c5dc-4841-a426-49b18c1321b0",
+      "meta": {
+        "versionId": "1623923368000",
+        "lastUpdated": "2021-06-17T09:49:28.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3e2bc8b-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "mch mch mch (OpenMRS ID: MGFUTD)"
+      },
+      "encounter": {
+        "reference": "Encounter/3773db30-537b-4010-8661-46e77ca81aec",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-06-17T09:48:57+00:00",
+      "issued": "2021-06-17T09:49:28.000+00:00",
+      "valueDateTime": "2021-10-12T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/3773db30-537b-4010-8661-46e77ca81aec"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "50c34741-ab45-448e-b202-907f34c9c704",
+      "meta": {
+        "versionId": "1634031290000",
+        "lastUpdated": "2021-10-12T09:34:50.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3e2bc8b-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "mch mch mch (OpenMRS ID: MGFUTD)"
+      },
+      "encounter": {
+        "reference": "Encounter/ed7acfd6-a0b1-4615-8f8e-ad4874245623",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-10-12T09:34:18+00:00",
+      "issued": "2021-10-12T09:34:50.000+00:00",
+      "valueDateTime": "2022-01-11T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/ed7acfd6-a0b1-4615-8f8e-ad4874245623"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "68f9bab8-471b-479c-a1b9-5a51162a36c0",
+      "meta": {
+        "versionId": "1642773626000",
+        "lastUpdated": "2022-01-21T14:00:26.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3e2bc8b-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "mch mch mch (OpenMRS ID: MGFUTD)"
+      },
+      "encounter": {
+        "reference": "Encounter/b1955557-bd82-4535-8ffb-1e139731bc50",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2022-01-21T13:57:07+00:00",
+      "issued": "2022-01-21T14:00:26.000+00:00",
+      "valueDateTime": "2022-04-12T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/b1955557-bd82-4535-8ffb-1e139731bc50"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "fd7e6f62-72cc-41c0-8e8c-a6f3f332dbc6",
+      "meta": {
+        "versionId": "1649926798000",
+        "lastUpdated": "2022-04-14T08:59:58.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3e2bc8b-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "mch mch mch (OpenMRS ID: MGFUTD)"
+      },
+      "encounter": {
+        "reference": "Encounter/07f13f0d-ce49-4db0-b1c5-985db1ee834e",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2022-04-14T08:58:11+00:00",
+      "issued": "2022-04-14T08:59:58.000+00:00",
+      "valueDateTime": "2022-09-15T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/07f13f0d-ce49-4db0-b1c5-985db1ee834e"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "3e58e95e-4b9f-4b37-9208-64908e75b2bb",
+      "meta": {
+        "versionId": "1663334446000",
+        "lastUpdated": "2022-09-16T13:20:46.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3e2bc8b-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "mch mch mch (OpenMRS ID: MGFUTD)"
+      },
+      "encounter": {
+        "reference": "Encounter/14283e42-5603-4c44-a980-4945f06bf84b",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2022-09-15T13:19:00+00:00",
+      "issued": "2022-09-16T13:20:46.000+00:00",
+      "valueDateTime": "2023-01-19T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/14283e42-5603-4c44-a980-4945f06bf84b"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "68986e9d-209d-40ba-87c7-9845c7af1a22",
+      "meta": {
+        "versionId": "1674578531000",
+        "lastUpdated": "2023-01-24T16:42:11.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3e2bc8b-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "mch mch mch (OpenMRS ID: MGFUTD)"
+      },
+      "encounter": {
+        "reference": "Encounter/3f275bb1-7a5c-4a38-86c5-28239e160aeb",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2023-01-19T16:38:00+00:00",
+      "issued": "2023-01-24T16:42:11.000+00:00",
+      "valueDateTime": "2023-07-19T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/3f275bb1-7a5c-4a38-86c5-28239e160aeb"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "a67a2007-a721-44ad-973b-da7ee5a2bfc1",
+      "meta": {
+        "versionId": "1689763245000",
+        "lastUpdated": "2023-07-19T10:40:45.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3e2bc8b-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "mch mch mch (OpenMRS ID: MGFUTD)"
+      },
+      "encounter": {
+        "reference": "Encounter/09d2e646-a714-4593-9183-88f538890db8",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2023-07-19T10:35:32+00:00",
+      "issued": "2023-07-19T10:40:45.000+00:00",
+      "valueDateTime": "2023-11-15T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/09d2e646-a714-4593-9183-88f538890db8"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "44ab8fa4-305e-4033-a4c4-182b63dde220",
+      "meta": {
+        "versionId": "1699963142000",
+        "lastUpdated": "2023-11-14T11:59:02.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3e2bc8b-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "mch mch mch (OpenMRS ID: MGFUTD)"
+      },
+      "encounter": {
+        "reference": "Encounter/993c679d-1c33-413e-98f7-e86556f6d8c7",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2023-11-14T11:56:32+00:00",
+      "issued": "2023-11-14T11:59:02.000+00:00",
+      "valueDateTime": "2024-06-11T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/993c679d-1c33-413e-98f7-e86556f6d8c7"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "b3f1da49-1d2c-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347139000",
+        "lastUpdated": "2020-11-02T19:58:59.000+00:00"
+      },
+      "identifier": [ {
+        "id": "b403a5f1-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "official",
+        "type": {
+          "coding": [ {
+            "code": "dfacd928-0370-4315-99d7-6ec1c9f7ae76"
+          } ],
+          "text": "OpenMRS ID"
+        },
+        "value": "MGFUUA"
+      }, {
+        "id": "b3f233bc-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "05ee9cf4-7242-4a17-b4d4-00f707265c8a"
+          } ],
+          "text": "Unique Patient Number"
+        },
+        "value": "15339000366"
+      } ],
+      "active": true,
+      "name": [ {
+        "id": "b3f1f854-1d2c-11eb-8abc-0242e805c5c5",
+        "family": "MATO PREP",
+        "given": [ "MATO PREP", "MATO PREP" ]
+      } ],
+      "gender": "female",
+      "birthDate": "1990-06-15",
+      "deceasedBoolean": false,
+      "address": [ {
+        "id": "b3f212c9-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/address",
+          "extension": [ {
+            "url": "http://fhir.openmrs.org/ext/address#address1",
+            "valueString": "303 address1"
+          } ]
+        } ],
+        "use": "old"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/b3f1da49-1d2c-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "76583833-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347895000",
+        "lastUpdated": "2020-11-02T20:11:35.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "1193AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "CURRENT DRUGS USED"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "1193"
+        } ],
+        "text": "CURRENT DRUGS USED"
+      },
+      "subject": {
+        "reference": "Patient/b3f1da49-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MATO PREP MATO PREP MATO PREP (OpenMRS ID: MGFUUA)"
+      },
+      "encounter": {
+        "reference": "Encounter/7657f8b2-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-08-02T00:00:00+00:00",
+      "issued": "2020-11-02T20:11:35.000+00:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "164505AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Lamivudine / Efavirenz / Tenofovir"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "164505"
+        } ],
+        "text": "Lamivudine / Efavirenz / Tenofovir"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/7657f8b2-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2c304bcd-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347771000",
+        "lastUpdated": "2020-11-02T20:09:31.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b3f1da49-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MATO PREP MATO PREP MATO PREP (OpenMRS ID: MGFUUA)"
+      },
+      "encounter": {
+        "reference": "Encounter/2c2fda3f-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-08-02T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:31.000+00:00",
+      "valueDateTime": "2017-10-31T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2c2fda3f-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "382baa71-1d2d-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347361000",
+        "lastUpdated": "2020-11-02T20:02:41.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "161555AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Reason for discontinuation of program"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "161555"
+        } ],
+        "text": "Reason for discontinuation of program"
+      },
+      "subject": {
+        "reference": "Patient/b3f1da49-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "MATO PREP MATO PREP MATO PREP (OpenMRS ID: MGFUUA)"
+      },
+      "encounter": {
+        "reference": "Encounter/382b7dc3-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-08-02T00:00:00+00:00",
+      "issued": "2020-11-02T20:02:41.000+00:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "159492AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Transferred out"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "159492"
+        } ],
+        "text": "Transferred out"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/382b7dc3-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "b403cb30-1d2c-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347140000",
+        "lastUpdated": "2020-11-02T19:59:00.000+00:00"
+      },
+      "identifier": [ {
+        "id": "b410631a-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "official",
+        "type": {
+          "coding": [ {
+            "code": "dfacd928-0370-4315-99d7-6ec1c9f7ae76"
+          } ],
+          "text": "OpenMRS ID"
+        },
+        "value": "MGFUV7"
+      }, {
+        "id": "b4043268-1d2c-11eb-8abc-0242e805c5c5",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "05ee9cf4-7242-4a17-b4d4-00f707265c8a"
+          } ],
+          "text": "Unique Patient Number"
+        },
+        "value": "1533900369"
+      }, {
+        "id": "4eae7f9e-3c8e-4a5e-8e5e-ab5b21166a34",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "49af6cdc-7968-4abb-bf46-de10d7f4859f"
+          } ],
+          "text": "National ID"
+        },
+        "value": "9778899"
+      }, {
+        "id": "2a773083-56e7-4fdc-83d3-ab4e30b0aee1",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/a92f9952-1c4c-4659-893b-a6b56a16b1df",
+            "type": "Location",
+            "display": "Ngarua Health Centre"
+          }
+        } ],
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "code": "f85081e2-b4be-4e48-b3a4-7994b69bb101"
+          } ],
+          "text": "National Unique patient identifier"
+        },
+        "value": "0000000989700"
+      } ],
+      "active": true,
+      "name": [ {
+        "id": "b403eac2-1d2c-11eb-8abc-0242e805c5c5",
+        "family": "Gakii",
+        "given": [ "Gakii", "Gakii" ]
+      } ],
+      "gender": "male",
+      "birthDate": "1972-06-15",
+      "deceasedBoolean": false,
+      "address": [ {
+        "id": "72e1c1da-78e0-467c-b13d-ae41147c461e",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/address",
+          "extension": [ {
+            "url": "http://fhir.openmrs.org/ext/address#address1",
+            "valueString": "304 address1"
+          }, {
+            "url": "http://fhir.openmrs.org/ext/address#address2",
+            "valueString": "kibagenge primary"
+          }, {
+            "url": "http://fhir.openmrs.org/ext/address#address4",
+            "valueString": "Marmanet"
+          }, {
+            "url": "http://fhir.openmrs.org/ext/address#address5",
+            "valueString": "Kimoriot"
+          }, {
+            "url": "http://fhir.openmrs.org/ext/address#address6",
+            "valueString": "Kimoriot"
+          } ]
+        } ],
+        "use": "home",
+        "city": "kibagenge",
+        "district": "Laikipia",
+        "state": "Laikipia West"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/b403cb30-1d2c-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "1aaa98e7-e88b-4a38-b40d-39abd01bec94",
+      "meta": {
+        "versionId": "1652196810000",
+        "lastUpdated": "2022-05-10T15:33:30.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "160540AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Method of enrollment"
+        }, {
+          "system": "http://loinc.org",
+          "code": "45252-4"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "160540"
+        } ],
+        "text": "Method of enrollment"
+      },
+      "subject": {
+        "reference": "Patient/b403cb30-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Gakii Gakii Gakii (OpenMRS ID: MGFUV7)"
+      },
+      "encounter": {
+        "reference": "Encounter/0fa6db46-1d2d-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-05-15T00:00:00+00:00",
+      "issued": "2022-05-10T15:33:30.000+00:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "160542AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Outpatient department"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "160542"
+        }, {
+          "system": "http://snomed.info/sct/",
+          "code": "33022008"
+        } ],
+        "text": "Outpatient department"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/0fa6db46-1d2d-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "765ea12f-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347895000",
+        "lastUpdated": "2020-11-02T20:11:35.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "1193AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "CURRENT DRUGS USED"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "1193"
+        } ],
+        "text": "CURRENT DRUGS USED"
+      },
+      "subject": {
+        "reference": "Patient/b403cb30-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Gakii Gakii Gakii (OpenMRS ID: MGFUV7)"
+      },
+      "encounter": {
+        "reference": "Encounter/765e6183-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-08-25T00:00:00+00:00",
+      "issued": "2020-11-02T20:11:35.000+00:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "164505AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Lamivudine / Efavirenz / Tenofovir"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "164505"
+        } ],
+        "text": "Lamivudine / Efavirenz / Tenofovir"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/765e6183-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2c36eba8-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347771000",
+        "lastUpdated": "2020-11-02T20:09:31.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b403cb30-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Gakii Gakii Gakii (OpenMRS ID: MGFUV7)"
+      },
+      "encounter": {
+        "reference": "Encounter/2c365e09-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2017-08-25T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:31.000+00:00",
+      "valueDateTime": "2017-11-23T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2c365e09-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2c3d2903-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347771000",
+        "lastUpdated": "2020-11-02T20:09:31.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b403cb30-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Gakii Gakii Gakii (OpenMRS ID: MGFUV7)"
+      },
+      "encounter": {
+        "reference": "Encounter/2c3caef2-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-02-05T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:31.000+00:00",
+      "valueDateTime": "2018-04-06T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2c3caef2-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2c4b34c4-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347771000",
+        "lastUpdated": "2020-11-02T20:09:31.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b403cb30-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Gakii Gakii Gakii (OpenMRS ID: MGFUV7)"
+      },
+      "encounter": {
+        "reference": "Encounter/2c4aabab-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-04-04T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:31.000+00:00",
+      "valueDateTime": "2018-06-04T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2c4aabab-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2c52d402-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347771000",
+        "lastUpdated": "2020-11-02T20:09:31.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b403cb30-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Gakii Gakii Gakii (OpenMRS ID: MGFUV7)"
+      },
+      "encounter": {
+        "reference": "Encounter/2c52559b-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-06-04T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:31.000+00:00",
+      "valueDateTime": "2018-08-03T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2c52559b-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2c5e6228-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347771000",
+        "lastUpdated": "2020-11-02T20:09:31.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b403cb30-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Gakii Gakii Gakii (OpenMRS ID: MGFUV7)"
+      },
+      "encounter": {
+        "reference": "Encounter/2c5ddbdb-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-08-02T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:31.000+00:00",
+      "valueDateTime": "2018-12-04T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2c5ddbdb-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2c64a827-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347771000",
+        "lastUpdated": "2020-11-02T20:09:31.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b403cb30-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Gakii Gakii Gakii (OpenMRS ID: MGFUV7)"
+      },
+      "encounter": {
+        "reference": "Encounter/2c6429c6-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2018-12-04T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:31.000+00:00",
+      "valueDateTime": "2019-01-03T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2c6429c6-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2c6ac723-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347771000",
+        "lastUpdated": "2020-11-02T20:09:31.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b403cb30-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Gakii Gakii Gakii (OpenMRS ID: MGFUV7)"
+      },
+      "encounter": {
+        "reference": "Encounter/2c6a8d84-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2019-05-14T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:31.000+00:00",
+      "valueDateTime": "2019-07-13T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2c6a8d84-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2c79b7b1-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347771000",
+        "lastUpdated": "2020-11-02T20:09:31.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b403cb30-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Gakii Gakii Gakii (OpenMRS ID: MGFUV7)"
+      },
+      "encounter": {
+        "reference": "Encounter/2c78a629-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2019-12-17T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:31.000+00:00",
+      "valueDateTime": "2020-06-24T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2c78a629-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "2c7fb01a-1d2e-11eb-8abc-0242e805c5c5",
+      "meta": {
+        "versionId": "1604347771000",
+        "lastUpdated": "2020-11-02T20:09:31.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b403cb30-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Gakii Gakii Gakii (OpenMRS ID: MGFUV7)"
+      },
+      "encounter": {
+        "reference": "Encounter/2c7ecf87-1d2e-11eb-8abc-0242e805c5c5",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-06-24T00:00:00+00:00",
+      "issued": "2020-11-02T20:09:31.000+00:00",
+      "valueDateTime": "2020-12-11T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/2c7ecf87-1d2e-11eb-8abc-0242e805c5c5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "d5ab5fee-e1a5-4089-896b-af67f85344f7",
+      "meta": {
+        "versionId": "1606219556000",
+        "lastUpdated": "2020-11-24T12:05:56.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b403cb30-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Gakii Gakii Gakii (OpenMRS ID: MGFUV7)"
+      },
+      "encounter": {
+        "reference": "Encounter/37453d8d-58c6-452c-a0ec-4e136fac6579",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2020-11-24T12:04:40+00:00",
+      "issued": "2020-11-24T12:05:56.000+00:00",
+      "valueDateTime": "2021-02-25T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/37453d8d-58c6-452c-a0ec-4e136fac6579"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "0ece037a-0367-4256-a3cd-aecdb3d8f7f9",
+      "meta": {
+        "versionId": "1614594408000",
+        "lastUpdated": "2021-03-01T10:26:48.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b403cb30-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Gakii Gakii Gakii (OpenMRS ID: MGFUV7)"
+      },
+      "encounter": {
+        "reference": "Encounter/923a90d9-66cf-4008-8f98-0d540e6cc5d4",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-02-25T10:24:00+00:00",
+      "issued": "2021-03-01T10:26:48.000+00:00",
+      "valueDateTime": "2021-07-27T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/923a90d9-66cf-4008-8f98-0d540e6cc5d4"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "03196ee5-2463-4b6d-bef8-656dbb351a63",
+      "meta": {
+        "versionId": "1627394376000",
+        "lastUpdated": "2021-07-27T13:59:36.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b403cb30-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Gakii Gakii Gakii (OpenMRS ID: MGFUV7)"
+      },
+      "encounter": {
+        "reference": "Encounter/91cb033c-926e-4b11-adc2-b83d23943e6c",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-07-27T13:58:57+00:00",
+      "issued": "2021-07-27T13:59:36.000+00:00",
+      "valueDateTime": "2022-01-18T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/91cb033c-926e-4b11-adc2-b83d23943e6c"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "cf30fba4-2e5a-4f90-b607-64f19887d1c0",
+      "meta": {
+        "versionId": "1643630355000",
+        "lastUpdated": "2022-01-31T11:59:15.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b403cb30-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Gakii Gakii Gakii (OpenMRS ID: MGFUV7)"
+      },
+      "encounter": {
+        "reference": "Encounter/295a3122-d9e6-42e4-842d-266b97ba9597",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2022-01-31T11:58:06+00:00",
+      "issued": "2022-01-31T11:59:15.000+00:00",
+      "valueDateTime": "2022-04-29T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/295a3122-d9e6-42e4-842d-266b97ba9597"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "7eb740d8-39cf-4314-9209-a951cd3f8d16",
+      "meta": {
+        "versionId": "1651657806000",
+        "lastUpdated": "2022-05-04T09:50:06.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b403cb30-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Gakii Gakii Gakii (OpenMRS ID: MGFUV7)"
+      },
+      "encounter": {
+        "reference": "Encounter/cba9532d-d9f3-4081-a927-7e94be78a48c",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2022-05-04T09:44:25+00:00",
+      "issued": "2022-05-04T09:50:06.000+00:00",
+      "valueDateTime": "2022-05-31T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/cba9532d-d9f3-4081-a927-7e94be78a48c"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "aaae897a-01a3-4e4f-90e9-81598ed7e9a6",
+      "meta": {
+        "versionId": "1655196471000",
+        "lastUpdated": "2022-06-14T08:47:51.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b403cb30-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Gakii Gakii Gakii (OpenMRS ID: MGFUV7)"
+      },
+      "encounter": {
+        "reference": "Encounter/44911fe4-d39c-461b-aabc-2c0dc9c1469f",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2022-06-13T17:41:19+00:00",
+      "issued": "2022-06-14T08:47:51.000+00:00",
+      "valueDateTime": "2022-10-12T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/44911fe4-d39c-461b-aabc-2c0dc9c1469f"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "28cfb921-9301-4ffc-be96-50469d4e8ea6",
+      "meta": {
+        "versionId": "1665658849000",
+        "lastUpdated": "2022-10-13T11:00:49.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b403cb30-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Gakii Gakii Gakii (OpenMRS ID: MGFUV7)"
+      },
+      "encounter": {
+        "reference": "Encounter/4571867a-35fa-4890-97db-ce6a1a09ab0a",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2022-10-13T10:59:13+00:00",
+      "issued": "2022-10-13T11:00:49.000+00:00",
+      "valueDateTime": "2023-02-14T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/4571867a-35fa-4890-97db-ce6a1a09ab0a"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "b20b5bd2-ba3f-47ab-87f4-e1f135caa421",
+      "meta": {
+        "versionId": "1676281552000",
+        "lastUpdated": "2023-02-13T09:45:52.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b403cb30-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Gakii Gakii Gakii (OpenMRS ID: MGFUV7)"
+      },
+      "encounter": {
+        "reference": "Encounter/fcfa9a0c-187a-4481-b624-cf98546d2172",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2023-02-13T09:44:04+00:00",
+      "issued": "2023-02-13T09:45:52.000+00:00",
+      "valueDateTime": "2023-08-29T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/fcfa9a0c-187a-4481-b624-cf98546d2172"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "91835fe1-63bc-403c-b246-18dcde42fc0f",
+      "meta": {
+        "versionId": "1693820768000",
+        "lastUpdated": "2023-09-04T09:46:08.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b403cb30-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Gakii Gakii Gakii (OpenMRS ID: MGFUV7)"
+      },
+      "encounter": {
+        "reference": "Encounter/6dea1f1f-03e4-44f6-b269-62f80fcb0843",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2023-08-29T09:42:00+00:00",
+      "issued": "2023-09-04T09:46:08.000+00:00",
+      "valueDateTime": "2023-09-28T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/6dea1f1f-03e4-44f6-b269-62f80fcb0843"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "6cce0c21-d96a-41c5-873e-fa0484de783b",
+      "meta": {
+        "versionId": "1695895367000",
+        "lastUpdated": "2023-09-28T10:02:47.000+00:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "RETURN VISIT DATE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "5096"
+        } ],
+        "text": "RETURN VISIT DATE"
+      },
+      "subject": {
+        "reference": "Patient/b403cb30-1d2c-11eb-8abc-0242e805c5c5",
+        "type": "Patient",
+        "display": "Gakii Gakii Gakii (OpenMRS ID: MGFUV7)"
+      },
+      "encounter": {
+        "reference": "Encounter/388f5da5-b053-4865-a596-aa3635076d96",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2023-09-28T10:00:10+00:00",
+      "issued": "2023-09-28T10:02:47.000+00:00",
+      "valueDateTime": "2024-01-18T00:00:00+00:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/388f5da5-b053-4865-a596-aa3635076d96"
+    }
+  } ]
+}
