@@ -1,0 +1,155 @@
+{
+  "resourceType": "Bundle",
+  "id": "6d15ca87-fc5c-48de-8690-b1999600df93",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "e70e0b6a-f2a2-4a5a-af3c-dbe08925d01e",
+      "meta": {
+        "versionId": "1648203304000",
+        "lastUpdated": "2022-03-25T13:15:04.000+03:00"
+      },
+      "identifier": [ {
+        "id": "035b0938-287e-4625-a5a8-498e920763b3",
+        "extension": [ {
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/fc4aeac6-24e7-4da1-8d51-9fc1997a80d4",
+            "type": "Location",
+            "display": "Kamulu Dispensary"
+          }
+        } ],
+        "use": "official",
+        "type": {
+          "coding": [ {
+            "code": "dfacd928-0370-4315-99d7-6ec1c9f7ae76"
+          } ],
+          "text": "OpenMRS ID"
+        },
+        "value": "MCAV3"
+      } ],
+      "active": true,
+      "name": [ {
+        "id": "96a1dee8-8a6a-483a-8508-8ab1b7cf9255",
+        "text": "Dan Dan Dan",
+        "family": "Dan",
+        "given": [ "Dan", "Dan" ]
+      } ],
+      "gender": "male",
+      "birthDate": "1980",
+      "deceasedBoolean": false,
+      "address": [ {
+        "id": "b561dc11-e23d-47b6-b559-362fe1e7499a",
+        "use": "home",
+        "state": "Kisumu"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/e70e0b6a-f2a2-4a5a-af3c-dbe08925d01e"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "1575d978-2745-45cb-8246-d6e1e1eb30d9",
+      "meta": {
+        "versionId": "1648203316000",
+        "lastUpdated": "2022-03-25T13:15:16.000+03:00"
+      },
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "exam",
+          "display": "Exam"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "code": "159427AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Result of HIV test"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "159427"
+        } ],
+        "text": "Result of HIV test"
+      },
+      "subject": {
+        "reference": "Patient/e70e0b6a-f2a2-4a5a-af3c-dbe08925d01e",
+        "type": "Patient",
+        "display": "Dan Okech Oketch (OpenMRS ID: MCAV3)"
+      },
+      "encounter": {
+        "reference": "Encounter/532fa83c-a56d-4f04-a3ca-ae1a5bfa324a",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2022-03-24T00:00:00+03:00",
+      "issued": "2022-03-25T13:15:16.000+03:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "NEGATIVE"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "664"
+        }, {
+          "system": "http://snomed.info/sct/",
+          "code": "260385009"
+        } ],
+        "text": "NEGATIVE"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/532fa83c-a56d-4f04-a3ca-ae1a5bfa324a"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "8259ea8d-e309-45f8-aa6c-88b87f0746a2",
+      "meta": {
+        "versionId": "1648203316000",
+        "lastUpdated": "2022-03-25T13:15:16.000+03:00"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "code": "164848AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Received HIV test result"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "164848"
+        } ],
+        "text": "Received HIV test result"
+      },
+      "subject": {
+        "reference": "Patient/e70e0b6a-f2a2-4a5a-af3c-dbe08925d01e",
+        "type": "Patient",
+        "display": "Dan Okech Oketch (OpenMRS ID: MCAV3)"
+      },
+      "encounter": {
+        "reference": "Encounter/532fa83c-a56d-4f04-a3ca-ae1a5bfa324a",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2022-03-24T00:00:00+03:00",
+      "issued": "2022-03-25T13:15:16.000+03:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "code": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display": "Yes"
+        }, {
+          "system": "https://cielterminology.org",
+          "code": "1065"
+        }, {
+          "system": "http://snomed.info/sct/",
+          "code": "373066001"
+        } ],
+        "text": "Yes"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/532fa83c-a56d-4f04-a3ca-ae1a5bfa324a"
+    }
+  } ]
+}
