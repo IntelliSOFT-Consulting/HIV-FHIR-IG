@@ -1,0 +1,1 @@
+Functional requirements describe the capabilities the system must have in order to meet the end-user's needs and achieve tasks within the business process.
