@@ -11,10 +11,22 @@ fi
 
 httpyac --all HIVObservationHIVCondition.http
 
-cp ./transform-test-data1.json ../tests/Debug/3e990510-1d51-4a25-abd4-3885cf9e8be9/
-cp ./transform-test-data2.json ../tests/Debug/445beebb-e886-11ea-87c2-00155d017200/
-cp ./transform-test-data1.json ../tests/HIVCommon/3e990510-1d51-4a25-abd4-3885cf9e8be9/
-cp ./transform-test-data2.json ../tests/HIVCommon/445beebb-e886-11ea-87c2-00155d017200/
-cp ./transform-test-data1.json ../tests/HIVIND27Logic/3e990510-1d51-4a25-abd4-3885cf9e8be9/
-cp ./transform-test-data2.json ../tests/HIVIND27Logic/445beebb-e886-11ea-87c2-00155d017200/
+cp ./transforms/3e990510-1d51-4a25-abd4-3885cf9e8be9.json ../tests/Debug/3e990510-1d51-4a25-abd4-3885cf9e8be9/
+cp ./transforms/445beebb-e886-11ea-87c2-00155d017200.json ../tests/Debug/445beebb-e886-11ea-87c2-00155d017200/
+cp ./transforms/e70e0b6a-f2a2-4a5a-af3c-dbe08925d01e.json ../tests/Debug/e70e0b6a-f2a2-4a5a-af3c-dbe08925d01e/
 
+cp ./transforms/3e990510-1d51-4a25-abd4-3885cf9e8be9.json ../tests/HIVIND18Logic/3e990510-1d51-4a25-abd4-3885cf9e8be9/
+cp ./transforms/445beebb-e886-11ea-87c2-00155d017200.json ../tests/HIVIND18Logic/445beebb-e886-11ea-87c2-00155d017200/
+cp ./transforms/e70e0b6a-f2a2-4a5a-af3c-dbe08925d01e.json ../tests/HIVIND18Logic/e70e0b6a-f2a2-4a5a-af3c-dbe08925d01e/
+
+cp ./transforms/3e990510-1d51-4a25-abd4-3885cf9e8be9.json ../tests/HIVIND27Logic/3e990510-1d51-4a25-abd4-3885cf9e8be9/
+cp ./transforms/445beebb-e886-11ea-87c2-00155d017200.json ../tests/HIVIND27Logic/445beebb-e886-11ea-87c2-00155d017200/
+cp ./transforms/e70e0b6a-f2a2-4a5a-af3c-dbe08925d01e.json ../tests/HIVIND27Logic/e70e0b6a-f2a2-4a5a-af3c-dbe08925d01e/
+
+cp ./transforms/3e990510-1d51-4a25-abd4-3885cf9e8be9.json ../tests/HIVIND28Logic/3e990510-1d51-4a25-abd4-3885cf9e8be9/
+cp ./transforms/445beebb-e886-11ea-87c2-00155d017200.json ../tests/HIVIND28Logic/445beebb-e886-11ea-87c2-00155d017200/
+cp ./transforms/e70e0b6a-f2a2-4a5a-af3c-dbe08925d01e.json ../tests/HIVIND28Logic/e70e0b6a-f2a2-4a5a-af3c-dbe08925d01e/
+
+cp ./transforms/3e990510-1d51-4a25-abd4-3885cf9e8be9.json ../tests/HIVIND30Logic/3e990510-1d51-4a25-abd4-3885cf9e8be9/
+cp ./transforms/445beebb-e886-11ea-87c2-00155d017200.json ../tests/HIVIND30Logic/445beebb-e886-11ea-87c2-00155d017200/
+cp ./transforms/e70e0b6a-f2a2-4a5a-af3c-dbe08925d01e.json ../tests/HIVIND30Logic/e70e0b6a-f2a2-4a5a-af3c-dbe08925d01e/

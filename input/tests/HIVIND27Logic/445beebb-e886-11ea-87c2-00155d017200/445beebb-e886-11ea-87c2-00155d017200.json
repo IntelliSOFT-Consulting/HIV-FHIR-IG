@@ -1,0 +1,129 @@
+{
+  "resourceType" : "Bundle",
+  "type" : "transaction",
+  "entry" : [{
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "445beebb-e886-11ea-87c2-00155d017200",
+      "meta" : {
+        "lastUpdated" : "2020-08-27T19:56:35.000+03:00"
+      },
+      "identifier" : [{
+        "id" : "4462a315-e886-11ea-87c2-00155d017200",
+        "extension" : [{
+          "url" : "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference" : {
+            "reference" : "Location/f4934663-bf3a-4778-81b8-4c1e79398069",
+            "type" : "Location",
+            "display" : "Machakos Level 5 Hospital"
+          }
+        }],
+        "use" : "official",
+        "type" : {
+          "coding" : [{
+            "code" : "dfacd928-0370-4315-99d7-6ec1c9f7ae76"
+          }],
+          "text" : "OpenMRS ID"
+        },
+        "value" : "MHECKF"
+      },
+      {
+        "id" : "c4c3233b-7dad-440f-8bab-a473d4abfb1a",
+        "use" : "usual",
+        "type" : {
+          "coding" : [{
+            "code" : "05ee9cf4-7242-4a17-b4d4-00f707265c8a"
+          }],
+          "text" : "Unique Patient Number"
+        },
+        "value" : "1243898765"
+      }],
+      "active" : true,
+      "name" : [{
+        "id" : "445bfd9c-e886-11ea-87c2-00155d017200",
+        "family" : "MUNINI  NJOROGE",
+        "given" : ["MUNINI  NJOROGE",
+        "MUNINI  NJOROGE"]
+      }],
+      "gender" : "female",
+      "birthDate" : "2001-11-30",
+      "deceasedBoolean" : false,
+      "address" : [{
+        "id" : "445c0ea0-e886-11ea-87c2-00155d017200",
+        "extension" : [{
+          "extension" : [{
+            "url" : "http://fhir.openmrs.org/ext/address#address1",
+            "valueString" : "15034 address1"
+          },
+          {
+            "url" : "http://fhir.openmrs.org/ext/address#address2",
+            "valueString" : "15034 address2"
+          },
+          {
+            "url" : "http://fhir.openmrs.org/ext/address#address4",
+            "valueString" : "KITHIMANI"
+          }],
+          "url" : "http://fhir.openmrs.org/ext/address"
+        }],
+        "use" : "home",
+        "district" : "MACHAKOS",
+        "state" : "YATTA"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:3159b503-a1db-4756-bedf-e1805fe54892",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "3159b503-a1db-4756-bedf-e1805fe54892",
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "active",
+          "display" : "Active"
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code" : "encounter-diagnosis",
+          "display" : "Encounter Diagnosis"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+          "code" : "HIV.B.DE116"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/445beebb-e886-11ea-87c2-00155d017200"
+      },
+      "onsetDateTime" : "2023-08-01T12:02:11+03:00"
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Condition/3159b503-a1db-4756-bedf-e1805fe54892"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:db88c11d-d7eb-4ebe-a2a2-d6a08ac0ae8b",
+    "resource" : {
+      "resourceType" : "Provenance",
+      "id" : "db88c11d-d7eb-4ebe-a2a2-d6a08ac0ae8b",
+      "target" : [{
+        "reference" : "urn:uuid:3159b503-a1db-4756-bedf-e1805fe54892"
+      }],
+      "entity" : [{
+        "role" : "source",
+        "what" : {
+          "reference" : "Observation/fa1ea8e7-7d90-4a5b-a320-9ee61f7a6ad5"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Provenance/db88c11d-d7eb-4ebe-a2a2-d6a08ac0ae8b"
+    }
+  }]
+}
