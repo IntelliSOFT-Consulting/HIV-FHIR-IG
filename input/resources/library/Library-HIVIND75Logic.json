@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND75Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND75Logic",
   "title": "HIV.IND.75 Logic",
   "description": "% of people living with HIV tested positive for gonorrhoea who were treated based on national guidelines during the reporting period",
   "extension": [

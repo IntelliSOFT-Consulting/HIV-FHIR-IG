@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/base-clinical/Library/WHOConcepts",
+  "url": "http://smart.who.int/hiv/Library/WHOConcepts",
   "title": "WHOConcepts",
   "description": "Description not yet available for WHOConcepts.",
   "extension": [

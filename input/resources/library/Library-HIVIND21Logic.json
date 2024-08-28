@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND21Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND21Logic",
   "title": "HIV.IND.21 Logic",
   "description": "% of people newly diagnosed with HIV initiated on ART",
   "extension": [

@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND91Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND91Logic",
   "title": "HIV.IND.91 Logic",
   "description": "% of people living with HIV and diagnosed with HCV infection who initiated HCV treatment (direct acting antivirals) during the reporting period",
   "extension": [

@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND5Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND5Logic",
   "title": "HIV.IND.5 Logic",
   "description": "Number of people prescribed PEP during the reporting period",
   "extension": [

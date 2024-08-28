@@ -81,31 +81,10 @@
       ],
       "stratifier": [
         {
-          "id": "HIV.IND.4.S.AG",
+          "id": "HIV.IND.4.S",
           "criteria": {
             "language": "text/cql-identifier",
-            "expression": "Administrative Gender Stratifier"
-          }
-        },
-        {
-          "id": "HIV.IND.4.S.A",
-          "criteria": {
-            "language": "text/cql-identifier",
-            "expression": "Age Stratifier"
-          }
-        },
-        {
-          "id": "HIV.IND.4.S.GR",
-          "criteria": {
-            "language": "text/cql-identifier",
-            "expression": "Geographic Region Stratifier"
-          }
-        },
-        {
-          "id": "HIV.IND.4.S.P",
-          "criteria": {
-            "language": "text/cql-identifier",
-            "expression": "patientGroups Stratifier"
+            "expression": "Stratification"
           }
         }
       ]
@@ -127,14 +106,14 @@
     ]
   },
   "description": "Total volume of PrEP product prescribed",
-  "url": "http://smart.who.int/HIV/Measure/HIVIND4",
+  "url": "http://smart.who.int/hiv/Measure/HIVIND4",
   "status": "draft",
   "experimental": true,
-  "date": "2024-07-12",
+  "date": "2024-08-18",
   "name": "HIVIND4",
   "title": "HIV.IND.4 Volume of PrEP prescribed",
   "publisher": "World Health Organization (WHO)",
   "library": [
-    "http://smart.who.int/HIV/Library/HIVIND4Logic"
+    "http://smart.who.int/hiv/Library/HIVIND4Logic"
   ]
 }

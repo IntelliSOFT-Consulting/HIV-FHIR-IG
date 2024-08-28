@@ -62,6 +62,15 @@
             "expression": "Numerator"
           }
         }
+      ],
+      "stratifier": [
+        {
+          "id": "HIV.IND.32.S",
+          "criteria": {
+            "language": "text/cql-identifier",
+            "expression": "Stratification"
+          }
+        }
       ]
     }
   ],
@@ -81,14 +90,14 @@
     ]
   },
   "description": "% of people living with HIV on ART (for at least six months) with viral load test results",
-  "url": "http://smart.who.int/HIV/Measure/HIVIND32",
+  "url": "http://smart.who.int/hiv/Measure/HIVIND32",
   "status": "draft",
   "experimental": true,
-  "date": "2024-07-12",
+  "date": "2024-08-18",
   "name": "HIVIND32",
   "title": "HIV.IND.32 Viral load testing coverage",
   "publisher": "World Health Organization (WHO)",
   "library": [
-    "http://smart.who.int/HIV/Library/HIVIND32Logic"
+    "http://smart.who.int/hiv/Library/HIVIND32Logic"
   ]
 }

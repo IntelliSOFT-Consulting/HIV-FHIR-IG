@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND45Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND45Logic",
   "title": "HIV.IND.45 Logic",
   "description": "Number and % of people living with HIV on ART who completed a course of TB preventive treatment among those who initiated TPT",
   "extension": [

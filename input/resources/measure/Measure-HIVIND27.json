@@ -81,31 +81,10 @@
       ],
       "stratifier": [
         {
-          "id": "HIV.IND.27.S.AG",
+          "id": "HIV.IND.27.S",
           "criteria": {
             "language": "text/cql-identifier",
-            "expression": "Administrative Gender Stratifier"
-          }
-        },
-        {
-          "id": "HIV.IND.27.S.A",
-          "criteria": {
-            "language": "text/cql-identifier",
-            "expression": "Age Stratifier"
-          }
-        },
-        {
-          "id": "HIV.IND.27.S.GR",
-          "criteria": {
-            "language": "text/cql-identifier",
-            "expression": "Geographic Region Stratifier"
-          }
-        },
-        {
-          "id": "HIV.IND.27.S.P",
-          "criteria": {
-            "language": "text/cql-identifier",
-            "expression": "patientGroups Stratifier"
+            "expression": "Stratification"
           }
         }
       ]
@@ -127,14 +106,14 @@
     ]
   },
   "description": "Number and % of people on ART among all people living with HIV at the end of the reporting period",
-  "url": "http://smart.who.int/HIV/Measure/HIVIND27",
+  "url": "http://smart.who.int/hiv/Measure/HIVIND27",
   "status": "draft",
   "experimental": true,
-  "date": "2024-07-12",
+  "date": "2024-08-18",
   "name": "HIVIND27",
   "title": "HIV.IND.27 People living with HIV on ART",
   "publisher": "World Health Organization (WHO)",
   "library": [
-    "http://smart.who.int/HIV/Library/HIVIND27Logic"
+    "http://smart.who.int/hiv/Library/HIVIND27Logic"
   ]
 }

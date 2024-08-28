@@ -81,14 +81,14 @@
     ]
   },
   "description": "% of pregnant women who are HIV-positive at the time of their first test during the current pregnancy",
-  "url": "http://smart.who.int/HIV/Measure/HIVIND43",
+  "url": "http://smart.who.int/hiv/Measure/HIVIND43",
   "status": "draft",
   "experimental": true,
-  "date": "2024-07-12",
+  "date": "2024-08-18",
   "name": "HIVIND43",
   "title": "HIV.IND.43 HIV prevalence among women attending ANC",
   "publisher": "World Health Organization (WHO)",
   "library": [
-    "http://smart.who.int/HIV/Library/HIVIND43Logic"
+    "http://smart.who.int/hiv/Library/HIVIND43Logic"
   ]
 }

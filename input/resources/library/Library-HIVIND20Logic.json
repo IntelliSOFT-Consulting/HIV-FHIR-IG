@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND20Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND20Logic",
   "title": "HIV.IND.20 Logic",
   "description": "% testing positive among people who received an HIV test in the reporting period",
   "extension": [

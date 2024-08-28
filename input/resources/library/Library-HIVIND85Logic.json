@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND85Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND85Logic",
   "title": "HIV.IND.85 Logic",
   "description": "Percentage of people attending HIV prevention services who were tested for HBsAg and had a positive HBsAg test during the reporting period",
   "extension": [

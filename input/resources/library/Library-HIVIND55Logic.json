@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND55Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND55Logic",
   "title": "HIV.IND.55 Logic",
   "description": "% of people living with HIV enrolled in DSD ART models among those eligible for DSD ART (for facilities with electronic HIS) or among people living with HIV On ART (facilities with paper-based systems) during the reporting period",
   "extension": [

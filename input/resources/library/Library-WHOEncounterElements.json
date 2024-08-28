@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/WHOEncounter/Library/WHOEncounterElements",
+  "url": "http://smart.who.int/hiv/Library/WHOEncounterElements",
   "title": "WHOEncounterElements",
   "description": "Description not yet available for WHOEncounterElements.",
   "extension": [

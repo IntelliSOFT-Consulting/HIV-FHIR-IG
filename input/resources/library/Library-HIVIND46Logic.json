@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND46Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND46Logic",
   "title": "HIV.IND.46 Logic",
   "description": "% of people living with HIV with TB symptoms who receive a rapid molecular test, for example, Xpert MTB/RIF, as a first test for diagnosis of TB",
   "extension": [

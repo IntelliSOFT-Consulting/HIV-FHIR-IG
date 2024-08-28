@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND60Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND60Logic",
   "title": "HIV.IND.60 Logic",
   "description": "% of pregnant women who were tested for syphilis on first ANC services visit during the reporting period",
   "extension": [

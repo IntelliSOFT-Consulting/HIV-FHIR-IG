@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND8Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND8Logic",
   "title": "HIV.IND.8 Logic",
   "description": "% of people who inject drugs provided with needles-syringes during the reporting period",
   "extension": [

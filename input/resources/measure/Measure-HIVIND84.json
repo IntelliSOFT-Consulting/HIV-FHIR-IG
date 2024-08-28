@@ -81,14 +81,14 @@
     ]
   },
   "description": "% of people living with HIV who were tested for HCV (HCV antibody, HCV RNA or HCV core antigen) during the reporting period (laboratory-based test or rapid test)",
-  "url": "http://smart.who.int/HIV/Measure/HIVIND84",
+  "url": "http://smart.who.int/hiv/Measure/HIVIND84",
   "status": "draft",
   "experimental": true,
-  "date": "2024-07-12",
+  "date": "2024-08-18",
   "name": "HIVIND84",
   "title": "HIV.IND.84 HCV test coverage, HIV-positive clients",
   "publisher": "World Health Organization (WHO)",
   "library": [
-    "http://smart.who.int/HIV/Library/HIVIND84Logic"
+    "http://smart.who.int/hiv/Library/HIVIND84Logic"
   ]
 }

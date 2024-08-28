@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND22Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND22Logic",
   "title": "HIV.IND.22 Logic",
   "description": "Number of people who were identified and tested using partner testing services and who received their results",
   "extension": [

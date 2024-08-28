@@ -81,14 +81,14 @@
     ]
   },
   "description": "% of HIV-positive pregnant women who received ART during pregnancy and/or at labour and delivery",
-  "url": "http://smart.who.int/HIV/Measure/HIVIND40",
+  "url": "http://smart.who.int/hiv/Measure/HIVIND40",
   "status": "draft",
   "experimental": true,
-  "date": "2024-07-12",
+  "date": "2024-08-18",
   "name": "HIVIND40",
   "title": "HIV.IND.40 ART coverage in pregnant women",
   "publisher": "World Health Organization (WHO)",
   "library": [
-    "http://smart.who.int/HIV/Library/HIVIND40Logic"
+    "http://smart.who.int/hiv/Library/HIVIND40Logic"
   ]
 }

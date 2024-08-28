@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVB7DTLogic",
+  "url": "http://smart.who.int/hiv/Library/HIVB7DTLogic",
   "title": "HIV.B7.DT Logic",
   "description": "Description not yet available for HIV.B7.DT Logic.",
   "extension": [

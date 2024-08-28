@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND95Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND95Logic",
   "title": "HIV.IND.95 Logic",
   "description": "% of women living with HIV diagnosed with invasive cancer who were treated",
   "extension": [

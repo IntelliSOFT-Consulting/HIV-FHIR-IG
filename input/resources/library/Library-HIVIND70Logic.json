@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND70Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND70Logic",
   "title": "HIV.IND.70 Logic",
   "description": "% of people attending HIV prevention services tested for gonorrhoea during the reporting period",
   "extension": [

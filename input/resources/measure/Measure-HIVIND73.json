@@ -81,14 +81,14 @@
     ]
   },
   "description": "% of people living with HIV who tested positive for gonorrhoea during the reporting period",
-  "url": "http://smart.who.int/HIV/Measure/HIVIND73",
+  "url": "http://smart.who.int/hiv/Measure/HIVIND73",
   "status": "draft",
   "experimental": true,
-  "date": "2024-07-12",
+  "date": "2024-08-18",
   "name": "HIVIND73",
   "title": "HIV.IND.73 Gonorrhoea test positivity, HIV-positive clients",
   "publisher": "World Health Organization (WHO)",
   "library": [
-    "http://smart.who.int/HIV/Library/HIVIND73Logic"
+    "http://smart.who.int/hiv/Library/HIVIND73Logic"
   ]
 }

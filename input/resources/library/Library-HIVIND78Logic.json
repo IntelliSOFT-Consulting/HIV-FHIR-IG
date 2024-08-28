@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND78Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND78Logic",
   "title": "HIV.IND.78 Logic",
   "description": "% of people attending HIV prevention services diagnosed with a particular STI syndrome who were diagnosed with the same STI syndrome two or more times during the reporting period",
   "extension": [

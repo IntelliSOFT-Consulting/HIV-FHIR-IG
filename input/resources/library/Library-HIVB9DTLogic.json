@@ -1,6 +1,6 @@
 {
   "resourceType": "Library",
-  "id": "HIVIND89Logic",
+  "id": "HIVB9DTLogic",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablelibrary",
@@ -9,16 +9,16 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/hiv/Library/HIVIND89Logic",
-  "title": "HIV.IND.89 Logic",
-  "description": "% of people living with HIV with a positive HCV test result (HCV antibody, HCV RNA (PCR) or HCV core antigen) during the reporting period",
+  "url": "http://smart.who.int/hiv/Library/HIVB9DTLogic",
+  "title": "HIV.B9.DT Logic",
+  "description": "HIV.B9.DT Logic",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
       "valueCode": "computable"
     }
   ],
-  "name": "HIVIND89Logic",
+  "name": "HIVB9DTLogic",
   "status": "draft",
   "experimental": true,
   "publisher": "World Health Organization (WHO)",
@@ -32,7 +32,7 @@
   },
   "content": [
     {
-      "id": "ig-loader-HIVIND89Logic.cql"
+      "id": "ig-loader-HIVB9DTLogic.cql"
     }
   ]
 }

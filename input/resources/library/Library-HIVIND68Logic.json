@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND68Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND68Logic",
   "title": "HIV.IND.68 Logic",
   "description": "% of pregnant women tested positive for syphilis on first ANC services visit who were treated based on national guidelines during the reporting period",
   "extension": [

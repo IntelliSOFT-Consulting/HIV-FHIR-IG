@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND88Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND88Logic",
   "title": "HIV.IND.88 Logic",
   "description": "% of people attending HIV prevention services with a positive HCV test result (HCV antibody, HCV RNA (PCR) or HCV core antigen) during the reporting period",
   "extension": [

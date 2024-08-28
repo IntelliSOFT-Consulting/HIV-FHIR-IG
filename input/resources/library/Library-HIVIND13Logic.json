@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND13Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND13Logic",
   "title": "HIV.IND.13 Logic",
   "description": "% of OAMT recipients who received treatment for at least six months",
   "extension": [

@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND94Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND94Logic",
   "title": "HIV.IND.94 Logic",
   "description": "% of women living with HIV who screened positive for pre-invasive cervical disease and received treatment for it",
   "extension": [

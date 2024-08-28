@@ -81,14 +81,14 @@
     ]
   },
   "description": "% of HIV-exposed infants whose final HIV outcome status is known",
-  "url": "http://smart.who.int/HIV/Measure/HIVIND42",
+  "url": "http://smart.who.int/hiv/Measure/HIVIND42",
   "status": "draft",
   "experimental": true,
-  "date": "2024-07-12",
+  "date": "2024-08-18",
   "name": "HIVIND42",
   "title": "HIV.IND.42 Final outcome of PMTCT",
   "publisher": "World Health Organization (WHO)",
   "library": [
-    "http://smart.who.int/HIV/Library/HIVIND42Logic"
+    "http://smart.who.int/hiv/Library/HIVIND42Logic"
   ]
 }

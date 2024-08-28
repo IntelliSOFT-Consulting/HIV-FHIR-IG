@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND41Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND41Logic",
   "title": "HIV.IND.41 Logic",
   "description": "% of HIV-exposed breastfeeding infants whose mothers are receiving ART at 12 (and 24 months) postpartum",
   "extension": [

@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND53Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND53Logic",
   "title": "HIV.IND.53 Logic",
   "description": "% of people living with HIV and On ART who are receiving multi-month dispensing of ARV medicine during the reporting period",
   "extension": [

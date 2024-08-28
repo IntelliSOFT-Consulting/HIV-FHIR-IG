@@ -81,14 +81,14 @@
     ]
   },
   "description": "% of people living with HIV and diagnosed with HBV infection who are on TDF-based ART",
-  "url": "http://smart.who.int/HIV/Measure/HIVIND90",
+  "url": "http://smart.who.int/hiv/Measure/HIVIND90",
   "status": "draft",
   "experimental": true,
-  "date": "2024-07-12",
+  "date": "2024-08-18",
   "name": "HIVIND90",
   "title": "HIV.IND.90 HBV treatment among people living with HIV",
   "publisher": "World Health Organization (WHO)",
   "library": [
-    "http://smart.who.int/HIV/Library/HIVIND90Logic"
+    "http://smart.who.int/hiv/Library/HIVIND90Logic"
   ]
 }

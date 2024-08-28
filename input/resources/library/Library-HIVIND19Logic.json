@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND19Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND19Logic",
   "title": "HIV.IND.19 Logic",
   "description": "Number of HIV tests performed (volume) and the % of HIV-positive results returned to people (positivity)",
   "extension": [

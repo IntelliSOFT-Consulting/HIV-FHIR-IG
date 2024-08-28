@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND24Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND24Logic",
   "title": "HIV.IND.24 Logic",
   "description": "Among those testing HIV-negative and identified as being at elevated risk for HIV acquisition, % of people who receive an HIV prevention intervention within defined period",
   "extension": [

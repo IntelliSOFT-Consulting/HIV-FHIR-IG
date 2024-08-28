@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND27Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND27Logic",
   "title": "HIV.IND.27 Logic",
   "description": "Number and % of people on ART among all people living with HIV at the end of the reporting period",
   "extension": [

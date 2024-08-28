@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND11Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND11Logic",
   "title": "HIV.IND.11 Logic",
   "description": "% of opioid dependent people receiving opioid agonist maintenance treatment (OAMT) at a specified date",
   "extension": [

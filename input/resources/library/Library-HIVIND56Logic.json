@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND56Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND56Logic",
   "title": "HIV.IND.56 Logic",
   "description": "% of people retained in DSD ART models during the reporting period",
   "extension": [

@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND28Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND28Logic",
   "title": "HIV.IND.28 Logic",
   "description": "Number and % of people living with HIV on ART at the end of the last reporting period and those newly initiating ART during the current reporting period who were not on ART at the end of the current reporting period",
   "extension": [

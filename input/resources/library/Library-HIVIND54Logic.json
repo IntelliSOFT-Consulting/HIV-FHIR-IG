@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND54Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND54Logic",
   "title": "HIV.IND.54 Logic",
   "description": "% of people newly enrolled in DSD ART models among those eligible",
   "extension": [

@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND25Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND25Logic",
   "title": "HIV.IND.25 Logic",
   "description": "% of people testing HIV-negative who tested again within a defined period of time after their previous test",
   "extension": [

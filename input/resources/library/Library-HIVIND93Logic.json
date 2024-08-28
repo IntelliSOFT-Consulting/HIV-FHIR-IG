@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND93Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND93Logic",
   "title": "HIV.IND.93 Logic",
   "description": "Number of women living with HIV who were screened for cervical cancer using any screening test",
   "extension": [

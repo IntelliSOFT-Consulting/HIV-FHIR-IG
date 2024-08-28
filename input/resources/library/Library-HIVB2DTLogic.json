@@ -9,9 +9,9 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVB2DTLogic",
+  "url": "http://smart.who.int/hiv/Library/HIVB2DTLogic",
   "title": "HIV.B2.DT Logic",
-  "description": "Description not yet available for HIV.B2.DT Logic.",
+  "description": "HIV.B2.DT Logic",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",

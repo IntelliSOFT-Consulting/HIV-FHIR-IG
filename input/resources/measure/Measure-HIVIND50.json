@@ -56,10 +56,19 @@
             ]
           },
           "id": "HIV.IND.50.NUM",
-          "description": "Number of people living with HIV newly initiated on ART who are investigated for active TB disease with appropriate diagnostic testing*",
+          "description": "Number of people living with HIV newly initiated on ART who are investigated for active TB disease with appropriate diagnostic testing",
           "criteria": {
             "language": "text/cql-identifier",
             "expression": "Numerator"
+          }
+        }
+      ],
+      "stratifier": [
+        {
+          "id": "HIV.IND.50.S",
+          "criteria": {
+            "language": "text/cql-identifier",
+            "expression": "Stratification"
           }
         }
       ]
@@ -81,14 +90,14 @@
     ]
   },
   "description": "% of people living with HIV newly initiated on ART and screened positive for TB symptoms who then are tested for TB",
-  "url": "http://smart.who.int/HIV/Measure/HIVIND50",
+  "url": "http://smart.who.int/hiv/Measure/HIVIND50",
   "status": "draft",
   "experimental": true,
-  "date": "2024-07-12",
+  "date": "2024-08-18",
   "name": "HIVIND50",
   "title": "HIV.IND.50 TB testing among those symptom-screened positive",
   "publisher": "World Health Organization (WHO)",
   "library": [
-    "http://smart.who.int/HIV/Library/HIVIND50Logic"
+    "http://smart.who.int/hiv/Library/HIVIND50Logic"
   ]
 }

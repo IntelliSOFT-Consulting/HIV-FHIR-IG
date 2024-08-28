@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND84Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND84Logic",
   "title": "HIV.IND.84 Logic",
   "description": "% of people living with HIV who were tested for HCV (HCV antibody, HCV RNA or HCV core antigen) during the reporting period (laboratory-based test or rapid test)",
   "extension": [

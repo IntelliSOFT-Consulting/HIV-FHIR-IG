@@ -81,14 +81,14 @@
     ]
   },
   "description": "% of women living with HIV who screened positive for pre-invasive cervical disease and received treatment for it",
-  "url": "http://smart.who.int/HIV/Measure/HIVIND94",
+  "url": "http://smart.who.int/hiv/Measure/HIVIND94",
   "status": "draft",
   "experimental": true,
-  "date": "2024-07-12",
+  "date": "2024-08-18",
   "name": "HIVIND94",
   "title": "HIV.IND.94 Pre-invasive cervical disease treatment",
   "publisher": "World Health Organization (WHO)",
   "library": [
-    "http://smart.who.int/HIV/Library/HIVIND94Logic"
+    "http://smart.who.int/hiv/Library/HIVIND94Logic"
   ]
 }

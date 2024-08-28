@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND38Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND38Logic",
   "title": "HIV.IND.38 Logic",
   "description": "% of HIV-exposed infants who receive a virological test for HIV within two months (and 12 months) of birth",
   "extension": [

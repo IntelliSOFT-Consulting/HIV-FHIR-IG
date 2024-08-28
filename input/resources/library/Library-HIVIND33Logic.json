@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND33Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND33Logic",
   "title": "HIV.IND.33 Logic",
   "description": "Number and % of people living with HIV on ART who had a viral load result reviewed by six months after initiation of ART",
   "extension": [

@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND34Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND34Logic",
   "title": "HIV.IND.34 Logic",
   "description": "% of people living with HIV receiving ART with VL ≥1000 copies/mL who received a follow-up viral load test within three months",
   "extension": [

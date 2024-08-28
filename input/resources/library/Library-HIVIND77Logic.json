@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND77Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND77Logic",
   "title": "HIV.IND.77 Logic",
   "description": "% of people living with HIV diagnosed with a particular STI syndrome during the reporting period",
   "extension": [

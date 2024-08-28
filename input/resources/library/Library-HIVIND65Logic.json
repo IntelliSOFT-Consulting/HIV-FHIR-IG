@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND65Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND65Logic",
   "title": "HIV.IND.65 Logic",
   "description": "% of pregnant women who tested positive for syphilis during the reporting period",
   "extension": [

@@ -56,7 +56,7 @@
             ]
           },
           "id": "HIV.IND.14.NUM",
-          "description": "Number of people, at a specified date, maintained on methadone or buprenorphine receiving recommended minimum maintenance dose (WHO guidance recommends doses of ≥60 mg of methadone or ≥8 mg of buprenorphine*)",
+          "description": "Number of people, at a specified date, maintained on methadone or buprenorphine receiving recommended minimum maintenance dose (WHO guidance recommends doses of ≥60 mg of methadone or ≥8 mg of buprenorphine)",
           "criteria": {
             "language": "text/cql-identifier",
             "expression": "Numerator"
@@ -81,14 +81,14 @@
     ]
   },
   "description": "% of OAMT recipients receiving a maintenance dose greater than or equal to the recommended minimum dose",
-  "url": "http://smart.who.int/HIV/Measure/HIVIND14",
+  "url": "http://smart.who.int/hiv/Measure/HIVIND14",
   "status": "draft",
   "experimental": true,
-  "date": "2024-07-12",
+  "date": "2024-08-18",
   "name": "HIVIND14",
   "title": "HIV.IND.14 OAMT minimum dose",
   "publisher": "World Health Organization (WHO)",
   "library": [
-    "http://smart.who.int/HIV/Library/HIVIND14Logic"
+    "http://smart.who.int/hiv/Library/HIVIND14Logic"
   ]
 }

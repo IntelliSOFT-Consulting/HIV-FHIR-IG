@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND40Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND40Logic",
   "title": "HIV.IND.40 Logic",
   "description": "% of HIV-positive pregnant women who received ART during pregnancy and/or at labour and delivery",
   "extension": [

@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND6Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND6Logic",
   "title": "HIV.IND.6 Logic",
   "description": "% of PEP recipients completing PEP course",
   "extension": [

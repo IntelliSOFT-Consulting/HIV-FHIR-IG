@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND96Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND96Logic",
   "title": "HIV.IND.96 Logic",
   "description": "Crude probability of surviving 1 year after a diagnosis of cervical cancer",
   "extension": [

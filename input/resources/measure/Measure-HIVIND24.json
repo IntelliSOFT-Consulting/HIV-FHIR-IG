@@ -62,6 +62,15 @@
             "expression": "Numerator"
           }
         }
+      ],
+      "stratifier": [
+        {
+          "id": "HIV.IND.24.S",
+          "criteria": {
+            "language": "text/cql-identifier",
+            "expression": "Stratification"
+          }
+        }
       ]
     }
   ],
@@ -81,14 +90,14 @@
     ]
   },
   "description": "Among those testing HIV-negative and identified as being at elevated risk for HIV acquisition, % of people who receive an HIV prevention intervention within defined period",
-  "url": "http://smart.who.int/HIV/Measure/HIVIND24",
+  "url": "http://smart.who.int/hiv/Measure/HIVIND24",
   "status": "draft",
   "experimental": true,
-  "date": "2024-07-12",
+  "date": "2024-08-18",
   "name": "HIVIND24",
   "title": "HIV.IND.24 HTS linkage to prevention",
   "publisher": "World Health Organization (WHO)",
   "library": [
-    "http://smart.who.int/HIV/Library/HIVIND24Logic"
+    "http://smart.who.int/hiv/Library/HIVIND24Logic"
   ]
 }

@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND63Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND63Logic",
   "title": "HIV.IND.63 Logic",
   "description": "% of people living with HIV who were tested for syphilis and had a positive syphilis test result during the reporting period",
   "extension": [

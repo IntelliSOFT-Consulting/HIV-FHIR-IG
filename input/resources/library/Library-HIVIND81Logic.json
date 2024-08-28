@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND81Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND81Logic",
   "title": "HIV.IND.81 Logic",
   "description": "% of people living with HIV who were tested for hepatitis B surface antigen (HBsAg) during the reporting period (laboratory-based test or rapid test)",
   "extension": [

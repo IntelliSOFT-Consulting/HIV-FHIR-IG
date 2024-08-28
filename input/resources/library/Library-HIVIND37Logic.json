@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND37Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND37Logic",
   "title": "HIV.IND.37 Logic",
   "description": "% of HIV-positive pregnant women who are virally suppressed at labour and delivery",
   "extension": [

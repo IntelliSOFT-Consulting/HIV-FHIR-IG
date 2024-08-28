@@ -56,7 +56,7 @@
             ]
           },
           "id": "HIV.IND.41.NUM",
-          "description": "Number of HIV-exposed breastfeeding infants whose mothers are receiving ART at 12 months (and 24 months*) postpartum",
+          "description": "Number of HIV-exposed breastfeeding infants whose mothers are receiving ART at 12 months (and 24 months) postpartum",
           "criteria": {
             "language": "text/cql-identifier",
             "expression": "Numerator"
@@ -81,14 +81,14 @@
     ]
   },
   "description": "% of HIV-exposed breastfeeding infants whose mothers are receiving ART at 12 (and 24 months) postpartum",
-  "url": "http://smart.who.int/HIV/Measure/HIVIND41",
+  "url": "http://smart.who.int/hiv/Measure/HIVIND41",
   "status": "draft",
   "experimental": true,
-  "date": "2024-07-12",
+  "date": "2024-08-18",
   "name": "HIVIND41",
   "title": "HIV.IND.41 ART coverage in breastfeeding mothers",
   "publisher": "World Health Organization (WHO)",
   "library": [
-    "http://smart.who.int/HIV/Library/HIVIND41Logic"
+    "http://smart.who.int/hiv/Library/HIVIND41Logic"
   ]
 }

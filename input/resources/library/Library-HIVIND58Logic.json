@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND58Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND58Logic",
   "title": "HIV.IND.58 Logic",
   "description": "% of people attending HIV prevention services who were tested for syphilis during the reporting period",
   "extension": [

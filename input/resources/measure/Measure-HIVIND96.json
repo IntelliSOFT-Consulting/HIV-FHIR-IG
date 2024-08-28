@@ -81,14 +81,14 @@
     ]
   },
   "description": "Crude probability of surviving 1 year after a diagnosis of cervical cancer",
-  "url": "http://smart.who.int/HIV/Measure/HIVIND96",
+  "url": "http://smart.who.int/hiv/Measure/HIVIND96",
   "status": "draft",
   "experimental": true,
-  "date": "2024-07-12",
+  "date": "2024-08-18",
   "name": "HIVIND96",
   "title": "HIV.IND.96 Cervical cancer survival",
   "publisher": "World Health Organization (WHO)",
   "library": [
-    "http://smart.who.int/HIV/Library/HIVIND96Logic"
+    "http://smart.who.int/hiv/Library/HIVIND96Logic"
   ]
 }

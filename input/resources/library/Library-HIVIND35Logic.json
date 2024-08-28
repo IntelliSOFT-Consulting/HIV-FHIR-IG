@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND35Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND35Logic",
   "title": "HIV.IND.35 Logic",
   "description": "% of ART patients with treatment-limiting ARV toxicity",
   "extension": [

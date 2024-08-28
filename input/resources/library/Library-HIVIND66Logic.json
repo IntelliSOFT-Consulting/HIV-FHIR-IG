@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND66Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND66Logic",
   "title": "HIV.IND.66 Logic",
   "description": "% of people attending HIV prevention services tested positive for syphilis who were treated based on national guidelines during the reporting period",
   "extension": [

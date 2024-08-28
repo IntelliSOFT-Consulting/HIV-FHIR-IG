@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVCommon",
+  "url": "http://smart.who.int/hiv/Library/HIVCommon",
   "title": "HIVCommon",
   "description": "Description not yet available for HIVCommon.",
   "extension": [

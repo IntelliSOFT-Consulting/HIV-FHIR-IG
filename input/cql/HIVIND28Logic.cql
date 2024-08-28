@@ -78,8 +78,9 @@ using FHIR version '4.0.1'
 
 include HIVCommon version '0.0.1' called HIC
 include FHIRHelpers version '4.0.1'
-include FHIRCommon called FC
 include WHOCommon called WCom
+include HIVElements called HE
+include HIVIndicatorElements called HIE
 
 // Indicator Definition
 parameter "Measurement Period" Interval<Date> default Interval[@2023-01-01, @2023-01-30]
@@ -93,35 +94,24 @@ define "Initial Population":
 
 
 define "numerator":
+//MINUS | COUNT of clients with "HIV status"='HIV-positive' AND "On ART"=True on the reporting period end date
    (
-    HIC."Patient Deceased before end of Measurement Period"
-   and HIC."Transfer Out at Facility during the measurement period"
-   and HIC."Lost to Follow Up during the measurement period"
+    HIE."Has death documented"
+   or HIE."Has transferred out"
+   or HIE."Is lost to follow-up"
    )
-   and ((
+   and (((
     //saying needs to not be counted this measurement period but should have counted this period or last period
-    (exists(HIC."HIV Positive Condition" C
-	where C.onset before end of "Measurement Period")
-	or 
-	exists(HIC."HIV Positive Observation" O
-	where (O.issued before end of "Measurement Period")
-	))
-   and exists(HIC."HIV Treatment Active" H
-   where H.effective starts before end of "Measurement Period"
-    and H.effective ends after start of "Measurement Period"
+   HIE."Has HIV-positive Status"
+   and HIE."On ART H.DE47"
    )
    ) or
    (
     //Accounts for end of last period
-    (exists(HIC."HIV Positive Condition" C
-	where C.onset before (end of "Measurement Period" - duration in days of "Measurement Period"))
-	or 
-	exists(HIC."HIV Positive Observation" O
-	where (O.issued before end of "Measurement Period" - duration in days of "Measurement Period")
-	))
-   and exists(HIC."HIV Treatment Active" H
-   where H.effective starts before (end of "Measurement Period" - duration in days of "Measurement Period")
-    and H.effective ends after (start of "Measurement Period" - duration in days of "Measurement Period")
+    HIE."Has HIV-positive Status at last measurment period"
+   and exists(HE."On ART H.DE47" ART
+   where ART.effective starts before (end of "Measurement Period" - duration in days of "Measurement Period")
+    and ART.effective ends after (start of "Measurement Period" - duration in days of "Measurement Period")
    )
    )
    )
@@ -129,30 +119,18 @@ define "numerator":
 
 
  define "denominator":
-   ((
+   (((
     //saying needs to not be counted this measurement period but should have counted this period or last period
-    (exists(HIC."HIV Positive Condition" C
-	where C.onset before end of "Measurement Period")
-	or 
-	exists(HIC."HIV Positive Observation" O
-	where (O.issued before end of "Measurement Period")
-	))
-   and exists(HIC."HIV Treatment Active" H
-   where H.effective starts before end of "Measurement Period"
-    and H.effective ends after start of "Measurement Period"
+   HIE."Has HIV-positive Status"
+   and HIE."On ART H.DE47"
    )
    ) or
    (
     //Accounts for end of last period
-    (exists(HIC."HIV Positive Condition" C
-	where C.onset before (end of "Measurement Period" - duration in days of "Measurement Period"))
-	or 
-	exists(HIC."HIV Positive Observation" O
-	where (O.issued before end of "Measurement Period" - duration in days of "Measurement Period")
-	))
-   and exists(HIC."HIV Treatment Active" H
-   where H.effective starts before (end of "Measurement Period" - duration in days of "Measurement Period")
-    and H.effective ends after (start of "Measurement Period" - duration in days of "Measurement Period")
+    HIE."Has HIV-positive Status at last measurment period"
+   and exists(HE."On ART H.DE47" ART
+   where ART.effective starts before (end of "Measurement Period" - duration in days of "Measurement Period")
+    and ART.effective ends after (start of "Measurement Period" - duration in days of "Measurement Period")
    )
    )
    )
@@ -164,20 +142,23 @@ define "numerator":
  */
 
 define "Administrative Gender Stratifier":
-	HIC."By Administrative Gender Stratifier"
+	HIE."By Administrative Gender Stratifier"
 
 define "Age Stratifier":
-	HIC."By Age Stratifier"
+	HIE."By Age Stratifier"
 
 define "Geographic Region Stratifier":
-	HIC."By Geographic Region Stratifier"
+	HIE."By Geographic Region Stratifier"
 
 define "patientGroups Stratifier":
-	HIC."patientGroups"
+	HIE."patientGroups"
 
-//NEED TO FIGURE OUT Treatment outcome category (died, stopped treatment, lost to follow-up)
+define "Treatment outcome category Stratifier":
+	HIE."Treatment outcome category"
 
 define "Stratification":
- HIC."By Administrative Gender Stratifier".code 
-  + ':' + HIC."By Age Stratifier"
-+ ':' + HIC."By Geographic Region Stratifier"
+ HIE."By Administrative Gender Stratifier".code 
+  + ':' + HIE."By Age Stratifier"
++ ':' + HIE."By Geographic Region Stratifier"
++ Combine(HIE.patientGroups, ':')
++ Combine(HIE."Treatment outcome category", ':')

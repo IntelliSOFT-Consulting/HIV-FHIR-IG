@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND86Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND86Logic",
   "title": "HIV.IND.86 Logic",
   "description": "Percentage of people living with HIV who were tested for HBsAg and had a positive HBsAg test during the reporting period",
   "extension": [

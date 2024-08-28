@@ -73,21 +73,16 @@ include HIVCommon version '0.0.1' called HIC
 include FHIRHelpers version '4.0.1'
 include WHOCommon called WCom
 
+include HIVElements called HE
+include HIVIndicatorElements called HIE
+
 // Indicator Definition
 parameter "Measurement Period" Interval<Date> default Interval[@2023-01-01, @2023-01-30]
 
 context Patient
 define "Measure Population":
-    exists(HIC."HIV Positive Condition" C
-	where C.onset before end of "Measurement Period")
-	or 
-	exists(HIC."HIV Positive Observation" O
-	where O.issued before end of "Measurement Period"
-	) 
-
-//define denominator?
-//How to bring in data from external sources
-
+   HIE."Has HIV-positive Status"
+	
 /*
  * As defined by Member States
  */
@@ -106,24 +101,24 @@ define function "Measure Observation"(Patient "Patient"):
  */
 
 define "Administrative Gender Stratifier":
-	HIC."By Administrative Gender Stratifier"
+	HIE."By Administrative Gender Stratifier"
 
 define "Age Stratifier":
-	HIC."By Age Stratifier 2"
+	HIE."By Age Stratifier 2"
 
 define "Geographic Region Stratifier":
-	HIC."By Geographic Region Stratifier"
+	HIE."By Geographic Region Stratifier"
 
 define "patientGroups Stratifier":
-	HIC."patientGroups"
+	HIE."patientGroups"
 
-define "ANC Stratifier":
-    HIC."anc"
+// define "ANC Stratifier":
+//     HIC."anc"
 
 
 define "Stratification":
- HIC."By Administrative Gender Stratifier".code 
-  + ':' + HIC."By Age Stratifier 2"
-+ ':' + HIC."By Geographic Region Stratifier"
-+ Combine(HIC.patientGroups, ':')
-+ Combine(HIC."anc", ':')
+ HIE."By Administrative Gender Stratifier".code 
+  + ':' + HIE."By Age Stratifier 2"
++ ':' + HIE."By Geographic Region Stratifier"
++ Combine(HIE.patientGroups, ':')
+// + Combine(HIC."anc", ':')

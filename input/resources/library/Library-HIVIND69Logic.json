@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND69Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND69Logic",
   "title": "HIV.IND.69 Logic",
   "description": "% of pregnant women who tested positive for syphilis who were treated based on national guidelines during the reporting period",
   "extension": [

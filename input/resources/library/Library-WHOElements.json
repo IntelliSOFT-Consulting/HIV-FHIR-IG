@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/base-clinical/Library/WHOElements",
+  "url": "http://smart.who.int/hiv/Library/WHOElements",
   "title": "WHOElements",
   "description": "Description not yet available for WHOElements.",
   "extension": [

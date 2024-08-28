@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND9Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND9Logic",
   "title": "HIV.IND.9 Logic",
   "description": "% of people who inject drugs accessing a needle-syringe programme (NSP) at least once per month during the reporting period",
   "extension": [

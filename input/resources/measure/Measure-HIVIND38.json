@@ -62,6 +62,15 @@
             "expression": "Numerator"
           }
         }
+      ],
+      "stratifier": [
+        {
+          "id": "HIV.IND.38.S.GR",
+          "criteria": {
+            "language": "text/cql-identifier",
+            "expression": "Geographic Region Stratifier"
+          }
+        }
       ]
     }
   ],
@@ -81,14 +90,14 @@
     ]
   },
   "description": "% of HIV-exposed infants who receive a virological test for HIV within two months (and 12 months) of birth",
-  "url": "http://smart.who.int/HIV/Measure/HIVIND38",
+  "url": "http://smart.who.int/hiv/Measure/HIVIND38",
   "status": "draft",
   "experimental": true,
-  "date": "2024-07-12",
+  "date": "2024-08-18",
   "name": "HIVIND38",
   "title": "HIV.IND.38 Early infant diagnosis (EID) coverage",
   "publisher": "World Health Organization (WHO)",
   "library": [
-    "http://smart.who.int/HIV/Library/HIVIND38Logic"
+    "http://smart.who.int/hiv/Library/HIVIND38Logic"
   ]
 }

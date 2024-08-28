@@ -81,14 +81,14 @@
     ]
   },
   "description": "% of people living with HIV tested positive for gonorrhoea who were treated based on national guidelines during the reporting period",
-  "url": "http://smart.who.int/HIV/Measure/HIVIND75",
+  "url": "http://smart.who.int/hiv/Measure/HIVIND75",
   "status": "draft",
   "experimental": true,
-  "date": "2024-07-12",
+  "date": "2024-08-18",
   "name": "HIVIND75",
   "title": "HIV.IND.75 Gonorrhoea treatment coverage, HIV-positive clients",
   "publisher": "World Health Organization (WHO)",
   "library": [
-    "http://smart.who.int/HIV/Library/HIVIND75Logic"
+    "http://smart.who.int/hiv/Library/HIVIND75Logic"
   ]
 }

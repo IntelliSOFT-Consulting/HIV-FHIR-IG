@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND7Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND7Logic",
   "title": "HIV.IND.7 Logic",
   "description": "% of PEP recipients testing HIV-positive three months after PEP was prescribed",
   "extension": [

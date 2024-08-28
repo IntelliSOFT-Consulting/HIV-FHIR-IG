@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND71Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND71Logic",
   "title": "HIV.IND.71 Logic",
   "description": "% of people living with HIV tested for gonorrhoea during the reporting period",
   "extension": [

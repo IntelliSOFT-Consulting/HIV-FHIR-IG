@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVElements",
+  "url": "http://smart.who.int/hiv/Library/HIVElements",
   "title": "HIVElements",
   "description": "Description not yet available for HIVElements.",
   "extension": [

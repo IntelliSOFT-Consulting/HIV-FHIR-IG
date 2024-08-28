@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND32Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND32Logic",
   "title": "HIV.IND.32 Logic",
   "description": "% of people living with HIV on ART (for at least six months) with viral load test results",
   "extension": [

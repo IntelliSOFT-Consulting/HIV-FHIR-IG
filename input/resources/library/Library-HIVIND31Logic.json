@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND31Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND31Logic",
   "title": "HIV.IND.31 Logic",
   "description": "% of people living with HIV who initiate ART with a CD4 count of <200 cells/mm3",
   "extension": [

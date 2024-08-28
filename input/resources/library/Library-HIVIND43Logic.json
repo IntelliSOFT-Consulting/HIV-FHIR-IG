@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND43Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND43Logic",
   "title": "HIV.IND.43 Logic",
   "description": "% of pregnant women who are HIV-positive at the time of their first test during the current pregnancy",
   "extension": [

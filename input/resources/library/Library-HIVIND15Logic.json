@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND15Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND15Logic",
   "title": "HIV.IND.15 Logic",
   "description": "Total number of voluntary medical male circumcisions (VMMCs) performed according to national standard during the reporting period",
   "extension": [

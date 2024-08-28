@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVConceptsCustom",
+  "url": "http://smart.who.int/hiv/Library/HIVConceptsCustom",
   "title": "HIVConceptsCustom",
   "description": "Description not yet available for HIVConceptsCustom.",
   "extension": [

@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND42Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND42Logic",
   "title": "HIV.IND.42 Logic",
   "description": "% of HIV-exposed infants whose final HIV outcome status is known",
   "extension": [

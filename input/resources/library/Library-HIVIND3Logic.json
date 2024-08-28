@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND3Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND3Logic",
   "title": "HIV.IND.3 Logic",
   "description": "% of people prescribed PrEP among those identified as being at elevated risk for HIV acquisition",
   "extension": [

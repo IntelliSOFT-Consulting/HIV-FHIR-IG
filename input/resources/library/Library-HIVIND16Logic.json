@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND16Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND16Logic",
   "title": "HIV.IND.16 Logic",
   "description": "a) Number or (b) % of adverse events during the reporting period",
   "extension": [

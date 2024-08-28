@@ -1,15 +1,21 @@
 library HIVConceptsCustom
+codesystem "HIVConceptsCustom": 'http://smart.who.int/hiv/CodeSystem/HIVConceptsCustom'
 
 codesystem "ConditionCategoryCodes": 'http://terminology.hl7.org/CodeSystem/condition-category'
 codesystem "ConditionClinicalStatusCodes": 'http://terminology.hl7.org/CodeSystem/condition-clinical'
 codesystem "ObservationCategoryCodes": 'http://terminology.hl7.org/CodeSystem/observation-category'
 codesystem "missing concepts": 'missing concepts'
-codesystem "Devicestatement-status": 'http://hl7.org/fhir/ValueSet/device-statement-status'
+codesystem "Devicestatement-status": 'http://hl7.org/fhir/device-statement-status'
 codesystem "SNOMEDCT:2018-03": 'urn:oid:2.16.840.1.113883.6.96' version 'urn:hl7:version:2018-03'
 codesystem "SNOMEDCT": 'urn:oid:2.16.840.1.113883.6.96'
-codesystem "AdverseEventSeverity": 'http://hl7.org/fhir/ValueSet/adverse-event-severity'
+codesystem "AdverseEventSeverity": 'http://terminology.hl7.org/CodeSystem/adverse-event-severity'
+codesystem "RoleCode": 'http://terminology.hl7.org/CodeSystem/v3-RoleCode'
 
 code "encounter-diagnosis": 'encounter-diagnosis' from "ConditionCategoryCodes" display 'Encounter Diagnosis'
+
+// Related Person
+valueset "RelatedPersonRelationshipType": 'http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype'
+code "Mother": 'MTH' from "RoleCode"
 
 // Condition Clinical Status Codes
 code "active": 'active' from "ConditionClinicalStatusCodes"
@@ -54,8 +60,19 @@ code "Twice a day (qualifier value)": '229799001' from "SNOMEDCT:2018-03" displa
 code "Two to four times a day (qualifier value)": '396111001' from "SNOMEDCT" display 'Two to four times a day (qualifier value)'
 
 
+// Encounter Types
+code "HTS Visit": 'HTS Visit' from "HIVConceptsCustom"
+
 //not currently provided
 code "needle-syringe": 'needle syringe' from "missing concepts"
 code "methadone": 'methadone' from "missing concepts"
 code "buprenorphine": 'buprenorphine' from "missing concepts"
+code "viral load test": 'viral load test' from "missing concepts"
+code "delivery": 'delivery' from "missing concepts"
+code "tb treatment": 'tb treatment' from "missing concepts"
+code "ART medication": 'ART medication' from "missing concepts"
+code "DSD ART eligibility assessed" : 'DSD ART eligibility assessed' from "missing concepts"
+code "syphilis test" : 'syphilis test' from "missing concepts"
 
+
+valueset "Antenatal care contact": 'http://fhir.org/guides/who/anc-cds/ValueSet/antenatal-care-contact'

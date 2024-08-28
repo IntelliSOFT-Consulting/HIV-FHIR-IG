@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND90Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND90Logic",
   "title": "HIV.IND.90 Logic",
   "description": "% of people living with HIV and diagnosed with HBV infection who are on TDF-based ART",
   "extension": [

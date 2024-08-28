@@ -65,31 +65,10 @@
       ],
       "stratifier": [
         {
-          "id": "HIV.IND.8.S.AG",
+          "id": "HIV.IND.8.S",
           "criteria": {
             "language": "text/cql-identifier",
-            "expression": "Administrative Gender Stratifier"
-          }
-        },
-        {
-          "id": "HIV.IND.8.S.A",
-          "criteria": {
-            "language": "text/cql-identifier",
-            "expression": "Age Stratifier"
-          }
-        },
-        {
-          "id": "HIV.IND.8.S.GR",
-          "criteria": {
-            "language": "text/cql-identifier",
-            "expression": "Geographic Region Stratifier"
-          }
-        },
-        {
-          "id": "HIV.IND.8.S.P",
-          "criteria": {
-            "language": "text/cql-identifier",
-            "expression": "patientGroups Stratifier"
+            "expression": "Stratification"
           }
         }
       ]
@@ -111,14 +90,14 @@
     ]
   },
   "description": "% of people who inject drugs provided with needles-syringes during the reporting period",
-  "url": "http://smart.who.int/HIV/Measure/HIVIND8",
+  "url": "http://smart.who.int/hiv/Measure/HIVIND8",
   "status": "draft",
   "experimental": true,
-  "date": "2024-07-12",
+  "date": "2024-08-18",
   "name": "HIVIND8",
   "title": "HIV.IND.8 NSP coverage",
   "publisher": "World Health Organization (WHO)",
   "library": [
-    "http://smart.who.int/HIV/Library/HIVIND8Logic"
+    "http://smart.who.int/hiv/Library/HIVIND8Logic"
   ]
 }

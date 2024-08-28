@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND14Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND14Logic",
   "title": "HIV.IND.14 Logic",
   "description": "% of OAMT recipients receiving a maintenance dose greater than or equal to the recommended minimum dose",
   "extension": [

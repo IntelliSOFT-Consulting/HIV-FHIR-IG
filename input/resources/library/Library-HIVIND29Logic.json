@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND29Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND29Logic",
   "title": "HIV.IND.29 Logic",
   "description": "% of people living with HIV on ART (for at least six months) who have virological suppression",
   "extension": [

@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND39Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND39Logic",
   "title": "HIV.IND.39 Logic",
   "description": "% of HIV-exposed infants who initiated ARV prophylaxis",
   "extension": [

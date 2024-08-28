@@ -81,14 +81,14 @@
     ]
   },
   "description": "% of people who inject drugs accessing a needle-syringe programme (NSP) at least once per month during the reporting period",
-  "url": "http://smart.who.int/HIV/Measure/HIVIND9",
+  "url": "http://smart.who.int/hiv/Measure/HIVIND9",
   "status": "draft",
   "experimental": true,
-  "date": "2024-07-12",
+  "date": "2024-08-18",
   "name": "HIVIND9",
   "title": "HIV.IND.9 Regular NSP access",
   "publisher": "World Health Organization (WHO)",
   "library": [
-    "http://smart.who.int/HIV/Library/HIVIND9Logic"
+    "http://smart.who.int/hiv/Library/HIVIND9Logic"
   ]
 }

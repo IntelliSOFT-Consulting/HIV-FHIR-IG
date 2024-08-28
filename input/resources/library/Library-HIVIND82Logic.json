@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND82Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND82Logic",
   "title": "HIV.IND.82 Logic",
   "description": "% of pregnant women who were tested for hepatitis B surface antigen (HBsAg) during the reporting period (laboratory-based test or rapid test)",
   "extension": [

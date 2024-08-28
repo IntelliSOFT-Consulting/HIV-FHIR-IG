@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
     ]
   },
-  "url": "http://smart.who.int/HIV/Library/HIVIND80Logic",
+  "url": "http://smart.who.int/hiv/Library/HIVIND80Logic",
   "title": "HIV.IND.80 Logic",
   "description": "% of people attending HIV prevention services who were tested for hepatitis B surface antigen (HBsAg) during the reporting period (laboratory-based test or rapid test)",
   "extension": [
