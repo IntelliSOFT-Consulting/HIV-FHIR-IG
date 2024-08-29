@@ -12,7 +12,7 @@ include WHOElements called WE
 include HIVConcepts called Concepts
 include HIVConceptsCustom called ConceptsCustom
 include HIVElements called Elements
-include HIVCommon called Common
+include HIVCommon version '0.0.1' called Common
 include HIVConfig called Config
 
 parameter "Measurement Period" Interval<Date> default Interval[@2020-01-01, @2024-12-30]

@@ -11,7 +11,7 @@ include WHOElements called WE
 
 include HIVConcepts called Concepts
 include HIVConceptsCustom called ConceptsCustom
-include HIVCommon called Common
+include HIVCommon version '0.0.1' called Common
 
 context Patient
 

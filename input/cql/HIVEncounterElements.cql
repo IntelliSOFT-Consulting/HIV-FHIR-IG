@@ -9,7 +9,7 @@ include WHOCommon called WC
 include WHOElements called WE
 
 include HIVConcepts called Concepts
-include HIVCommon called Common
+include HIVCommon version '0.0.1' called Common
 include HIVElements called Elements
 
 parameter Today Date default Today()
