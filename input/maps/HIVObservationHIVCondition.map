@@ -140,18 +140,13 @@ group HIVObservationHIVCondition(
          // this will have to be one for hiv positive and one for hiv negative
          src.entry as obsentry where resource.is(Observation) 
          and resource.subject.exists(reference=("Patient/" & patient.id))
-         // ciel for hiv positive, could add snomed
-         and resource.code.exists(coding.exists(system='https://openconceptlab.org/orgs/CIEL/sources/CIEL' and code='159427')) 
+         and resource.code.exists(coding.exists(system='https://cielterminology.org' and code='159427')) 
             -> tgt.entry as newentry, newentry.resource = create("Observation") as observe, uuid() as obsd 
          then {
            obsentry.resource as obs -> newentry.fullUrl = ( "urn:uuid:" & obsd ),
-           // var for request bit of resources in transaction bundle
            newentry.request as newrequest
            then {
-             // obsentry -> cond.id = cid "setCId";
              obsentry -> observe.id = obsd "setOBSd";
-             // setrequest rule for resource in transaction bundle
-             // needs to be processed properly before putting on existing data on fhir server
              obsentry -> newrequest.method = "PUT", newrequest.url = ("Observation/" & obsd) "setrequest";
 
              patient -> observe.subject as subject 
@@ -159,17 +154,15 @@ group HIVObservationHIVCondition(
                patient -> subject.reference = reference(patient) "setSubjectRef";
              } "setSubject";
              obs.effective as effective -> observe.effective = effective "setOnset";
-             // observations must have status and code
-             // different than the hiv positive code used above
-             //obsentry -> observe.code = cc("http://smart.who.int/hiv/CodeSystem/HIVConcepts", "HIV.B.DE112", "HIV-positive") "setCode";
              obs.code as code -> observe.code = code "setCode";
-             obs.value as value : CodeableConcept where value.coding.exists(system='https://openconceptlab.org/orgs/CIEL/sources/CIEL' and code='664') 
+             obs.value as value : CodeableConcept where value.coding.exists(system='https://cielterminology.org' and code='664') 
               -> observe.value = cc("http://smart.who.int/hiv/CodeSystem/HIVConcepts", "HIV.B.DE117", "HIV-negative") "setValueNegative";
-             obs.value as value : CodeableConcept where value.coding.exists(system='https://openconceptlab.org/orgs/CIEL/sources/CIEL' and code='138571') 
+             obs.value as value : CodeableConcept where value.coding.exists(system='https://cielterminology.org' and code='138571') 
+              -> observe.value = cc("http://smart.who.int/hiv/CodeSystem/HIVConcepts", "HIV.B.DE116", "HIV-positive") "setValuePositive";
+             obs.value as value : CodeableConcept where value.coding.exists(system='https://cielterminology.org' and code='703') 
               -> observe.value = cc("http://smart.who.int/hiv/CodeSystem/HIVConcepts", "HIV.B.DE116", "HIV-positive") "setValuePositive";
              obsentry -> observe.status = cc("http://hl7.org/fhir/observation-status", "final", "Final") "setStatus";
  
-             // create provenance resource to document input/output resources links
              obs -> tgt.entry as pentry, pentry.resource = create("Provenance") as prov, uuid() as pid,
              pentry.request as prequest
              then {
@@ -192,55 +185,8 @@ group HIVObservationHIVCondition(
              } "setProvenance";
            } "setHIVPositiveTest";
           } "getOnARTObservation";
-
-
-        // create observation resource with the negative hiv test codes
-        /*
-         src.entry as obsentry where resource.is(Observation) 
-         and resource.subject.exists(reference=("Patient/" & patient.id))
-         and resource.code.exists(coding.exists(system='https://openconceptlab.org/orgs/CIEL/sources/CIEL' and code='664')) 
-            -> tgt.entry as newentry, newentry.resource = create("Observation") as negative, uuid() as negobs 
-         then {
-           obsentry.resource as obs -> newentry.fullUrl = ( "urn:uuid:" & negobs ),
-           newentry.request as newrequest
-           then {
-             obsentry -> negative.id = negobs "setOBSd";
-             obsentry -> newrequest.method = "PUT", newrequest.url = ("Observation/" & negobs) "setrequest";
-
-             patient -> negative.subject as subject 
-             then {
-               patient -> subject.reference = reference(patient) "setSubjectRef";
-             } "setSubject";
-             obs.effective as effective -> negative.effective = effective "setOnset";
-             obsentry -> negative.code = cc("http://smart.who.int/hiv/CodeSystem/HIVConcepts", "HIV.B.DE113", "HIV-negative") "setCode";
-             obsentry -> negative.status = cc("http://hl7.org/fhir/observation-status", "final", "Final") "setStatus";
- 
-             obs -> tgt.entry as pentry, pentry.resource = create("Provenance") as prov, uuid() as pid,
-             pentry.request as prequest
-             then {
-               obs -> prov.id = pid "setPId";
-               obs -> pentry.fullUrl = ( "urn:uuid:" & pid ) "setFullUrl";
-               obs -> prequest.method = "PUT", prequest.url = ("Provenance/" & pid) "setrequest";
-               obs -> prov.target as ptarg 
-               then {
-                 obs -> ptarg.reference = ( "urn:uuid:" & cid ) "setTargetRef";
-               } "setTarget";
-               obs -> prov.entity as entity 
-               then {
-                 obs -> entity.role = "source" "setRole";
-                 obs -> entity.what as pwhat 
-                 then {
-                   obs -> pwhat.reference = reference(obs) "setWhatRef";
-                 } "setWhat";
-               } "setEntity";
-             } "setProvenance";
-           } "setHIVNegativeTest";
-          } "getHIVNegativeObservation";
-        */
-
         } "patientResource";
     } "copyPatient";
 
   }
-
 
