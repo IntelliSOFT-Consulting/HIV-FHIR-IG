@@ -155,12 +155,30 @@ group HIVObservationHIVCondition(
              } "setSubject";
              obs.effective as effective -> observe.effective = effective "setOnset";
              obs.code as code -> observe.code = code "setCode";
-             obs.value : CodeableConcept as value where value.coding.exists(system='https://cielterminology.org' and code='664') 
-              -> observe.value = cc("http://smart.who.int/hiv/CodeSystem/HIVConcepts", "HIV.B.DE117", "HIV-negative") "setValueNegative";
-             obs.value : CodeableConcept as value where value.coding.exists(system='https://cielterminology.org' and code='138571') 
-              -> observe.value = cc("http://smart.who.int/hiv/CodeSystem/HIVConcepts", "HIV.B.DE116", "HIV-positive") "setValuePositive";
-             obs.value : CodeableConcept as value where value.coding.exists(system='https://cielterminology.org' and code='703') 
-              -> observe.value = cc("http://smart.who.int/hiv/CodeSystem/HIVConcepts", "HIV.B.DE116", "HIV-positive") "setValuePositive";
+             obs.value : CodeableConcept as value where coding.exists(system='https://cielterminology.org' and code='664') 
+              -> observe.value = create("CodeableConcept") as val then {
+                value -> val.coding as coding then {
+                  value -> coding.system = "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+                    coding.code = "HIV.B.DE117",
+                    coding.display = "HIV-negative" "setNegativeCC";
+                } "setNegativeCoding";
+              } "setValueNegative";
+              obs.value : CodeableConcept as value where coding.exists(system='https://cielterminology.org' and code='138571') 
+              -> observe.value = create("CodeableConcept") as val then {
+                value -> val.coding as coding then {
+                  value -> coding.system = "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+                    coding.code = "HIV.B.DE116",
+                    coding.display = "HIV-positive" "setPositiveCC";
+                } "setPositiveCoding";
+              } "setValuePositive1";
+             obs.value : CodeableConcept as value where coding.exists(system='https://cielterminology.org' and code='703') 
+              -> observe.value = create("CodeableConcept") as val then {
+                value -> val.coding as coding then {
+                  value -> coding.system = "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+                    coding.code = "HIV.B.DE116",
+                    coding.display = "HIV-positive" "setPositiveCC";
+                } "setPositiveCoding";
+              } "setValuePositive2";
              obsentry -> observe.status = cc("http://hl7.org/fhir/observation-status", "final", "Final") "setStatus";
  
              obs -> tgt.entry as pentry, pentry.resource = create("Provenance") as prov, uuid() as pid,
