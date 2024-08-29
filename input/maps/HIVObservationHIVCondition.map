@@ -141,7 +141,7 @@ group HIVObservationHIVCondition(
          src.entry as obsentry where resource.is(Observation) 
          and resource.subject.exists(reference=("Patient/" & patient.id))
          // ciel for hiv positive, could add snomed
-         and resource.code.exists(coding.exists(system='https://openconceptlab.org/orgs/CIEL/sources/CIEL' and code='138571')) 
+         and resource.code.exists(coding.exists(system='https://openconceptlab.org/orgs/CIEL/sources/CIEL' and code='159427')) 
             -> tgt.entry as newentry, newentry.resource = create("Observation") as observe, uuid() as obsd 
          then {
            obsentry.resource as obs -> newentry.fullUrl = ( "urn:uuid:" & obsd ),
@@ -161,7 +161,12 @@ group HIVObservationHIVCondition(
              obs.effective as effective -> observe.effective = effective "setOnset";
              // observations must have status and code
              // different than the hiv positive code used above
-             obsentry -> observe.code = cc("http://smart.who.int/hiv/CodeSystem/HIVConcepts", "HIV.B.DE112", "HIV-positive") "setCode";
+             //obsentry -> observe.code = cc("http://smart.who.int/hiv/CodeSystem/HIVConcepts", "HIV.B.DE112", "HIV-positive") "setCode";
+             obs.code as code -> observe.code = code "setCode";
+             obs.value as value : CodeableConcept where value.coding.exists(system='https://openconceptlab.org/orgs/CIEL/sources/CIEL' and code='664') 
+              -> observe.value = cc("http://smart.who.int/hiv/CodeSystem/HIVConcepts", "HIV.B.DE117", "HIV-negative") "setValueNegative";
+             obs.value as value : CodeableConcept where value.coding.exists(system='https://openconceptlab.org/orgs/CIEL/sources/CIEL' and code='138571') 
+              -> observe.value = cc("http://smart.who.int/hiv/CodeSystem/HIVConcepts", "HIV.B.DE116", "HIV-positive") "setValuePositive";
              obsentry -> observe.status = cc("http://hl7.org/fhir/observation-status", "final", "Final") "setStatus";
  
              // create provenance resource to document input/output resources links
@@ -190,6 +195,7 @@ group HIVObservationHIVCondition(
 
 
         // create observation resource with the negative hiv test codes
+        /*
          src.entry as obsentry where resource.is(Observation) 
          and resource.subject.exists(reference=("Patient/" & patient.id))
          and resource.code.exists(coding.exists(system='https://openconceptlab.org/orgs/CIEL/sources/CIEL' and code='664')) 
@@ -230,7 +236,7 @@ group HIVObservationHIVCondition(
              } "setProvenance";
            } "setHIVNegativeTest";
           } "getHIVNegativeObservation";
-
+        */
 
         } "patientResource";
     } "copyPatient";
