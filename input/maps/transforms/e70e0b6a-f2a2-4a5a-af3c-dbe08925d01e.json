@@ -45,5 +45,58 @@
         "state" : "Kisumu"
       }]
     }
+  },
+  {
+    "fullUrl" : "urn:uuid:13003e30-5ad9-4b8e-b87b-3efa40e2dbf3",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "13003e30-5ad9-4b8e-b87b-3efa40e2dbf3",
+      "code" : {
+        "coding" : [{
+          "code" : "159427AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "display" : "Result of HIV test"
+        },
+        {
+          "system" : "https://cielterminology.org",
+          "code" : "159427"
+        }],
+        "text" : "Result of HIV test"
+      },
+      "subject" : {
+        "reference" : "Patient/e70e0b6a-f2a2-4a5a-af3c-dbe08925d01e"
+      },
+      "effectiveDateTime" : "2022-03-24T00:00:00+03:00",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+          "code" : "HIV.B.DE117",
+          "display" : "HIV-negative"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/13003e30-5ad9-4b8e-b87b-3efa40e2dbf3"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:bb39e599-f8ec-4ef7-963c-53a5c3ad8824",
+    "resource" : {
+      "resourceType" : "Provenance",
+      "id" : "bb39e599-f8ec-4ef7-963c-53a5c3ad8824",
+      "target" : [{
+        "reference" : "urn:uuid:"
+      }],
+      "entity" : [{
+        "role" : "source",
+        "what" : {
+          "reference" : "Observation/1575d978-2745-45cb-8246-d6e1e1eb30d9"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Provenance/bb39e599-f8ec-4ef7-963c-53a5c3ad8824"
+    }
   }]
 }
