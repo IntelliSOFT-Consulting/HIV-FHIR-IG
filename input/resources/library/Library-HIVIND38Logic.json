@@ -1,0 +1,38 @@
+{
+  "resourceType": "Library",
+  "id": "HIVIND38Logic",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablelibrary",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablelibrary",
+      "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-library",
+      "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
+    ]
+  },
+  "url": "http://smart.who.int/hiv/Library/HIVIND38Logic",
+  "title": "HIV.IND.38 Logic",
+  "description": "% of HIV-exposed infants who receive a virological test for HIV within two months (and 12 months) of birth",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+      "valueCode": "computable"
+    }
+  ],
+  "name": "HIVIND38Logic",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "World Health Organization (WHO)",
+  "type": {
+    "coding": [
+      {
+        "code": "logic-library",
+        "system": "http://terminology.hl7.org/CodeSystem/library-type"
+      }
+    ]
+  },
+  "content": [
+    {
+      "id": "ig-loader-HIVIND38Logic.cql"
+    }
+  ]
+}

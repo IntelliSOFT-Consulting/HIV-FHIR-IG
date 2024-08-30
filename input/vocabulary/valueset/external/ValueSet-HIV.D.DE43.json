@@ -1,0 +1,34 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HIVDDE43",
+  "id": "HIV.D.DE43",
+  "title": "ART start type ValueSet",
+  "description": "Value set of whether the client is ART naive or is restarting ART",
+  "url": "http://smart.who.int/hiv/ValueSet/HIV.D.DE43",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+    ]
+  },
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "concept": [
+          {
+            "code": "HIV.D.DE44",
+            "display": "First-time user of ART"
+          },
+          {
+            "code": "HIV.D.DE45",
+            "display": "Restarting ART"
+          }
+        ]
+      }
+    ]
+  }
+}

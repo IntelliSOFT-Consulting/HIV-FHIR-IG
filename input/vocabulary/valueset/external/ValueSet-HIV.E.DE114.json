@@ -1,0 +1,42 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HIVEDE114",
+  "id": "HIV.E.DE114",
+  "title": "Key population member type ValueSet",
+  "description": "Value set of the type of key population that the infant's mother is included in",
+  "url": "http://smart.who.int/hiv/ValueSet/HIV.E.DE114",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+    ]
+  },
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "concept": [
+          {
+            "code": "HIV.E.DE115",
+            "display": "Sex worker"
+          },
+          {
+            "code": "HIV.E.DE116",
+            "display": "People who inject drugs"
+          },
+          {
+            "code": "HIV.E.DE117",
+            "display": "Trans and gender-diverse people"
+          },
+          {
+            "code": "HIV.E.DE118",
+            "display": "People living in prisons and other closed setting"
+          }
+        ]
+      }
+    ]
+  }
+}

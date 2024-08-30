@@ -1,0 +1,70 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HIVDDE247",
+  "id": "HIV.D.DE247",
+  "title": "Preventing and treating coinfections ValueSet",
+  "description": "Value set of coinfection prevention and treatment activities performed during the care visit",
+  "url": "http://smart.who.int/hiv/ValueSet/HIV.D.DE247",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+    ]
+  },
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "concept": [
+          {
+            "code": "HIV.D.DE248",
+            "display": "Provide co-trimoxazole preventive therapy (CPT)"
+          },
+          {
+            "code": "HIV.D.DE249",
+            "display": "Intensified TB case finding and linkage to TB treatment"
+          },
+          {
+            "code": "HIV.D.DE250",
+            "display": "Provide isoniazid preventive therapy"
+          },
+          {
+            "code": "HIV.D.DE251",
+            "display": "Screen for cryptococcal infection and fungal prophylaxis"
+          },
+          {
+            "code": "HIV.D.DE252",
+            "display": "Screen for hepatitis B"
+          },
+          {
+            "code": "HIV.D.DE253",
+            "display": "Screen for hepatitis C"
+          },
+          {
+            "code": "HIV.D.DE254",
+            "display": "Prevent malaria"
+          },
+          {
+            "code": "HIV.D.DE255",
+            "display": "Screen for STIs"
+          },
+          {
+            "code": "HIV.D.DE256",
+            "display": "Prevent and screen for cervical cancer"
+          },
+          {
+            "code": "HIV.D.DE257",
+            "display": "Anal cancer screening (for men who have sex with men)"
+          },
+          {
+            "code": "HIV.D.DE258",
+            "display": "Assessment and provision of vaccinations"
+          }
+        ]
+      }
+    ]
+  }
+}

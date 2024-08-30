@@ -1,0 +1,38 @@
+{
+  "resourceType": "Library",
+  "id": "HIVIND35Logic",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablelibrary",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablelibrary",
+      "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-library",
+      "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
+    ]
+  },
+  "url": "http://smart.who.int/hiv/Library/HIVIND35Logic",
+  "title": "HIV.IND.35 Logic",
+  "description": "% of ART patients with treatment-limiting ARV toxicity",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+      "valueCode": "computable"
+    }
+  ],
+  "name": "HIVIND35Logic",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "World Health Organization (WHO)",
+  "type": {
+    "coding": [
+      {
+        "code": "logic-library",
+        "system": "http://terminology.hl7.org/CodeSystem/library-type"
+      }
+    ]
+  },
+  "content": [
+    {
+      "id": "ig-loader-HIVIND35Logic.cql"
+    }
+  ]
+}

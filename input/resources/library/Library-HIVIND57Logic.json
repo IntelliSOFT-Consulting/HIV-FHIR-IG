@@ -1,0 +1,38 @@
+{
+  "resourceType": "Library",
+  "id": "HIVIND57Logic",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablelibrary",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablelibrary",
+      "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-library",
+      "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
+    ]
+  },
+  "url": "http://smart.who.int/hiv/Library/HIVIND57Logic",
+  "title": "HIV.IND.57 Logic",
+  "description": "% of people living with HIV engaged in DSD ART models who have virological suppression",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+      "valueCode": "computable"
+    }
+  ],
+  "name": "HIVIND57Logic",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "World Health Organization (WHO)",
+  "type": {
+    "coding": [
+      {
+        "code": "logic-library",
+        "system": "http://terminology.hl7.org/CodeSystem/library-type"
+      }
+    ]
+  },
+  "content": [
+    {
+      "id": "ig-loader-HIVIND57Logic.cql"
+    }
+  ]
+}

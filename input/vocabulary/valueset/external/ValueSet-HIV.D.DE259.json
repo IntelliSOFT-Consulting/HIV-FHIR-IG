@@ -1,0 +1,138 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HIVDDE259",
+  "id": "HIV.D.DE259",
+  "title": "Risk factors, comorbidities and coinfections signs and symptoms ValueSet",
+  "description": "Value set of signs and symptoms of opportunistic infections or other comorbidities experienced by client",
+  "url": "http://smart.who.int/hiv/ValueSet/HIV.D.DE259",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+    ]
+  },
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "concept": [
+          {
+            "code": "HIV.D.DE260",
+            "display": "Oral candidiasis"
+          },
+          {
+            "code": "HIV.D.DE261",
+            "display": "Vaginal candidiasis"
+          },
+          {
+            "code": "HIV.D.DE262",
+            "display": "Cough"
+          },
+          {
+            "code": "HIV.D.DE263",
+            "display": "Prolonged fever"
+          },
+          {
+            "code": "HIV.D.DE264",
+            "display": "Night sweats"
+          },
+          {
+            "code": "HIV.D.DE265",
+            "display": "Weight loss"
+          },
+          {
+            "code": "HIV.D.DE266",
+            "display": "Difficulty breathing"
+          },
+          {
+            "code": "HIV.D.DE267",
+            "display": "Pneumonia"
+          },
+          {
+            "code": "HIV.D.DE268",
+            "display": "Urethral discharge"
+          },
+          {
+            "code": "HIV.D.DE269",
+            "display": "Syphilis"
+          },
+          {
+            "code": "HIV.D.DE270",
+            "display": "Pelvic inflammatory disease"
+          },
+          {
+            "code": "HIV.D.DE271",
+            "display": "Ulcers - skin"
+          },
+          {
+            "code": "HIV.D.DE272",
+            "display": "Ulcers - mouth or other"
+          },
+          {
+            "code": "HIV.D.DE273",
+            "display": "Ulcers - male genital"
+          },
+          {
+            "code": "HIV.D.DE274",
+            "display": "Vaginal discharge"
+          },
+          {
+            "code": "HIV.D.DE275",
+            "display": "Malaria"
+          },
+          {
+            "code": "HIV.D.DE276",
+            "display": "Chronic obstructive pulmonary disease"
+          },
+          {
+            "code": "HIV.D.DE277",
+            "display": "Hypertension"
+          },
+          {
+            "code": "HIV.D.DE278",
+            "display": "Diabetes"
+          },
+          {
+            "code": "HIV.D.DE279",
+            "display": "Gestational diabetes"
+          },
+          {
+            "code": "HIV.D.DE280",
+            "display": "Mental health disorders"
+          },
+          {
+            "code": "HIV.D.DE281",
+            "display": "Diarrhoea or abdominal pain"
+          },
+          {
+            "code": "HIV.D.DE282",
+            "display": "Presumptive TB"
+          },
+          {
+            "code": "HIV.D.DE283",
+            "display": "Severe or complicated malnutrition"
+          },
+          {
+            "code": "HIV.D.DE284",
+            "display": "Poor growth or development"
+          },
+          {
+            "code": "HIV.D.DE285",
+            "display": "Oedema"
+          },
+          {
+            "code": "HIV.D.DE286",
+            "display": "Previously treated for TB"
+          },
+          {
+            "code": "HIV.D.DE287",
+            "display": "Other"
+          }
+        ]
+      }
+    ]
+  }
+}

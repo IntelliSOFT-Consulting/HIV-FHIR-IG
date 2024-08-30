@@ -5,4 +5,7 @@ Thumbs.db
 /output
 /temp
 /template
+
+### user added
+input/tests/results
 /input/test-data

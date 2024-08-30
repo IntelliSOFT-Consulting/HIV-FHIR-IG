@@ -1,0 +1,42 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HIVCDE101",
+  "id": "HIV.C.DE101",
+  "title": "Alternative third PEP drug ValueSet",
+  "description": "Value set of alternative third drug for PEP",
+  "url": "http://smart.who.int/hiv/ValueSet/HIV.C.DE101",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+    ]
+  },
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "concept": [
+          {
+            "code": "HIV.C.DE102",
+            "display": "ATV/r"
+          },
+          {
+            "code": "HIV.C.DE103",
+            "display": "DRV/r"
+          },
+          {
+            "code": "HIV.C.DE104",
+            "display": "LPV/r"
+          },
+          {
+            "code": "HIV.C.DE105",
+            "display": "RAL"
+          }
+        ]
+      }
+    ]
+  }
+}

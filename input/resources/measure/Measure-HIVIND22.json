@@ -1,0 +1,119 @@
+{
+  "resourceType": "Measure",
+  "id": "HIVIND22",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cv-measure-cqfm",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablemeasure",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablemeasure"
+    ]
+  },
+  "group": [
+    {
+      "population": [
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "initial-population",
+                "display": "Initial Population"
+              }
+            ]
+          },
+          "id": "HIV.IND.22.IP",
+          "description": "Initial Population",
+          "criteria": {
+            "language": "text/cql-identifier",
+            "expression": "Initial Population"
+          }
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "measure-population",
+                "display": "Measure Population"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-populationBasis",
+              "valueCode": "boolean"
+            }
+          ],
+          "id": "HIV.IND.22.MP",
+          "description": "Measure Population",
+          "criteria": {
+            "language": "text/cql-identifier",
+            "expression": "Measure Population"
+          }
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "measure-observation",
+                "display": "Measure Observation"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-criteriaReference",
+              "valueString": "measure-population"
+            },
+            {
+              "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-aggregateMethod",
+              "valueCode": "count"
+            }
+          ],
+          "id": "HIV.IND.22.MO",
+          "description": "Measure Observation",
+          "criteria": {
+            "language": "text/cql-identifier",
+            "expression": "Measure Observation"
+          }
+        }
+      ],
+      "stratifier": [
+        {
+          "id": "HIV.IND.22.S",
+          "criteria": {
+            "language": "text/cql-identifier",
+            "expression": "Stratification"
+          }
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-populationBasis",
+      "valueCode": "boolean"
+    }
+  ],
+  "scoring": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/measure-scoring",
+        "code": "continuous-variable",
+        "display": "Continuous Variable"
+      }
+    ]
+  },
+  "description": "Number of people who were identified and tested using partner testing services and who received their results",
+  "url": "http://smart.who.int/hiv/Measure/HIVIND22",
+  "status": "draft",
+  "experimental": true,
+  "date": "2024-08-18",
+  "name": "HIVIND22",
+  "title": "HIV.IND.22 HTS partner services",
+  "publisher": "World Health Organization (WHO)",
+  "library": [
+    "http://smart.who.int/hiv/Library/HIVIND22Logic"
+  ]
+}

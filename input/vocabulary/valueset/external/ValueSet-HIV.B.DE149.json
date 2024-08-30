@@ -1,0 +1,58 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HIVBDE149",
+  "id": "HIV.B.DE149",
+  "title": "Prevention services offered and referrals ValueSet",
+  "description": "Value set of offer or refer to prevention services",
+  "url": "http://smart.who.int/hiv/ValueSet/HIV.B.DE149",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+    ]
+  },
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "concept": [
+          {
+            "code": "HIV.B.DE150",
+            "display": "Offer male and female condoms and condom-compatible lubricants"
+          },
+          {
+            "code": "HIV.B.DE151",
+            "display": "Offer pre-exposure prophylaxis (PrEP) for people at elevated risk for HIV acquisition"
+          },
+          {
+            "code": "HIV.B.DE152",
+            "display": "Offer post-exposure prophylaxis (PEP) following suspected exposure"
+          },
+          {
+            "code": "HIV.B.DE153",
+            "display": "Voluntary medical male circumcision (VMMC)"
+          },
+          {
+            "code": "HIV.B.DE154",
+            "display": "Harm reduction for people who inject drugs"
+          },
+          {
+            "code": "HIV.B.DE155",
+            "display": "Behavioural interventions to support risk reduction, particularly for people with HIV and members of key populations"
+          },
+          {
+            "code": "HIV.B.DE156",
+            "display": "HIV testing for partners and biological children"
+          },
+          {
+            "code": "HIV.B.DE157",
+            "display": "HIV testing for partners and social contacts of people from key populations, where appropriate"
+          }
+        ]
+      }
+    ]
+  }
+}

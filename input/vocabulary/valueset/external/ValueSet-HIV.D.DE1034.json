@@ -1,0 +1,46 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HIVDDE1034",
+  "id": "HIV.D.DE1034",
+  "title": "TB preventive treatment (TPT) status ValueSet",
+  "description": "Value set of indicates the current status of TB preventive treatment (TPT)",
+  "url": "http://smart.who.int/hiv/ValueSet/HIV.D.DE1034",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+    ]
+  },
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "concept": [
+          {
+            "code": "HIV.D.DE1035",
+            "display": "Not started"
+          },
+          {
+            "code": "HIV.D.DE1036",
+            "display": "On TPT"
+          },
+          {
+            "code": "HIV.D.DE1037",
+            "display": "On TPT with interruptions"
+          },
+          {
+            "code": "HIV.D.DE1038",
+            "display": "On hold"
+          },
+          {
+            "code": "HIV.D.DE1039",
+            "display": "Completed"
+          }
+        ]
+      }
+    ]
+  }
+}

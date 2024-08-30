@@ -1,0 +1,42 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HIVDDE668",
+  "id": "HIV.D.DE668",
+  "title": "VIA cervical cancer screening test result ValueSet",
+  "description": "Value set of screening test result for VIA",
+  "url": "http://smart.who.int/hiv/ValueSet/HIV.D.DE668",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+    ]
+  },
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "concept": [
+          {
+            "code": "HIV.D.DE669",
+            "display": "Negative"
+          },
+          {
+            "code": "HIV.D.DE670",
+            "display": "Positive"
+          },
+          {
+            "code": "HIV.D.DE671",
+            "display": "Suspected cancer"
+          },
+          {
+            "code": "HIV.D.DE672",
+            "display": "Invalid"
+          }
+        ]
+      }
+    ]
+  }
+}

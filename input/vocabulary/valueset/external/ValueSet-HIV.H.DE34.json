@@ -1,0 +1,38 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HIVHDE34",
+  "id": "HIV.H.DE34",
+  "title": "HIV status of partner or contact ValueSet",
+  "description": "Value set of HIV status of the partner or contact given by the index case",
+  "url": "http://smart.who.int/hiv/ValueSet/HIV.H.DE34",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+    ]
+  },
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "concept": [
+          {
+            "code": "HIV.H.DE35",
+            "display": "Already knew positive"
+          },
+          {
+            "code": "HIV.H.DE36",
+            "display": "Newly diagnosed"
+          },
+          {
+            "code": "HIV.H.DE37",
+            "display": "Negative"
+          }
+        ]
+      }
+    ]
+  }
+}

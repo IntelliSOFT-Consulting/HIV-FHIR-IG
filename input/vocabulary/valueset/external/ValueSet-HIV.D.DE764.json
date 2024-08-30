@@ -1,0 +1,50 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HIVDDE764",
+  "id": "HIV.D.DE764",
+  "title": "DSD ART model(s) ValueSet",
+  "description": "Value set of type of DSD ART model client is enrolled in (country-specific)",
+  "url": "http://smart.who.int/hiv/ValueSet/HIV.D.DE764",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+    ]
+  },
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "concept": [
+          {
+            "code": "HIV.D.DE765",
+            "display": "Fast track ART refill"
+          },
+          {
+            "code": "HIV.D.DE766",
+            "display": "Facility adherence club"
+          },
+          {
+            "code": "HIV.D.DE767",
+            "display": "Community ART distribution point"
+          },
+          {
+            "code": "HIV.D.DE768",
+            "display": "CHW/peer educator community ART group"
+          },
+          {
+            "code": "HIV.D.DE769",
+            "display": "Patient/client community ART group"
+          },
+          {
+            "code": "HIV.D.DE770",
+            "display": "Other DSD ART model"
+          }
+        ]
+      }
+    ]
+  }
+}

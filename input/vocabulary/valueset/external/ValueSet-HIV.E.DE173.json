@@ -1,0 +1,38 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HIVEDE173",
+  "id": "HIV.E.DE173",
+  "title": "Maternal and child health service visit ValueSet",
+  "description": "Value set of maternal and child health service visit attended by an HIV-exposed infant",
+  "url": "http://smart.who.int/hiv/ValueSet/HIV.E.DE173",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+    ]
+  },
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "concept": [
+          {
+            "code": "HIV.E.DE174",
+            "display": "12-month visit"
+          },
+          {
+            "code": "HIV.E.DE175",
+            "display": "24-month visit"
+          },
+          {
+            "code": "HIV.E.DE176",
+            "display": "First visit after the end of breastfeeding"
+          }
+        ]
+      }
+    ]
+  }
+}

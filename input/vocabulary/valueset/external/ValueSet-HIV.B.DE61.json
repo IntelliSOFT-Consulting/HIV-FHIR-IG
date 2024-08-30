@@ -1,0 +1,38 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HIVBDE61",
+  "id": "HIV.B.DE61",
+  "title": "HIV exposure type ValueSet",
+  "description": "Value set of ways in which the client was exposed to HIV",
+  "url": "http://smart.who.int/hiv/ValueSet/HIV.B.DE61",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+    ]
+  },
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "concept": [
+          {
+            "code": "HIV.B.DE62",
+            "display": "Occupational"
+          },
+          {
+            "code": "HIV.B.DE63",
+            "display": "Non-occupational violent"
+          },
+          {
+            "code": "HIV.B.DE64",
+            "display": "Non-occupational consensual sex"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HIVCDE63",
+  "id": "HIV.C.DE63",
+  "title": "Screenings and diagnostics for PrEP users ValueSet",
+  "description": "Value set of listing of tests for clients on or starting pre-exposure prophylaxis (PrEP) that may be recommended or should be considered",
+  "url": "http://smart.who.int/hiv/ValueSet/HIV.C.DE63",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+    ]
+  },
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "concept": [
+          {
+            "code": "HIV.C.DE64",
+            "display": "Serum creatinine test"
+          },
+          {
+            "code": "HIV.C.DE65",
+            "display": "Hepatitis B test"
+          },
+          {
+            "code": "HIV.C.DE66",
+            "display": "Hepatitis C test"
+          },
+          {
+            "code": "HIV.C.DE67",
+            "display": "Syphilis test"
+          },
+          {
+            "code": "HIV.C.DE68",
+            "display": "Other screening for STIs"
+          },
+          {
+            "code": "HIV.C.DE69",
+            "display": "Pregnancy testing"
+          },
+          {
+            "code": "HIV.C.DE70",
+            "display": "Review vaccination history"
+          }
+        ]
+      }
+    ]
+  }
+}

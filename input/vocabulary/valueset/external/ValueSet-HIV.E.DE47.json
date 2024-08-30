@@ -1,0 +1,42 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HIVEDE47",
+  "id": "HIV.E.DE47",
+  "title": "Pregnancy outcome ValueSet",
+  "description": "Value set of outcome of current pregnancy",
+  "url": "http://smart.who.int/hiv/ValueSet/HIV.E.DE47",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+    ]
+  },
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "concept": [
+          {
+            "code": "HIV.E.DE48",
+            "display": "Live birth"
+          },
+          {
+            "code": "HIV.E.DE49",
+            "display": "Early fetal loss/miscarriage"
+          },
+          {
+            "code": "HIV.E.DE50",
+            "display": "Induced abortion"
+          },
+          {
+            "code": "HIV.E.DE51",
+            "display": "Stillbirth"
+          }
+        ]
+      }
+    ]
+  }
+}

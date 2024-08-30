@@ -1,0 +1,38 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HIVDDE897",
+  "id": "HIV.D.DE897",
+  "title": "WHO functional status ValueSet",
+  "description": "Value set of functional status of people with advanced HIV disease",
+  "url": "http://smart.who.int/hiv/ValueSet/HIV.D.DE897",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+    ]
+  },
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "concept": [
+          {
+            "code": "HIV.D.DE898",
+            "display": "Working, able to perform usual work inside and outside the home"
+          },
+          {
+            "code": "HIV.D.DE899",
+            "display": "Ambulatory, able to perform activity of daily living (ADL), not able to work"
+          },
+          {
+            "code": "HIV.D.DE900",
+            "display": "Bedridden not able to perform ADL"
+          }
+        ]
+      }
+    ]
+  }
+}

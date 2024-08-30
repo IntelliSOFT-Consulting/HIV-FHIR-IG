@@ -1,0 +1,110 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HIVDDE537",
+  "id": "HIV.D.DE537",
+  "title": "Current medications ValueSet",
+  "description": "Value set of list of all of the medications the client is currently taking",
+  "url": "http://smart.who.int/hiv/ValueSet/HIV.D.DE537",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+    ]
+  },
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "concept": [
+          {
+            "code": "HIV.D.DE538",
+            "display": "No medications"
+          },
+          {
+            "code": "HIV.D.DE539",
+            "display": "Don't know of any current medications"
+          },
+          {
+            "code": "HIV.D.DE540",
+            "display": "Analgesic"
+          },
+          {
+            "code": "HIV.D.DE541",
+            "display": "Antacids"
+          },
+          {
+            "code": "HIV.D.DE542",
+            "display": "Antibiotics (broad-spectrum)"
+          },
+          {
+            "code": "HIV.D.DE543",
+            "display": "Anticonvulsive"
+          },
+          {
+            "code": "HIV.D.DE544",
+            "display": "Antidiabetic"
+          },
+          {
+            "code": "HIV.D.DE545",
+            "display": "Antifungals"
+          },
+          {
+            "code": "HIV.D.DE546",
+            "display": "Antihelmintic"
+          },
+          {
+            "code": "HIV.D.DE547",
+            "display": "Antihypertensive"
+          },
+          {
+            "code": "HIV.D.DE548",
+            "display": "Antimalarials"
+          },
+          {
+            "code": "HIV.D.DE549",
+            "display": "Antiretrovirals (ARVs)"
+          },
+          {
+            "code": "HIV.D.DE550",
+            "display": "Antiparasitics"
+          },
+          {
+            "code": "HIV.D.DE551",
+            "display": "Antivirals"
+          },
+          {
+            "code": "HIV.D.DE552",
+            "display": "Buprenorphine"
+          },
+          {
+            "code": "HIV.D.DE553",
+            "display": "Co-trimoxazole preventive therapy (CPT)"
+          },
+          {
+            "code": "HIV.D.DE554",
+            "display": "Hormonal family planning method"
+          },
+          {
+            "code": "HIV.D.DE555",
+            "display": "Methadone"
+          },
+          {
+            "code": "HIV.D.DE556",
+            "display": "PrEP to prevent HIV"
+          },
+          {
+            "code": "HIV.D.DE557",
+            "display": "Other antibiotics"
+          },
+          {
+            "code": "HIV.D.DE558",
+            "display": "Other medications"
+          }
+        ]
+      }
+    ]
+  }
+}

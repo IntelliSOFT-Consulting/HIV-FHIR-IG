@@ -1,0 +1,138 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HIVDDE903",
+  "id": "HIV.D.DE903",
+  "title": "Medication/drug ValueSet",
+  "description": "Value set of current or considered medication/drug, for the purpose of determining drug interactions",
+  "url": "http://smart.who.int/hiv/ValueSet/HIV.D.DE903",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+    ]
+  },
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "concept": [
+          {
+            "code": "HIV.D.DE904",
+            "display": "Rifampicin"
+          },
+          {
+            "code": "HIV.D.DE905",
+            "display": "Halofantrine"
+          },
+          {
+            "code": "HIV.D.DE906",
+            "display": "Lovastatin"
+          },
+          {
+            "code": "HIV.D.DE907",
+            "display": "Simvastatin"
+          },
+          {
+            "code": "HIV.D.DE908",
+            "display": "Hormonal contraception"
+          },
+          {
+            "code": "HIV.D.DE909",
+            "display": "Metformin"
+          },
+          {
+            "code": "HIV.D.DE910",
+            "display": "Astemizole"
+          },
+          {
+            "code": "HIV.D.DE911",
+            "display": "Terfenadine"
+          },
+          {
+            "code": "HIV.D.DE912",
+            "display": "TDF"
+          },
+          {
+            "code": "HIV.D.DE913",
+            "display": "Simeprevir"
+          },
+          {
+            "code": "HIV.D.DE914",
+            "display": "Ombitasvir + paritaprevir/ritonavir + dasabuvir"
+          },
+          {
+            "code": "HIV.D.DE915",
+            "display": "Methadone"
+          },
+          {
+            "code": "HIV.D.DE916",
+            "display": "Buprenorphine"
+          },
+          {
+            "code": "HIV.D.DE917",
+            "display": "Dofetilide"
+          },
+          {
+            "code": "HIV.D.DE918",
+            "display": "Carbamazepine"
+          },
+          {
+            "code": "HIV.D.DE919",
+            "display": "Phenobarbital"
+          },
+          {
+            "code": "HIV.D.DE920",
+            "display": "Phenytoin"
+          },
+          {
+            "code": "HIV.D.DE921",
+            "display": "Polyvalent cation products containing Mg, Al, Fe, Ca and Zn"
+          },
+          {
+            "code": "HIV.D.DE922",
+            "display": "Amodiaquine"
+          },
+          {
+            "code": "HIV.D.DE923",
+            "display": "Cisapride"
+          },
+          {
+            "code": "HIV.D.DE924",
+            "display": "Ergotamine"
+          },
+          {
+            "code": "HIV.D.DE925",
+            "display": "Dihydroergotamine"
+          },
+          {
+            "code": "HIV.D.DE926",
+            "display": "Midazolam"
+          },
+          {
+            "code": "HIV.D.DE927",
+            "display": "Triazolam"
+          },
+          {
+            "code": "HIV.D.DE928",
+            "display": "Estrogen-based hormonal contraception"
+          },
+          {
+            "code": "HIV.D.DE929",
+            "display": "Ribavirin"
+          },
+          {
+            "code": "HIV.D.DE930",
+            "display": "Peginterferon alfa-2a"
+          },
+          {
+            "code": "HIV.D.DE931",
+            "display": "Other"
+          }
+        ]
+      }
+    ]
+  }
+}

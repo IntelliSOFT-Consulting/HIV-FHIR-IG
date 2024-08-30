@@ -1,0 +1,98 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HIVHDE53",
+  "id": "HIV.H.DE53",
+  "title": "Reason(s) for adherence problem ValueSet",
+  "description": "Value set of reason why client is not adherent",
+  "url": "http://smart.who.int/hiv/ValueSet/HIV.H.DE53",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+    ]
+  },
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "concept": [
+          {
+            "code": "HIV.H.DE54",
+            "display": "Forgot"
+          },
+          {
+            "code": "HIV.H.DE55",
+            "display": "Toxicity/side effects"
+          },
+          {
+            "code": "HIV.H.DE56",
+            "display": "Busy"
+          },
+          {
+            "code": "HIV.H.DE57",
+            "display": "Change of routine"
+          },
+          {
+            "code": "HIV.H.DE58",
+            "display": "Travel cost"
+          },
+          {
+            "code": "HIV.H.DE59",
+            "display": "Distance to clinic"
+          },
+          {
+            "code": "HIV.H.DE60",
+            "display": "Client lost/ran out of pills"
+          },
+          {
+            "code": "HIV.H.DE61",
+            "display": "Stock-out"
+          },
+          {
+            "code": "HIV.H.DE62",
+            "display": "Too ill"
+          },
+          {
+            "code": "HIV.H.DE63",
+            "display": "Pill burden"
+          },
+          {
+            "code": "HIV.H.DE64",
+            "display": "Felt well"
+          },
+          {
+            "code": "HIV.H.DE65",
+            "display": "Depression"
+          },
+          {
+            "code": "HIV.H.DE66",
+            "display": "Alcohol use"
+          },
+          {
+            "code": "HIV.H.DE67",
+            "display": "Substance use"
+          },
+          {
+            "code": "HIV.H.DE68",
+            "display": "Stigma/disclosure concerns"
+          },
+          {
+            "code": "HIV.H.DE69",
+            "display": "Lack of food"
+          },
+          {
+            "code": "HIV.H.DE70",
+            "display": "Poor palatability"
+          },
+          {
+            "code": "HIV.H.DE71",
+            "display": "Other"
+          }
+        ]
+      }
+    ]
+  }
+}

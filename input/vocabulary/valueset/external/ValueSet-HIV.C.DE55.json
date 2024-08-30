@@ -1,0 +1,46 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HIVCDE55",
+  "id": "HIV.C.DE55",
+  "title": "Sex partner's HIV treatment status ValueSet",
+  "description": "Value set of treatment adherence of client's sex partner for partners that are HIV-positive",
+  "url": "http://smart.who.int/hiv/ValueSet/HIV.C.DE55",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+    ]
+  },
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "concept": [
+          {
+            "code": "HIV.C.DE56",
+            "display": "Not on ART"
+          },
+          {
+            "code": "HIV.C.DE57",
+            "display": "On ART less than 6 months"
+          },
+          {
+            "code": "HIV.C.DE58",
+            "display": "Partner has suspected low adherence to ART"
+          },
+          {
+            "code": "HIV.C.DE59",
+            "display": "Partner is not virally suppressed"
+          },
+          {
+            "code": "HIV.C.DE60",
+            "display": "Partner is virally suppressed and has been on ART for 6 months or more"
+          }
+        ]
+      }
+    ]
+  }
+}

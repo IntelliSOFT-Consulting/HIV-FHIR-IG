@@ -1,0 +1,82 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HIVDDE956",
+  "id": "HIV.D.DE956",
+  "title": "TB screening algorithm ValueSet",
+  "description": "Value set of screening algorithm selected for screening activities",
+  "url": "http://smart.who.int/hiv/ValueSet/HIV.D.DE956",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+    ]
+  },
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "concept": [
+          {
+            "code": "HIV.D.DE957",
+            "display": "Screening with cough"
+          },
+          {
+            "code": "HIV.D.DE958",
+            "display": "Screening with any TB symptom"
+          },
+          {
+            "code": "HIV.D.DE959",
+            "display": "W4SS single screening algorithm"
+          },
+          {
+            "code": "HIV.D.DE960",
+            "display": "CRP single screening algorithm"
+          },
+          {
+            "code": "HIV.D.DE961",
+            "display": "CXR single screening algorithm"
+          },
+          {
+            "code": "HIV.D.DE962",
+            "display": "Parallel screening algorithm with W4SS and CRP"
+          },
+          {
+            "code": "HIV.D.DE963",
+            "display": "Sequential positive screening algorithm with W4SS and CRP"
+          },
+          {
+            "code": "HIV.D.DE964",
+            "display": "Sequential negative screening algorithm with W4SS and CRP"
+          },
+          {
+            "code": "HIV.D.DE965",
+            "display": "Parallel screening algorithm with W4SS and CXR"
+          },
+          {
+            "code": "HIV.D.DE966",
+            "display": "Sequential positive screening algorithm with W4SS and CXR"
+          },
+          {
+            "code": "HIV.D.DE967",
+            "display": "Sequential negative screening algorithm with W4SS and CXR"
+          },
+          {
+            "code": "HIV.D.DE968",
+            "display": "Screening with mWRD"
+          },
+          {
+            "code": "HIV.D.DE969",
+            "display": "Clinical assessment"
+          },
+          {
+            "code": "HIV.D.DE970",
+            "display": "Other TB screening algorithm"
+          }
+        ]
+      }
+    ]
+  }
+}
