@@ -18,13 +18,38 @@ group HIVObservationHIVCondition(
     // loop through patients in input bundle
     src.entry as entry -> tgt.entry as tentry 
     then {
-      entry.resource : Patient as patient -> tentry.resource = patient
+      entry.resource : Patient as patient -> tentry.resource = patient, 
+        tentry.request as newrequest
       then {
+        entry -> tentry.fullUrl = ("urn:uuid:" & patient.id) "setFullUrl";
+        entry -> newrequest.method = "PUT", newrequest.url = ("Patient/" & patient.id) "setPatientRequest";
+        entry -> tgt.entry as pentry, pentry.resource = create("Provenance") as prov, uuid() as pid,
+        pentry.request as prequest
+        then {
+          patient -> prov.id = pid "setPId";
+          patient -> pentry.fullUrl = ( "urn:uuid:" & pid ) "setFullUrl";
+          patient -> prequest.method = "PUT", prequest.url = ("Provenance/" & pid) "setrequest";
+          patient -> prov.target as ptarg 
+          then {
+            patient -> ptarg.reference = ( "urn:uuid:" & patient.id ) "setTargetRef";
+          } "setTarget";
+          patient -> prov.entity as entity 
+          then {
+            patient -> entity.role = "source" "setRole";
+            patient -> entity.what as pwhat 
+            then {
+              patient -> pwhat.reference = reference(patient) "setWhatRef";
+            } "setWhat";
+          } "setEntity";
+        //   patient -> prov.recordedDate = %now();
+        } "setProvenance";
+
+
         // for observations of that patient look for art program enrollment
         // create a condition resource in output with uuid
         src.entry as obsentry where resource.is(Observation) 
         and resource.subject.exists(reference=("Patient/" & patient.id))
-        and resource.code.exists(coding.exists(system='https://openconceptlab.org/orgs/CIEL/sources/CIEL' and code='160540')) 
+        and resource.code.exists(coding.exists(system='https://cielterminology.org' and code='160540')) 
             -> tgt.entry as newentry, newentry.resource = create("Condition") as cond, uuid() as cid 
         then {
           obsentry.resource as obs -> newentry.fullUrl = ( "urn:uuid:" & cid ),
@@ -73,7 +98,7 @@ group HIVObservationHIVCondition(
         // create a medication request resource in output with uuid
         src.entry as obsentry where resource.is(Observation) 
         and resource.subject.exists(reference=("Patient/" & patient.id))
-        and resource.code.exists(coding.exists(system='https://openconceptlab.org/orgs/CIEL/sources/CIEL' and code='5096')) 
+        and resource.code.exists(coding.exists(system='https://cielterminology.org' and code='5096')) 
             -> tgt.entry as newentry, newentry.resource = create("MedicationStatement") as ms, uuid() as msid 
         then {
           
@@ -107,7 +132,7 @@ group HIVObservationHIVCondition(
               then {
                 obsentry -> coding.code = '160119', 
                             coding.display = "CURRENTLY TAKING ARV", 
-                            coding.system = 'https://openconceptlab.org/orgs/CIEL/sources/CIEL' "setMSCoding";
+                            coding.system = 'https://cielterminology.org' "setMSCoding";
                 } "setMSCoding";
             } "SetMSMedication";
             
