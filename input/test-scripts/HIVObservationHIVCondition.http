@@ -1,0 +1,21 @@
+### @host = http://localhost:8080/matchboxv3/fhir
+@host = https://smarthapi.intellisoftkenya.com/matchbox/fhir
+
+
+
+### Convert FML to StructureMap and and PUT on server
+PUT {{host}}/StructureMap/HIVObservationHIVCondition HTTP/1.1
+Content-Type: text/fhir-mapping
+Accept: application/fhir+json
+
+< ../maps/HIVObservationHIVCondition.map
+
+
+### Transforms Production Test 1
+POST {{host}}/StructureMap/$transform?source=https://path-global-health.github.io/MERindicators/StructureMap/HIVObservationHIVCondition
+Accept: application/fhir+json;fhirVersion=4.0
+Content-Type: application/fhir+json;fhirVersion=4.0
+ 
+< ../test-data/0a2f4c9b-0963-4ea6-8d8c-da9b461460d1/0a2f4c9b-0963-4ea6-8d8c-da9b461460d1.json
+
+>>! ../test-transforms/0a2f4c9b-0963-4ea6-8d8c-da9b461460d1.json
