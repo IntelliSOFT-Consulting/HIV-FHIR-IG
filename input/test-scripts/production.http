@@ -1,0 +1,11 @@
+@host = https://smarthapi.intellisoftkenya.com/matchbox/fhir
+
+
+### Transforms Production Test 1
+POST {{host}}/StructureMap/$transform?source=https://path-global-health.github.io/MERindicators/StructureMap/HIVObservationHIVCondition
+Accept: application/fhir+json;fhirVersion=4.0
+Content-Type: application/fhir+json;fhirVersion=4.0
+ 
+< ../test-data/{{foo}}
+
+>>! ../test-transforms/{{foo}}
