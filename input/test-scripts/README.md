@@ -27,3 +27,49 @@ The script only transforms the test-data and puts transforms into test-transform
   * 159492: "Transferred out"
   * 161555: "Reason for discontinuation of program"
   * 164384: "Treatment end date"
+
+
+## Annotated code
+
+
+For observations of that patient look for art program enrollment: "Method of enrollment", create a condition resource
+```
+resource.code.exists(coding.exists(system='https://cielterminology.org' and code='160540')) 
+obsentry -> cond.code = cc("http://smart.who.int/hiv/CodeSystem/HIVConcepts", "HIV.B.DE116", "HIV-positive") "setCode";
+```
+
+For observations of that patient look for return visit date: "RETURN VISIT DATE", create a medication request resource in output with uuid
+```
+resource.code.exists(coding.exists(system='https://cielterminology.org' and code='5096')) 
+obsentry -> ms.reasonCode = cc("http://smart.who.int/hiv/CodeSystem/HIVConcepts", "HIV.H.DE47", "On ART") "setMSReasonCode";            
+// with
+obsentry -> coding.code = '160119', 
+            coding.display = "CURRENTLY TAKING ARV", 
+            coding.system = 'https://cielterminology.org' "setMSCoding";
+```
+
+Create observation resource with the hiv test codes: "Result of HIV test". This will have to be one for HIV positive and one for negative
+```
+and resource.code.exists(coding.exists(system='https://cielterminology.org' and code='159427')) 
+// then
+obs.value : CodeableConcept as value where coding.exists(system='https://cielterminology.org' and code='664') 
+-> observe.value = create("CodeableConcept") as val then {
+  value -> val.coding as coding then {
+    value -> coding.system = "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+      coding.code = "HIV.B.DE117",
+      coding.display = "HIV-negative" "setNegativeCC";
+
+obs.value : CodeableConcept as value where coding.exists(system='https://cielterminology.org' and code='138571') 
+-> observe.value = create("CodeableConcept") as val then {
+  value -> val.coding as coding then {
+    value -> coding.system = "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+      coding.code = "HIV.B.DE116",
+      coding.display = "HIV-positive" "setPositiveCC";
+
+obs.value : CodeableConcept as value where coding.exists(system='https://cielterminology.org' and code='703') 
+-> observe.value = create("CodeableConcept") as val then {
+  value -> val.coding as coding then {
+    value -> coding.system = "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+      coding.code = "HIV.B.DE116",
+      coding.display = "HIV-positive" "setPositiveCC";
+```
