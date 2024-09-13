@@ -18,7 +18,7 @@ Content-Type: application/fhir+json;fhirVersion=4.0
  
 < ./test_data/3e990510-1d51-4a25-abd4-3885cf9e8be9.json
 
->>! ./transforms/3e990510-1d51-4a25-abd4-3885cf9e8be9.json
+###>>! ./transforms/3e990510-1d51-4a25-abd4-3885cf9e8be9.json
 
 
 ### Transforms 2
@@ -39,3 +39,10 @@ Content-Type: application/fhir+json;fhirVersion=4.0
 < ./test_data/e70e0b6a-f2a2-4a5a-af3c-dbe08925d01e.json
 
 >>! ./transforms/e70e0b6a-f2a2-4a5a-af3c-dbe08925d01e.json
+
+### Transforms 3
+POST {{host}}/StructureMap/$transform?source=https://path-global-health.github.io/MERindicators/StructureMap/HIVObservationHIVCondition
+Accept: application/fhir+json;fhirVersion=4.0
+Content-Type: application/fhir+json;fhirVersion=4.0
+ 
+< ./test_data/0a2f4c9b-0963-4ea6-8d8c-da9b461460d1/0a2f4c9b-0963-4ea6-8d8c-da9b461460d1.json

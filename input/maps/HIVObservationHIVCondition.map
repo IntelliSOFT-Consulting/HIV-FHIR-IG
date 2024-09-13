@@ -36,10 +36,7 @@ group HIVObservationHIVCondition(
           patient -> prov.entity as entity 
           then {
             patient -> entity.role = "source" "setRole";
-            patient -> entity.what as pwhat 
-            then {
-              patient -> pwhat.reference = reference(patient) "setWhatRef";
-            } "setWhat";
+            patient -> entity.what as pwhat then setProvenanceFromBundleId( src, pwhat ) "setWhatId";
           } "setEntity";
         //   patient -> prov.recordedDate = %now();
         } "setProvenance";
@@ -84,10 +81,7 @@ group HIVObservationHIVCondition(
               obs -> prov.entity as entity 
               then {
                 obs -> entity.role = "source" "setRole";
-                obs -> entity.what as pwhat 
-                then {
-                  obs -> pwhat.reference = reference(obs) "setWhatRef";
-                } "setWhat";
+                obs -> entity.what as pwhat then setProvenanceFromBundleId( src, pwhat ) "setWhatId";
               } "setEntity";
             //   obs -> prov.recordedDate = %now();
             } "setProvenance";
@@ -150,10 +144,7 @@ group HIVObservationHIVCondition(
               obs -> prov.entity as entity 
               then {
                 obs -> entity.role = "source" "setRole";
-                obs -> entity.what as pwhat 
-                then {
-                  obs -> pwhat.reference = reference(obs) "setWhatRef";
-                } "setWhat";
+                obs -> entity.what as pwhat then setProvenanceFromBundleId( src, pwhat ) "setWhatId";
               } "setEntity";
             //   obs -> prov.recordedDate = %now();
             } "setProvenance";
@@ -219,10 +210,7 @@ group HIVObservationHIVCondition(
                obs -> prov.entity as entity 
                then {
                  obs -> entity.role = "source" "setRole";
-                 obs -> entity.what as pwhat 
-                 then {
-                   obs -> pwhat.reference = reference(obs) "setWhatRef";
-                 } "setWhat";
+                 obs -> entity.what as pwhat then setProvenanceFromBundleId( src, pwhat ) "setWhatId";
                } "setEntity";
              //   obs -> prov.recordedDate = %now();
              } "setProvenance";
@@ -233,3 +221,11 @@ group HIVObservationHIVCondition(
 
   }
 
+group setProvenanceFromBundleId (
+  source bundle: input,
+  target provwhat: Reference
+) {
+  bundle.id as bundleid -> provwhat.identifier as whatid then {
+    bundleid -> whatid.value = ( "Bundle/" & bundleid ) "setWhatIdValue";
+  } "setWhatId";  
+}
