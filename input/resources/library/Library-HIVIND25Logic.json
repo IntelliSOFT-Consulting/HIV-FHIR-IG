@@ -2,37 +2,31 @@
   "resourceType": "Library",
   "id": "HIVIND25Logic",
   "meta": {
-    "profile": [
-      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablelibrary",
-      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablelibrary",
-      "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-library",
-      "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
-    ]
+    "profile": [ "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablelibrary", "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablelibrary", "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-library", "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module" ]
   },
-  "url": "http://smart.who.int/hiv/Library/HIVIND25Logic",
-  "title": "HIV.IND.25 Logic",
-  "description": "% of people testing HIV-negative who tested again within a defined period of time after their previous test",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
-      "valueCode": "computable"
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+    "valueCode": "computable"
+  }, {
+    "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-softwaresystem",
+    "valueReference": {
+      "reference": "Device/cqf-tooling"
     }
-  ],
+  } ],
+  "url": "http://smart.who.int/hiv/Library/HIVIND25Logic",
   "name": "HIVIND25Logic",
+  "title": "HIV.IND.25 Logic",
   "status": "draft",
   "experimental": true,
-  "publisher": "World Health Organization (WHO)",
   "type": {
-    "coding": [
-      {
-        "code": "logic-library",
-        "system": "http://terminology.hl7.org/CodeSystem/library-type"
-      }
-    ]
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/library-type",
+      "code": "logic-library"
+    } ]
   },
-  "content": [
-    {
-      "id": "ig-loader-HIVIND25Logic.cql"
-    }
-  ]
+  "publisher": "World Health Organization (WHO)",
+  "description": "% of people testing HIV-negative who tested again within a defined period of time after their previous test",
+  "content": [ {
+    "id": "ig-loader-HIVIND25Logic.cql"
+  } ]
 }

@@ -2,102 +2,499 @@
   "resourceType": "Measure",
   "id": "HIVIND28",
   "meta": {
-    "profile": [
-      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/proportion-measure-cqfm",
-      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablemeasure",
-      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablemeasure"
-    ]
+    "profile": [ "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/proportion-measure-cqfm", "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablemeasure", "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablemeasure", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-measure-cqfm" ]
   },
-  "group": [
-    {
-      "population": [
-        {
-          "code": {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
-                "code": "initial-population",
-                "display": "Initial Population"
-              }
-            ]
-          },
-          "id": "HIV.IND.28.IP",
-          "description": "Initial Population",
-          "criteria": {
-            "language": "text/cql-identifier",
-            "expression": "Initial Population"
-          }
-        },
-        {
-          "code": {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
-                "code": "denominator",
-                "display": "Denominator"
-              }
-            ]
-          },
-          "id": "HIV.IND.28.DEN",
-          "description": "Number of people reported on ART at the end of the last reporting period | plus | those newly initiated on ART during the current reporting period",
-          "criteria": {
-            "language": "text/cql-identifier",
-            "expression": "Denominator"
-          }
-        },
-        {
-          "code": {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
-                "code": "numerator",
-                "display": "Numerator"
-              }
-            ]
-          },
-          "id": "HIV.IND.28.NUM",
-          "description": "Number of people living with HIV reported on ART at the end of the last reporting period | plus | Number of people living with HIV newly initiated on ART during the current reporting period | minus | Total number of people living with HIV on ART at the end of the current reporting period",
-          "criteria": {
-            "language": "text/cql-identifier",
-            "expression": "Numerator"
-          }
-        }
-      ],
-      "stratifier": [
-        {
-          "id": "HIV.IND.28.S",
-          "criteria": {
-            "language": "text/cql-identifier",
-            "expression": "Stratification"
-          }
-        }
-      ]
-    }
-  ],
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-populationBasis",
-      "valueCode": "boolean"
-    }
-  ],
-  "scoring": {
-    "coding": [
-      {
-        "system": "http://terminology.hl7.org/CodeSystem/measure-scoring",
-        "code": "proportion",
-        "display": "Proportion"
+  "contained": [ {
+    "resourceType": "Library",
+    "id": "effective-data-requirements",
+    "extension": [ {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-directReferenceCode",
+      "valueCoding": {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "code": "HIV.A.DE20",
+        "display": "Male"
       }
-    ]
-  },
-  "description": "Number and % of people living with HIV on ART at the end of the last reporting period and those newly initiating ART during the current reporting period who were not on ART at the end of the current reporting period",
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-directReferenceCode",
+      "valueCoding": {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "code": "HIV.A.DE19",
+        "display": "Female"
+      }
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-directReferenceCode",
+      "valueCoding": {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "code": "HIV.A.DE22",
+        "display": "Transgender female"
+      }
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-directReferenceCode",
+      "valueCoding": {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "code": "HIV.A.DE21",
+        "display": "Transgender male"
+      }
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-directReferenceCode",
+      "valueCoding": {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "code": "HIV.A.DE23",
+        "display": "Other"
+      }
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-directReferenceCode",
+      "valueCoding": {
+        "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+        "code": "HIV.B.DE49",
+        "display": "Key population member*"
+      }
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-directReferenceCode",
+      "valueCoding": {
+        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+        "code": "social-history",
+        "display": "Social History"
+      }
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "HIVIND28Logic"
+      }, {
+        "url": "name",
+        "valueString": "Initial Population"
+      }, {
+        "url": "statement",
+        "valueString": "/*\n * As defined by Member State\n */\ndefine \"Initial Population\":\n  true"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 0
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "HIVIndicatorElements"
+      }, {
+        "url": "name",
+        "valueString": "By Administrative Gender Stratifier"
+      }, {
+        "url": "statement",
+        "valueString": "/* End of Age */\n\n\n\n\n\n\n/*\n@dataElement: HIV.A.DE18 - Gender\n@activity: HIV.A6.1 Review sociodemographic data with client | HIV.A5 Create new client record\n@description: Gender of the client\n*/\n\n/*\n * By Administrative Gender of Patient Stratifier\n * Need to expand codes\n */\n\ndefine \"By Administrative Gender Stratifier\":\n  case \n      when Patient.gender = 'male' then Concepts.\"Male\"\n      when Patient.gender = 'female' then Concepts.\"Female\"\n      when Patient.gender = 'transgender female' then Concepts.\"Transgender female\"\n      when Patient.gender = 'transgender male' then Concepts.\"Transgender male\"\n      else Concepts.\"Other - HIV.A.DE23\"\n  end"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 1
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "HIVIndicatorElements"
+      }, {
+        "url": "name",
+        "valueString": "Age In Years"
+      }, {
+        "url": "statement",
+        "valueString": "/* End of Visit date A.DE3 */\n\n/*\n@dataElement: HIV.A.DE17 - Age\n@activity: HIV.A6.1 Review sociodemographic data with client | HIV.A5 Create new client record\n@description: Calculated age (number of years) of the client based on date of birth\n*/\ndefine \"Age In Years\":\n  AgeInYearsAt(start of \"Measurement Period\")"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 2
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "HIVIndicatorElements"
+      }, {
+        "url": "name",
+        "valueString": "By Age Stratifier"
+      }, {
+        "url": "statement",
+        "valueString": "/*\n * By Age Stratifiers\n * (0–4, 5–9, 10–14, 15–19, 20–24, 25–29, 30–34, 35–39, 40–44, 45–49, 50+ years)\n * \n */\ndefine \"By Age Stratifier\":\n  case \n      when \"Age In Years\" <= 4 then '0-4'\n      when \"Age In Years\" <= 9 then '5-9'\n      when \"Age In Years\" <= 14 then '10–14'\n      when \"Age In Years\" <= 19 then '15–19'\n      when \"Age In Years\" <= 24 then '20–24'\n      when \"Age In Years\" <= 29 then '25–29'\n      when \"Age In Years\" <= 34 then '30–34'\n      when \"Age In Years\" <= 39 then '35–39'\n      when \"Age In Years\" <= 44 then '40–44'\n      when \"Age In Years\" <= 49 then '45–49'\n      when \"Age In Years\" >= 50 then '50+'\n      else null\n  end"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 3
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "HIVIndicatorElements"
+      }, {
+        "url": "name",
+        "valueString": "By Geographic Region Stratifier"
+      }, {
+        "url": "statement",
+        "valueString": "// Geographic Region\ndefine \"By Geographic Region Stratifier\":\n    First(Patient.address A where A.use in { 'home' }).state"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 4
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "HIVElements"
+      }, {
+        "url": "name",
+        "valueString": "Key population member type Observation"
+      }, {
+        "url": "statement",
+        "valueString": "/* End of Key population member B.DE49 */\n\n/*\n@dataElement: HIV.B.DE50 - Key population member type\n@activity: HIV.B6 Capture or update client history\n@description: The type of key population that the client is included in\n*/\ndefine \"Key population member type Observation\":\n  [Observation: Concepts.\"Key population member - HIV.B.DE49\"] O\n    where O.status in { 'final', 'amended', 'corrected' }\n    and exists(O.category OC where OC ~ ConceptsCustom.\"social-history\")"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 5
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "HIVIndicatorElements"
+      }, {
+        "url": "name",
+        "valueString": "Key population member type Observation"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Key population member type Observation\":\n  Elements.\"Key population member type Observation\" O\n    where O.effective.toInterval() before end of \"Measurement Period\"\n    or O.issued before end of \"Measurement Period\""
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 6
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "HIVIndicatorElements"
+      }, {
+        "url": "name",
+        "valueString": "patientGroups"
+      }, {
+        "url": "statement",
+        "valueString": "// Stratifier\ndefine patientGroups:\n  \"Key population member type Observation\" O\n  return Combine(O.code.coding.code, ':')"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 7
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "HIVIndicatorElements"
+      }, {
+        "url": "name",
+        "valueString": "Treatment outcome category"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Treatment outcome category\":\n  List<String>{\n    if \"Is lost to follow-up\" then 'LTFU' else null,\n    if \"Has transferred out\" then 'Transfer Out' else null,\n    if \"Has death documented\" then 'Death' else null,\n    if \"Refused stopped treatment\" then 'Stopped' else null,\n    if \"On ART H.DE47\" then 'On ART' else null\n  }"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 8
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "HIVIND28Logic"
+      }, {
+        "url": "name",
+        "valueString": "Stratification"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Stratification\":\n HIE.\"By Administrative Gender Stratifier\".code \n  + ':' + HIE.\"By Age Stratifier\"\n+ ':' + HIE.\"By Geographic Region Stratifier\"\n+ Combine(HIE.patientGroups, ':')\n+ Combine(HIE.\"Treatment outcome category\", ':')"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 9
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "FHIRHelpers"
+      }, {
+        "url": "name",
+        "valueString": "ToString"
+      }, {
+        "url": "statement",
+        "valueString": "define function ToString(value AdministrativeGender): value.value"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 10
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "FHIRHelpers"
+      }, {
+        "url": "name",
+        "valueString": "ToString"
+      }, {
+        "url": "statement",
+        "valueString": "define function ToString(value string): value.value"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 11
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "FHIRHelpers"
+      }, {
+        "url": "name",
+        "valueString": "ToString"
+      }, {
+        "url": "statement",
+        "valueString": "define function ToString(value AddressUse): value.value"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 12
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "FHIRHelpers"
+      }, {
+        "url": "name",
+        "valueString": "ToString"
+      }, {
+        "url": "statement",
+        "valueString": "define function ToString(value ObservationStatus): value.value"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 13
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "FHIRHelpers"
+      }, {
+        "url": "name",
+        "valueString": "ToConcept"
+      }, {
+        "url": "statement",
+        "valueString": "define function ToConcept(concept FHIR.CodeableConcept):\n    if concept is null then\n        null\n    else\n        System.Concept {\n            codes: concept.coding C return ToCode(C),\n            display: concept.text.value\n        }"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 14
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "FHIRHelpers"
+      }, {
+        "url": "name",
+        "valueString": "ToDateTime"
+      }, {
+        "url": "statement",
+        "valueString": "define function ToDateTime(value instant): value.value"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 15
+      } ]
+    } ],
+    "name": "EffectiveDataRequirements",
+    "status": "active",
+    "type": {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/library-type",
+        "code": "module-definition"
+      } ]
+    },
+    "relatedArtifact": [ {
+      "type": "depends-on",
+      "display": "Library HIE",
+      "resource": "Library/HIVIndicatorElements"
+    }, {
+      "type": "depends-on",
+      "display": "Library FHIRHelpers",
+      "resource": "Library/FHIRHelpers|4.0.1"
+    }, {
+      "type": "depends-on",
+      "display": "Library Concepts",
+      "resource": "Library/HIVConcepts"
+    }, {
+      "type": "depends-on",
+      "display": "Library FHIRHelpers",
+      "resource": "Library/FHIRHelpers|4.0.1"
+    }, {
+      "type": "depends-on",
+      "display": "Library Elements",
+      "resource": "Library/HIVElements"
+    }, {
+      "type": "depends-on",
+      "display": "Library Concepts",
+      "resource": "Library/HIVConcepts"
+    }, {
+      "type": "depends-on",
+      "display": "Library FHIRHelpers",
+      "resource": "Library/FHIRHelpers|4.0.1"
+    }, {
+      "type": "depends-on",
+      "display": "Library ConceptsCustom",
+      "resource": "Library/HIVConceptsCustom"
+    }, {
+      "type": "depends-on",
+      "display": "Library WC",
+      "resource": "Library/WHOCommon"
+    }, {
+      "type": "depends-on",
+      "display": "Code system HIVConcepts",
+      "resource": "http://smart.who.int/hiv/CodeSystem/HIVConcepts"
+    }, {
+      "type": "depends-on",
+      "display": "Code system ObservationCategoryCodes",
+      "resource": "http://terminology.hl7.org/CodeSystem/observation-category"
+    } ],
+    "parameter": [ {
+      "name": "Measurement Period",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "type": "Period"
+    }, {
+      "name": "Initial Population",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    }, {
+      "name": "Stratification",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "string"
+    } ],
+    "dataRequirement": [ {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/StructureDefinition/Patient" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/StructureDefinition/Patient" ],
+      "mustSupport": [ "use" ]
+    }, {
+      "type": "Observation",
+      "profile": [ "http://hl7.org/fhir/StructureDefinition/Observation" ],
+      "mustSupport": [ "code", "status", "category" ],
+      "codeFilter": [ {
+        "path": "code",
+        "code": [ {
+          "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+          "code": "HIV.B.DE49",
+          "display": "Key population member*"
+        } ]
+      } ]
+    }, {
+      "type": "Observation",
+      "profile": [ "http://hl7.org/fhir/StructureDefinition/Observation" ],
+      "mustSupport": [ "code", "status", "category", "effective", "issued" ],
+      "codeFilter": [ {
+        "path": "code",
+        "code": [ {
+          "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+          "code": "HIV.B.DE49",
+          "display": "Key population member*"
+        } ]
+      } ]
+    }, {
+      "type": "Observation",
+      "profile": [ "http://hl7.org/fhir/StructureDefinition/Observation" ],
+      "mustSupport": [ "code", "status", "category", "effective", "issued", "code.coding" ],
+      "codeFilter": [ {
+        "path": "code",
+        "code": [ {
+          "system": "http://smart.who.int/hiv/CodeSystem/HIVConcepts",
+          "code": "HIV.B.DE49",
+          "display": "Key population member*"
+        } ]
+      } ]
+    } ]
+  } ],
+  "extension": [ {
+    "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-populationBasis",
+    "valueCode": "boolean"
+  }, {
+    "id": "effective-data-requirements",
+    "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-effectiveDataRequirements",
+    "valueReference": {
+      "reference": "#effective-data-requirements"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-softwaresystem",
+    "valueReference": {
+      "reference": "Device/cqf-tooling"
+    }
+  } ],
   "url": "http://smart.who.int/hiv/Measure/HIVIND28",
-  "status": "draft",
-  "experimental": true,
-  "date": "2024-08-18",
   "name": "HIVIND28",
   "title": "HIV.IND.28 Total attrition from ART",
+  "status": "draft",
+  "experimental": true,
+  "date": "2024-09-13",
   "publisher": "World Health Organization (WHO)",
-  "library": [
-    "http://smart.who.int/hiv/Library/HIVIND28Logic"
-  ]
+  "description": "Number and % of people living with HIV on ART at the end of the last reporting period and those newly initiating ART during the current reporting period who were not on ART at the end of the current reporting period",
+  "library": [ "http://smart.who.int/hiv/Library/HIVIND28Logic" ],
+  "scoring": {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/measure-scoring",
+      "code": "proportion",
+      "display": "Proportion"
+    } ]
+  },
+  "group": [ {
+    "population": [ {
+      "id": "HIV.IND.28.IP",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "initial-population",
+          "display": "Initial Population"
+        } ]
+      },
+      "description": "Initial Population",
+      "criteria": {
+        "language": "text/cql-identifier",
+        "expression": "Initial Population"
+      }
+    }, {
+      "id": "HIV.IND.28.DEN",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "denominator",
+          "display": "Denominator"
+        } ]
+      },
+      "description": "Number of people reported on ART at the end of the last reporting period | plus | those newly initiated on ART during the current reporting period",
+      "criteria": {
+        "language": "text/cql-identifier",
+        "expression": "Denominator"
+      }
+    }, {
+      "id": "HIV.IND.28.NUM",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "numerator",
+          "display": "Numerator"
+        } ]
+      },
+      "description": "Number of people living with HIV reported on ART at the end of the last reporting period | plus | Number of people living with HIV newly initiated on ART during the current reporting period | minus | Total number of people living with HIV on ART at the end of the current reporting period",
+      "criteria": {
+        "language": "text/cql-identifier",
+        "expression": "Numerator"
+      }
+    } ],
+    "stratifier": [ {
+      "id": "HIV.IND.28.S",
+      "criteria": {
+        "language": "text/cql-identifier",
+        "expression": "Stratification"
+      }
+    } ]
+  } ]
 }
