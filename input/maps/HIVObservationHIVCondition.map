@@ -1,5 +1,5 @@
 // name the map and its canonical url
-map "https://path-global-health.github.io/MERindicators/StructureMap/HIVObservationHIVCondition" = "HIVObservationHIVCondition"
+map "https://IntelliSOFT-Consulting.github.io/HIV-FHIR-IG/StructureMap/HIVObservationHIVCondition" = "HIVObservationHIVCondition"
 
 // declare the structure defs used
 uses "http://hl7.org/fhir/StructureDefinition/Bundle" alias input as source

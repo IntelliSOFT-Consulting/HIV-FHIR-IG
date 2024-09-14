@@ -53,7 +53,7 @@ Description: "0.1.0"
 
 
 Alias: $EnrollmentMethods = https://path-global-health.github.io/MERindicators/CodeSystem/EnrollmentMethods
-Alias: $0203 = http://hl7.org/fhir/v2/0203
+
 Alias: $m49.htm = http://unstats.un.org/unsd/methods/m49/m49.htm
 
 ValueSet: EnrollmentMethodsforHIVProgram
@@ -84,8 +84,8 @@ Description: "1"
 
 
 Alias: $OpenHIE = https://path-global-health.github.io/MERindicators/CodeSystem/OpenHIE
-Alias: $CIEL = https://openconceptlab.org/orgs/CIEL/sources/CIEL
-Alias: $0203 = http://hl7.org/fhir/v2/0203
+Alias: $CIEL = https://cielterminology.org
+
 Alias: $m49.htm = http://unstats.un.org/unsd/methods/m49/m49.htm
 
 ValueSet: OnARV
@@ -118,7 +118,7 @@ Description: "0.1.1"
 
 
 
-Alias: $0203 = http://hl7.org/fhir/v2/0203
+
 
 ValueSet: TestResultsReceived
 Id: HIV.D.DE8
@@ -189,7 +189,7 @@ Description: "0.1.1"
 * $transferInValueSetURlValue#9860127
 * $transferInValueSetURlValue#9860129
 
-Alias: $0203 = http://hl7.org/fhir/v2/0203
+
 
 ValueSet: HTSSetting
 Id: HTS.setting

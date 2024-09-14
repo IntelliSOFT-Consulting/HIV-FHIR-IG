@@ -108,7 +108,7 @@
               "display": "Method of enrollment"
             },
             {
-              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "system": "https://cielterminology.org",
               "code": "160540",
               "display": "Method of enrollment"
             },
@@ -138,7 +138,7 @@
               "display": "Voluntary counseling and testing program"
             },
             {
-              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "system": "https://cielterminology.org",
               "code": "160539",
               "display": "Voluntary counseling and testing program"
             }

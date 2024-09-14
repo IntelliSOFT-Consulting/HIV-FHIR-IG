@@ -940,15 +940,15 @@
     "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-populationBasis",
     "valueCode": "boolean"
   }, {
+    "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-softwaresystem",
+    "valueReference": {
+      "reference": "Device/cqf-tooling"
+    }
+  }, {
     "id": "effective-data-requirements",
     "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-effectiveDataRequirements",
     "valueReference": {
       "reference": "#effective-data-requirements"
-    }
-  }, {
-    "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-softwaresystem",
-    "valueReference": {
-      "reference": "Device/cqf-tooling"
     }
   } ],
   "url": "http://smart.who.int/hiv/Measure/HIVIND29",
@@ -956,7 +956,7 @@
   "title": "HIV.IND.29 People living with HIV on ART who have suppressed viral load",
   "status": "draft",
   "experimental": true,
-  "date": "2024-09-13",
+  "date": "2024-09-14",
   "publisher": "World Health Organization (WHO)",
   "description": "% of people living with HIV on ART (for at least six months) who have virological suppression",
   "library": [ "http://smart.who.int/hiv/Library/HIVIND29Logic" ],
@@ -979,7 +979,7 @@
       },
       "description": "Initial Population",
       "criteria": {
-        "language": "text/cql-identifier",
+        "language": "text/cql",
         "expression": "Initial Population"
       }
     }, {
@@ -993,7 +993,7 @@
       },
       "description": "Number of people living with HIV on ART at least six months with at least one routine VL result in a medical or laboratory record during the reporting period, to monitor progress towards the third 95 target |  | In addition, this can also be presented as the number with suppressed VL among all people living with HIV to calculate population-level viral suppression.",
       "criteria": {
-        "language": "text/cql-identifier",
+        "language": "text/cql",
         "expression": "Denominator"
       }
     }, {
@@ -1007,14 +1007,14 @@
       },
       "description": "Number of people living with HIV on ART for at least six months and with at least one routine VL test result who have virological suppression (<1000 copies/mL) during the reporting period.",
       "criteria": {
-        "language": "text/cql-identifier",
+        "language": "text/cql",
         "expression": "Numerator"
       }
     } ],
     "stratifier": [ {
       "id": "HIV.IND.29.S",
       "criteria": {
-        "language": "text/cql-identifier",
+        "language": "text/cql",
         "expression": "Stratification"
       }
     } ]

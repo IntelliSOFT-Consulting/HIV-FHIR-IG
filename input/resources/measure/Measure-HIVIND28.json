@@ -418,15 +418,15 @@
     "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-populationBasis",
     "valueCode": "boolean"
   }, {
+    "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-softwaresystem",
+    "valueReference": {
+      "reference": "Device/cqf-tooling"
+    }
+  }, {
     "id": "effective-data-requirements",
     "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-effectiveDataRequirements",
     "valueReference": {
       "reference": "#effective-data-requirements"
-    }
-  }, {
-    "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-softwaresystem",
-    "valueReference": {
-      "reference": "Device/cqf-tooling"
     }
   } ],
   "url": "http://smart.who.int/hiv/Measure/HIVIND28",
@@ -434,7 +434,7 @@
   "title": "HIV.IND.28 Total attrition from ART",
   "status": "draft",
   "experimental": true,
-  "date": "2024-09-13",
+  "date": "2024-09-14",
   "publisher": "World Health Organization (WHO)",
   "description": "Number and % of people living with HIV on ART at the end of the last reporting period and those newly initiating ART during the current reporting period who were not on ART at the end of the current reporting period",
   "library": [ "http://smart.who.int/hiv/Library/HIVIND28Logic" ],
@@ -457,7 +457,7 @@
       },
       "description": "Initial Population",
       "criteria": {
-        "language": "text/cql-identifier",
+        "language": "text/cql",
         "expression": "Initial Population"
       }
     }, {
@@ -471,7 +471,7 @@
       },
       "description": "Number of people reported on ART at the end of the last reporting period | plus | those newly initiated on ART during the current reporting period",
       "criteria": {
-        "language": "text/cql-identifier",
+        "language": "text/cql",
         "expression": "Denominator"
       }
     }, {
@@ -485,14 +485,14 @@
       },
       "description": "Number of people living with HIV reported on ART at the end of the last reporting period | plus | Number of people living with HIV newly initiated on ART during the current reporting period | minus | Total number of people living with HIV on ART at the end of the current reporting period",
       "criteria": {
-        "language": "text/cql-identifier",
+        "language": "text/cql",
         "expression": "Numerator"
       }
     } ],
     "stratifier": [ {
       "id": "HIV.IND.28.S",
       "criteria": {
-        "language": "text/cql-identifier",
+        "language": "text/cql",
         "expression": "Stratification"
       }
     } ]

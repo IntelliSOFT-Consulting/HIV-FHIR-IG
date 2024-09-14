@@ -643,15 +643,15 @@
     "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-populationBasis",
     "valueCode": "boolean"
   }, {
+    "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-softwaresystem",
+    "valueReference": {
+      "reference": "Device/cqf-tooling"
+    }
+  }, {
     "id": "effective-data-requirements",
     "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-effectiveDataRequirements",
     "valueReference": {
       "reference": "#effective-data-requirements"
-    }
-  }, {
-    "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-softwaresystem",
-    "valueReference": {
-      "reference": "Device/cqf-tooling"
     }
   } ],
   "url": "http://smart.who.int/hiv/Measure/HIVIND18",
@@ -659,7 +659,7 @@
   "title": "HIV.IND.18 People living with HIV who know their HIV status (first 95)",
   "status": "draft",
   "experimental": true,
-  "date": "2024-09-13",
+  "date": "2024-09-14",
   "publisher": "World Health Organization (WHO)",
   "description": "Number and % of people living with HIV who know their HIV status",
   "library": [ "http://smart.who.int/hiv/Library/HIVIND18Logic" ],
@@ -682,7 +682,7 @@
       },
       "description": "Initial Population",
       "criteria": {
-        "language": "text/cql-identifier",
+        "language": "text/cql",
         "expression": "Initial Population"
       }
     }, {
@@ -700,7 +700,7 @@
       },
       "description": "Measure Population",
       "criteria": {
-        "language": "text/cql-identifier",
+        "language": "text/cql",
         "expression": "Measure Population"
       }
     }, {
@@ -721,14 +721,14 @@
       },
       "description": "Measure Observation",
       "criteria": {
-        "language": "text/cql-identifier",
+        "language": "text/cql",
         "expression": "Measure Observation"
       }
     } ],
     "stratifier": [ {
       "id": "HIV.IND.18.S",
       "criteria": {
-        "language": "text/cql-identifier",
+        "language": "text/cql",
         "expression": "Stratification"
       }
     } ]

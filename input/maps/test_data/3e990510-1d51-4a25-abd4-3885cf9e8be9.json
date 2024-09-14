@@ -146,7 +146,7 @@
           "code": "160540AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
           "display": "Method of enrollment"
         }, {
-          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "system": "https://cielterminology.org",
           "code": "160540",
           "display": "Method of enrollment"
         }, {
@@ -172,7 +172,7 @@
           "code": "160542AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
           "display": "Outpatient department"
         }, {
-          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "system": "https://cielterminology.org",
           "code": "160542",
           "display": "Outpatient department"
         }, {
@@ -200,7 +200,7 @@
           "code": "1193AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
           "display": "CURRENT DRUGS USED"
         }, {
-          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "system": "https://cielterminology.org",
           "code": "1193",
           "display": "CURRENT DRUGS USED"
         } ],
@@ -242,7 +242,7 @@
           "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
           "display": "RETURN VISIT DATE"
         }, {
-          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "system": "https://cielterminology.org",
           "code": "5096",
           "display": "RETURN VISIT DATE"
         } ],
@@ -278,7 +278,7 @@
           "code": "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
           "display": "RETURN VISIT DATE"
         }, {
-          "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "system": "https://cielterminology.org",
           "code": "5096",
           "display": "RETURN VISIT DATE"
         } ],

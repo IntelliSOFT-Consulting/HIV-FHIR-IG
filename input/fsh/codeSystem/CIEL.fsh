@@ -5,7 +5,7 @@ CodeSystem: CIEL
 Id: CIEL
 Title: "CIEL"
 Description: "0.1.1"
-* ^url = "https://openconceptlab.org/orgs/CIEL/sources/CIEL"
+* ^url = "https://IntelliSOFT-Consulting.github.io/HIV-FHIR-IG/CodeSystem/CIEL"
 * ^status = #active
 * ^language = #en
 * ^count = 97

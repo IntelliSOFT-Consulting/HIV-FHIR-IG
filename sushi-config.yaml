@@ -4,7 +4,7 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: fhir.hivfhirIg
-canonical: http://example.org
+canonical: https://IntelliSOFT-Consulting.github.io/HIV-FHIR-IG
 name: HIV-FHIR-IG
 # title: Example Title
 # description: Example Implementation Guide for getting started with SUSHI
@@ -17,7 +17,7 @@ releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | re
 # jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
   name: intellisoftkenya
-  url: http://example.org/example-publisher
+  url: https://www.intellisoftkenya.com/
   # email: test@example.org
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
@@ -69,6 +69,12 @@ pages:
   deployment.md:
     title: Deployment
 
+
+resources:
+  StructureMap/HIVObservationHIVCondition:
+    name: HIVObservationHIVCondition
+    description: Kenya SMART Guidelines for HIV
+    exampleBoolean: true
 
 #
 # The parameters property represents IG.definition.parameter. Rather

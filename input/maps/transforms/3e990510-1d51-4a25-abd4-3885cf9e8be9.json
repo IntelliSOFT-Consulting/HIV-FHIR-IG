@@ -200,7 +200,7 @@
       "status" : "active",
       "medicationCodeableConcept" : {
         "coding" : [{
-          "system" : "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "system" : "https://cielterminology.org",
           "code" : "160119",
           "display" : "CURRENTLY TAKING ARV"
         }]
@@ -252,7 +252,7 @@
       "status" : "active",
       "medicationCodeableConcept" : {
         "coding" : [{
-          "system" : "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+          "system" : "https://cielterminology.org",
           "code" : "160119",
           "display" : "CURRENTLY TAKING ARV"
         }]
