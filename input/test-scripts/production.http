@@ -2,7 +2,7 @@
 
 
 ### Transforms Production Test 1
-POST {{host}}/StructureMap/$transform?source=https://path-global-health.github.io/MERindicators/StructureMap/HIVObservationHIVCondition
+POST {{host}}/StructureMap/$transform?source=https://IntelliSOFT-Consulting.github.io/HIV-FHIR-IG/StructureMap/HIVObservationHIVCondition
 Accept: application/fhir+json;fhirVersion=4.0
 Content-Type: application/fhir+json;fhirVersion=4.0
  
