@@ -100,7 +100,7 @@ parameters:
     - input/maps
     - input/resources/device
     - input/resources/library
-    - input/resource/measure
+    - input/resources/measure
     - input/vocabulary/valueset
     - input/vocabulary/external/codesystem
   path-binary: input/cql
