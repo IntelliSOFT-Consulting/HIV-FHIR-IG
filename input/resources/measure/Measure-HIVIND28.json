@@ -434,7 +434,7 @@
   "title": "HIV.IND.28 Total attrition from ART",
   "status": "draft",
   "experimental": true,
-  "date": "2024-09-14",
+  "date": "2024-09-15",
   "publisher": "World Health Organization (WHO)",
   "description": "Number and % of people living with HIV on ART at the end of the last reporting period and those newly initiating ART during the current reporting period who were not on ART at the end of the current reporting period",
   "library": [ "http://smart.who.int/hiv/Library/HIVIND28Logic" ],

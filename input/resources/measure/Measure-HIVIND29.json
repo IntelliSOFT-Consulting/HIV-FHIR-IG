@@ -956,7 +956,7 @@
   "title": "HIV.IND.29 People living with HIV on ART who have suppressed viral load",
   "status": "draft",
   "experimental": true,
-  "date": "2024-09-14",
+  "date": "2024-09-15",
   "publisher": "World Health Organization (WHO)",
   "description": "% of people living with HIV on ART (for at least six months) who have virological suppression",
   "library": [ "http://smart.who.int/hiv/Library/HIVIND29Logic" ],

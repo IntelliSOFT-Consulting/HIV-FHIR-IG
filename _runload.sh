@@ -5,13 +5,21 @@
 export HEADER="Content-Type: application/fhir+json"
 export FHIR="http://localhost:8080/fhir"
 
-curl -s -X PUT -H "$HEADER" --data @Library-FHIR-ModelInfo.json $FHIR/Library/FHIR-ModelInfo | jq .
-
 # add patient examples
+
 for FILE in input/test-transforms/*.json ; do curl -X POST -H "$HEADER" --data @${FILE} $FHIR | jq . ; done
 
-curl -s http://localhost:8080/fhir/Patient?_total=accurate | jq .total
+pat=$(curl -s http://localhost:8080/fhir/Patient?_total=accurate | jq .total)
+printf "Patients: ${pat}\n"
 
-curl -s http://localhost:8080/fhir/MedicationStatement?_total=accurate | jq .total
+ms=$(curl -s http://localhost:8080/fhir/MedicationStatement?_total=accurate | jq .total)
+printf "Medication Statements: ${ms}\n"
 
-curl -s http://localhost:8080/fhir/Condition?_total=accurate | jq .total
+con=$(curl -s http://localhost:8080/fhir/Condition?_total=accurate | jq .total)
+printf "Conditions: ${con}\n"
+
+
+bash _refresh.sh
+
+# bash _genonce.sh
+java -Xmx4g -jar ./input-cache/publisher.jar publisher -ig .

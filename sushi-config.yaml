@@ -89,7 +89,33 @@ resources:
 # parameters:
 #   excludettl: true
 #   validation: [allow-any-extensions, no-broken-links]
-#
+
+parameters:  
+  path-resource:
+    # this is commented out to prevent errors
+    # - input/fsh
+    # - fsh-generated/resources
+    # - input/examples-src/output
+    # for cqf tooling
+    - input/maps
+    - input/resources/device
+    - input/vocabulary/valueset
+    - input/vocabulary/external/codesystem
+  path-binary: input/cql
+  active-tables: 'false'
+  apply-contact: 'true'
+  apply-jurisdiction: 'true'
+  apply-publisher: 'true'
+  apply-version: 'true'
+  show-inherited-invariants: 'false'
+  usage-stats-opt-out: 'true'
+  autoload-resources: 'true'
+  shownav: 'true'
+  # validation: [allow-any-extensions, no-broken-links]
+  validation: [allow-any-extensions]
+
+
+
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │ The menu property will be used to generate the input/menu.xml file. The menu is represented    │
 # │ as a simple structure where the YAML key is the menu item name and the value is the URL.       │
