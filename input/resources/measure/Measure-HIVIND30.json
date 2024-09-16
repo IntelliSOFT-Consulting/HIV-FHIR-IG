@@ -712,7 +712,7 @@
   "title": "HIV.IND.30 New ART patients",
   "status": "draft",
   "experimental": true,
-  "date": "2024-09-15",
+  "date": "2024-09-16",
   "publisher": "World Health Organization (WHO)",
   "description": "Number of people living with HIV who initiated ART",
   "library": [ "http://smart.who.int/hiv/Library/HIVIND30Logic" ],
