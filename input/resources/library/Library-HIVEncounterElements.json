@@ -9,7 +9,7 @@
     "id": "options",
     "parameter": [ {
       "name": "translatorVersion",
-      "valueString": "3.10.0"
+      "valueString": "3.11.0"
     }, {
       "name": "option",
       "valueString": "EnableAnnotations"
@@ -24,13 +24,13 @@
       "valueString": "DisableListPromotion"
     }, {
       "name": "format",
-      "valueString": "XML"
+      "valueString": "JSON"
     }, {
       "name": "analyzeDataRequirements",
       "valueBoolean": false
     }, {
       "name": "collapseDataRequirements",
-      "valueBoolean": false
+      "valueBoolean": true
     }, {
       "name": "compatibilityLevel",
       "valueString": "1.5"
@@ -42,7 +42,7 @@
       "valueString": "Info"
     }, {
       "name": "signatureLevel",
-      "valueString": "None"
+      "valueString": "All"
     }, {
       "name": "validateUnits",
       "valueBoolean": true
