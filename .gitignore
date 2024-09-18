@@ -10,3 +10,4 @@ Thumbs.db
 input/tests/results
 /input/test-data
 /input/test-transforms
+node_modules

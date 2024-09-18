@@ -9,6 +9,8 @@ MEASURES=(HIVIND18Logic HIVIND27Logic HIVIND28Logic HIVIND29Logic HIVIND30Logic)
 MSHORT=(HIVIND18 HIVIND27 HIVIND28 HIVIND29 HIVIND30)
 LIBRARIES=(FHIRHelpers FHIRCommon HIVCommon HIVConfig HIVConcepts HIVConceptsCustom HIVElements HIVEncounterElements)
 
+curl --show-error --write-out '%{http_code}' --output /dev/null -s -X PUT -H "$HEADER" --data @Library-FHIR-ModelInfo.json ${FHIR}/Library/FHIR-ModelInfo
+
 # PERSTART=(2021-01-01 2022-01-01)
 # PERSTOP=(2021-12-31 2022-12-31)
 
@@ -44,12 +46,17 @@ for FILE in ${MSHORT[*]}; do curl "${FHIR}/Measure/${FILE}/%24evaluate-measure?p
 #     done
 # done
 
+# cat measure-results/HIVIND18-2023-12.json | jq -r '.group[] | .stratifier[] | .stratum
+# cat measure-results/HIVIND27-2023-12.json | jq -r '.group[] | .stratifier[] | .stratum
+# cat measure-results/HIVIND28-2023-12.json | jq -r '.group[] | .stratifier[] | .stratum
+# cat measure-results/HIVIND29-2023-12.json | jq -r '.group[] | .stratifier[] | .stratum
+# cat measure-results/HIVIND30-2023-12.json | jq -r '.group[] | .stratifier[] | .stratum
 
 
 # curl $FHIR'/Measure/DASHTXCURR/$evaluate-measure?periodStart=2000-01-01&periodEnd=2021-12-31' | jq . 
 
-# cat measurereports/DASHTXCURR.json | jq '.group[] | .stratifier[] | .stratum'
+# cat measure-results/DASHTXCURR.json | jq '.group[] | .stratifier[] | .stratum'
 
-# cat measurereports/DASHTXCURR.json | jq -r '.group[] | .stratifier[] | .stratum | (. | map(leaf_paths) | unique) as $cols | map (. as $row | ($cols | map(. as $col | $row | getpath($col)))) as $rows | ([($cols | map(. | tostring))] + $rows) | map(@csv) | .[]' > measurereports/DASHTXCURR.csv
+# cat measure-results/DASHTXCURR.json | jq -r '.group[] | .stratifier[] | .stratum | (. | map(leaf_paths) | unique) as $cols | map (. as $row | ($cols | map(. as $col | $row | getpath($col)))) as $rows | ([($cols | map(. | tostring))] + $rows) | map(@csv) | .[]' > measurereports/DASHTXCURR.csv
 
 

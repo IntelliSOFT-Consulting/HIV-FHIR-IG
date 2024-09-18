@@ -1,0 +1,10 @@
+{
+  "resourceType": "OperationOutcome",
+  "issue": [
+    {
+      "severity": "error",
+      "code": "processing",
+      "diagnostics": "HAPI-0389: Failed to call access method: org.opencds.cqf.cql.engine.exception.CqlException: Could not resolve expression reference 'Denominator' in library 'HIVIND28Logic'."
+    }
+  ]
+}
